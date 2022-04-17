@@ -6,6 +6,4 @@ Jan lupa follow ig ku : @thekingtermux
 
 ![Github activity graph](https://activity-graph.herokuapp.com/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true)]
 
-![Profile views](https://gpvc.arturio.dev/[TheKingTermux])
-
 ![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=onedark)]
