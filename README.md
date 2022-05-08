@@ -8,4 +8,4 @@ Jan lupa follow ig ku : @thekingtermux
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=onedark)
 
-![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=TheKingTermux)
+![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=TheKingTermux)
