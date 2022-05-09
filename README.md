@@ -17,6 +17,8 @@ My social media :
 * Twitter   : @thekingtermux
 * Discord   : 𝓣𝓱𝓮𝓚𝓲𝓷𝓰𝓣𝓮𝓻𝓶𝓾𝔁「✔ ᵛᵉʳᶦᶠᶦᵉᵈ 」 #3615
 
+My Stats
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&langs_count=8)
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true)
