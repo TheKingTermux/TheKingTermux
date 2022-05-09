@@ -1,4 +1,21 @@
-Jan lupa follow ig ku : @thekingtermux
+When I have some free time, I am a contributor in the Tachiyomi's Extensions repository.
+
+From :
+Indonesia 
+
+Free time :
+   UTC+7
+09:00 - 12:00
+19:00 - 23:00
+
+Contac me in WhatsApp only
++6282301826966
+
+My social media :
+Instagram : @thekingtermux
+Facebook  : TheKingg Termux
+Twitter   : @thekingtermux
+Discord   : 𝓣𝓱𝓮𝓚𝓲𝓷𝓰𝓣𝓮𝓻𝓶𝓾𝔁「✔ ᵛᵉʳᶦᶠᶦᵉᵈ 」 #3615
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&langs_count=8)
 
