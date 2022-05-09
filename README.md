@@ -3,15 +3,13 @@
 
 - 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi)
 
-- 🌱 I’m currently learning **Kotlin, JSoup, OkHttp, etc**
-
 - 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions)
+
+- 🌱 I’m currently learning **Kotlin, JSoup, OkHttp, etc**
 
 - 👨‍💻 All of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
-- 💬 Ask me about **My projects**
-
-- ⚡ Fun fact **Watching an Anime or reading a Manga**
+- ⚡ My hobby **Watching an Anime or Reading a Manga**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
