@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm TheKingTermux</h1>
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
-- 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi)
+- 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions)
 
 - 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions)
 
