@@ -15,10 +15,11 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://wa.me/6282301826966" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167414307-f4e55ca5-b5d1-472a-ae72-c1aa72120ce9.png" alt="WhatsApp" height="30" width="30" /></a>
-<a href="https://twitter.com/thekingtermux" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="thekingtermux" height="30" width="40" /></a>
-<a href="https://www.facebook.com/achmad.maulana.908347" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="thekingg termux" height="30" width="40" /></a>
-<a href="https://instagram.com/thekingtermux" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="thekingtermux" height="30" width="40" /></a>
+<a href="https://wa.me/6282301826966" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167414307-f4e55ca5-b5d1-472a-ae72-c1aa72120ce9.png" alt="WhatsApp" height="40" width="40" /></a>
+<a href="https://twitter.com/thekingtermux" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167454155-532a8b1c-62e5-4c08-b137-c17b126c4d6f.png" alt="thekingtermux" height="40" width="40" /></a>
+<a href="https://www.facebook.com/achmad.maulana.908347" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167454240-cb544aa1-fc38-479d-a9d0-4f87cdcd5969.png" alt="thekingg termux" height="40" width="40" /></a>
+<a href="https://instagram.com/thekingtermux" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167454303-60cc69d5-4d4c-4cee-8e75-8946eda94da4.png" alt="thekingtermux" height="40" width="40" /></a>
+<a href="mailto:achmadmaulana0233@gmail.com?subject=From%20Github%20(%20Dari%20Github%20)%20&body=Send%20your%20mesaage%20here%20(%20Don't%20delete%20this%20text%20)%0ASilahkan%20Kirim%20Pesan%20Anda%20Di%20Bawah%20(%20Baris%20Ini%20Jangan%20Dihapus%20)%0A%0A" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167456783-780d7d83-0d97-41d9-983f-286da76e03d8.png" alt="email" height="40" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
