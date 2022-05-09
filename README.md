@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Kotlin, JSoup, OkHttp, etc**
 
-- 🤝 My currently working on [My Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions)
+- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions)
 
 - 👨‍💻 All of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
