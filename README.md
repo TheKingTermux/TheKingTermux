@@ -15,7 +15,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://wa.me/6282301826966" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167414307-f4e55ca5-b5d1-472a-ae72-c1aa72120ce9.png" alt="WhatsApp" height="30" width="40" /></a>
+<a href="https://wa.me/6282301826966" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167414307-f4e55ca5-b5d1-472a-ae72-c1aa72120ce9.png" alt="WhatsApp" height="30" width="30" /></a>
 <a href="https://twitter.com/thekingtermux" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="thekingtermux" height="30" width="40" /></a>
 <a href="https://www.facebook.com/achmad.maulana.908347" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="thekingg termux" height="30" width="40" /></a>
 <a href="https://instagram.com/thekingtermux" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="thekingtermux" height="30" width="40" /></a>
