@@ -11,6 +11,11 @@
 
 - ⚡ My another hobby is **Watching an Anime or Reading a Manga**
 
+<h3 align="center">My free time:</h3>
+<p align="center">Use UTC+7 (Jakarta)</p>
+<p align="center">09:00 - 12:00</p>
+<p align="center">19:00 - 23:00</p>
+
 <h3 align="center">Connect with me:</h3>
 <p align="center">
 <a href="https://wa.me/6282301826966" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167414307-f4e55ca5-b5d1-472a-ae72-c1aa72120ce9.png" alt="WhatsApp" height="40" width="40" /></a>
