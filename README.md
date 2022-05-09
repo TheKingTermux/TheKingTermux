@@ -12,8 +12,7 @@ Contac me in WhatsApp only
 * +6282301826966
 
 My social media :
-* Instagram : 
-<a href=”https://instagram.com/thekingtermux?igshid=YmMyMTA2M2Y=" target=”_blank” rel=”noreferrer”>@thekingtermux</a>
+* Instagram : @thekingtermux
 * Facebook  : TheKingg Termux
 * Twitter   : @thekingtermux
 * Discord   : 𝓣𝓱𝓮𝓚𝓲𝓷𝓰𝓣𝓮𝓻𝓶𝓾𝔁「✔ ᵛᵉʳᶦᶠᶦᵉᵈ 」 #3615
