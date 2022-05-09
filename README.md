@@ -1,7 +1,7 @@
 When I have some free time, I am a contributor in the Tachiyomi's Extensions repository.
 
 From :
-Indonesia 
+* Indonesia 
 
 Free time :
    UTC+7
