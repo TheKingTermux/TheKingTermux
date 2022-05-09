@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm TheKingTermux</h1>
-<h3 align="center">Just a young man whose hobby is coding</h3>
+<h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
 - 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi)
 
@@ -9,7 +9,7 @@
 
 - 👨‍💻 All of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
-- ⚡ My hobby **Watching an Anime or Reading a Manga**
+- ⚡ My another hobby is **Watching an Anime or Reading a Manga**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
