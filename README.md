@@ -23,10 +23,10 @@
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
 <p align="center">
-<a Use UTC+7 [Jakarta](https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1)</a>
-<a 09:00 - 12:00</a>
-<a 19:00 - 23:00</a>
+<a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
+<p align="center">09:00 - 12:00</p>
+<p align="center">19:00 - 23:00</p>
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
