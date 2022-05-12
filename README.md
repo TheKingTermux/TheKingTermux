@@ -14,6 +14,8 @@
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
 - ⚡ My another hobby is **Watching an Anime or Reading a Manga**
+<h3 align="center">I'm from</h3>
+<p>
 
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
