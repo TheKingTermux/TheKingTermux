@@ -51,5 +51,3 @@
 ![Github activity graph](https://activity-graph.herokuapp.com/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true)
 
 ![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=onedark)
-
-![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=TheKingTermux)
