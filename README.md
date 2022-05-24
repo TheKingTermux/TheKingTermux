@@ -15,7 +15,7 @@
 
 - ⚡ My another hobby is **Watching an Anime or Reading a Manga**
 
-<h3 align="center">I'm working from</h3>
+<h3 align="center">My working device</h3>
 <p align="center">Phone exactly</p>
 <p align="center">I'm have a laptop, but i think i need a personal WiFi in my home</p>
 
