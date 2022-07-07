@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "config:base",
+    ":reviewer(TheKingTermux)",
+  ],
+  "schedule": [
+    "at any time"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],   
+      "assignees": [
+        "TheKingTermux",
+      ],
+      "dependencyDashboardApproval": true,
+      "dependencyDashboardAutoclose": true,
+      "automerge": true,
+      "automergeType": "pr-comment",
+      "automergeComment": "bors: r+",
+      "rebaseWhen": "behind-base-branch",
+      "prCreation": "immediate",
+      "prConcurrentLimit": 0
+    }
+  ]
+}
