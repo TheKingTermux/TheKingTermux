@@ -1,4 +1,4 @@
-# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
   # Schedule updates (each hour)
@@ -38,7 +38,6 @@ jobs:
           plugin_activity_filter: all
           plugin_activity_limit: 5
           plugin_activity_load: 300
-          plugin_activity_timestamps: yes
           plugin_activity_visibility: all
           plugin_followup: yes
           plugin_followup_archived: yes
@@ -60,5 +59,4 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
           plugin_repositories: yes
-          plugin_repositories_featured: TheKingTermux/tachiyomi-extensions, TheKingTermux/Alice, TheKingTermux/Newbie
-          plugin_repositories_pinned: 0
+          plugin_repositories_featured: tachiyomiorg/tachiyomi-extensions, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/Newbie
