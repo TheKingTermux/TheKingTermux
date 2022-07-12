@@ -56,4 +56,4 @@
 
 <h3 align="center">My Detailed Stats</h3>
 
-![Metrics](/github-metrics.svg)
+<img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
