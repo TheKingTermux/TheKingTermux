@@ -61,10 +61,10 @@
 
 [![Push](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main&event=push)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
 
-- Build
-
-[![Build](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
-
 - Schedule
 
 [![Schedule](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main&event=schedule)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
+
+- Build
+
+[![Build](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
