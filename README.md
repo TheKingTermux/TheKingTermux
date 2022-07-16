@@ -15,10 +15,6 @@
 
 - ⚡ My another hobby is **Watching an Anime or Reading a Manga**
 
-<h3 align="center">My working device</h3>
-<p align="center">Phone exactly</p>
-<p align="center">I'm have a laptop, but i think i need a personal WiFi in my home</p>
-
 <h3 align="center">I'm from</h3>
 <p align="center">
 <a href="https://maps.app.goo.gl/233bP1PiyJf8B2sP6" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167992183-1c6f1b03-765a-45d0-a323-4a451b194210.png" alt="Country" height="40" width="40" /></a>
