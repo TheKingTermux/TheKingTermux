@@ -2,7 +2,7 @@
 name: Metrics
 on:
   # Schedule updates (each day)
-  schedule: [{cron: "0 1 * * *"}]
+  schedule: [{cron: "* 1 * * *"}]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["master", "main"]}
@@ -42,7 +42,7 @@ jobs:
           plugin_anilist: yes
           plugin_anilist_limit: 2
           plugin_anilist_limit_characters: 22
-          plugin_anilist_medias: anime, manga
+          plugin_anilist_medias: anime, manga, characters, staff, studios
           plugin_anilist_sections: favorites
           plugin_anilist_shuffle: yes
           plugin_anilist_user: TheKingTermux
