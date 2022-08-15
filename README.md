@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning **Kotlin, JSoup, OkHttp, etc**
 
-- 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Clossed due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues/83)
+- 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
 - 🗂️ I'm a web designer and web developer in [Naturly Leaf Literation Community](https://naleliform.blogspot.com)
 
