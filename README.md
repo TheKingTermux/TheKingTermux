@@ -45,22 +45,10 @@
 
 ![Github activity graph](https://activity-graph.herokuapp.com/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true)
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=onedark)
+![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=onedark&rank=-C)
 
 <h3 align="center">My Detailed Stats</h3>
 
 <img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
 
 <h3 align="center">Workflow Detailed Stats</h3>
-
-- Push
-
-[![Push](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main&event=push)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
-
-- Schedule
-
-[![Schedule](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main&event=schedule)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
-
-- Build
-
-[![Build](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml/badge.svg?branch=main)](https://github.com/TheKingTermux/TheKingTermux/actions/workflows/metrics.yml)
