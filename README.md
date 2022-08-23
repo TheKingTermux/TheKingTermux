@@ -25,8 +25,11 @@
 <p align="center">
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
-<p align="center">09:00 - 12:00</p>
-<p align="center">19:00 - 23:00</p>
+
+| Day | Time |
+|:-----:|:---:|
+| Weekday | 15.00 - 17.00   <br> 19.00 - 21.00   |
+| Weekend | 05.00 - 07.00   <br> 09.00 - 12.00   <br> 15.00 - 17.00   <br> 19.00 - 23.00   |
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
@@ -50,5 +53,3 @@
 <h3 align="center">My Detailed Stats</h3>
 
 <img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
-
-<h3 align="center">Workflow Detailed Stats</h3>
