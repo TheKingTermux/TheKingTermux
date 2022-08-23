@@ -33,6 +33,11 @@
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
+
+| Special Media | Status |
+|:---:|:---:|
+| |
+
 <a href="https://wa.me/6282301826966" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167414307-f4e55ca5-b5d1-472a-ae72-c1aa72120ce9.png" alt="WhatsApp" height="40" width="40" /></a>
 <a href="https://twitter.com/thekingtermux" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167454155-532a8b1c-62e5-4c08-b137-c17b126c4d6f.png" alt="Twitter" height="40" width="40" /></a>
 <a href="https://www.facebook.com/achmad.maulana.908347" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167454240-cb544aa1-fc38-479d-a9d0-4f87cdcd5969.png" alt="Facebook" height="40" width="40" /></a>
@@ -52,4 +57,4 @@
 
 <h3 align="center">My Detailed Stats</h3>
 
-<img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
+<img align="center" src="picture/github-metrics.svg" alt="Metrics" width="100%">
