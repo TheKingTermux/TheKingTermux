@@ -33,7 +33,7 @@
 
 <h3 align="center">Connect with me:</h3>
 
-| Special Media | Respond Status |
+| Social Media | Respond Status |
 |:---:|:---:|
 | <a href="https://bit.ly/TheKingTermuxWA" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond** |
 | <a href="https://bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/instagram.png" alt="Instagram" height="40" width="40" /></a> | **Slow Respond** |
