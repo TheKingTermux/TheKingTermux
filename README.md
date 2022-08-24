@@ -35,10 +35,10 @@
 
 | Special Media | Respond Status |
 |:---:|:---:|
-| <a href="bit.ly/TheKingTermuxWA" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond** |
-| <a href="bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/twitter.png" alt="Twitter" height="40" width="40" /></a> | **Very Slow Respond** |
-| <a href="bit.ly/TheKingTermuxFB" target="blank"><img src="./picture/facebook-logo.png" alt="Facebook" height="40" width="40" /></a> | **Very Slow Respond** |
-| <a href="bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/instagram.png" alt="Instagram" height="40" width="40" /></a> | **Slow Respond** |
+| <a href="https://bit.ly/TheKingTermuxWA" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond** |
+| <a href="https://bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/twitter.png" alt="Twitter" height="40" width="40" /></a> | **Very Slow Respond** |
+| <a href="https://bit.ly/TheKingTermuxFB" target="blank"><img src="./picture/facebook-logo.png" alt="Facebook" height="40" width="40" /></a> | **Very Slow Respond** |
+| <a href="https://bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/instagram.png" alt="Instagram" height="40" width="40" /></a> | **Slow Respond** |
 | <a href="mailto:achmadmaulana0233@gmail.com?subject=From%20Github%20(%20Dari%20Github%20)%20&body=Send%20your%20mesaage%20here%20(%20Don't%20delete%20this%20text%20)%0ASilahkan%20Kirim%20Pesan%20Anda%20Di%20Bawah%20(%20Baris%20Ini%20Jangan%20Dihapus%20)%0A%0A" target="blank"><img src="./picture/gmail.png" alt="Email" height="40" width="40" /></a> | **Very Slow Respond** |
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> </p>
