@@ -9,7 +9,7 @@
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
-- 🗂️ I'm a web designer and web developer in [Naturly Leaf Literation Community](https://naleliform.blogspot.com)
+- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com)
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
