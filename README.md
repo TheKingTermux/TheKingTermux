@@ -21,7 +21,7 @@
 </p>
 
 <h3 align="center">My free time:</h3>
-<h5 font face="Sawarabi Mincho" align="center">Times may change, depending on my conditions</h5>
+<a font face="Sawarabi Mincho" align="center">Times may change, depending on my conditions</a>
 <p align="center">
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
