@@ -54,5 +54,3 @@
 <h3 align="center">My Detailed Stats</h3>
 
 <img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
-
-<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho" rel="stylesheet" type="text/css">
