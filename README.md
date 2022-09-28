@@ -43,7 +43,7 @@
 
 <h3 align="center">Tachiyomi-Extensions-Backup-App</h3> 
 <p align="center">
-<a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/backup.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
+<a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
 </p>
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> </p>
