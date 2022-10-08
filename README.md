@@ -13,7 +13,7 @@
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
-- ⚡ My another hobby is **Watching an Anime or Reading a Manga**
+- ⚡ My another hobby is [**Watching an Anime or Reading a Manga**](https://anilist.co/user/TheKingTermux/)
 
 <h3 align="center">I'm from</h3>
 <p align="center">
