@@ -30,16 +30,16 @@
 |:-----:|:---:|
 | Weekday | 15.00 - 17.00   <br> 19.00 - 21.00   |
 | Weekend | 05.00 - 07.00   <br> 09.00 - 11.30   <br> 15.00 - 17.00   <br> 19.00 - 21.00   |
-
 <h3 align="center">Connect with me:</h3>
 
 | Social Media | Respond Status |
 |:---:|:---:|
-| <a href="https://bit.ly/TheKingTermuxWA" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond** |
+| <a href="https://bit.ly/TheKingTermuxWA" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond*** |
 | <a href="https://bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/instagram.png" alt="Instagram" height="40" width="40" /></a> | **Slow Respond** |
 | <a href="https://bit.ly/TheKingTermuxFB" target="blank"><img src="./picture/facebook-logo.png" alt="Facebook" height="40" width="40" /></a> | **Very Slow Respond** |
 | <a href="https://bit.ly/TheKingTermuxTW" target="blank"><img src="./picture/twitter.png" alt="Twitter" height="40" width="40" /></a> | **Very Very Slow Respond** |
 | <a href="mailto:achmadmaulana0233@gmail.com?subject=From%20Github%20(%20Dari%20Github%20)%20&body=Send%20your%20mesaage%20here%20(%20Don't%20delete%20this%20text%20)%0ASilahkan%20Kirim%20Pesan%20Anda%20Di%20Bawah%20(%20Baris%20Ini%20Jangan%20Dihapus%20)%0A%0A" target="blank"><img src="./picture/gmail.png" alt="Email" height="40" width="40" /></a> | **Very Very Very Slow Respond** |
+| *Fast Respond When | [You in My Free Time](https://github.com/TheKingTermux/TheKingTermux/edit/main/README.md#my-free-time) | 
 
 <h3 align="center">Tachiyomi-Extensions-Backup-App</h3> 
 <p align="center">
