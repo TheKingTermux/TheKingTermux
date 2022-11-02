@@ -29,7 +29,7 @@
 | Day | Time |
 |:-----:|:---:|
 | Weekday | 15.00 - 17.00   <br> 19.00 - 21.00   |
-| Weekend | 05.00 - 07.00   <br> 09.00 - 11.30   <br> 15.00 - 17.00   <br> 19.00 - 21.00   |
+| Weekend | 09.00 - 11.30   <br> 15.00 - 17.00   <br> 19.00 - 21.00   |
 <h3 align="center">Connect with me:</h3>
 
 | Social Media | Respond Status |
@@ -54,7 +54,7 @@
 
 ![Github Activity Graph](https://activity-graph.herokuapp.com/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true)
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&rank=-C)
+![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&rank=)
 
 <h3 align="center">My Detailed Stats</h3>
 
