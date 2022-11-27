@@ -1,4 +1,8 @@
 <h1 align="center">Hi 👋, I'm TheKingTermux</h1>
+<br>
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=25&pause=1000&center=true&vCenter=true&width=500&lines=Vocational+high+school+student;Web+developer+;Anime+subtitle+creator" alt="Typing SVG" /></a>
+
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
 - 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions)
