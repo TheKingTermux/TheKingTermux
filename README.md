@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm TheKingTermux</h1>
-<br>
 
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
