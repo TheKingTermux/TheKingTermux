@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm TheKingTermux</h1>
 <br>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=25&pause=1000&center=true&vCenter=true&width=500&lines=Vocational+high+school+student;Web+developer;Anime+subtitle+creator;WhatsApp+bot+creator" alt="Typing SVG" /></a>
-
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
 - 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions)
@@ -18,6 +16,12 @@
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
 - ⚡ My another hobby is [**Watching an Anime or Reading a Manga**](https://anilist.co/user/TheKingTermux/)
+
+<h3 align="center">About Me Simply</h3>
+<img src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=25&pause=1000&center=true&vCenter=true&width=500&lines=Vocational+high+school+student;Web+developer;Anime+subtitle+creator;WhatsApp+bot+creator;Anime+lovers;Video+editor" alt="Typing SVG" /></a>
+
+<h3 align="center">Interested in</h3>
+<img src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=25&pause=1000&center=true&vCenter=true&width=500&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+development;Android+development" alt="Typing SVG" /></a>
 
 <h3 align="center">I'm from</h3>
 <p align="center">
