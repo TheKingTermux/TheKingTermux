@@ -59,11 +59,11 @@
 
 <h3 align="center">My Simple Stats</h3>
 
-![Stats](https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true)
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="STATS"/> </p>
 
-![Github Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true)
+<p align="center"> <img src="https://github-readme-activity-graph.cyclic.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> </p>
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&rank=-C)
+<p align="center"> <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&rank=-C" alt="Trophy"/> </p>
 
 <h3 align="center">My Detailed Stats</h3>
 
