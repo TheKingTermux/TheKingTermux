@@ -4,7 +4,7 @@
 
 - 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions) and [Website Pengaduan Masyarakat repository](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat)
 
-- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only and [My Personal Website Pengaduan Masyarakat repository](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat) for a vocational high school graduation project
+- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only and [My Personal Website Pengaduan Masyarakat repository](https://github.com/TheKingTermux/Website-Pengaduan-Masyarakat) for a vocational high school graduation project
 
 - 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc**
 
