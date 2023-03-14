@@ -29,6 +29,7 @@
 
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
+<h5 align="center">Current Status Now<br><b>Busy</b></h5>
 <p align="center">
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
@@ -43,7 +44,7 @@
 
 | Social Media | Respond Status |
 |:---:|:---:|
-| <a href="https://bit.ly/TheKingTermuxWA" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond*** |
+| <a href="https://bit.ly/TheKingTermuxWA1" target="blank"><img src="./picture/whatsapp.png" alt="WhatsApp" height="40" width="40"/></a> | **Fast Respond*** |
 | <a href="https://bit.ly/TheKingTermuxIG" target="blank"><img src="./picture/instagram.png" alt="Instagram" height="40" width="40" /></a> | **Slow Respond** |
 | <a href="https://bit.ly/TheKingTermuxFB" target="blank"><img src="./picture/facebook-logo.png" alt="Facebook" height="40" width="40" /></a> | **Very Slow Respond** |
 | <a href="https://bit.ly/TheKingTermuxTW" target="blank"><img src="./picture/twitter.png" alt="Twitter" height="40" width="40" /></a> | **Very Very Slow Respond** |
