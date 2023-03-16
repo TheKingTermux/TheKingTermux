@@ -2,9 +2,9 @@
 
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
-- 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions) and [Website Pengaduan Masyarakat repository](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat)
+- 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions) and [Website Pengaduan Masyarakat repository](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake)
 
-- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only and [My Personal Website Pengaduan Masyarakat repository](https://github.com/TheKingTermux/Website-Pengaduan-Masyarakat) for a vocational high school graduation project
+- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only and [My Personal Website Pengaduan Masyarakat repository](https://github.com/TheKingTermux/Website-Pengaduan-Masyarakat-Remake) for a vocational high school graduation project
 
 - 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc**
 
@@ -29,7 +29,7 @@
 
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
-<h5 align="center">Current Status Now<br><b>Busy</b></h5>
+<h5 align="center">Current Status Now<br><b>SELF HEALING</b></h5>
 <p align="center">
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
