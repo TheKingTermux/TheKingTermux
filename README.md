@@ -29,7 +29,7 @@
 
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
-<h5 align="center">Current Status Now<br><b>Is Conducting the Education Unit Examination</b></h5>
+<h5 align="center">Current Status Now:<br><br><b>Is Conducting the Education Unit Examination</b></h5>
 <p align="center">
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
