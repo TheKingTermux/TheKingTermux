@@ -17,7 +17,9 @@
 - ⚡ My another hobby is [**Watching an Anime or Reading a Manga**](https://anilist.co/user/TheKingTermux/)
 
 <h3 align="center">About Me Simply</h3>
+<details>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=25&pause=1000&center=true&vCenter=true&width=1000&lines=Vocational+high+school+student;Web+developer;Anime+subtitle+creator;WhatsApp+bot+creator;Anime+lovers;Video+editor" alt="Typing SVG" /></a>
+</details>
 
 <h3 align="center">Interested in</h3>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=25&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+development;Android+development" alt="Typing SVG" /></a>
@@ -29,10 +31,11 @@
 
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
-<h5 align="center">Current Status Now:<br><br><b>Is Conducting the Education Unit Examination</b></h5>
 <p align="center">
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
+<h3 align="center">Current Status Now:</h3>
+<h5 align="center"><b>Is Conducting the Education Unit Examination</b></h5>
 
 | Day | Time |
 |:-----:|:---:|
