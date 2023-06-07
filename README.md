@@ -55,7 +55,7 @@
 ```
 (dd/mm/yy)
 (03/04/23)
-'''
+```
 **Note : I just changed my WhatsApp number, because the old number was blocked for some reason**
 
 <h3 align="center">Tachiyomi-Extensions-Backup-App</h3> 
