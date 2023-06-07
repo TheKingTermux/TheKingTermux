@@ -59,7 +59,7 @@
 
 <h4 align="center">Note :<h4>
 <p align="center">
-I just changed my WhatsApp number, because the old number was blocked for some reason, if you need me, please just chat my WhatsApp number above
+I just changed my WhatsApp number, because the old number was blocked for some reason, if you need me, please just chat my WhatsApp again
 </p>
 
 <h3 align="center">Tachiyomi-Extensions-Backup-App</h3> 
