@@ -52,12 +52,12 @@
 | <a href="mailto:achmadmaulana0233@gmail.com?subject=From%20Github%20(%20Dari%20Github%20)%20&body=Send%20your%20mesaage%20here%20(%20Don't%20delete%20this%20text%20)%0ASilahkan%20Kirim%20Pesan%20Anda%20Di%20Bawah%20(%20Baris%20Ini%20Jangan%20Dihapus%20)%0A%0A" target="blank"><img src="./picture/gmail.png" alt="Email" height="40" width="40" /></a> | **Very Very Very Slow Respond** |
 | *Fast Respond When | [You in My Free Time](#my-free-time) |
 
-<h3 align="center">(dd/mm/yy)<h3>
+<h4 align="center">(dd/mm/yy)<h4>
 <p align="center">
 (03/04/23)
 </p>
 
-<h3 align="center">Note :<h3>
+<h4 align="center">Note :<h4>
 <p align="center">
 I just changed my WhatsApp number, because the old number was blocked for some reason, if you need me, please just chat my WhatsApp number above
 </p>
