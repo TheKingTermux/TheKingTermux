@@ -42,6 +42,7 @@
 | Weekend | 09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00   |
 | *Friday is | Special days for me and therefore that's why i separated it |
 <h3 align="center">Connect with me:</h3>
+<h5 align="center"><b>I recommend reading the **NOTE** section below first if it is a problem regarding the Tachiyomi Extension / etc</b></h5>
 
 | Social Media | Respond Status |
 |:---:|:---:|
@@ -55,12 +56,16 @@
 - Note :
 
 1. (dd/mm/yy)
+(15/12/22)
+My laptop is broken, I can't make a contribution in Tachiyomi Extension, and even i can't do my school project / assignment because of this problem.
+
+2. (dd/mm/yy)
 (03/04/23)
 I just changed my WhatsApp number, because the old number was blocked for some reason, if you need me or you are the person who chatted before, please [chat my WhatsApp again](#connect-with-me).
 
-2. (dd/mm/yy)
+3. (dd/mm/yy)
 (01/06/23)
-My laptop is broken and under repairing, if you want me to create some Tachiyomi Extension sorry i can't, if you need your request to created by someone, you can create a [Source Request on Tachiyomi Extension Official](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new?assignees=&labels=Source+request&projects=&template=02_request_source.yml), or you need a report of change the Extension BaseUrl, you can create a [Source URL Change Report on Tachiyomi Extension Official](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new?assignees=&labels=Bug%2CDomain+changed&projects=&template=03_report_url_change.yml), or you need a report some issues related to your problem with everything about Extension,  you can create a [Report a Source Issue on Tachiyomi Extension Official](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new?assignees=&labels=Bug&projects=&template=01_report_issue.yml). Thanks for contacting me.
+My laptop is broken again and under repairing, if you want me to create some Tachiyomi Extension, sorry i can't, if you need your request to created by someone, you can create a [Source Request on Tachiyomi Extension Official](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new?assignees=&labels=Source+request&projects=&template=02_request_source.yml), or you need a report of change the Extension BaseUrl, you can create a [Source URL Change Report on Tachiyomi Extension Official](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new?assignees=&labels=Bug%2CDomain+changed&projects=&template=03_report_url_change.yml), or you need a report some issues related to your problem with everything about Extension,  you can create a [Source Issue Report on Tachiyomi Extension Official](https://github.com/tachiyomiorg/tachiyomi-extensions/issues/new?assignees=&labels=Bug&projects=&template=01_report_issue.yml). Thanks for contacting me.
 
 <h3 align="center">Tachiyomi-Extensions-Backup-App</h3> 
 <p align="center">
