@@ -60,7 +60,7 @@
 My laptop is broken, I can't make a contribution in Tachiyomi Extension, and even i can't do my school project / assignment because of this problem.
 
 2. (dd/mm/yy)
-(03/04/23)
+(14/03/23)
 I just changed my WhatsApp number, because the old number was blocked for some reason, if you need me or you are the person who chatted before, please [chat my WhatsApp again](#connect-with-me).
 
 3. (dd/mm/yy)
