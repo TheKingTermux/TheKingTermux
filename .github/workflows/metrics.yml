@@ -39,6 +39,10 @@ jobs:
           plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: all
+          plugin_topics: yes
+          plugin_topics_limit: 20
+          plugin_topics_mode: starred
+          plugin_topics_sort: stars
           plugin_anilist: yes
           plugin_anilist_limit: 2
           plugin_anilist_limit_characters: 22
@@ -67,3 +71,14 @@ jobs:
           plugin_notable_types: commit
           plugin_repositories: yes
           plugin_repositories_featured: tachiyomiorg/tachiyomi-extensions, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/Newbie
+          plugin_16personalities: yes
+          plugin_16personalities_scores: yes
+          plugin_16personalities_sections: personality
+          plugin_16personalities_url: https://www.16personalities.com/profiles/eefd8e0d6b807
+          plugin_steam: yes
+          plugin_steam_achievements_limit: 2
+          plugin_steam_games_limit: 1
+          plugin_steam_playtime_threshold: 2
+          plugin_steam_recent_games_limit: 1
+          plugin_steam_sections: player, most-played, recently-played
+          plugin_steam_user: 76561198975659161
