@@ -6,7 +6,7 @@
 
 - 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only and [My Personal Website Pengaduan Masyarakat repository](https://github.com/TheKingTermux/Website-Pengaduan-Masyarakat-Remake) for a vocational high school graduation project
 
-- 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc**
+- 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc about Android Development**
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
@@ -17,10 +17,10 @@
 - ⚡ My another hobby is [**Watching an Anime or Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/)
 
 <h3 align="center">About Me Simply</h3>
-<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Creator;Video+Editor;Sound+Engineer; Lighting+Engineer" alt="Typing SVG" /></a>
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer; Lighting+Engineer" alt="Typing SVG" /></a>
 
 <h3 align="center">Interested in</h3>
-<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+development;Android+development;Sound+System;Audio+Recording" alt="Typing SVG" /></a>
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+Development;Android+Development;Sound+System;Audio+Recording" alt="Typing SVG" /></a>
 
 <h3 align="center">I'm from</h3>
 <p align="center">
