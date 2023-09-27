@@ -47,7 +47,7 @@ jobs:
           plugin_anilist_limit: 2
           plugin_anilist_limit_characters: 22
           plugin_anilist_medias: anime, manga
-          plugin_anilist_sections: favorites, characters
+          plugin_anilist_sections: favorites, characters, watching
           plugin_anilist_shuffle: yes
           plugin_anilist_user: TheKingTermux
           plugin_followup: yes
@@ -70,15 +70,4 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
           plugin_repositories: yes
-          plugin_repositories_featured: tachiyomiorg/tachiyomi-extensions, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/Newbie
-          plugin_16personalities: yes
-          plugin_16personalities_scores: yes
-          plugin_16personalities_sections: personality
-          plugin_16personalities_url: https://www.16personalities.com/profiles/eefd8e0d6b807
-          plugin_steam: yes
-          plugin_steam_achievements_limit: 2
-          plugin_steam_games_limit: 1
-          plugin_steam_playtime_threshold: 2
-          plugin_steam_recent_games_limit: 1
-          plugin_steam_sections: player, most-played, recently-played
-          plugin_steam_user: 76561198975659161
+          plugin_repositories_featured: tachiyomiorg/tachiyomi-extensions, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/Newbie, TheKingTermux/Website-Pengaduan-Masyarakat-Remake, UKKWariors/Website-Pengaduan-Masyarakat-Remake
