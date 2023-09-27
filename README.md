@@ -17,10 +17,10 @@
 - ⚡ My another hobby is [**Watching an Anime or Reading a Manga**](https://anilist.co/user/TheKingTermux/)
 
 <h3 align="center">About Me Simply</h3>
-<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Vocational+high+school+student;Web+developer;Anime+subtitle+creator;WhatsApp+bot+creator;Anime+lovers;Video+editor" alt="Typing SVG" /></a>
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Vocational+high+school+student;Web+developer;Anime+subtitle+creator;WhatsApp+bot+creator;Anime+lovers;Video+editor;Sound+Engineer" alt="Typing SVG" /></a>
 
 <h3 align="center">Interested in</h3>
-<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+development;Android+development" alt="Typing SVG" /></a>
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+development;Android+development;Sound+System" alt="Typing SVG" /></a>
 
 <h3 align="center">I'm from</h3>
 <p align="center">
@@ -76,7 +76,7 @@ My laptop is broken again and under repairing, if you want me to create some Tac
 
 <h3 align="center">My Simple Stats</h3>
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="STATS"/> </p>
+<p align="center"> <img src="https://github-readme-activity-graph.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="STATS"/> </p>
 
 <p align="center"> <img src="https://github-readme-activity-graph.cyclic.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> </p>
 
