@@ -78,8 +78,6 @@ My laptop is broken again and under repairing, if you want me to create some Tac
 
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Stats"/> </p>
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheKingTermux&layout=compact" alt="Top Language"/> </p>
-
 <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> </p>
 
 <p align="center"> <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&rank=-C" alt="Trophy"/> </p>
