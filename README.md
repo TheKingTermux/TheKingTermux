@@ -80,7 +80,7 @@ My laptop is broken again and under repairing, if you want me to create some Tac
 
 <p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> </p>
 
-<p align="center"> <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&rank=-C" alt="Trophy"/> </p>
+<p align="center"> <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&no-bg=true&no-frame=true&rank=-C" alt="Trophy"/> </p>
 
 <h3 align="center">My Detailed Stats</h3>
 
