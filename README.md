@@ -2,15 +2,15 @@
 
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
-- 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions) and [Website Pengaduan Masyarakat repository](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake)
+- 🔭 I’m currently working on [Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions)
 
-- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only and [My Personal Website Pengaduan Masyarakat repository](https://github.com/TheKingTermux/Website-Pengaduan-Masyarakat-Remake) for a vocational high school graduation project
+- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only
 
 - 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc about Android Development**
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
-- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com)
+- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online), [Sample of School Website "SMPN 6 Malang"](https://amgeming.000webhostapp.com) (Online) ```NOTE: This website is just a SAMPLE / ASSIGNMENT given to me by my teacher (you could say this is an assignment for me at the end of the first semester), this is NOT the ORIGINAL SMPN 6 Malang school website, The ORIGINAL SMPN 6 Malang website is just https://smpn6-mlg.sch.id, hope you understand``` and in [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
