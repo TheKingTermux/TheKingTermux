@@ -42,7 +42,7 @@
 | Weekend | 09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00   |
 | *Friday is | Special days for me and therefore that's why i separated it |
 <h3 align="center">Connect with me:</h3>
-<h5 align="center"><b>I recommend reading the **NOTE** section below first if it is a problem regarding the Tachiyomi Extension / etc</b></h5>
+<h5 align="center"><b>I recommend reading the **NOTE** section below first if it is a problem regarding the Tachiyomi Extension / etc. And also if you want to contact me, please contact me via WhatsApp, I rarely use the other social media listed below</b></h5>
 
 | Social Media | Respond Status |
 |:---:|:---:|
