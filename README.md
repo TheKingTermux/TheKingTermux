@@ -14,7 +14,7 @@
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
-- ⚡ My another hobby is [**Watching an Anime or Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/)
+- ⚡ My another hobby is [**Watching an Anime, Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/) and playing some online games
 
 <h3 align="center">About Me Simply</h3>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer; Lighting+Engineer" alt="Typing SVG" /></a>
