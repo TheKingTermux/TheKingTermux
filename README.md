@@ -2,19 +2,19 @@
 
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
-- 🔭 I’m currently working on ~~[Tachiyomi's Extensions repository](https://github.com/tachiyomiorg/tachiyomi-extensions)~~ (Removed due DMCA)
+- 🔭 I’m currently working on [Tachiyomi's and Mihon's Extensions repository](https://github.com/keiyoushi/extensions-source)
 
-- 🤝 My currently working on [My Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) for Indonesian extension only
+- 🤝 My currently working on [My Old Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) (Old), [My New Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/extensions-source) (New) for Indonesian extension only
 
-- 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc about Android Development**
+- 🌱 I’m currently learning [Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc about Android Application Development, Website Development, Game Modder, and anything about Server's
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
-- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online), [Sample of School Website "SMPN 6 Malang"](https://amgeming.000webhostapp.com) (Online) ```NOTE: This website is just a SAMPLE / ASSIGNMENT given to me by my teacher (you could say this is an assignment for me at the end of the first semester), this is NOT the ORIGINAL SMPN 6 Malang school website, The ORIGINAL SMPN 6 Malang website is just https://smpn6-mlg.sch.id, hope you understand``` and in [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
+- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online), [Sample of School Website "SMPN 6 Malang"](https://amgeming.000webhostapp.com) (Online) ```NOTE: This website is just a SAMPLE / ASSIGNMENT given to me by my teacher (you could say this is an assignment for me at the end of the first semester), this is NOT the ORIGINAL SMPN 6 Malang school website, The ORIGINAL SMPN 6 Malang website is just``` https://smpn6-mlg.sch.id ```, hope you understand``` and in [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
-- ⚡ My another hobby is [**Watching an Anime or Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/)
+- ⚡ My another hobby is [**Watching an Anime, Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/) and playing some online games
 
 <h3 align="center">About Me Simply</h3>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer; Lighting+Engineer" alt="Typing SVG" /></a>
