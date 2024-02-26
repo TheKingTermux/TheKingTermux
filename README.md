@@ -6,7 +6,7 @@
 
 - 🤝 My currently working on [My Old Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) (Old), [My New Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/extensions-source) (New) for Indonesian extension only
 
-- 🌱 I’m currently learning **[Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc about Android Development**
+- 🌱 I’m currently learning [Kotlin](https://kotlinlang.org/), [JSoup](https://jsoup.org/), [OkHttp](https://square.github.io/okhttp/), etc about Android Development, Website Development, Game Modder, and anything about Server's
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
