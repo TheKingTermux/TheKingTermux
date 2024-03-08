@@ -67,7 +67,7 @@ I just changed my WhatsApp number, because the old number was blocked for some r
 (01/06/23)
 My laptop is broken again and under repairing, if you want me to create some Tachiyomi Extension, sorry i can't, if you need your request to created by someone, you can create a [Source Request on Keiyoushi Tachiyomi and Mihon Extension](https://github.com/keiyoushi/extensions-source/issues/new?template=02_request_source.yml), or you need a report of change the Extension BaseUrl, you can create a [Source URL Change Report on Keiyoushi Tachiyomi and Mihon Extension](https://github.com/keiyoushi/extensions-source/issues/new?template=03_report_url_change.yml), or you need a report some issues related to your problem with everything about Extension,  you can create a [Source Issue Report on Keiyoushi Tachiyomi and Mihon Extension](https://github.com/keiyoushi/extensions-source/issues/new?template=01_report_issue.yml). Thanks for contacting me.
 
-<h3 align="center">Tachiyomi-Extensions-Backup-App</h3> 
+<h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
 <a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
 </p>
