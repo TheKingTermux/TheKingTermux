@@ -37,10 +37,11 @@
 
 | Day | Time |
 |:-----:|:---:|
-| Weekday | 15.00 - 17.00 <br> 19.00 - 21.00   |
-| Friday* | 12.30 - 16.00 |
-| Weekend | 09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00   |
+| Weekday | ~15.00 - 17.00 <br> 19.00 - 21.00~ <br> 22.00 - 23.00**   |
+| Friday* | ~12.30 - 16.00~ <br> 22.00 - 23.00** |
+| Weekend | ~09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00~ <br> 22.00 - 23.00**   |
 | *Friday is | Special days for me and therefore that's why i separated it |
+| **About this time | Because we are now entering the month of Ramadhan, I am very busy IRL, so my time to be active on social media and coding ofcourse is getting less and less, please understand |
 <h3 align="center">Connect with me:</h3>
 <h5 align="center"><b>I recommend reading the **NOTE** section below first if it is a problem regarding the Tachiyomi Extension / etc. And also if you want to contact me, please contact me via WhatsApp, I rarely use the other social media listed below</b></h5>
 
