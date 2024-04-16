@@ -33,7 +33,7 @@
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
 <h3 align="center">Current Status Now:</h3>
-<h5 align="center"><b>Suffering a Broken ~Laptop~ PC</b></h5>
+<h5 align="center"><b>Suffering a Broken PC</b></h5>
 
 | Day | Time |
 |:-----:|:---:|
@@ -43,7 +43,7 @@
 | *Friday is | Special days for me and therefore that's why i separated it |
 
 <h3 align="center">Connect with me:</h3>
-<h5 align="center"><b>I recommend reading the **NOTE** section below first if it is a problem regarding the Tachiyomi Extension / etc. And also if you want to contact me, please contact me via WhatsApp, I rarely use the other social media listed below</b></h5>
+<h5 align="center"><b>I recommend reading the NOTE section below first if it is a problem regarding the Tachiyomi Extension / etc. And also if you want to contact me, please contact me via WhatsApp, I rarely use the other social media listed below</b></h5>
 
 | Social Media | Respond Status |
 |:---:|:---:|
