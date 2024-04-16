@@ -33,15 +33,15 @@
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
 <h3 align="center">Current Status Now:</h3>
-<h5 align="center"><b>Suffering a Broken Laptop</b></h5>
+<h5 align="center"><b>Suffering a Broken ~Laptop~ PC</b></h5>
 
 | Day | Time |
 |:-----:|:---:|
-| Weekday | ~15.00 - 17.00 <br> 19.00 - 21.00~ <br> 22.00 - 23.00**   |
-| Friday* | ~12.30 - 16.00~ <br> 22.00 - 23.00** |
-| Weekend | ~09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00~ <br> 22.00 - 23.00**   |
+| Weekday | ~15.00 - 17.00 <br> 19.00 - 21.00 |
+| Friday* | 12.30 - 16.00 |
+| Weekend | 09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00 |
 | *Friday is | Special days for me and therefore that's why i separated it |
-| **About this time | Because we are now entering the month of Ramadhan, I am very busy IRL, so my time to be active on social media and coding ofcourse is getting less and less, please understand |
+
 <h3 align="center">Connect with me:</h3>
 <h5 align="center"><b>I recommend reading the **NOTE** section below first if it is a problem regarding the Tachiyomi Extension / etc. And also if you want to contact me, please contact me via WhatsApp, I rarely use the other social media listed below</b></h5>
 
@@ -67,6 +67,10 @@ I just changed my WhatsApp number, because the old number was blocked for some r
 3. (dd/mm/yy)
 (01/06/23)
 My laptop is broken again and under repairing, if you want me to create some Tachiyomi Extension, sorry i can't, if you need your request to created by someone, you can create a [Source Request on Keiyoushi Tachiyomi and Mihon Extension](https://github.com/keiyoushi/extensions-source/issues/new?template=02_request_source.yml), or you need a report of change the Extension BaseUrl, you can create a [Source URL Change Report on Keiyoushi Tachiyomi and Mihon Extension](https://github.com/keiyoushi/extensions-source/issues/new?template=03_report_url_change.yml), or you need a report some issues related to your problem with everything about Extension,  you can create a [Source Issue Report on Keiyoushi Tachiyomi and Mihon Extension](https://github.com/keiyoushi/extensions-source/issues/new?template=01_report_issue.yml). Thanks for contacting me.
+
+4. (dd/mm/yy)
+(13/03/24)
+I have an PC now, but it broken, Soo i need to troubleshooting that PC, i don't have a time for doing that, Soo i need to troubleshoot and maybe need to Save money to buy damaged components, maybe it take some time, but still progressing.
 
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
