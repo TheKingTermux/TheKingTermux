@@ -37,7 +37,7 @@
 
 | Day | Time |
 |:-----:|:---:|
-| Weekday | ~15.00 - 17.00 <br> 19.00 - 21.00 |
+| Weekday | 15.00 - 17.00 <br> 19.00 - 21.00 |
 | Friday* | 12.30 - 16.00 |
 | Weekend | 09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00 |
 | *Friday is | Special days for me and therefore that's why i separated it |
