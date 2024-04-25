@@ -72,6 +72,10 @@ My laptop is broken again and under repairing, if you want me to create some Tac
 (13/03/24)
 I have an PC now, but it broken, Soo i need to troubleshooting that PC, i don't have a time for doing that, Soo i need to troubleshoot and maybe need to Save money to buy damaged components, maybe it take some time, but still progressing.
 
+5. (dd/mm/yy)
+(23/04/24)
+I went to my friend's house to do troubleshooting because our PCs were similar, and it turned out that the RAM, CPU and motherboard were damaged. Luckily the PSU and VGA Card can still be used normally, and I have to save to buy RAM, CPU and motherboard at the same time. 
+
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
 <a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
