@@ -74,7 +74,11 @@ I have an PC now, but it broken, Soo i need to troubleshooting that PC, i don't 
 
 5. (dd/mm/yy)
 (23/04/24)
-I went to my friend's house to do troubleshooting because our PCs were similar, and it turned out that the RAM, CPU and motherboard were damaged. Luckily the PSU and VGA Card can still be used normally, and I have to save to buy RAM, CPU and motherboard at the same time. 
+I went to my friend's house to do troubleshooting because our PCs were similar, and it turned out that the RAM, CPU and motherboard were damaged. Luckily the PSU and VGA Card can still be used normally, and I have to save to buy RAM, CPU and motherboard at the same time.
+
+6. (dd/mm/yy)
+(01/05/24)
+I'm currently busy preparing for my older brother's wedding, so I will stop coding for a while until the wedding is finished, maybe until the beginning of July, but Idk if it could be longer than I thought.
 
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
