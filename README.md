@@ -83,7 +83,7 @@ I'm currently busy preparing for my older brother's wedding, so I will stop codi
 
 7. (dd/mm/yy)
 (01/06/24)
-I started to think, instead of buying a used product, and soon it broke again, then I finally decided to buy all new products for the motherboard, RAM and CPU. Because the PSU and VGA Card are still normal and can be used, maybe in the future I will upgrade them
+I started to think, instead of buying a used product, and I don't know whether it will last long, or it will be damaged immediately, or maybe it is an item that is already damaged (because the guarantee has been lost many time ago), then I finally decided to buy all new products for the Motherboard, RAM and CPU. Because the PSU and VGA Card are still normal and can be used, maybe in the future I will upgrade them.
 
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
