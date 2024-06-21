@@ -81,6 +81,10 @@ _Edited on (04/06/24)_
 (01/05/24)
 I'm currently busy preparing for my older brother's wedding, so I will stop coding for a while until the wedding is finished, maybe until the beginning of July, but Idk if it could be longer than I thought.
 
+7. (dd/mm/yy)
+(01/06/24)
+I started to think, instead of buying a used product, and soon it broke again, then I finally decided to buy all new products for the motherboard, RAM and CPU. Because the PSU and VGA Card are still normal and can be used, maybe in the future I will upgrade them
+
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
 <a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
