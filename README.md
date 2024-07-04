@@ -85,6 +85,10 @@ I'm currently busy preparing for my older brother's wedding, so I will stop codi
 (01/06/24)
 I started to think, instead of buying a used product, and I don't know whether it will last long, or it will be damaged immediately, or maybe it is an item that is already damaged (because the guarantee has been lost many time ago), then I finally decided to buy all new products for the Motherboard, RAM and CPU. Because the PSU and VGA Card are still normal and can be used, maybe in the future I will upgrade them.
 
+8. (dd/mm/yy)
+(03/07/24)
+Finally I have bought a motherboard, RAM and CPU thanks to the help of my mother and brother, I really love them
+
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
 <a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
