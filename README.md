@@ -10,7 +10,7 @@
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
-- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online), [Sample of School Website "SMPN 6 Malang"](https://amgeming.000webhostapp.com) (Online) ```NOTE: This website is just a SAMPLE / ASSIGNMENT given to me by my teacher (you could say this is an assignment for me at the end of the first semester), this is NOT the ORIGINAL SMPN 6 Malang school website, The ORIGINAL SMPN 6 Malang website is just``` https://smpn6-mlg.sch.id ```, hope you understand``` and in [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
+- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online), [Sample of School Website "SMPN 6 Malang"](https://amgeming.000webhostapp.com) (It has been shutdown properly) ```~NOTE: This website is just a SAMPLE / ASSIGNMENT given to me by my teacher (you could say this is an assignment for me at the end of the first semester), this is NOT the ORIGINAL SMPN 6 Malang school website, The ORIGINAL SMPN 6 Malang website is just``` https://smpn6-mlg.sch.id ```, hope you understand~``` and in [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
@@ -33,7 +33,7 @@
 <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
 <h3 align="center">Current Status Now:</h3>
-<h5 align="center"><b>Suffering a Broken PC</b></h5>
+<h5 align="center"><b>Currently remembering the lessons that I've passed since more than 2 years without coding, I ALMOST FORGOT EVERYTHING (⁠─⁠.⁠─⁠|⁠|⁠）</b></h5>
 
 | Day | Time |
 |:-----:|:---:|
