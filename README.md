@@ -17,7 +17,7 @@
 - ⚡ My another hobby is [**Watching an Anime, Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/) and playing some online games
 
 <h3 align="center">About Me Simply</h3>
-<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer; Lighting+Engineer" alt="About Me Simply Typing SVG" /></a>
+<img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Android+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer;Lighting+Engineer" alt="About Me Simply Typing SVG" /></a>
 
 <h3 align="center">Interested in</h3>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+Development;Android+Development;Sound+System;Audio+Recording" alt="Interested in Typing SVG" /></a>
