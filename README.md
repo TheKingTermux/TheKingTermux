@@ -89,6 +89,10 @@ I started to think, instead of buying a used product, and I don't know whether i
 (03/07/24)
 Finally I have bought a motherboard, RAM and CPU thanks to the help of my mother and brother, I really love them
 
+9. (dd/mm/yy)
+(20/09/25)
+Finally i have bought a Monitor, my hard working is aleardy been paid off little by little, now my goal is saving for a GPU and PSU, for the Case i think would be later far beyond after getting some good Pc Parts
+
 <h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
 <p align="center">
 <a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
