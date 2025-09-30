@@ -66,4 +66,4 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
           plugin_repositories: yes
-          plugin_repositories_featured: TheKingTermux/extensions-source, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/Newbie, TheKingTermux/Website-Pengaduan-Masyarakat-Remake, UKKWariors/Website-Pengaduan-Masyarakat-Remake
+          plugin_repositories_featured: TheKingTermux/extensions-source, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/myanimelist-nekopoi-scrapper, TheKingTermux/Website-Pengaduan-Masyarakat-Remake, UKKWariors/Website-Pengaduan-Masyarakat-Remake
