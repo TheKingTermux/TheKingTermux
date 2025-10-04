@@ -61,9 +61,6 @@
 | <img src="https://i.pinimg.com/1200x/53/c5/e1/53c5e1226d05c04a312b3304fd438655.jpg" alt="Genshin Impact" height="100" width="100"/> | 813646627 |
 | <img src="https://i.pinimg.com/736x/64/39/a9/6439a9e5dfe97ba877db65e677c2370c.jpg" alt="PointBlank" height="100" width="100"/> | UwUHeadshot69xD |
 
-<h3 align="center">Current Status Now:</h3>
-<h5 align="center"><b>Currently remembering the lessons that I've passed since more than 2 years without coding, I ALMOST FORGOT EVERYTHING (⁠─⁠.⁠─⁠|⁠|⁠）</b></h5>
-
 - Note :
 
 1. (dd/mm/yy)
