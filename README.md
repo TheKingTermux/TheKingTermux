@@ -10,11 +10,11 @@
 
 - 🤖 My WhatsApp Bot using Node.JS are available at [here](https://github.com/TheKingTermux/alice) [[Stopped due leak on access vulnerability (GitHub Advisory Database)]](https://github.com/TheKingTermux/alice/issues?q=is%3Aissue+is%3Aopen+label%3ASecurity+)
 
-- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online), [Sample of School Website "SMPN 6 Malang"](https://amgeming.000webhostapp.com) (It has been shutdown properly) ~NOTE: This website is just a SAMPLE / ASSIGNMENT given to me by my teacher (you could say this is an assignment for me at the end of the first semester), this is NOT the ORIGINAL SMPN 6 Malang school website, The ORIGINAL SMPN 6 Malang website is just https://smpn6-mlg.sch.id, hope you understand~ and in [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
+- 🗂️ I'm a web designer and web developer in [Lotus Academy](https://lomyform.blogspot.com) (Online) and [Website Pengaduan Masyarakat](https://github.com/UKKWariors/Website-Pengaduan-Masyarakat-Remake) (Offline)
 
 - 👨‍💻 Another of my projects are available at [here](https://github.com/TheKingTermux?tab=repositories)
 
-- ⚡ My another hobby is [**Watching an Anime, Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/) and playing some online games
+- ⚡ My another hobby is [**Watching an Anime, Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/) and playing [some online games](#my-game-curently-playing)
 
 <h3 align="center">About Me Simply</h3>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Android+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer;Lighting+Engineer" alt="About Me Simply Typing SVG" /></a>
@@ -53,6 +53,16 @@
 | <a href="https://bit.ly/TheKingTermuxTW" target="blank"><img src="./picture/twitter.png" alt="Twitter" height="40" width="40" /></a> | **Very Very Slow Respond** |
 | <a href="mailto:achmadmaulana0233@gmail.com?subject=From%20Github%20(%20Dari%20Github%20)%20&body=Send%20your%20mesaage%20here%20(%20Don't%20delete%20this%20text%20)%0ASilahkan%20Kirim%20Pesan%20Anda%20Di%20Bawah%20(%20Baris%20Ini%20Jangan%20Dihapus%20)%0A%0A" target="blank"><img src="./picture/gmail.png" alt="Email" height="40" width="40" /></a> | **Very Very Very Slow Respond** |
 | *Fast Respond When | [You in My Free Time](#my-free-time) |
+
+<h3 align="center">My Game Curently Playing:</h3>
+
+| Game | UID / Username |
+|:---:|:---:|
+| <img src="https://i.pinimg.com/1200x/53/c5/e1/53c5e1226d05c04a312b3304fd438655.jpg" alt="Genshin Impact" height="100" width="100"/> | 813646627 |
+| <img src="https://i.pinimg.com/736x/64/39/a9/6439a9e5dfe97ba877db65e677c2370c.jpg" alt="PointBlank" height="100" width="100"/> | UwUHeadshot69xD |
+
+<h3 align="center">Current Status Now:</h3>
+<h5 align="center"><b>Currently remembering the lessons that I've passed since more than 2 years without coding, I ALMOST FORGOT EVERYTHING (⁠─⁠.⁠─⁠|⁠|⁠）</b></h5>
 
 - Note :
 
