@@ -2,8 +2,6 @@
 
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
-<p align="center"> <img src="https://thunderdungeon.com/wp-content/uploads/2024/11/anime-memes-for-programmers-11-20241108-600x901.jpg" alt="thekingtermux" height="800" width="400"/> </p>
-
 - 🔭 I’m currently working on [Tachiyomi's and Mihon's Extensions repository](https://github.com/keiyoushi/extensions-source)
 
 - 🤝 My currently working on [My Old Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) (Old), [My New Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/extensions-source) (New) for Indonesian extension only
@@ -103,9 +101,13 @@ Finally I have bought a motherboard, RAM and CPU thanks to the help of my mother
 Finally i have bought a Monitor, my hard working is aleardy been paid off little by little, now my goal is saving for a GPU and PSU, for the Case, Gaming Chair, Fan, Camera, Mic, even Mousepad i think would be later far beyond after getting some good Pc Parts
 _Edited on (13/10/25)_
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> </p>
+<h3 align="center">Meme Today</h3>
+
+<p align="center"> <img src="https://thunderdungeon.com/wp-content/uploads/2024/11/anime-memes-for-programmers-11-20241108-600x901.jpg" alt="thekingtermux" height="800" width="400"/> </p>
 
 <h3 align="center">My Simple Stats</h3>
+
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> </p>
 
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Stats"/> </p>
 
