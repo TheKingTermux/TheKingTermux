@@ -2,6 +2,8 @@
 
 <h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
 
+<p align="center"> <img src="https://thunderdungeon.com/wp-content/uploads/2024/11/anime-memes-for-programmers-11-20241108-600x901.jpg" alt="thekingtermux" height="800" width="400"/> </p>
+
 - 🔭 I’m currently working on [Tachiyomi's and Mihon's Extensions repository](https://github.com/keiyoushi/extensions-source)
 
 - 🤝 My currently working on [My Old Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/tachiyomi-extensions) (Old), [My New Personal Tachiyomi's Extensions repository](https://github.com/TheKingTermux/extensions-source) (New) for Indonesian extension only
@@ -100,11 +102,6 @@ Finally I have bought a motherboard, RAM and CPU thanks to the help of my mother
 (20/09/25)
 Finally i have bought a Monitor, my hard working is aleardy been paid off little by little, now my goal is saving for a GPU and PSU, for the Case, Gaming Chair, Fan, Camera, Mic, even Mousepad i think would be later far beyond after getting some good Pc Parts
 _Edited on (13/10/25)_
-
-<h3 align="center"><s>Tachiyomi-Extensions-Backup-App</s></h3> 
-<p align="center">
-<a href="https://bit.ly/tasiupp" target="blank"><img src="./picture/2778923.png" alt="Tachiyomi-Extensions-Backup-App" height="40" width="40"/></a>
-</p>
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> </p>
 
