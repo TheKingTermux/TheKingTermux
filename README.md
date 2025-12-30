@@ -103,7 +103,7 @@ _Edited on (13/10/25)_
 
 <h3 align="center">Meme Today</h3>
 
-<p align="center"> <img src="https://thunderdungeon.com/wp-content/uploads/2024/11/anime-memes-for-programmers-11-20241108-600x901.jpg" alt="thekingtermux" height="800" width="400"/> </p>
+<p align="center"> <img src="https://pleated-jeans.com/wp-content/uploads/2024/11/funny-memes-anime-coding-34-768x856.webp" alt="thekingtermux" height="800" width="400"/> </p>
 
 <h3 align="center">My Simple Stats</h3>
 
