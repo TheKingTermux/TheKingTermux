@@ -50,7 +50,7 @@ def update_readme_section(image_filename):
 
     image_path_in_readme = os.path.join(DIR_IMG, image_filename).replace("\\", "/")
 
-    new_content_block = f """{START_MARKER}
+    new_content_block = f"""{START_MARKER}
 <p align="center">
   <img src="{image_path_in_readme}" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
 </p>
