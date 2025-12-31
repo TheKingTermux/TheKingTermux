@@ -11,7 +11,7 @@ END_MARKER = "<!-- END_SECTION:daily_meme -->"
 
 def get_image_list(directory):
     """Mendapatkan daftar semua file gambar yang tersedia."""
-    files = [f for f in os.listdir(directory) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
+    files = [f for f in os.listdir(directory) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp'))]
     return files
 
 def get_next_random_image(all_images):
