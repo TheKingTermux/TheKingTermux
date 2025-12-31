@@ -23,14 +23,16 @@
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+Development;Android+Development;Sound+System;Audio+Recording" alt="Interested in Typing SVG" /></a>
 
 <h3 align="center">I'm from</h3>
-<p align="center">
-<a href="https://maps.app.goo.gl/233bP1PiyJf8B2sP6" target="blank"><img align="center" src="https://user-images.githubusercontent.com/50316075/167992183-1c6f1b03-765a-45d0-a323-4a451b194210.png" alt="Country" height="40" width="40" /></a>
+  <p align="center">
+  <a href="https://maps.app.goo.gl/233bP1PiyJf8B2sP6" target="blank">
+    <img align="center" src="https://user-images.githubusercontent.com/50316075/167992183-1c6f1b03-765a-45d0-a323-4a451b194210.png" alt="Country" height="40" width="40" />
+  </a>
 </p>
 
 <h3 align="center">My free time:</h3>
 <h5 align="center">Times may change, depending on my conditions</h5>
 <p align="center">
-<a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
+  <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
 <h3 align="center">Current Status Now:</h3>
 <h5 align="center"><b>Currently remembering the lessons that I've passed since more than 2 years without coding, I ALMOST FORGOT EVERYTHING (⁠─⁠.⁠─⁠|⁠|⁠）</b></h5>
@@ -103,17 +105,29 @@ _Edited on (13/10/25)_
 
 <h3 align="center">Meme Today</h3>
 
-<p align="center"> <img src="https://pleated-jeans.com/wp-content/uploads/2024/11/funny-memes-anime-coding-34-768x856.webp" alt="thekingtermux" height="800" width="400"/> </p>
+<!-- START_SECTION:daily_meme -->
+<p align="center"> 
+  <img src="https://pleated-jeans.com/wp-content/uploads/2024/11/funny-memes-anime-coding-34-768x856.webp" alt="meme" style="max-width: auto; max-width: 800px; height: auto; max-height: 800px"/> 
+</p>
+<!-- END_SECTION:daily_meme -->
 
 <h3 align="center">My Simple Stats</h3>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> </p>
+<p align="center"> 
+  <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> 
+</p>
 
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Stats"/> </p>
+<p align="center"> 
+  <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Stats"/> 
+</p>
 
-<p align="center"> <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> </p>
+<p align="center"> 
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> 
+</p>
 
-<p align="center"> <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&no-bg=true&no-frame=true&rank=-C" alt="Trophy"/> </p>
+<p align="center"> 
+  <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&no-bg=true&no-frame=true&rank=-C" alt="Trophy"/> 
+</p>
 
 <h3 align="center">My Detailed Stats</h3>
 
