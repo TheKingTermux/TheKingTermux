@@ -106,8 +106,8 @@ _Edited on (13/10/25)_
 <h3 align="center">Meme Today</h3>
 
 <!-- START_SECTION:daily_meme -->
-<p align="center"> 
-  <img src="https://pleated-jeans.com/wp-content/uploads/2024/11/funny-memes-anime-coding-34-768x856.webp" alt="meme" style="max-width: auto; max-width: 800px; height: auto; max-height: 800px"/> 
+<p align="center">
+  <img src="img/funny-memes-anime-coding-1-768x1244.webp" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
 </p>
 <!-- END_SECTION:daily_meme -->
 
