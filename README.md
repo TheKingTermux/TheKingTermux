@@ -103,11 +103,15 @@ Finally I have bought a motherboard, RAM and CPU thanks to the help of my mother
 Finally i have bought a Monitor, my hard working is aleardy been paid off little by little, now my goal is saving for a GPU and PSU, for the Case, Gaming Chair, Fan, Camera, Mic, even Mousepad i think would be later far beyond after getting some good Pc Parts
 _Edited on (13/10/25)_
 
+10. (dd/mm/yy)
+(12/12/25)
+Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gaming Chair, Fan, Camera, Mic, even Mousepad i think would be later far beyond after getting some good Pc Parts
+
 <h3 align="center">Meme Today</h3>
 
 <!-- START_SECTION:daily_meme -->
 <p align="center">
-  <img src="img/funny-memes-anime-coding-1-768x1244.webp" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
+  <img src="img/funny-memes-anime-coding-1-768x1244.webp" alt="meme" style="width: auto; max-width: 200px; height: auto; max-height: 200px;"/>
 </p>
 <!-- END_SECTION:daily_meme -->
 
