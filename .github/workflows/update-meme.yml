@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@latest
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@latest
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -20,7 +20,7 @@ jobs:
         run: python update_image.py
 
       - name: Commit and Push changes
-        uses: EndBug/add-and-commit@latest
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: TheKingTermux
           author_email: 50316075+TheKingTermux@users.noreply.github.com
