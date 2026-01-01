@@ -1,5 +1,4 @@
-name: Update README Image Sequence
-
+name: Update README Meme Image
 on:
   workflow_dispatch:
   schedule:
@@ -17,7 +16,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name:  Run update script to select next random image
+      - name: Run update script to select next random meme available
         run: python update_image.py
 
       - name: Commit and Push changes
@@ -25,5 +24,5 @@ jobs:
         with:
           author_name: TheKingTermux
           author_email: 50316075+TheKingTermux@users.noreply.github.com
-          message: "Otomatis: Update path gambar dan status acak di README.md"
+          message: "Otomatis: Update gambar meme acak di README.md"
           add: 'README.md status.json' 
