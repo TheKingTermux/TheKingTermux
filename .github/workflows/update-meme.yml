@@ -23,7 +23,7 @@ jobs:
       - name: Commit and Push changes
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: GitHub Actions
-          author_email: actions@github.com
+          author_name: TheKingTermux
+          author_email: 50316075+TheKingTermux@users.noreply.github.com
           message: "Otomatis: Update path gambar dan status acak di README.md"
           add: 'README.md status.json' 
