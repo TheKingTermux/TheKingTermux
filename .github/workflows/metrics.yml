@@ -23,6 +23,9 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          author_name: TheKingTermux
+          author_email: 50316075+TheKingTermux@users.noreply.github.com
+          message: "Otomatis: Update metrics (detailed stats) di README.md"
 
           # Options
           user: TheKingTermux
