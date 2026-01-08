@@ -111,7 +111,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 <!-- START_SECTION:daily_meme -->
 <p align="center">
-  <img src="img/29b0e06a9e5bea57bb5e2f7046e8d0de.png" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
+  <img src="img/funny-memes-anime-coding-29-768x864.webp" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
 </p>
 <!-- END_SECTION:daily_meme -->
 
