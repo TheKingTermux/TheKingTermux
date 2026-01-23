@@ -62,6 +62,8 @@
 |:---:|:---:|
 | <img src="https://i.pinimg.com/1200x/53/c5/e1/53c5e1226d05c04a312b3304fd438655.jpg" alt="Genshin Impact" height="100" width="100"/> | 813646627 / Alice |
 | <img src="https://i.pinimg.com/736x/64/39/a9/6439a9e5dfe97ba877db65e677c2370c.jpg" alt="PointBlank" height="100" width="100"/> | UwUHeadshot69xD |
+| <img src="https://wp.logos-download.com/wp-content/uploads/2021/01/Valorant_Logo.png" alt="Valorant" height="100" width="100"/> | TheKingTermux #404 |
+| <img src="https://cdn.kibrispdr.org/data/816/pubg-mobile-icon-4.jpg" alt="PUBG PC" height="100" width="100"/> | TheKingTermux404 |
 
 - Note :
 
