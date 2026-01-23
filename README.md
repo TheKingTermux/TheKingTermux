@@ -118,11 +118,11 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <h3 align="center">My Simple Stats</h3>
 
 <p align="center"> 
-  <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="thekingtermux" /> 
+  <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" /> 
 </p>
 
 <p align="center"> 
-  <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Stats"/> 
+  <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Github Stats"/> 
 </p>
 
 <p align="center"> 
