@@ -23,7 +23,7 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-          commits_authoring: TheKingTermux, TheKingTermux, 50316075+TheKingTermux@users.noreply.github.com
+          commits_authoring: TheKingTermux, 50316075+TheKingTermux@users.noreply.github.com
           committer_message: "Otomatis: Update metrics (detailed stats) di README.md"
 
           # Options
@@ -57,6 +57,7 @@ jobs:
           plugin_languages_analysis_timeout: 15
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
+          plugin_languages_indepth: yes
           plugin_languages_limit: 24
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
@@ -69,3 +70,7 @@ jobs:
           plugin_notable_types: commit
           plugin_repositories: yes
           plugin_repositories_featured: TheKingTermux/extensions-source, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/myanimelist-nekopoi-scrapper, TheKingTermux/nekopoi-renamer, TheKingTermux/Website-Pengaduan-Masyarakat-Remake, UKKWariors/Website-Pengaduan-Masyarakat-Remake
+          retries: 3
+          retries_delay: 300
+          retries_output_action: 5
+          retries_delay_output_action: 120
