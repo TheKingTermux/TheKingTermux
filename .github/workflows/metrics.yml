@@ -12,6 +12,10 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Set Git Identity
+        run: |
+          git config --global user.name "TheKingTermux"
+          git config --global user.email "50316075+TheKingTermux@users.noreply.github.com"
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
@@ -23,8 +27,6 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_name: TheKingTermux
-          committer_email: 50316075+TheKingTermux@users.noreply.github.com
           commits_authoring: TheKingTermux, 50316075+TheKingTermux@users.noreply.github.com
           committer_message: "Otomatis: Update metrics (detailed stats) di README.md"
 
