@@ -23,6 +23,8 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          commits_authoring: TheKingTermux, 50316075+TheKingTermux@users.noreply.github.com
+          committer_message: "Otomatis: Update metrics (detailed stats) di README.md"
 
           # Options
           user: TheKingTermux
@@ -71,11 +73,3 @@ jobs:
           retries_delay: 300
           retries_output_action: 5
           retries_delay_output_action: 120
-      
-      - name: Commit and Push changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: TheKingTermux
-          author_email: 50316075+TheKingTermux@users.noreply.github.com
-          message: "Otomatis: Update metrics (detailed stats) di README.md"
-          add: 'github-metrics.svg' 
