@@ -12,10 +12,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Set Git Identity
-        run: |
-          git config --global user.name "TheKingTermux"
-          git config --global user.email "50316075+TheKingTermux@users.noreply.github.com"
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
@@ -61,7 +57,6 @@ jobs:
           plugin_languages_analysis_timeout: 15
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
-          plugin_languages_indepth: yes
           plugin_languages_limit: 24
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
