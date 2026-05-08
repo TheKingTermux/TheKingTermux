@@ -66,6 +66,9 @@
 
 - Note :
 
+<details>
+<summary>Please Readme</summary>
+  
 1. (dd/mm/yy)
 (15/12/22)
 My laptop is broken, I can't make a contribution in Tachiyomi Extension, and even i can't do my school project / assignment because of this problem.
@@ -107,6 +110,7 @@ _Edited on (13/10/25)_
 10. (dd/mm/yy)
 (12/12/25)
 Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gaming Chair, Fan, Camera, Mic, even Mousepad i think would be later far beyond after getting some good Pc Parts
+</details>
 
 <h3 align="center">Meme Today</h3>
 
