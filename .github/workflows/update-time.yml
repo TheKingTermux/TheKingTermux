@@ -1,0 +1,28 @@
+name: Update README TIme
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '*/5 * * * *'
+
+jobs:
+  update-time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run update script to refresh the time
+        run: python update_time.py
+
+      - name: Commit and Push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: TheKingTermux
+          author_email: 50316075+TheKingTermux@users.noreply.github.com
+          message: "Otomatis: Update time di README.md"
+          add: 'README.md status.json' 
