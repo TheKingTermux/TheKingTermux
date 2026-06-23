@@ -65,14 +65,15 @@ def main():
     temp, humidity, desc = get_weather()
 
     block = f"""{START_MARKER}
-### 🌦️ Weather in Talun
+    <div align="center">
+### 🌦️ Weather in Me
 
 > {desc}
 >
 > 🌡️ Temperature: {temp}°C
 >
 > 💧 Humidity: {humidity}%
-
+    </div>
 {END_MARKER}"""
 
     update_readme(block)
