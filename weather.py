@@ -96,7 +96,7 @@ def main():
     temp, humidity, desc, wind, uv_text, day_state, soil, vis_text = get_weather()
 
     block = f"""{START_MARKER}
-<p align="center">
+<div align="center">
 
 ### 🌦️ Weather in Me
 
@@ -110,7 +110,7 @@ def main():
 🌱 Soil Temp (10cm): {soil}°C  
 👀 Visibility: {vis_text}
 
-</p>
+</div>
 {END_MARKER}"""
 
     update_readme(block)
