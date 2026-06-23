@@ -125,9 +125,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Testing shows the presence, not the absence of bugs.
+> Stay hungry, stay foolish.
 
-<b>— Edsger W. Dijkstra</b>
+<b>— Steve Jobs</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
