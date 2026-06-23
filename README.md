@@ -135,13 +135,13 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <h2 align="center">Server Tip of the Day</h2>
 
 <!-- START_SECTION:server_tip -->
-    <div align="center">
+<div align="center">
     
-> **Restart service**
+    **Check open ports**
+    
+    > _Use: netstat -tulnp or ss -tulnp to see listening services_
 
-> systemctl restart nginx
-
-    </div>
+</div>
 <!-- END_SECTION:server_tip -->
 
 <h2 align="center">Local Weather</h2>
