@@ -71,13 +71,13 @@ def main():
     tip = pick_tip(tips, status)
 
     block = f"""{START_MARKER}
-    <div align="center">
+<div align="center">
     
-> **{tip['title']}**
+    > **{tip['title']}**
+    
+    > {tip['text']}
 
-> {tip['text']}
-
-    </div>
+</div>
 {END_MARKER}"""
 
     update_readme(block)
