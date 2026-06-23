@@ -42,7 +42,7 @@ def update_readme(time_str, date_str):
 
 def main():
     time_str = get_time()
-    update_readme(time_str)
+    update_readme(time_str, date_str)
     print("Time updated!")
 
 
