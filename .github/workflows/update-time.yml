@@ -16,6 +16,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytz
+
       - name: Run update script to refresh the time
         run: python update_time.py
 
