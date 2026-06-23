@@ -155,12 +155,12 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 20.5°C  
-💧 Humidity: 89%  
-💨 Wind: 2.3 km/h  
+🌡️ Temperature: 19.6°C  
+💧 Humidity: 92%  
+💨 Wind: 1.7 km/h  
 ☀️ UV: 🟢 Safe UV  
 🌗 Time: 🌙 Night  
-🌱 Soil Temp (10cm): 21.6°C  
+🌱 Soil Temp (10cm): 21.3°C  
 👀 Visibility: Poor
 
 </div>
