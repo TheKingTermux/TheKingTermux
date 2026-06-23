@@ -1,4 +1,4 @@
-name: Update README Quotes
+name: Update Quotes
 on:
   workflow_dispatch:
   schedule:
