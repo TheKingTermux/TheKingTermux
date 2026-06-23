@@ -12,19 +12,25 @@ LON = 112.660860
 
 def get_weather():
     url = (
-        f"https://api.open-meteo.com/v1/forecast"
+        "https://api.open-meteo.com/v1/forecast"
         f"?latitude={LAT}"
         f"&longitude={LON}"
-        f"&current=temperature_2m,relative_humidity_2m,weather_code"
+        "&current=temperature_2m,relative_humidity_2m,weather_code,"
+        "wind_speed_10m,uv_index,is_day,"
+        "soil_temperature_0_to_10cm,visibility"
     )
 
     data = requests.get(url, timeout=30).json()
-
     current = data["current"]
 
     temp = current["temperature_2m"]
     humidity = current["relative_humidity_2m"]
     code = current["weather_code"]
+    wind = current["wind_speed_10m"]
+    uv = current["uv_index"]
+    is_day = current["is_day"]
+    soil = current["soil_temperature_0_to_10cm"]
+    visibility = current["visibility"]
 
     weather_map = {
         0: "☀️ Clear Sky",
@@ -42,8 +48,33 @@ def get_weather():
     }
 
     desc = weather_map.get(code, "🌍 Unknown")
+    day_state = "🌞 Day" if is_day == 1 else "🌙 Night"
 
-    return temp, humidity, desc
+    # UV
+    if uv >= 8:
+        uv_text = "☠️ Extreme UV (pakai sunscreen bro!)"
+    elif uv >= 5:
+        uv_text = "⚠️ High UV"
+    else:
+        uv_text = "🟢 Safe UV"
+
+    # Visibility
+    if visibility >= 10000:
+        vis_text = "Excellent"
+    elif visibility >= 5000:
+        vis_text = "Good"
+    else:
+        vis_text = "Poor"
+
+    # Wind
+    if wind > 30:
+        wind_text = "🌪️ Strong wind (tornado jir!)"
+    elif wind > 15:
+        wind_text = "💨 Breezy"
+    else:
+        wind_text = "🍃 Calm"
+
+    return temp, humidity, desc, wind, uv_text, day_state, soil, vis_text
 
 
 def update_readme(block):
@@ -62,18 +93,22 @@ def update_readme(block):
 
 
 def main():
-    temp, humidity, desc = get_weather()
+    temp, humidity, desc, wind, uv_text, day_state, soil, vis_text = get_weather()
 
     block = f"""{START_MARKER}
 <p align="center">
-    
-    ### 🌦️ Weather in Me
 
-    > {desc}
-    >
-    > 🌡️ Temperature: {temp}°C
-    >
-    > 💧 Humidity: {humidity}%
+### 🌦️ Weather in Me
+
+**{desc}**
+
+🌡️ Temperature: {temp}°C  
+💧 Humidity: {humidity}%  
+💨 Wind: {wind} km/h  
+☀️ UV: {uv_text}  
+🌗 Time: {day_state}  
+🌱 Soil Temp (10cm): {soil}°C  
+👀 Visibility: {vis_text}
 
 </p>
 {END_MARKER}"""
