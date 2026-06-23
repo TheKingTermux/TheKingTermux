@@ -35,7 +35,10 @@
 <h2 align="center">Current Time (Update Every 5 Min)</h2>
 
 <!-- START_SECTION:time -->
-⏳ Loading time...
+<div align="center">
+🕒 00:04:03 WIB  
+📅 Wednesday, 24 June 2026
+</div>
 <!-- END_SECTION:time -->
 
 <h2 align="center">Current Status Now:</h2>
