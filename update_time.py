@@ -22,11 +22,6 @@ def update_readme(time_str, date_str):
     with open(PATH_README, "r", encoding="utf-8") as f:
         content = f.read()
 
-
-def update_readme(time_str):
-    with open(PATH_README, "r", encoding="utf-8") as f:
-        content = f.read()
-
     block = f"""{START_MARKER}
 <div align="center">
 🕒 {time_str} WIB  
