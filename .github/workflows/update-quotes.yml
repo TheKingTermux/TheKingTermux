@@ -6,15 +6,12 @@ on:
     - cron: '0 1 * * *'
 
 jobs:
-  update-image:
+  update-quotes:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Show files (debug)
-        run: ls -R
 
       - name: Set up Python
         uses: actions/setup-python@v5
