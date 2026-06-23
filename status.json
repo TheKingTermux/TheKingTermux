@@ -66,5 +66,8 @@
     5
   ],
   "displayed_tips": [],
-  "displayed_weather": []
+  "displayed_weather": [],
+  "displayed_server_tips": [
+    1
+  ]
 }
