@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm TheKingTermux</h1>
 
-<h3 align="center">Just a young man whose hobby is coding when has a free time</h3>
+<h2 align="center">Just a young man whose hobby is coding when has a free time</h2>
 
 - 🔭 I’m currently working on [Tachiyomi's and Mihon's Extensions repository](https://github.com/keiyoushi/extensions-source)
 
@@ -16,25 +16,25 @@
 
 - ⚡ My another hobby is [**Watching an Anime, Reading a Manga, Manhua, and Manhwa**](https://anilist.co/user/TheKingTermux/) and playing [some online games](#my-game-curently-playing)
 
-<h3 align="center">About Me Simply</h3>
+<h2 align="center">About Me Simply</h2>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50&pause=1000&center=true&vCenter=true&width=1000&lines=Web+Developer;Android+Developer;Anime+Subtitle+Creator;WhatsApp+Bot+Creator;Anime+Lovers;Certificate+Maker;Video+Editor;Sound+Engineer;Lighting+Engineer" alt="About Me Simply Typing SVG" /></a>
 
-<h3 align="center">Interested in</h3>
+<h2 align="center">Interested in</h2>
 <img align="center" src="https://readme-typing-svg.demolab.com?font=Sawarabi+Mincho&size=50%&pause=1000&center=true&vCenter=true&width=1000&lines=Technology;Artificial+Intelligence;Virtual+Reality;Music;Computer+or+PC;Server's;Database's;Web+Development;Android+Development;Sound+System;Audio+Recording" alt="Interested in Typing SVG" /></a>
 
-<h3 align="center">I'm from</h3>
+<h2 align="center">I'm from</h2>
   <p align="center">
   <a href="https://maps.app.goo.gl/233bP1PiyJf8B2sP6" target="blank">
     <img align="center" src="https://user-images.githubusercontent.com/50316075/167992183-1c6f1b03-765a-45d0-a323-4a451b194210.png" alt="Country" height="40" width="40" />
   </a>
 </p>
 
-<h3 align="center">My free time:</h3>
+<h2 align="center">My free time:</h2>
 <h5 align="center">Times may change, depending on my conditions</h5>
 <p align="center">
   <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
 </p>
-<h3 align="center">Current Status Now:</h3>
+<h2 align="center">Current Status Now:</h2>
 <h5 align="center"><b>Currently remembering the lessons that I've passed since more than 2 years without coding, I ALMOST FORGOT EVERYTHING (⁠─⁠.⁠─⁠|⁠|⁠）</b></h5>
 
 | Day | Time |
@@ -44,7 +44,7 @@
 | Weekend | 09.00 - 11.30 <br> 15.00 - 17.00 <br> 19.00 - 21.00 |
 | *Friday is | Special days for me and therefore that's why i separated it |
 
-<h3 align="center">Connect with me:</h3>
+<h2 align="center">Connect with me:</h2>
 <h5 align="center"><b>I recommend reading the NOTE section below first if it is a problem regarding the Tachiyomi Extension / etc. And also if you want to contact me, please contact me via WhatsApp, I rarely use the other social media listed below</b></h5>
 
 | Social Media | Respond Status |
@@ -55,7 +55,7 @@
 | <a href="https://bit.ly/TheKingTermuxTW" target="blank"><img src="./picture/twitter.png" alt="Twitter" height="40" width="40" /></a> | **Very Very Slow Respond** |
 | *Fast Respond When | [You in My Free Time](#my-free-time) |
 
-<h3 align="center">My Game Curently Playing:</h3>
+<h2 align="center">My Game Curently Playing:</h2>
 
 | Game | UID / Username |
 |:---:|:---:|
@@ -112,7 +112,7 @@ _Edited on (13/10/25)_
 Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gaming Chair, Fan, Camera, Mic, even Mousepad i think would be later far beyond after getting some good Pc Parts
 </details>
 
-<h3 align="center">Meme Today</h3>
+<h2 align="center">Meme Today</h2>
 
 <!-- START_SECTION:daily_meme -->
 <p align="center">
@@ -120,7 +120,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </p>
 <!-- END_SECTION:daily_meme -->
 
-<h3 align="center">Quotes Today</h3>
+<h2 align="center">Quotes Today</h2>
 
 <!-- START_SECTION:daily_quote -->
 <div align="center">
@@ -132,7 +132,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </div>
 <!-- END_SECTION:daily_quote -->
 
-<h3 align="center">My Simple Stats</h3>
+<h2 align="center">My Simple Stats</h2>
 
 <p align="center"> 
   <img src="https://komarev.com/ghpvc/?username=thekingtermux&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" /> 
@@ -150,6 +150,6 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
   <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&no-bg=true&no-frame=true&rank=-C" alt="Trophy"/> 
 </p>
 
-<h3 align="center">My Detailed Stats</h3>
+<h2 align="center">My Detailed Stats</h2>
 
 <img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
