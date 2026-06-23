@@ -1,13 +1,13 @@
 import re
 from datetime import datetime
-import pytz
+from zoneinfo import ZoneInfo
 
 PATH_README = "README.md"
 
 START_MARKER = "<!-- START_SECTION:time -->"
 END_MARKER = "<!-- END_SECTION:time -->"
 
-TZ = "Asia/Jakarta"
+TZ = ZoneInfo("Asia/Jakarta")
 
 
 def get_time():
@@ -17,7 +17,6 @@ def get_time():
     date_str = now.strftime("%A, %d %B %Y")
 
     return time_str, date_str
-
 
 def update_readme(time_str, date_str):
     with open(PATH_README, "r", encoding="utf-8") as f:
