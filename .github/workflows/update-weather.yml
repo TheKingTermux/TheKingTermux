@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run update script to select next random tips available
+      - name: Run update script to refresh weather available
         run: python weather.py
 
       - name: Commit and Push changes
