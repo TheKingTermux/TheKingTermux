@@ -142,6 +142,7 @@ Loading...
 
 <!-- START_SECTION:weather -->
     <div align="center">
+    
 ### 🌦️ Weather in Me
 
 > ⛅ Partly Cloudy
@@ -149,6 +150,7 @@ Loading...
 > 🌡️ Temperature: 20.9°C
 >
 > 💧 Humidity: 91%
+
     </div>
 <!-- END_SECTION:weather -->
 
