@@ -32,14 +32,9 @@
 <h2 align="center">My free time:</h2>
 <h5 align="center">Times may change, depending on my conditions</h5>
 
-<h2 align="center">Current Time (Update Every 5 Min)</h2>
-
-<!-- START_SECTION:time -->
-<div align="center">
-🕒 00:04:03 WIB  
-📅 Wednesday, 24 June 2026
-</div>
-<!-- END_SECTION:time -->
+<p align="center">
+  <a align="center" href="https://www.worldtimebuddy.com/utc-to-indonesia-jakarta?pl=1&lid=100,1642911&h=100&hf=1" target="blank">Use UTC+7 (Jakarta)</a>
+</p>
 
 <h2 align="center">Current Status Now:</h2>
 <h5 align="center"><b>Currently remembering the lessons that I've passed since more than 2 years without coding, I ALMOST FORGOT EVERYTHING (⁠─⁠.⁠─⁠|⁠|⁠）</b></h5>
