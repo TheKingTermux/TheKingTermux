@@ -32,7 +32,7 @@
 <h2 align="center">My free time:</h2>
 <h5 align="center">Times may change, depending on my conditions</h5>
 
-<h2 align="center">Current Time</h2>
+<h2 align="center">Current Time (Update Every 5 Min)</h2>
 
 <!-- START_SECTION:time -->
 ⏳ Loading time...
