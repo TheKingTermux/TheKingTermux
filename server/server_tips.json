@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Check open ports",
+    "text": "Use: netstat -tulnp or ss -tulnp to see listening services"
+  },
+  {
+    "title": "Restart service",
+    "text": "systemctl restart nginx"
+  },
+  {
+    "title": "Check disk usage",
+    "text": "df -h shows disk usage in human readable format"
+  },
+  {
+    "title": "Check logs live",
+    "text": "journalctl -f is your best friend"
+  },
+  {
+    "title": "Ping test",
+    "text": "Use ping 8.8.8.8 to test internet connectivity"
+  },
+  {
+    "title": "Check active connections",
+    "text": "ss -tunap gives detailed network connections"
+  }
+]
