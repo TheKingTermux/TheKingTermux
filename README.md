@@ -147,17 +147,17 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <h2 align="center">Local Weather</h2>
 
 <!-- START_SECTION:weather -->
-    <div align="center">
+<p align="center">
     
-### 🌦️ Weather in Me
+    ### 🌦️ Weather in Me
 
-> ⛅ Partly Cloudy
->
-> 🌡️ Temperature: 20.9°C
->
-> 💧 Humidity: 91%
+    > ⛅ Partly Cloudy
+    >
+    > 🌡️ Temperature: 20.9°C
+    >
+    > 💧 Humidity: 90%
 
-    </div>
+</p>
 <!-- END_SECTION:weather -->
 
 <h2 align="center">My Simple Stats</h2>
