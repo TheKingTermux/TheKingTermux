@@ -1,4 +1,4 @@
-name: Update README TIme
+name: Update Time
 on:
   workflow_dispatch:
   schedule:
