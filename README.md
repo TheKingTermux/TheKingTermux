@@ -141,7 +141,14 @@ Loading...
 <h2 align="center">Local Weather</h2>
 
 <!-- START_SECTION:weather -->
-Loading...
+### 🌦️ Weather in Talun
+
+> ⛅ Partly Cloudy
+>
+> 🌡️ Temperature: 20.9°C
+>
+> 💧 Humidity: 91%
+
 <!-- END_SECTION:weather -->
 
 <h2 align="center">My Simple Stats</h2>
