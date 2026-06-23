@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run update script to select next random meme available
+      - name: Run update script to select next random tips available
         run: python server_tips.py
 
       - name: Commit and Push changes
