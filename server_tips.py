@@ -71,7 +71,6 @@ def main():
     tip = pick_tip(tips, status)
 
     block = f"""{START_MARKER}
-### 🌐 Server Tip of the Day
 
 > **{tip['title']}**
 >
