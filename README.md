@@ -147,9 +147,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <h2 align="center">Local Weather</h2>
 
 <!-- START_SECTION:weather -->
-<p align="center">
+<div align="center">
 
-### 🌦️ Weather in Me
+### 🌦️ Weather in Me (Update Hourly)
 
 **⛅ Partly Cloudy**
 
@@ -161,7 +161,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌱 Soil Temp (10cm): 22.7°C  
 👀 Visibility: Poor
 
-</p>
+</div>
 <!-- END_SECTION:weather -->
 
 <h2 align="center">My Simple Stats</h2>
