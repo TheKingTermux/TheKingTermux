@@ -120,12 +120,6 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </p>
 <!-- END_SECTION:daily_meme -->
 
-<h3 align="center">Quotes Today</h3>
-
-<!-- START_SECTION:daily_quote -->
-
-<!-- END_SECTION:daily_quote -->
-
 <h3 align="center">My Simple Stats</h3>
 
 <p align="center"> 
