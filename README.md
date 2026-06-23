@@ -132,6 +132,18 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </div>
 <!-- END_SECTION:daily_quote -->
 
+<h2 align="center">Server Tip of the Day</h2>
+
+<!-- START_SECTION:server_tip -->
+Loading...
+<!-- END_SECTION:server_tip -->
+
+<h2 align="center">Local Weather</h2>
+
+<!-- START_SECTION:weather -->
+Loading...
+<!-- END_SECTION:weather -->
+
 <h2 align="center">My Simple Stats</h2>
 
 <p align="center"> 
