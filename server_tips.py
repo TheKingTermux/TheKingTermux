@@ -2,7 +2,7 @@ import json
 import random
 import re
 
-PATH_TIPS = "server_tips.json"
+PATH_TIPS = "server/server_tips.json"
 PATH_README = "README.md"
 PATH_STATUS = "status.json"
 
