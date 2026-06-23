@@ -74,7 +74,7 @@ def main():
     <div align="center">
     
 > **{tip['title']}**
->
+
 > {tip['text']}
 
     </div>
