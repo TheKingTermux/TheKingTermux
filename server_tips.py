@@ -72,9 +72,11 @@ def main():
 
     block = f"""{START_MARKER}
     <div align="center">
+    
 > **{tip['title']}**
 >
 > {tip['text']}
+
     </div>
 {END_MARKER}"""
 
