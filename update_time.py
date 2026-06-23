@@ -41,8 +41,8 @@ def update_readme(time_str, date_str):
 
 
 def main():
-    times_str = get_time()
-    update_readme(times_str)
+    time_str, date_str = get_time()
+    update_readme(time_str, date_str)
     print("Time updated!")
 
 
