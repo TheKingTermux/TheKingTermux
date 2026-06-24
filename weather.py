@@ -172,6 +172,7 @@ def main():
 🌧️ Rain Hours: {rain_hours} h
 
 💨 Wind Speed: {wind} km/h ({wind_text})
+
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
