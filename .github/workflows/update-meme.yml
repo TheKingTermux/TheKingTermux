@@ -17,7 +17,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run update script to select next random meme available
-        run: python update_image.py
+        run: python meme.py
 
       - name: Commit and Push changes
         uses: EndBug/add-and-commit@v9
