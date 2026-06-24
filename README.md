@@ -139,9 +139,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Memory Pressure**
+**View Routing Table**
     
-> _Use 'vmstat 1' to inspect memory and CPU pressure._
+> _Use 'ip route' to inspect network routes._
 
 </div>
 <!-- END_SECTION:server_tip -->
