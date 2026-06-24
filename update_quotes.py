@@ -10,22 +10,22 @@ PATH_STATUS = "status.json"
 START_MARKER = "<!-- START_SECTION:daily_quote -->"
 END_MARKER = "<!-- END_SECTION:daily_quote -->"
 
-
-# ========= STATUS =========
 def load_status():
     try:
         with open(PATH_STATUS, "r", encoding="utf-8") as f:
-            return json.load(f)
+            status = json.load(f)
     except FileNotFoundError:
-        return {"displayed_quotes": []}
+        status = {}
 
+    if "displayed_quotes" not in status:
+        status["displayed_quotes"] = []
+
+    return status
 
 def save_status(status):
     with open(PATH_STATUS, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2)
 
-
-# ========= QUOTES =========
 def load_quotes():
     with open(PATH_QUOTES, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -46,8 +46,6 @@ def pick_quote(quotes, status):
 
     return quotes[idx]
 
-
-# ========= README UPDATE =========
 def update_readme(block):
     with open(PATH_README, "r", encoding="utf-8") as f:
         content = f.read()
@@ -62,8 +60,6 @@ def update_readme(block):
     with open(PATH_README, "w", encoding="utf-8") as f:
         f.write(content)
 
-
-# ========= MAIN =========
 def main():
     status = load_status()
     quotes = load_quotes()
