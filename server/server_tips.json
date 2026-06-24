@@ -4,8 +4,8 @@
     "text": "Use: netstat -tulnp or ss -tulnp to see listening services"
   },
   {
-    "title": "Restart service",
-    "text": "systemctl restart nginx"
+    "title": "Restart Service",
+    "text": "Use 'systemctl restart <service>' to restart a service after configuration changes."
   },
   {
     "title": "Check disk usage",
@@ -22,5 +22,205 @@
   {
     "title": "Check active connections",
     "text": "ss -tunap gives detailed network connections"
+  },
+    {
+    "title": "Check Failed SSH Logins",
+    "text": "Use 'grep Failed /var/log/auth.log' to identify brute-force attempts."
+  },
+  {
+    "title": "Find Top Memory Consumers",
+    "text": "Use 'ps aux --sort=-%mem | head' to find processes using the most RAM."
+  },
+  {
+    "title": "Find Top CPU Consumers",
+    "text": "Use 'ps aux --sort=-%cpu | head' to identify CPU-intensive processes."
+  },
+  {
+    "title": "Monitor Network Traffic",
+    "text": "Use 'iftop' or 'nload' to view live bandwidth usage."
+  },
+  {
+    "title": "Check Open Files",
+    "text": "Use 'lsof' to see which files are currently opened by processes."
+  },
+  {
+    "title": "Test DNS Resolution",
+    "text": "Use 'dig google.com' or 'nslookup google.com' to verify DNS functionality."
+  },
+  {
+    "title": "View Routing Table",
+    "text": "Use 'ip route' to inspect network routes."
+  },
+  {
+    "title": "Check Firewall Rules",
+    "text": "Use 'iptables -L -n -v' or 'nft list ruleset' to inspect firewall policies."
+  },
+  {
+    "title": "Verify Time Synchronization",
+    "text": "Use 'timedatectl status' to check NTP synchronization."
+  },
+  {
+    "title": "Check Disk I/O",
+    "text": "Use 'iostat -xz 1' to monitor disk performance."
+  },
+  {
+    "title": "Analyze Boot Time",
+    "text": "Use 'systemd-analyze blame' to find slow startup services."
+  },
+  {
+    "title": "List Listening Ports",
+    "text": "Use 'ss -lntp' instead of the deprecated netstat."
+  },
+  {
+    "title": "Check System Uptime",
+    "text": "Use 'uptime' to quickly see load averages and uptime."
+  },
+  {
+    "title": "Monitor Logs Live",
+    "text": "Use 'journalctl -xef' to follow logs and view recent errors."
+  },
+  {
+    "title": "Check TCP Connections",
+    "text": "Use 'ss -ant' to inspect active TCP sessions."
+  },
+  {
+    "title": "Find Largest Directories",
+    "text": "Use 'du -sh * | sort -hr' to locate storage hogs."
+  },
+  {
+    "title": "Test HTTP Response",
+    "text": "Use 'curl -I https://example.com' to inspect headers."
+  },
+  {
+    "title": "Check SSL Certificate",
+    "text": "Use 'openssl s_client -connect domain.com:443' to inspect TLS details."
+  },
+  {
+    "title": "Verify Cron Jobs",
+    "text": "Use 'crontab -l' to review scheduled user tasks."
+  },
+  {
+    "title": "Check Swap Usage",
+    "text": "Use 'swapon --show' to view active swap devices."
+  },
+  {
+    "title": "Inspect Mounted Filesystems",
+    "text": "Use 'findmnt' for a cleaner view than 'mount'."
+  },
+  {
+    "title": "Monitor Real-Time Processes",
+    "text": "Use 'htop' for an interactive process viewer."
+  },
+  {
+    "title": "Check Package Updates",
+    "text": "Regularly update systems using apt, dnf, pacman, or your distro package manager."
+  },
+  {
+    "title": "Secure SSH",
+    "text": "Disable password authentication and use SSH keys whenever possible."
+  },
+  {
+    "title": "Limit Root Access",
+    "text": "Prefer sudo over direct root logins for accountability."
+  },
+  {
+    "title": "Enable Fail2Ban",
+    "text": "Fail2Ban helps block repeated failed login attempts."
+  },
+  {
+    "title": "Backup Before Updating",
+    "text": "Always create backups before major upgrades or configuration changes."
+  },
+  {
+    "title": "Check Memory Pressure",
+    "text": "Use 'vmstat 1' to inspect memory and CPU pressure."
+  },
+  {
+    "title": "Find Zombie Processes",
+    "text": "Use 'ps aux | grep Z' to locate zombie processes."
+  },
+  {
+    "title": "Check Established Connections",
+    "text": "Use 'ss -ant state established' to list active TCP sessions."
+  },
+  {
+    "title": "Inspect DNS Records",
+    "text": "Use 'dig ANY domain.com' cautiously to inspect DNS information."
+  },
+  {
+    "title": "Verify Reverse DNS",
+    "text": "Use 'dig -x <IP>' to check PTR records."
+  },
+  {
+    "title": "Test Latency",
+    "text": "Use 'ping' to measure round-trip times."
+  },
+  {
+    "title": "Trace Network Paths",
+    "text": "Use 'traceroute' or 'mtr' to diagnose routing issues."
+  },
+  {
+    "title": "Check System Temperature",
+    "text": "Use 'sensors' from lm-sensors to monitor hardware temperatures."
+  },
+  {
+    "title": "View Kernel Version",
+    "text": "Use 'uname -r' to identify the running kernel."
+  },
+  {
+    "title": "Check Listening UDP Ports",
+    "text": "Use 'ss -lun' to view UDP services."
+  },
+  {
+    "title": "Verify Service Status",
+    "text": "Use 'systemctl status <service>' for detailed service diagnostics."
+  },
+  {
+    "title": "Check Failed Services",
+    "text": "Use 'systemctl --failed' to find broken services."
+  },
+  {
+    "title": "Monitor Login Sessions",
+    "text": "Use 'who' or 'w' to view active users."
+  },
+  {
+    "title": "Audit Recent Logins",
+    "text": "Use 'last' to inspect login history."
+  },
+  {
+    "title": "Check File Permissions",
+    "text": "Use 'namei -l <path>' to inspect permission chains."
+  },
+  {
+    "title": "Verify Public IP",
+    "text": "Use 'curl ifconfig.me' or similar services."
+  },
+  {
+    "title": "Inspect ARP Table",
+    "text": "Use 'ip neigh' to view ARP and neighbor entries."
+  },
+  {
+    "title": "Check Network Interfaces",
+    "text": "Use 'ip addr show' to inspect interface configurations."
+  },
+  {
+    "title": "Test Download Speed",
+    "text": "Use 'speedtest-cli' or 'iperf3' for network performance tests."
+  },
+  {
+    "title": "Monitor Bandwidth Usage",
+    "text": "Use 'vnstat' to collect long-term traffic statistics."
+  },
+  {
+    "title": "Check Certificate Expiry",
+    "text": "Monitor TLS certificates to avoid unexpected outages."
+  },
+  {
+    "title": "Rotate Logs",
+    "text": "Ensure logrotate is configured to prevent disk exhaustion."
+  },
+  {
+    "title": "Document Changes",
+    "text": "Keep notes of configuration changes to simplify troubleshooting."
   }
 ]
