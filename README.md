@@ -151,16 +151,16 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:weather -->
 <div align="center">
 
-### 🌦️ Weather in Me (Updated Approximately Every 2 Hour)
+### 🌦️ Weather in Me (Updated Approximately Every 2 to 3 Hour)
 
 **⛅ Partly Cloudy**
 
-🌡️ Temperature: 22.7°C  
-💧 Humidity: 89%  
-💨 Wind: 1.4 km/h  
+🌡️ Temperature: 22.5°C  
+💧 Humidity: 90%  
+💨 Wind: 0.8 km/h  
 ☀️ UV: 🟢 Safe UV  
 🌗 Time: 🌙 Night  
-🌱 Soil Temp (10cm): 25.6°C  
+🌱 Soil Temp (10cm): 24.8°C  
 👀 Visibility: Excellent
 
 </div>
