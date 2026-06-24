@@ -16,14 +16,19 @@ def get_image_list(directory):
 
 def get_next_random_image(all_images):
     """Membaca status gambar yang sudah ditampilkan, memilih yang berikutnya secara acak, dan menyimpan status baru."""
+    
     try:
-        with open(PATH_STATUS, "r") as f:
+        with open(PATH_STATUS, "r", encoding="utf-8") as f:
             status_data = json.load(f)
-            displayed_images = status_data.get("displayed_images", [])
     except FileNotFoundError:
-        displayed_images = []
+        status_data = {}
 
-    remaining_images = [img for img in all_images if img not in displayed_images]
+    displayed_images = status_data.get("displayed_images", [])
+
+    remaining_images = [
+        img for img in all_images
+        if img not in displayed_images
+    ]
 
     if not remaining_images:
         print("Semua gambar sudah ditampilkan. Me-reset urutan acak.")
@@ -37,8 +42,10 @@ def get_next_random_image(all_images):
 
     displayed_images.append(selected_image)
 
-    with open(PATH_STATUS, "w") as f:
-        json.dump({"displayed_images": displayed_images}, f, indent=2)
+    status_data["displayed_images"] = displayed_images
+
+    with open(PATH_STATUS, "w", encoding="utf-8") as f:
+        json.dump(status_data, f, indent=2)
 
     return selected_image
 
