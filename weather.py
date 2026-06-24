@@ -180,6 +180,7 @@ def main():
 🌇 Sunset: {sunset}
 
 👀 Visibility: {visibility} m  ({vis_text})
+
 🔻 Min: {min_visibility} m  
 🔺 Max: {max_visibility} m
 
