@@ -173,6 +173,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌇 Sunset: 17:21
 
 👀 Visibility: 280.0 m  (Poor)
+
 🔻 Min: 160.0 m  
 🔺 Max: 33540.0 m
 
