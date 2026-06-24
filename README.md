@@ -152,7 +152,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <div align="center">
 
 ### 🌦️ Weather in Me
-<h3>(Updated Approximately Every 2 to 3 Hour)</h3>
+##### (Updated Approximately Every 2 to 3 Hour)
 
 **⛅ Partly Cloudy**
 
