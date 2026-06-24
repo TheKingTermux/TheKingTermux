@@ -98,7 +98,7 @@ def main():
     block = f"""{START_MARKER}
 <div align="center">
 
-### 🌦️ Weather in Me (Updated Approximately Every 2 Hour)
+### 🌦️ Weather in Me (Updated Approximately Every 2 to 3 Hour)
 
 **{desc}**
 
