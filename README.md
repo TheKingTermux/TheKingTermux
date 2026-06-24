@@ -156,15 +156,15 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 19.8°C  
+🌡️ Temperature: 19.6°C  
 💧 Humidity: 98%  
-🌱 Soil Temp: 21.6°C
+🌱 Soil Temp: 21.4°C
 
-☁️ Cloud Cover: 84%  
+☁️ Cloud Cover: 87%  
 ☔ Precipitation: 0.0 mm  
 🌧️ Rain Hours: 0.0 h
 
-💨 Wind Speed: 0.5 km/h (🍃 Calm)
+💨 Wind Speed: 0.2 km/h (🍃 Calm)
 
 ☀️ UV: 🟢 Safe UV  
 🌗 Time: 🌙 Night
@@ -172,7 +172,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:21
 
-👀 Visibility: 280.0 m  (Poor)
+👀 Visibility: 260.0 m  (Poor)
 
 🔻 Min: 160.0 m  
 🔺 Max: 33540.0 m
