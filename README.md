@@ -127,9 +127,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Stay hungry, stay foolish.
+> Debugging is twice as hard as writing the code in the first place.
 
-<b>— Steve Jobs</b>
+<b>— Brian Kernighan</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
