@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run update script to refresh weather available
+      - name: Run update script to refresh new weather informations available
         run: python weather.py
 
       - name: Commit and Push changes
@@ -29,5 +29,5 @@ jobs:
         with:
           author_name: TheKingTermux
           author_email: 50316075+TheKingTermux@users.noreply.github.com
-          message: "Otomatis: Update cuaca di README.md"
+          message: "Otomatis: Update cuaca terbaru"
           add: 'README.md status.json' 
