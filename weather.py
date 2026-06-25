@@ -1,7 +1,12 @@
 import requests
 import re
+import json
+import os
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 PATH_README = "README.md"
+PATH_STATUS = "status.json"
 
 START_MARKER = "<!-- START_SECTION:weather -->"
 END_MARKER = "<!-- END_SECTION:weather -->"
@@ -62,20 +67,28 @@ def get_weather():
     day_state = "🌞 Day" if is_day == 1 else "🌙 Night"
 
     # UV
-    if uv >= 8:
-        uv_text = "☠️ Extreme UV (pakai sunscreen bro!)"
+    if uv >= 11:
+        uv_text = "☠️ Extreme UV (matahari mode ngegas, jangan jadi sate manusia 🔥)"
+    elif uv >= 8:
+        uv_text = "🥵 Very High UV (kulit auto drama kalo lama di luar ☀️)"
     elif uv >= 5:
-        uv_text = "⚠️ High UV"
+        uv_text = "⚠️ High UV (panasnya mulai toxic dikit)"
+    elif uv >= 3:
+        uv_text = "🟡 Moderate UV (masih aman tapi jangan sok kuat)"
     else:
-        uv_text = "🟢 Safe UV"
+        uv_text = "🟢 Safe UV (aman lah, kayak zona nyaman 😌)"
 
     # Visibility
-    if visibility >= 10000:
-        vis_text = "Excellent"
+    if visibility >= 20000:
+        vis_text = "Excellent (anjir jernih banget, kayak mata elang 🦅)"
+    elif visibility >= 10000:
+        vis_text = "Very Good (lumayan bening, masih enak dipandang 👀)"
     elif visibility >= 5000:
-        vis_text = "Good"
+        vis_text = "Good (masih oke lah, gak blur-blur amat)"
+    elif visibility >= 2000:
+        vis_text = "Moderate (agak gakelihatan, kayak mood Senin 😩)"
     else:
-        vis_text = "Poor"
+        vis_text = "Poor (tidor pun sodap ni 💤)"
 
     today = daily["sunrise"][0][:10]
 
@@ -93,15 +106,50 @@ def get_weather():
         max_visibility = visibility
 
     # Wind
-    if wind > 30:
-        wind_text = "🌪️ Strong wind (tornado jir!)"
+    if wind > 40:
+        wind_text = "🌪️ Extreme Storm (ini angin atau marahnya mantan?!)"
+    elif wind > 30:
+        wind_text = "🌪️ Strong Wind (pegangan bang, bisa mental dikit 😵‍💫)"
     elif wind > 15:
-        wind_text = "💨 Breezy"
+        wind_text = "💨 Breezy (enak sih, kayak kipas natural 😌)"
+    elif wind > 5:
+        wind_text = "🍃 Light Wind (cuma lewat doang, gak niat)"
     else:
-        wind_text = "🍃 Calm"
+        wind_text = "🍃 Calm (diam total, kayak WiFi pas ujian 😐)"
+
+    # Precipitation
+    if precipitation >= 50:
+        rain_text = "⛈️ Extreme Rain (ini hujan atau air terjun bocor? 💀)"
+    elif precipitation >= 20:
+        rain_text = "🌧️ Heavy Rain (siap-siap jadi karakter anime sedih 🌊)"
+    elif precipitation >= 5:
+        rain_text = "🌦️ Moderate Rain (payung wajib, jangan sok kuat ☔)"
+    elif precipitation > 0:
+        rain_text = "🌦️ Light Rain (gerimis santai, romantis dikit 😌)"
+    else:
+        rain_text = "☀️ No Rain (kering total, AC alam aktif 🔥)"
+
+    # Temperature
+    if temp >= 40:
+        temp_text = "🔥 Inferno Mode (ini panas apa neraka cabang? 💀)"
+    elif temp >= 35:
+        temp_text = "🥵 Extremely Hot (kulit auto jadi panggangan sate)"
+    elif temp >= 30:
+        temp_text = "🌞 Hot (keringetan jalan dikit langsung drama)"
+    elif temp >= 26:
+        temp_text = "😌 Warm (enak sih, manusiawi banget)"
+    elif temp >= 20:
+        temp_text = "🌤️ Cool (adem, cocok buat rebahan produktif)"
+    elif temp >= 15:
+        temp_text = "🧥 Cold (udah mulai butuh jaket dikit)"
+    elif temp >= 10:
+        temp_text = "🥶 Very Cold (napas bisa keliatan ini)"
+    else:
+        temp_text = "🧊 Freezing (NPC mode aktif, badan auto kaku)"
 
     return (
         temp,
+        temp_text,
         humidity,
         desc,
         wind,
@@ -112,6 +160,7 @@ def get_weather():
         vis_text,
         cloud_cover,
         precipitation,
+        rain_text,
         sunrise,
         sunset,
         rain_hours,
@@ -134,9 +183,76 @@ def update_readme(block):
     with open(PATH_README, "w", encoding="utf-8") as f:
         f.write(content)
 
+def load_status():
+    if os.path.exists(PATH_STATUS):
+        with open(PATH_STATUS, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    return {}
+
+
+def save_status(status):
+    with open(PATH_STATUS, "w", encoding="utf-8") as f:
+        json.dump(status, f, indent=2)
+
+
+def update_weather_tracker():
+    status = load_status()
+
+    TZ = ZoneInfo("Asia/Jakarta")
+    now = datetime.now(TZ)
+
+    current_time = now.strftime("%d-%m-%Y %H:%M:%S")
+
+    previous_time = status.get("weather_last_update")
+
+    raw_compare = "00:00:00"
+    pretty_compare = "First Run"
+
+    if previous_time:
+        try:
+            old = datetime.strptime(previous_time, "%d-%m-%Y %H:%M:%S")
+            old = old.replace(tzinfo=TZ)
+
+            diff = int((now - old).total_seconds())
+
+            h = diff // 3600
+            m = (diff % 3600) // 60
+            s = diff % 60
+
+            raw_compare = f"{h:02d}:{m:02d}:{s:02d}"
+
+            if diff < 10:
+                pretty_compare = "Baru aja"
+            elif diff < 60:
+                pretty_compare = "Beberapa detik lalu"
+            else:
+                parts = []
+                if h > 0:
+                    parts.append(f"{h} Jam")
+                if m > 0:
+                    parts.append(f"{m} Menit")
+                if s > 0:
+                    parts.append(f"{s} Detik")
+
+                pretty_compare = " ".join(parts) + " lalu"
+
+        except Exception:
+            raw_compare = "Unknown"
+            pretty_compare = "Unknown"
+
+    status["weather_last_update"] = current_time
+    status["weather_compare"] = raw_compare
+    status["weather_compare_pretty"] = pretty_compare
+
+    save_status(status)
+
+    return current_time, pretty_compare
+
 def main():
     (
         temp,
+        temp_text,
         humidity,
         desc,
         wind,
@@ -147,6 +263,7 @@ def main():
         vis_text,
         cloud_cover,
         precipitation,
+        rain_text,
         sunrise,
         sunset,
         rain_hours,
@@ -154,33 +271,72 @@ def main():
         min_visibility,
         max_visibility
     ) = get_weather()
+    last_update, compare_time = update_weather_tracker()
+
+    days = {
+        "Monday": "Senin",
+        "Tuesday": "Selasa",
+        "Wednesday": "Rabu",
+        "Thursday": "Kamis",
+        "Friday": "Jumat",
+        "Saturday": "Sabtu",
+        "Sunday": "Minggu"
+    }
+
+    months = {
+            "January": "Januari",
+            "February": "Februari",
+            "March": "Maret",
+            "April": "April",
+            "May": "Mei",
+            "June": "Juni",
+            "July": "Juli",
+            "August": "Agustus",
+            "September": "September",
+            "October": "Oktober",
+            "November": "November",
+            "December": "Desember"
+        }
+    
+    dt = datetime.strptime(last_update, "%d-%m-%Y %H:%M:%S").replace(tzinfo=ZoneInfo("Asia/Jakarta"))
+    
+    hari = days[dt.strftime("%A")]
+    bulan = months[dt.strftime("%B")]
+    
+    last_update_id = (
+        f"{hari}, "
+        f"{dt.day} "
+        f"{bulan} "
+        f"{dt.year} "
+        f"{dt.strftime('%H:%M:%S')}"
+    )
 
     block = f"""{START_MARKER}
 <div align="center">
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
+##### 🕒 Last Updated: {last_update_id}
+##### ⏱️ Update Gap: {compare_time}<br><br>
 
 **{desc}**
 
-🌡️ Temperature: {temp}°C  
+🌡️ Temperature: {temp}°C  ({temp_text})<br>
 💧 Humidity: {humidity}%  
 🌱 Soil Temp: {soil}°C
 
 ☁️ Cloud Cover: {cloud_cover}%  
-☔ Precipitation: {precipitation} mm  
+☔ Precipitation: {precipitation} mm  ({rain_text})<br>
 🌧️ Rain Hours: {rain_hours} h
 
-💨 Wind Speed: {wind} km/h ({wind_text})
-
+💨 Wind Speed: {wind} km/h  ({wind_text})<br>
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
 🌅 Sunrise: {sunrise}  
 🌇 Sunset: {sunset}
 
-👀 Visibility: {visibility} m  ({vis_text})
-
+👀 Visibility: {visibility} m  ({vis_text})<br>
 🔻 Min: {min_visibility} m  
 🔺 Max: {max_visibility} m
 

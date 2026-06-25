@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6.3.0
         with:
           python-version: '3.x'
 
@@ -21,13 +21,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run update script to refresh weather available
+      - name: Run update script to refresh new weather informations available
         run: python weather.py
 
       - name: Commit and Push changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@latest
         with:
           author_name: TheKingTermux
           author_email: 50316075+TheKingTermux@users.noreply.github.com
-          message: "Otomatis: Update cuaca di README.md"
+          message: "Otomatis: Update cuaca terbaru"
           add: 'README.md status.json' 

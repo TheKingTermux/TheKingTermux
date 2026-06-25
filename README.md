@@ -118,7 +118,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 <!-- START_SECTION:daily_meme -->
 <p align="center">
-  <img src="img/7cxdx6bfu5ag1.jpeg" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
+  <img src="img/funny-memes-anime-coding-34-768x856.webp" alt="meme" style="max-width: 100%; height: auto; max-height: 800px;"/>
 </p>
 <!-- END_SECTION:daily_meme -->
 
@@ -153,27 +153,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
+##### 🕒 Last Updated: Jumat, 26 Juni 2026 01:54:25
+##### ⏱️ Update Gap: 2 Menit 28 Detik lalu<br><br>
 
-**⛅ Partly Cloudy**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 19.2°C  
+🌡️ Temperature: 19.0°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
 💧 Humidity: 94%  
-🌱 Soil Temp: 21.3°C
+🌱 Soil Temp: 20.9°C
 
-☁️ Cloud Cover: 55%  
-☔ Precipitation: 0.0 mm  
+☁️ Cloud Cover: 40%  
+☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 3.0 h
 
-💨 Wind Speed: 1.7 km/h (🍃 Calm)
-
-☀️ UV: 🟢 Safe UV  
+💨 Wind Speed: 1.9 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 280.0 m  (Poor)
-
+👀 Visibility: 320.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 280.0 m  
 🔺 Max: 33560.0 m
 
