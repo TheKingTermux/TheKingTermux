@@ -88,7 +88,7 @@ def get_weather():
     elif visibility >= 2000:
         vis_text = "Moderate (agak gakelihatan, kayak mood Senin 😩)"
     else:
-        vis_text = "Poor (udah kayak hidup lagi error 💤)"
+        vis_text = "Poor (tidor pun sodap ni 💤)"
 
     today = daily["sunrise"][0][:10]
 
@@ -295,7 +295,7 @@ def main():
 ☔ Precipitation: {precipitation} mm  
 🌧️ Rain Hours: {rain_hours} h
 
-💨 Wind Speed: {wind} km/h ({wind_text})<br>
+💨 Wind Speed: {wind} km/h {wind_text}<br>
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
