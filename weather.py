@@ -258,6 +258,7 @@ def main():
 ##### 🕒 Last Updated: {last_update_id}
 ##### ⏱️ Since Previous Update: {compare_time}
 
+
 **{desc}**
 
 🌡️ Temperature: {temp}°C  
