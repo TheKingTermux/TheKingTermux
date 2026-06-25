@@ -317,16 +317,16 @@ def main():
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
 ##### 🕒 Last Updated: {last_update_id}
-##### ⏱️ Update Gap: {compare_time}<br>
+##### ⏱️ Update Gap: {compare_time}<br><br>
 
 **{desc}**
 
-🌡️ Temperature: {temp}°C  ({temp_text})
+🌡️ Temperature: {temp}°C  ({temp_text})<br>
 💧 Humidity: {humidity}%  
 🌱 Soil Temp: {soil}°C
 
 ☁️ Cloud Cover: {cloud_cover}%  
-☔ Precipitation: {precipitation} mm  ({rain_text})
+☔ Precipitation: {precipitation} mm  ({rain_text})<br>
 🌧️ Rain Hours: {rain_hours} h
 
 💨 Wind Speed: {wind} km/h  ({wind_text})<br>
