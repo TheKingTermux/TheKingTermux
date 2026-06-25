@@ -256,8 +256,7 @@ def main():
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
 ##### 🕒 Last Updated: {last_update_id}
-##### ⏱️ Since Previous Update: {compare_time}
-
+##### ⏱️ Since Previous Update: {compare_time}<br>
 
 **{desc}**
 
@@ -269,16 +268,14 @@ def main():
 ☔ Precipitation: {precipitation} mm  
 🌧️ Rain Hours: {rain_hours} h
 
-💨 Wind Speed: {wind} km/h ({wind_text})
-
+💨 Wind Speed: {wind} km/h ({wind_text})<br>
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
 🌅 Sunrise: {sunrise}  
 🌇 Sunset: {sunset}
 
-👀 Visibility: {visibility} m  ({vis_text})
-
+👀 Visibility: {visibility} m  ({vis_text})<br>
 🔻 Min: {min_visibility} m  
 🔺 Max: {max_visibility} m
 
