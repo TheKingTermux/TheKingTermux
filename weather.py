@@ -67,20 +67,28 @@ def get_weather():
     day_state = "🌞 Day" if is_day == 1 else "🌙 Night"
 
     # UV
-    if uv >= 8:
-        uv_text = "☠️ Extreme UV (pakai sunscreen bro!)"
+    if uv >= 11:
+        uv_text = "☠️ Extreme UV (matahari mode ngegas, jangan jadi sate manusia 🔥)"
+    elif uv >= 8:
+        uv_text = "🥵 Very High UV (kulit auto drama kalo lama di luar ☀️)"
     elif uv >= 5:
-        uv_text = "⚠️ High UV"
+        uv_text = "⚠️ High UV (panasnya mulai toxic dikit)"
+    elif uv >= 3:
+        uv_text = "🟡 Moderate UV (masih aman tapi jangan sok kuat)"
     else:
-        uv_text = "🟢 Safe UV"
+        uv_text = "🟢 Safe UV (aman lah, kayak zona nyaman 😌)"
 
     # Visibility
-    if visibility >= 10000:
-        vis_text = "Excellent"
+    if visibility >= 20000:
+        vis_text = "Excellent (anjir jernih banget, kayak mata elang 🦅)"
+    elif visibility >= 10000:
+        vis_text = "Very Good (lumayan bening, masih enak dipandang 👀)"
     elif visibility >= 5000:
-        vis_text = "Good"
+        vis_text = "Good (masih oke lah, gak blur-blur amat)"
+    elif visibility >= 2000:
+        vis_text = "Moderate (agak gakelihatan, kayak mood Senin 😩)"
     else:
-        vis_text = "Poor"
+        vis_text = "Poor (udah kayak hidup lagi error 💤)"
 
     today = daily["sunrise"][0][:10]
 
@@ -98,12 +106,16 @@ def get_weather():
         max_visibility = visibility
 
     # Wind
-    if wind > 30:
-        wind_text = "🌪️ Strong wind (tornado jir!)"
+    if wind > 40:
+        wind_text = "🌪️ Extreme Storm (ini angin atau marahnya mantan?!)"
+    elif wind > 30:
+        wind_text = "🌪️ Strong Wind (pegangan bang, bisa mental dikit 😵‍💫)"
     elif wind > 15:
-        wind_text = "💨 Breezy"
+        wind_text = "💨 Breezy (enak sih, kayak kipas natural 😌)"
+    elif wind > 5:
+        wind_text = "🍃 Light Wind (cuma lewat doang, gak niat)"
     else:
-        wind_text = "🍃 Calm"
+        wind_text = "🍃 Calm (diam total, kayak WiFi pas ujian 😐)"
 
     return (
         temp,
@@ -172,8 +184,24 @@ def update_weather_tracker():
             h = diff // 3600
             m = (diff % 3600) // 60
             s = diff % 60
-
-            compare_text = f"{h:02d}:{m:02d}:{s:02d}"
+            
+            if diff < 5:
+                compare_text = "Just now"
+            elif diff < 60:
+                compare_text = "A few seconds ago"
+            else:
+                parts = []
+            
+                if h > 0:
+                    parts.append(f"{h} Hour{'s' if h > 1 else ''}")
+            
+                if m > 0:
+                    parts.append(f"{m} Minute{'s' if m > 1 else ''}")
+            
+                if s > 0 or not parts:
+                    parts.append(f"{s} Second{'s' if s > 1 else ''}")
+            
+                compare_text = " ".join(parts) + " Ago"
 
         except Exception:
             compare_text = "Unknown"
