@@ -295,14 +295,14 @@ def main():
 ☔ Precipitation: {precipitation} mm  
 🌧️ Rain Hours: {rain_hours} h
 
-💨 Wind Speed: {wind} km/h {wind_text}<br>
+💨 Wind Speed: {wind} km/h  {wind_text}<br>
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
 🌅 Sunrise: {sunrise}  
 🌇 Sunset: {sunset}
 
-👀 Visibility: {visibility} m  ({vis_text})<br>
+👀 Visibility: {visibility} m  {vis_text}<br>
 🔻 Min: {min_visibility} m  
 🔺 Max: {max_visibility} m
 
