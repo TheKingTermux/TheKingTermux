@@ -3,6 +3,7 @@ import re
 import json
 import os
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 PATH_README = "README.md"
 PATH_STATUS = "status.json"
@@ -153,8 +154,9 @@ def save_status(status):
 
 def update_weather_tracker():
     status = load_status()
-
-    now = datetime.now()
+    
+    TZ = ZoneInfo("Asia/Jakarta")
+    now = datetime.now(TZ)
     current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
     previous_time = status.get("weather_last_update")
