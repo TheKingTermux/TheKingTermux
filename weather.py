@@ -157,33 +157,28 @@ def update_weather_tracker():
     
     TZ = ZoneInfo("Asia/Jakarta")
     now = datetime.now(TZ)
+
+    current_ts = int(now.timestamp())
     current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
-    previous_time = status.get("weather_last_update")
+    previous_ts = status.get("weather_last_update")
 
     compare_text = "First Run"
 
-    if previous_time:
+    if previous_ts:
         try:
-            old = datetime.strptime(
-                previous_time,
-                "%d-%m-%Y %H:%M:%S"
-            )
+            diff = current_ts - int(previous_ts)
 
-            diff = now - old
-
-            total = int(diff.total_seconds())
-
-            h = total // 3600
-            m = (total % 3600) // 60
-            s = total % 60
+            h = diff // 3600
+            m = (diff % 3600) // 60
+            s = diff % 60
 
             compare_text = f"{h:02d}:{m:02d}:{s:02d}"
 
         except Exception:
             compare_text = "Unknown"
 
-    status["weather_last_update"] = current_time
+    status["weather_last_update"] = current_ts
     status["weather_compare"] = compare_text
 
     save_status(status)
@@ -237,7 +232,7 @@ def main():
             "December": "Desember"
         }
     
-    dt = datetime.strptime(last_update, "%d-%m-%Y %H:%M:%S")
+    dt = datetime.strptime(last_update, "%d-%m-%Y %H:%M:%S").replace(tzinfo=ZoneInfo("Asia/Jakarta"))
     
     hari = days[dt.strftime("%A")]
     bulan = months[dt.strftime("%B")]
