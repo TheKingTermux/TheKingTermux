@@ -139,9 +139,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**View Routing Table**
+**Monitor Real-Time Processes**
     
-> _Use 'ip route' to inspect network routes._
+> _Use 'htop' for an interactive process viewer._
 
 </div>
 <!-- END_SECTION:server_tip -->
