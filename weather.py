@@ -155,7 +155,7 @@ def update_weather_tracker():
     status = load_status()
 
     now = datetime.now()
-    current_time = now.strftime("%Y-%m-%d %H:%M:%S")
+    current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
     previous_time = status.get("weather_last_update")
 
@@ -165,7 +165,7 @@ def update_weather_tracker():
         try:
             old = datetime.strptime(
                 previous_time,
-                "%Y-%m-%d %H:%M:%S"
+                "%d-%m-%Y %H:%M:%S"
             )
 
             diff = now - old
@@ -210,12 +210,50 @@ def main():
     ) = get_weather()
     last_update, compare_time = update_weather_tracker()
 
+    days = {
+        "Monday": "Senin",
+        "Tuesday": "Selasa",
+        "Wednesday": "Rabu",
+        "Thursday": "Kamis",
+        "Friday": "Jumat",
+        "Saturday": "Sabtu",
+        "Sunday": "Minggu"
+    }
+
+    months = {
+            "January": "Januari",
+            "February": "Februari",
+            "March": "Maret",
+            "April": "April",
+            "May": "Mei",
+            "June": "Juni",
+            "July": "Juli",
+            "August": "Agustus",
+            "September": "September",
+            "October": "Oktober",
+            "November": "November",
+            "December": "Desember"
+        }
+    
+    dt = datetime.strptime(last_update, "%d-%m-%Y %H:%M:%S")
+    
+    hari = days[dt.strftime("%A")]
+    bulan = months[dt.strftime("%B")]
+    
+    last_update_id = (
+        f"{hari}, "
+        f"{dt.day} "
+        f"{bulan} "
+        f"{dt.year} "
+        f"{dt.strftime('%H:%M:%S')}"
+    )
+
     block = f"""{START_MARKER}
 <div align="center">
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🕒 Last Updated: {last_update}
+##### 🕒 Last Updated: {last_update_id}
 ##### ⏱️ Since Previous Update: {compare_time}
 
 **{desc}**
