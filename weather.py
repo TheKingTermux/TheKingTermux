@@ -1,7 +1,11 @@
 import requests
 import re
+import json
+import os
+from datetime import datetime
 
 PATH_README = "README.md"
+PATH_STATUS = "status.json"
 
 START_MARKER = "<!-- START_SECTION:weather -->"
 END_MARKER = "<!-- END_SECTION:weather -->"
@@ -134,6 +138,56 @@ def update_readme(block):
     with open(PATH_README, "w", encoding="utf-8") as f:
         f.write(content)
 
+def load_status():
+    if os.path.exists(PATH_STATUS):
+        with open(PATH_STATUS, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    return {}
+
+
+def save_status(status):
+    with open(PATH_STATUS, "w", encoding="utf-8") as f:
+        json.dump(status, f, indent=2)
+
+
+def update_weather_tracker():
+    status = load_status()
+
+    now = datetime.now()
+    current_time = now.strftime("%Y-%m-%d %H:%M:%S")
+
+    previous_time = status.get("weather_last_update")
+
+    compare_text = "First Run"
+
+    if previous_time:
+        try:
+            old = datetime.strptime(
+                previous_time,
+                "%Y-%m-%d %H:%M:%S"
+            )
+
+            diff = now - old
+
+            total = int(diff.total_seconds())
+
+            h = total // 3600
+            m = (total % 3600) // 60
+            s = total % 60
+
+            compare_text = f"{h:02d}:{m:02d}:{s:02d}"
+
+        except Exception:
+            compare_text = "Unknown"
+
+    status["weather_last_update"] = current_time
+    status["weather_compare"] = compare_text
+
+    save_status(status)
+
+    return current_time, compare_text
+
 def main():
     (
         temp,
@@ -154,12 +208,15 @@ def main():
         min_visibility,
         max_visibility
     ) = get_weather()
+    last_update, compare_time = update_weather_tracker()
 
     block = f"""{START_MARKER}
 <div align="center">
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
+##### 🕒 Last Updated: {last_update}
+##### ⏱️ Since Previous Update: {compare_time}
 
 **{desc}**
 
