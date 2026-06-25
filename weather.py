@@ -166,52 +166,56 @@ def save_status(status):
 
 def update_weather_tracker():
     status = load_status()
-    
+
     TZ = ZoneInfo("Asia/Jakarta")
     now = datetime.now(TZ)
 
-    current_ts = int(now.timestamp())
     current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
-    previous_ts = status.get("weather_last_update")
+    previous_time = status.get("weather_last_update")
 
-    compare_text = "First Run"
+    raw_compare = "00:00:00"
+    pretty_compare = "First Run"
 
-    if previous_ts:
+    if previous_time:
         try:
-            diff = current_ts - int(previous_ts)
+            old = datetime.strptime(previous_time, "%d-%m-%Y %H:%M:%S")
+            old = old.replace(tzinfo=TZ)
+
+            diff = int((now - old).total_seconds())
 
             h = diff // 3600
             m = (diff % 3600) // 60
             s = diff % 60
-            
-            if diff < 5:
-                compare_text = "Just now"
+
+            raw_compare = f"{h:02d}:{m:02d}:{s:02d}"
+
+            if diff < 10:
+                pretty_compare = "Baru aja"
             elif diff < 60:
-                compare_text = "A few seconds ago"
+                pretty_compare = "Beberapa detik lalu"
             else:
                 parts = []
-            
                 if h > 0:
-                    parts.append(f"{h} Hour{'s' if h > 1 else ''}")
-            
+                    parts.append(f"{h} Jam")
                 if m > 0:
-                    parts.append(f"{m} Minute{'s' if m > 1 else ''}")
-            
-                if s > 0 or not parts:
-                    parts.append(f"{s} Second{'s' if s > 1 else ''}")
-            
-                compare_text = " ".join(parts) + " Ago"
+                    parts.append(f"{m} Menit")
+                if s > 0:
+                    parts.append(f"{s} Detik")
+
+                pretty_compare = " ".join(parts) + " lalu"
 
         except Exception:
-            compare_text = "Unknown"
+            raw_compare = "Unknown"
+            pretty_compare = "Unknown"
 
-    status["weather_last_update"] = current_ts
-    status["weather_compare"] = compare_text
+    status["weather_last_update"] = current_time
+    status["weather_compare"] = raw_compare
+    status["weather_compare_pretty"] = pretty_compare
 
     save_status(status)
 
-    return current_time, compare_text
+    return current_time, pretty_compare
 
 def main():
     (
