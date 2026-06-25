@@ -117,8 +117,39 @@ def get_weather():
     else:
         wind_text = "🍃 Calm (diam total, kayak WiFi pas ujian 😐)"
 
+    # Precipitation
+    if precipitation >= 50:
+        rain_text = "⛈️ Extreme Rain (ini hujan atau air terjun bocor? 💀)"
+    elif precipitation >= 20:
+        rain_text = "🌧️ Heavy Rain (siap-siap jadi karakter anime sedih 🌊)"
+    elif precipitation >= 5:
+        rain_text = "🌦️ Moderate Rain (payung wajib, jangan sok kuat ☔)"
+    elif precipitation > 0:
+        rain_text = "🌦️ Light Rain (gerimis santai, romantis dikit 😌)"
+    else:
+        rain_text = "☀️ No Rain (kering total, AC alam aktif 🔥)"
+
+    # Temperature
+    if temp >= 40:
+        temp_text = "🔥 Inferno Mode (ini panas apa neraka cabang? 💀)"
+    elif temp >= 35:
+        temp_text = "🥵 Extremely Hot (kulit auto jadi panggangan sate)"
+    elif temp >= 30:
+        temp_text = "🌞 Hot (keringetan jalan dikit langsung drama)"
+    elif temp >= 26:
+        temp_text = "😌 Warm (enak sih, manusiawi banget)"
+    elif temp >= 20:
+        temp_text = "🌤️ Cool (adem, cocok buat rebahan produktif)"
+    elif temp >= 15:
+        temp_text = "🧥 Cold (udah mulai butuh jaket dikit)"
+    elif temp >= 10:
+        temp_text = "🥶 Very Cold (napas bisa keliatan ini)"
+    else:
+        temp_text = "🧊 Freezing (NPC mode aktif, badan auto kaku)"
+
     return (
         temp,
+        temp_text,
         humidity,
         desc,
         wind,
@@ -129,6 +160,7 @@ def get_weather():
         vis_text,
         cloud_cover,
         precipitation,
+        rain_text,
         sunrise,
         sunset,
         rain_hours,
@@ -220,6 +252,7 @@ def update_weather_tracker():
 def main():
     (
         temp,
+        temp_text,
         humidity,
         desc,
         wind,
@@ -230,6 +263,7 @@ def main():
         vis_text,
         cloud_cover,
         precipitation,
+        rain_text,
         sunrise,
         sunset,
         rain_hours,
@@ -283,26 +317,26 @@ def main():
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
 ##### 🕒 Last Updated: {last_update_id}
-##### ⏱️ Since Previous Update: {compare_time}<br>
+##### ⏱️ Update Gap: {compare_time}<br>
 
 **{desc}**
 
-🌡️ Temperature: {temp}°C  
+🌡️ Temperature: {temp}°C  ({temp_text})
 💧 Humidity: {humidity}%  
 🌱 Soil Temp: {soil}°C
 
 ☁️ Cloud Cover: {cloud_cover}%  
-☔ Precipitation: {precipitation} mm  
+☔ Precipitation: {precipitation} mm  ({rain_text})
 🌧️ Rain Hours: {rain_hours} h
 
-💨 Wind Speed: {wind} km/h  {wind_text}<br>
+💨 Wind Speed: {wind} km/h  ({wind_text})<br>
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
 🌅 Sunrise: {sunrise}  
 🌇 Sunset: {sunset}
 
-👀 Visibility: {visibility} m  {vis_text}<br>
+👀 Visibility: {visibility} m  ({vis_text})<br>
 🔻 Min: {min_visibility} m  
 🔺 Max: {max_visibility} m
 
