@@ -127,9 +127,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Any code is easier to change than no code at all.
+> Programming is like writing a book... except if you miss out a single comma on page 126 the whole thing makes no sense.
 
-<b>— Martin Fowler</b>
+<b>— Yukihiro Matsumoto</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
