@@ -154,20 +154,29 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🕒 Last Updated: Selasa, 10 Februari 2026 02:03:24
-##### ⏱️ Update Gap: 3286 Jam 32 Menit 19 Detik lalu<br><br>
+##### 🕒 Last Updated: Sabtu, 27 Juni 2026 00:35:43
+##### ⏱️ Update Gap: 36 Menit 34 Detik lalu<br><br>
 
 **☁️ Overcast**
 
-🌡️ Temperature: 20.5°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡️ Temperature: 20.2°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 23.4°C (🌤️ Adem banget, cocok rebahan)<br>
 💧 Humidity: 95%  
-🌱 Soil Temp: 22.8°C
+🌱 Soil Temp: 22.6°C
 
-☁️ Cloud Cover: 96%  
+☁️ Cloud Cover: 99%  
+🌡 Pressure: 1013.2 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
+🌧 Chance of Rain: 6% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-💨 Wind Speed: 2.4 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+😷 Air Quality Index: 82 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 47.7<br>
+🌫️ PM10: 48.5<br>
+
+💨 Wind Speed: 2.7 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Gust: 7.9 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 340° (Utara)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
