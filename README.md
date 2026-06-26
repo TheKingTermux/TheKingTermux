@@ -154,37 +154,37 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 01:30:51  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 01:12:17  
-##### ⏱️ Update Gap: 18 Menit 34 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 02:16:58  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 01:30:51  
+##### ⏱️ Update Gap: 46 Menit 7 Detik lalu<br><br>
 
 **☁️ Overcast**
 
-🌡️ Temperature: 20.0°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 23.0°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 19.8°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 22.7°C (🌤️ Adem banget, cocok rebahan)<br>
 💧 Humidity: 95%  
-🌱 Soil Temp: 22.4°C
+🌱 Soil Temp: 22.2°C
 
 ☁️ Cloud Cover: 99%  
-🌡 Pressure: 1012.9 hPa (⚖️ Normal (aman terkendali))<br>
+🌡 Pressure: 1012.6 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 5% (☀️ Santai, langit lagi baik hati)<br>
+🌧 Chance of Rain: 4% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 82 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 47.7<br>
-🌫️ PM10: 48.5<br>
+😷 Air Quality Index: 83 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 46.0<br>
+🌫️ PM10: 46.9<br>
 
-💨 Wind Speed: 3.1 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
-💨 Wind Gust: 7.9 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 339° (Utara)<br>
+💨 Wind Speed: 3.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Gust: 8.6 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 341° (Utara)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 200.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 180.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 180.0 m  
 🔺 Max: 31040.0 m
 
