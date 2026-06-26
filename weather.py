@@ -204,7 +204,6 @@ def update_weather_tracker():
 
     current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
-    # update sebelumnya
     previous_time = status.get("weather_latest_update")
 
     raw_compare = "00:00:00"
@@ -254,7 +253,12 @@ def update_weather_tracker():
 
     save_status(status)
 
-    return current_time, pretty_compare
+    return (
+        current_time,
+        status["weather_last_update"],
+        raw_compare,
+        pretty_compare
+    )
 
 def main():
     (
@@ -278,7 +282,12 @@ def main():
         min_visibility,
         max_visibility
     ) = get_weather()
-    last_update, compare_time = update_weather_tracker()
+    (
+        latest_update,
+        last_update,
+        compare_raw,
+        compare_pretty
+    ) = update_weather_tracker()
 
     days = {
         "Monday": "Senin",
