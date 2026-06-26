@@ -378,13 +378,14 @@ def main():
         max_visibility,
         rain_chance,
         rain_chance_text,
-        pressure_text,
         pressure,
+        pressure_text,
+        wind_dir,
         wind_dir_text,
-        gust_text,
         wind_gust,
-        feels_text,
-        feels_like
+        gust_text,
+        feels_like,
+        feels_text
     ) = get_weather()
     (
         latest_update,
