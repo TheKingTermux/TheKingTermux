@@ -14,6 +14,34 @@ END_MARKER = "<!-- END_SECTION:weather -->"
 LAT = -7.931080
 LON = 112.660860
 
+def get_air_quality():
+    url = (
+        f"https://air-quality-api.open-meteo.com/v1/air-quality"
+        f"?latitude={LAT}&longitude={LON}"
+        "&current=pm2_5,pm10,carbon_monoxide,nitrogen_dioxide,ozone,us_aqi"
+    )
+
+    data = requests.get(url, timeout=30).json()["current"]
+
+    aqi = data.get("us_aqi") or 0
+
+    if aqi >= 200:
+        aqi_text = "☠️ Parah banget (ini udara atau racun cair?)"
+    elif aqi >= 150:
+        aqi_text = "😷 Tidak sehat (masker jangan cuma pajangan)"
+    elif aqi >= 100:
+        aqi_text = "😐 Kurang sehat (paru-paru kerja lembur)"
+    elif aqi >= 50:
+        aqi_text = "🙂 Sedang (masih oke tapi jangan sok bersih)"
+    else:
+        aqi_text = "😄 Bersih (hirup bebas, kayak hidup ideal)"
+
+    return {
+        "pm25": data.get("pm2_5", 0),
+        "pm10": data.get("pm10", 0),
+        "aqi": aqi,
+        "aqi_text": aqi_text
+    }
 
 def get_weather():
     url = (
@@ -21,9 +49,9 @@ def get_weather():
     f"?latitude={LAT}"
     f"&longitude={LON}"
     "&current=temperature_2m,relative_humidity_2m,weather_code,"
-    "wind_speed_10m,uv_index,is_day,"
+    "wind_speed_10m,wind_direction_10m,wind_gusts_10m,uv_index,is_day,"
     "soil_temperature_0_to_10cm,visibility,"
-    "cloud_cover,precipitation"
+    "cloud_cover,precipitation,apparent_temperature,pressure_msl,precipitation_probability,"
     "&daily=sunrise,sunset,precipitation_hours"
     "&hourly=visibility"
     "&timezone=Asia%2FBangkok"
@@ -47,6 +75,11 @@ def get_weather():
     sunrise = daily["sunrise"][0][-5:]
     sunset = daily["sunset"][0][-5:]
     rain_hours = daily["precipitation_hours"][0]
+    rain_chance = current.get("precipitation_probability", 0)
+    feels_like = current["apparent_temperature"]
+    wind_gust = current.get("wind_gusts_10m", 0)
+    wind_dir = current.get("wind_direction_10m", 0)
+    pressure = current.get("pressure_msl", 0)
 
     weather_map = {
         0: "☀️ Clear Sky",
@@ -117,6 +150,44 @@ def get_weather():
     else:
         wind_text = "🍃 Calm (diam total, kayak WiFi pas ujian 😐)"
 
+    # Wind Gust
+    if wind_gust > 60:
+        gust_text = "🌪️ Badai mini (atap bisa mikir kabur)"
+    elif wind_gust > 40:
+        gust_text = "💨 Kenceng banget (rambut auto gagal gaya)"
+    elif wind_gust > 25:
+        gust_text = "🍃 Lumayan nendang"
+    else:
+        gust_text = "😴 Tenang, angin lagi cuti"
+
+    # Wind Direction
+    def wind_direction_text(deg):
+        dirs = ["Utara", "Timur Laut", "Timur", "Tenggara",
+                "Selatan", "Barat Daya", "Barat", "Barat Laut"]
+        return dirs[int((deg + 22.5) // 45) % 8]
+    
+    wind_dir_text = wind_direction_text(wind_dir)
+
+    # Pressure
+    if pressure >= 1020:
+        pressure_text = "📈 Tekanan tinggi (cuaca stabil kayak hati yang move on)"
+    elif pressure >= 1005:
+        pressure_text = "⚖️ Normal (aman terkendali)"
+    else:
+        pressure_text = "📉 Rendah (cuaca bisa drama)"
+
+    # Chance of Rain
+    if rain_chance >= 80:
+        rain_chance_text = "🌧️ Fix basah (payung? udah gak cukup, butuh kapal 😭)"
+    elif rain_chance >= 60:
+        rain_chance_text = "🌦️ Besar kemungkinan hujan (jangan sok nekat)"
+    elif rain_chance >= 40:
+        rain_chance_text = "🌤️ Bisa hujan bisa tidak (cuaca mode indecisive)"
+    elif rain_chance >= 20:
+        rain_chance_text = "☁️ Kecil kemungkinan (aman sih tapi jangan sombong)"
+    else:
+        rain_chance_text = "☀️ Santai, langit lagi baik hati"
+
     # Precipitation
     if precipitation >= 50:
         rain_text = "⛈️ Extreme Rain (ini hujan atau air terjun bocor? 💀)"
@@ -147,6 +218,20 @@ def get_weather():
     else:
         temp_text = "🧊 Freezing (NPC mode aktif, badan auto kaku)"
 
+    # Feels Like
+    if feels_like >= 40:
+        feels_text = "🔥 Neraka AC rusak (ini bukan panas lagi)"
+    elif feels_like >= 35:
+        feels_text = "🥵 Gerah level final boss"
+    elif feels_like >= 30:
+        feels_text = "🌞 Panas santai tapi mulai lengket"
+    elif feels_like >= 25:
+        feels_text = "😌 Nyaman kayak kipas angin malam"
+    elif feels_like >= 20:
+        feels_text = "🌤️ Adem banget, cocok rebahan"
+    else:
+        feels_text = "🧊 Dingin, tangan auto cari selimut"
+
     return (
         temp,
         temp_text,
@@ -166,7 +251,17 @@ def get_weather():
         rain_hours,
         visibility,
         min_visibility,
-        max_visibility
+        max_visibility,
+        rain_chance,
+        rain_chance_text,
+        pressure,
+        pressure_text,
+        wind_dir,
+        wind_dir_text,
+        wind_gust,
+        gust_text,
+        feels_like,
+        feels_text
     )
 
 def update_readme(block):
@@ -204,15 +299,17 @@ def update_weather_tracker():
 
     current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
-    previous_time = status.get("weather_last_update")
+    previous_time = status.get("weather_latest_update")
 
     raw_compare = "00:00:00"
     pretty_compare = "First Run"
 
     if previous_time:
         try:
-            old = datetime.strptime(previous_time, "%d-%m-%Y %H:%M:%S")
-            old = old.replace(tzinfo=TZ)
+            old = datetime.strptime(
+                previous_time,
+                "%d-%m-%Y %H:%M:%S"
+            ).replace(tzinfo=TZ)
 
             diff = int((now - old).total_seconds())
 
@@ -222,17 +319,20 @@ def update_weather_tracker():
 
             raw_compare = f"{h:02d}:{m:02d}:{s:02d}"
 
-            if diff < 10:
+            if diff < 5:
                 pretty_compare = "Baru aja"
             elif diff < 60:
                 pretty_compare = "Beberapa detik lalu"
             else:
                 parts = []
-                if h > 0:
+
+                if h:
                     parts.append(f"{h} Jam")
-                if m > 0:
+
+                if m:
                     parts.append(f"{m} Menit")
-                if s > 0:
+
+                if s:
                     parts.append(f"{s} Detik")
 
                 pretty_compare = " ".join(parts) + " lalu"
@@ -241,13 +341,19 @@ def update_weather_tracker():
             raw_compare = "Unknown"
             pretty_compare = "Unknown"
 
-    status["weather_last_update"] = current_time
+    status["weather_last_update"] = previous_time or current_time
+    status["weather_latest_update"] = current_time
     status["weather_compare"] = raw_compare
     status["weather_compare_pretty"] = pretty_compare
 
     save_status(status)
 
-    return current_time, pretty_compare
+    return (
+        current_time,
+        status["weather_last_update"],
+        raw_compare,
+        pretty_compare
+    )
 
 def main():
     (
@@ -269,9 +375,29 @@ def main():
         rain_hours,
         visibility,
         min_visibility,
-        max_visibility
+        max_visibility,
+        rain_chance,
+        rain_chance_text,
+        pressure,
+        pressure_text,
+        wind_dir,
+        wind_dir_text,
+        wind_gust,
+        gust_text,
+        feels_like,
+        feels_text
     ) = get_weather()
-    last_update, compare_time = update_weather_tracker()
+    (
+        latest_update,
+        last_update,
+        compare_raw,
+        compare_pretty
+    ) = update_weather_tracker()
+    aq = get_air_quality()
+    aqi = aq["aqi"]
+    aqi_text = aq["aqi_text"]
+    pm25 = aq["pm25"]
+    pm10 = aq["pm10"]
 
     days = {
         "Monday": "Senin",
@@ -317,19 +443,28 @@ def main():
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
 ##### 🕒 Last Updated: {last_update_id}
-##### ⏱️ Update Gap: {compare_time}<br><br>
+##### ⏱️ Update Gap: {compare_pretty}<br><br>
 
 **{desc}**
 
 🌡️ Temperature: {temp}°C  ({temp_text})<br>
+🌡 Feels Like: {feels_like}°C ({feels_text})<br>
 💧 Humidity: {humidity}%  
 🌱 Soil Temp: {soil}°C
 
 ☁️ Cloud Cover: {cloud_cover}%  
+🌡 Pressure: {pressure} hPa ({pressure_text})<br>
 ☔ Precipitation: {precipitation} mm  ({rain_text})<br>
+🌧 Chance of Rain: {rain_chance}% ({rain_chance_text})<br>
 🌧️ Rain Hours: {rain_hours} h
 
+😷 Air Quality Index: {aqi} ({aqi_text})<br>
+🌫️ PM2.5: {pm25}<br>
+🌫️ PM10: {pm10}<br>
+
 💨 Wind Speed: {wind} km/h  ({wind_text})<br>
+💨 Wind Gust: {wind_gust} km/h ({gust_text})<br>
+🧭 Wind Direction: {wind_dir}° ({wind_dir_text})<br>
 ☀️ UV: {uv_text}  
 🌗 Time: {day_state}
 
