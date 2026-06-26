@@ -204,15 +204,18 @@ def update_weather_tracker():
 
     current_time = now.strftime("%d-%m-%Y %H:%M:%S")
 
-    previous_time = status.get("weather_last_update")
+    # update sebelumnya
+    previous_time = status.get("weather_latest_update")
 
     raw_compare = "00:00:00"
     pretty_compare = "First Run"
 
     if previous_time:
         try:
-            old = datetime.strptime(previous_time, "%d-%m-%Y %H:%M:%S")
-            old = old.replace(tzinfo=TZ)
+            old = datetime.strptime(
+                previous_time,
+                "%d-%m-%Y %H:%M:%S"
+            ).replace(tzinfo=TZ)
 
             diff = int((now - old).total_seconds())
 
@@ -222,17 +225,20 @@ def update_weather_tracker():
 
             raw_compare = f"{h:02d}:{m:02d}:{s:02d}"
 
-            if diff < 10:
+            if diff < 5:
                 pretty_compare = "Baru aja"
             elif diff < 60:
                 pretty_compare = "Beberapa detik lalu"
             else:
                 parts = []
-                if h > 0:
+
+                if h:
                     parts.append(f"{h} Jam")
-                if m > 0:
+
+                if m:
                     parts.append(f"{m} Menit")
-                if s > 0:
+
+                if s:
                     parts.append(f"{s} Detik")
 
                 pretty_compare = " ".join(parts) + " lalu"
@@ -241,7 +247,8 @@ def update_weather_tracker():
             raw_compare = "Unknown"
             pretty_compare = "Unknown"
 
-    status["weather_last_update"] = current_time
+    status["weather_last_update"] = previous_time or current_time
+    status["weather_latest_update"] = current_time
     status["weather_compare"] = raw_compare
     status["weather_compare_pretty"] = pretty_compare
 
