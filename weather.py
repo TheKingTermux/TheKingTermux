@@ -437,12 +437,26 @@ def main():
         f"{dt.strftime('%H:%M:%S')}"
     )
 
+    dt_latest = datetime.strptime(latest_update, "%d-%m-%Y %H:%M:%S").replace(tzinfo=ZoneInfo("Asia/Jakarta"))
+    
+    hari_latest = days[dt_latest.strftime("%A")]
+    bulan_latest = months[dt_latest.strftime("%B")]
+    
+    latest_update_id = (
+        f"{hari_latest}, "
+        f"{dt_latest.day} "
+        f"{bulan_latest} "
+        f"{dt_latest.year} "
+        f"{dt_latest.strftime('%H:%M:%S')}"
+    )
+
     block = f"""{START_MARKER}
 <div align="center">
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🕒 Last Updated: {last_update_id}
+##### 🟢 Latest: {latest_update_id}  
+##### 🟡 Previous: {last_update_id}  
 ##### ⏱️ Update Gap: {compare_pretty}<br><br>
 
 **{desc}**
