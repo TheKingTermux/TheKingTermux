@@ -154,39 +154,39 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 02:16:58  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 01:30:51  
-##### ⏱️ Update Gap: 46 Menit 7 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 04:04:46  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 02:16:58  
+##### ⏱️ Update Gap: 1 Jam 47 Menit 48 Detik lalu<br><br>
 
 **☁️ Overcast**
 
-🌡️ Temperature: 19.8°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 22.7°C (🌤️ Adem banget, cocok rebahan)<br>
-💧 Humidity: 95%  
-🌱 Soil Temp: 22.2°C
+🌡️ Temperature: 19.5°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 22.3°C (🌤️ Adem banget, cocok rebahan)<br>
+💧 Humidity: 91%  
+🌱 Soil Temp: 22.0°C
 
-☁️ Cloud Cover: 99%  
-🌡 Pressure: 1012.6 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 88%  
+🌡 Pressure: 1012.5 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 4% (☀️ Santai, langit lagi baik hati)<br>
+🌧 Chance of Rain: 2% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 83 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 46.0<br>
-🌫️ PM10: 46.9<br>
+😷 Air Quality Index: 86 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 44.9<br>
+🌫️ PM10: 45.8<br>
 
-💨 Wind Speed: 3.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
-💨 Wind Gust: 8.6 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 341° (Utara)<br>
+💨 Wind Speed: 0.9 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Gust: 5.4 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 307° (Barat Laut)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 180.0 m  (Poor (tidor pun sodap ni 💤))<br>
-🔻 Min: 180.0 m  
-🔺 Max: 31040.0 m
+👀 Visibility: 240.0 m  (Poor (tidor pun sodap ni 💤))<br>
+🔻 Min: 200.0 m  
+🔺 Max: 33800.0 m
 
 </div>
 <!-- END_SECTION:weather -->
