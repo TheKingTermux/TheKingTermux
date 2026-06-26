@@ -333,7 +333,7 @@ def main():
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
 ##### 🕒 Last Updated: {last_update_id}
-##### ⏱️ Update Gap: {compare_time}<br><br>
+##### ⏱️ Update Gap: {pretty_compare}<br><br>
 
 **{desc}**
 
