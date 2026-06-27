@@ -154,37 +154,37 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 05:43:40  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 04:04:46  
-##### ⏱️ Update Gap: 1 Jam 38 Menit 54 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 07:01:39  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 05:43:40  
+##### ⏱️ Update Gap: 1 Jam 17 Menit 59 Detik lalu<br><br>
 
 **☁️ Overcast**
 
-🌡️ Temperature: 20.2°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 22.9°C (🌤️ Adem banget, cocok rebahan)<br>
-💧 Humidity: 90%  
-🌱 Soil Temp: 21.7°C
+🌡️ Temperature: 21.4°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 24.6°C (🌤️ Adem banget, cocok rebahan)<br>
+💧 Humidity: 92%  
+🌱 Soil Temp: 22.2°C
 
-☁️ Cloud Cover: 94%  
-🌡 Pressure: 1013.2 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 100%  
+🌡 Pressure: 1014.3 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 2% (☀️ Santai, langit lagi baik hati)<br>
+🌧 Chance of Rain: 22% (☁️ Kecil kemungkinan (aman sih tapi jangan sombong))<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 99 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 49.9<br>
-🌫️ PM10: 52.2<br>
+😷 Air Quality Index: 104 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 32.2<br>
+🌫️ PM10: 36.0<br>
 
-💨 Wind Speed: 2.7 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
-💨 Wind Gust: 6.5 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 278° (Barat)<br>
+💨 Wind Speed: 4.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Gust: 15.8 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 190° (Selatan)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
-🌗 Time: 🌙 Night
+🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 500.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 800.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 200.0 m  
 🔺 Max: 33800.0 m
 
