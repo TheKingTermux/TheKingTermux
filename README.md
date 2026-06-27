@@ -154,37 +154,37 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 21:59:27  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 20:22:47  
-##### ⏱️ Update Gap: 1 Jam 36 Menit 40 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 23:11:55  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 21:59:27  
+##### ⏱️ Update Gap: 1 Jam 12 Menit 28 Detik lalu<br><br>
 
 **🌤️ Mainly Clear**
 
-🌡️ Temperature: 21.3°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 23.9°C (🌤️ Adem banget, cocok rebahan)<br>
-💧 Humidity: 92%  
-🌱 Soil Temp: 24.5°C
+🌡️ Temperature: 20.8°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 23.2°C (🌤️ Adem banget, cocok rebahan)<br>
+💧 Humidity: 94%  
+🌱 Soil Temp: 23.7°C
 
-☁️ Cloud Cover: 36%  
+☁️ Cloud Cover: 27%  
 🌡 Pressure: 1014.4 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
+🌧 Chance of Rain: 2% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 110 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 26.7<br>
-🌫️ PM10: 28.1<br>
+😷 Air Quality Index: 102 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 22.5<br>
+🌫️ PM10: 23.2<br>
 
-💨 Wind Speed: 8.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 18.0 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 245° (Barat Daya)<br>
+💨 Wind Speed: 8.7 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 19.4 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 238° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 16740.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 17500.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 180.0 m  
 🔺 Max: 33880.0 m
 
