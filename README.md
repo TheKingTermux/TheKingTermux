@@ -154,39 +154,39 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 20:22:47  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 18:52:12  
-##### ⏱️ Update Gap: 1 Jam 30 Menit 35 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 21:59:27  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 20:22:47  
+##### ⏱️ Update Gap: 1 Jam 36 Menit 40 Detik lalu<br><br>
 
-**⛅ Partly Cloudy**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 21.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 24.4°C (🌤️ Adem banget, cocok rebahan)<br>
-💧 Humidity: 91%  
-🌱 Soil Temp: 25.6°C
+🌡️ Temperature: 21.3°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 23.9°C (🌤️ Adem banget, cocok rebahan)<br>
+💧 Humidity: 92%  
+🌱 Soil Temp: 24.5°C
 
-☁️ Cloud Cover: 69%  
-🌡 Pressure: 1013.7 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 36%  
+🌡 Pressure: 1014.4 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 4% (☀️ Santai, langit lagi baik hati)<br>
+🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 113 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 29.6<br>
-🌫️ PM10: 31.4<br>
+😷 Air Quality Index: 110 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 26.7<br>
+🌫️ PM10: 28.1<br>
 
-💨 Wind Speed: 7.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 19.1 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 236° (Barat Daya)<br>
+💨 Wind Speed: 8.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 18.0 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 245° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 17840.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 16740.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 180.0 m  
-🔺 Max: 33660.0 m
+🔺 Max: 33880.0 m
 
 </div>
 <!-- END_SECTION:weather -->
