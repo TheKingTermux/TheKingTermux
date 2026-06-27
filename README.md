@@ -154,39 +154,39 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 14:45:26  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 11:32:32  
-##### ⏱️ Update Gap: 3 Jam 12 Menit 54 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 17:01:34  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 14:45:26  
+##### ⏱️ Update Gap: 2 Jam 16 Menit 8 Detik lalu<br><br>
 
-**☁️ Overcast**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 27.0°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 29.8°C (😌 Nyaman kayak kipas angin malam)<br>
-💧 Humidity: 67%  
-🌱 Soil Temp: 30.7°C
+🌡️ Temperature: 23.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 26.8°C (😌 Nyaman kayak kipas angin malam)<br>
+💧 Humidity: 84%  
+🌱 Soil Temp: 29.0°C
 
-☁️ Cloud Cover: 88%  
-🌡 Pressure: 1010.5 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 31%  
+🌡 Pressure: 1011.6 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 100% (🌧️ Fix basah (payung? udah gak cukup, butuh kapal 😭))<br>
-🌧️ Rain Hours: 0.0 h
+🌧 Chance of Rain: 67% (🌦️ Besar kemungkinan hujan (jangan sok nekat))<br>
+🌧️ Rain Hours: 1.0 h
 
 😷 Air Quality Index: 106 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 11.6<br>
-🌫️ PM10: 12.8<br>
+🌫️ PM2.5: 19.3<br>
+🌫️ PM10: 20.5<br>
 
-💨 Wind Speed: 7.7 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 29.9 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 141° (Tenggara)<br>
+💨 Wind Speed: 7.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 25.9 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 196° (Selatan)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 26780.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 15540.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 180.0 m  
-🔺 Max: 33740.0 m
+🔺 Max: 33660.0 m
 
 </div>
 <!-- END_SECTION:weather -->
