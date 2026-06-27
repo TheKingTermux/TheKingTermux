@@ -154,37 +154,37 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 11:32:32  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 07:01:39  
-##### ⏱️ Update Gap: 4 Jam 30 Menit 53 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 14:45:26  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 11:32:32  
+##### ⏱️ Update Gap: 3 Jam 12 Menit 54 Detik lalu<br><br>
 
-**🌤️ Mainly Clear**
+**☁️ Overcast**
 
-🌡️ Temperature: 26.7°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 30.1°C (🌞 Panas santai tapi mulai lengket)<br>
-💧 Humidity: 64%  
-🌱 Soil Temp: 28.4°C
+🌡️ Temperature: 27.0°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 29.8°C (😌 Nyaman kayak kipas angin malam)<br>
+💧 Humidity: 67%  
+🌱 Soil Temp: 30.7°C
 
-☁️ Cloud Cover: 30%  
-🌡 Pressure: 1012.9 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 88%  
+🌡 Pressure: 1010.5 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 90% (🌧️ Fix basah (payung? udah gak cukup, butuh kapal 😭))<br>
+🌧 Chance of Rain: 100% (🌧️ Fix basah (payung? udah gak cukup, butuh kapal 😭))<br>
 🌧️ Rain Hours: 0.0 h
 
 😷 Air Quality Index: 106 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 11.5<br>
-🌫️ PM10: 13.0<br>
+🌫️ PM2.5: 11.6<br>
+🌫️ PM10: 12.8<br>
 
-💨 Wind Speed: 7.9 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 31.0 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 139° (Tenggara)<br>
-☀️ UV: ⚠️ High UV (panasnya mulai toxic dikit)  
+💨 Wind Speed: 7.7 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 29.9 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 141° (Tenggara)<br>
+☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 30720.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 26780.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 180.0 m  
 🔺 Max: 33740.0 m
 
