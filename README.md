@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Programming is like writing a book... except if you miss out a single comma on page 126 the whole thing makes no sense.
+> Bad programmers worry about the code. Good programmers worry about data structures.
 
-<b>— Yukihiro Matsumoto</b>
+<b>— Linus Torvalds</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
