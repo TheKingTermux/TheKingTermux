@@ -154,39 +154,39 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Sabtu, 27 Juni 2026 07:01:39  
-##### 🟡 Previous: Sabtu, 27 Juni 2026 05:43:40  
-##### ⏱️ Update Gap: 1 Jam 17 Menit 59 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 27 Juni 2026 11:32:32  
+##### 🟡 Previous: Sabtu, 27 Juni 2026 07:01:39  
+##### ⏱️ Update Gap: 4 Jam 30 Menit 53 Detik lalu<br><br>
 
-**☁️ Overcast**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 21.4°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 24.6°C (🌤️ Adem banget, cocok rebahan)<br>
-💧 Humidity: 92%  
-🌱 Soil Temp: 22.2°C
+🌡️ Temperature: 26.7°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 30.1°C (🌞 Panas santai tapi mulai lengket)<br>
+💧 Humidity: 64%  
+🌱 Soil Temp: 28.4°C
 
-☁️ Cloud Cover: 100%  
-🌡 Pressure: 1014.3 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 30%  
+🌡 Pressure: 1012.9 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 22% (☁️ Kecil kemungkinan (aman sih tapi jangan sombong))<br>
+🌧 Chance of Rain: 90% (🌧️ Fix basah (payung? udah gak cukup, butuh kapal 😭))<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 104 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 32.2<br>
-🌫️ PM10: 36.0<br>
+😷 Air Quality Index: 106 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 11.5<br>
+🌫️ PM10: 13.0<br>
 
-💨 Wind Speed: 4.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
-💨 Wind Gust: 15.8 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 190° (Selatan)<br>
-☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
+💨 Wind Speed: 7.9 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 31.0 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 139° (Tenggara)<br>
+☀️ UV: ⚠️ High UV (panasnya mulai toxic dikit)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 800.0 m  (Poor (tidor pun sodap ni 💤))<br>
-🔻 Min: 200.0 m  
-🔺 Max: 33800.0 m
+👀 Visibility: 30720.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+🔻 Min: 180.0 m  
+🔺 Max: 33740.0 m
 
 </div>
 <!-- END_SECTION:weather -->
