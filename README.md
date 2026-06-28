@@ -154,39 +154,39 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Minggu, 28 Juni 2026 23:42:13  
-##### 🟡 Previous: Minggu, 28 Juni 2026 22:02:39  
-##### ⏱️ Update Gap: 1 Jam 39 Menit 34 Detik lalu<br><br>
+##### 🟢 Latest: Senin, 29 Juni 2026 01:02:08  
+##### 🟡 Previous: Minggu, 28 Juni 2026 23:42:13  
+##### ⏱️ Update Gap: 1 Jam 19 Menit 55 Detik lalu<br><br>
 
 **🌤️ Mainly Clear**
 
-🌡️ Temperature: 19.3°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 21.8°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 18.5°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 20.5°C (🌤️ Adem banget, cocok rebahan)<br>
 💧 Humidity: 98%  
-🌱 Soil Temp: 21.8°C
+🌱 Soil Temp: 21.1°C
 
-☁️ Cloud Cover: 23%  
-🌡 Pressure: 1013.5 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 29%  
+🌡 Pressure: 1013.0 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧 Chance of Rain: 3% (☀️ Santai, langit lagi baik hati)<br>
+🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
 😷 Air Quality Index: 62 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 23.8<br>
-🌫️ PM10: 25.0<br>
+🌫️ PM2.5: 18.7<br>
+🌫️ PM10: 19.9<br>
 
-💨 Wind Speed: 5.5 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 14.0 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 238° (Barat Daya)<br>
+💨 Wind Speed: 6.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 12.6 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 245° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 7960.0 m  (Good (masih oke lah, gak blur-blur amat))<br>
-🔻 Min: 12060.0 m  
-🔺 Max: 33920.0 m
+👀 Visibility: 1140.0 m  (Poor (tidor pun sodap ni 💤))<br>
+🔻 Min: 580.0 m  
+🔺 Max: 38220.0 m
 
 </div>
 <!-- END_SECTION:weather -->
