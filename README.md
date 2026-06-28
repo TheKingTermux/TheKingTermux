@@ -154,37 +154,37 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Senin, 29 Juni 2026 03:56:25  
-##### 🟡 Previous: Senin, 29 Juni 2026 02:52:58  
-##### ⏱️ Update Gap: 1 Jam 3 Menit 27 Detik lalu<br><br>
+##### 🟢 Latest: Senin, 29 Juni 2026 05:00:55  
+##### 🟡 Previous: Senin, 29 Juni 2026 03:56:25  
+##### ⏱️ Update Gap: 1 Jam 4 Menit 30 Detik lalu<br><br>
 
-**⛅ Partly Cloudy**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 17.5°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 18.8°C (🧊 Dingin, tangan auto cari selimut)<br>
-💧 Humidity: 97%  
-🌱 Soil Temp: 20.0°C
+🌡️ Temperature: 17.0°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 18.2°C (🧊 Dingin, tangan auto cari selimut)<br>
+💧 Humidity: 96%  
+🌱 Soil Temp: 19.5°C
 
-☁️ Cloud Cover: 55%  
-🌡 Pressure: 1012.5 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 23%  
+🌡 Pressure: 1012.9 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
 😷 Air Quality Index: 61 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 15.9<br>
-🌫️ PM10: 16.8<br>
+🌫️ PM2.5: 14.0<br>
+🌫️ PM10: 14.8<br>
 
-💨 Wind Speed: 8.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 15.8 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 245° (Barat Daya)<br>
+💨 Wind Speed: 6.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 15.5 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 254° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 680.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 1280.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 580.0 m  
 🔺 Max: 38220.0 m
 
