@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Monitor Bandwidth Usage**
+**Trace Network Paths**
     
-> _Use 'vnstat' to collect long-term traffic statistics._
+> _Use 'traceroute' or 'mtr' to diagnose routing issues._
 
 </div>
 <!-- END_SECTION:server_tip -->
