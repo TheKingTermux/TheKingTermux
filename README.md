@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Bad programmers worry about the code. Good programmers worry about data structures.
+> Simplicity is a prerequisite for reliability.
 
-<b>— Linus Torvalds</b>
+<b>— Edsger W. Dijkstra</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
