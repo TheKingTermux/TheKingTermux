@@ -48,12 +48,9 @@ def get_weather():
     "https://api.open-meteo.com/v1/forecast"
     f"?latitude={LAT}"
     f"&longitude={LON}"
-    "&current=temperature_2m,relative_humidity_2m,weather_code,"
-    "wind_speed_10m,wind_direction_10m,wind_gusts_10m,uv_index,is_day,"
-    "soil_temperature_0_to_10cm,visibility,"
-    "cloud_cover,precipitation,apparent_temperature,pressure_msl,precipitation_probability,"
+    "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m,uv_index,is_day,soil_temperature_0_to_10cm,visibility,cloud_cover,precipitation,apparent_temperature,pressure_msl,precipitation_probability"
     "&daily=sunrise,sunset,precipitation_hours"
-    "&hourly=visibility"
+    "&hourly=visibility,temperature_2m,weather_code,precipitation_probability,wind_speed_10m,uv_index,cloud_cover"
     "&timezone=Asia%2FBangkok"
     )
 
@@ -61,6 +58,28 @@ def get_weather():
     current = data["current"]
     daily = data["daily"]
     hourly = data["hourly"]
+
+    forecast = []
+
+    current_time = datetime.fromisoformat(current["time"])
+    
+    for i, t in enumerate(hourly["time"]):
+        dt = datetime.fromisoformat(t)
+    
+        if dt >= current_time:
+            forecast.append({
+                "time": dt.strftime("%H:%M"),
+                "code": hourly["weather_code"][i],
+                "temp": hourly["temperature_2m"][i],
+                "rain": hourly["precipitation_probability"][i],
+                "wind": hourly["wind_speed_10m"][i],
+                "cloud": hourly["cloud_cover"][i],
+                "uv": hourly["uv_index"][i],
+                "visibility": hourly["visibility"][i],
+            })
+    
+        if len(forecast) == 5:
+            break
 
     temp = current["temperature_2m"]
     humidity = current["relative_humidity_2m"]
@@ -232,6 +251,34 @@ def get_weather():
     else:
         feels_text = "🧊 Dingin, tangan auto cari selimut"
 
+    forecast_text = ""
+
+    clock = {
+        0:"🕛",1:"🕐",2:"🕑",3:"🕒",4:"🕓",
+        5:"🕔",6:"🕕",7:"🕖",8:"🕗",9:"🕘",
+        10:"🕙",11:"🕚",12:"🕛",13:"🕐",
+        14:"🕑",15:"🕒",16:"🕓",17:"🕔",
+        18:"🕕",19:"🕖",20:"🕗",21:"🕘",
+        22:"🕙",23:"🕚"
+    }
+    
+    for item in forecast:
+    
+        hour = int(item["time"][:2])
+    
+        icon = clock[hour]
+    
+        desc2 = weather_map.get(item["code"], "🌍 Unknown")
+    
+        forecast_text += (
+            f"{icon} {item['time']}<br>"
+            f"{desc2}<br>"
+            f"🌡️ {item['temp']}°C • "
+            f"🌧️ {item['rain']}% • "
+            f"💨 {item['wind']} km/h"
+            f"<br><br>"
+        )
+
     return (
         temp,
         temp_text,
@@ -261,7 +308,8 @@ def get_weather():
         wind_gust,
         gust_text,
         feels_like,
-        feels_text
+        feels_text,
+        forecast
     )
 
 def update_readme(block):
@@ -385,7 +433,8 @@ def main():
         wind_gust,
         gust_text,
         feels_like,
-        feels_text
+        feels_text,
+        forecast
     ) = get_weather()
     (
         latest_update,
@@ -459,12 +508,25 @@ def main():
 ##### 🟡 Previous: {last_update_id}  
 ##### ⏱️ Update Gap: {compare_pretty}<br><br>
 
+━━━━━━━━━━━━━━━━━━
+### 📍 Current
+
 **{desc}**
 
 🌡️ Temperature: {temp}°C  ({temp_text})<br>
 🌡 Feels Like: {feels_like}°C ({feels_text})<br>
 💧 Humidity: {humidity}%  
 🌱 Soil Temp: {soil}°C
+
+━━━━━━━━━━━━━━━━━━
+
+### ⏳ Forecast (Next 4 Hours)
+
+{forecast_text}
+
+━━━━━━━━━━━━━━━━━━
+
+### 🌍 Environment
 
 ☁️ Cloud Cover: {cloud_cover}%  
 🌡 Pressure: {pressure} hPa ({pressure_text})<br>
