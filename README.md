@@ -154,37 +154,50 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Senin, 29 Juni 2026 09:58:10  
-##### 🟡 Previous: Senin, 29 Juni 2026 06:36:43  
-##### ⏱️ Update Gap: 3 Jam 21 Menit 27 Detik lalu<br><br>
+##### 🟢 Latest: Senin, 29 Juni 2026 14:18:20  
+##### 🟡 Previous: Senin, 29 Juni 2026 09:58:10  
+##### ⏱️ Update Gap: 4 Jam 20 Menit 10 Detik lalu<br><br>
+
+━━━━━━━━━━━━━━━━━━
+### 📍 Current
 
 **☀️ Clear Sky**
 
-🌡️ Temperature: 24.4°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 25.5°C (😌 Nyaman kayak kipas angin malam)<br>
-💧 Humidity: 47%  
-🌱 Soil Temp: 24.9°C
+🌡️ Temperature: 26.3°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 27.0°C (😌 Nyaman kayak kipas angin malam)<br>
+💧 Humidity: 50%  
+🌱 Soil Temp: 31.0°C
 
-☁️ Cloud Cover: 1%  
-🌡 Pressure: 1014.2 hPa (⚖️ Normal (aman terkendali))<br>
+━━━━━━━━━━━━━━━━━━
+
+### ⏳ Forecast (Next 4 Hours)
+
+🕒 15:00<br>☀️ Clear Sky<br>🌡️ 25.7°C • 🌧️ 0% • 💨 8.9 km/h<br><br>🕓 16:00<br>☀️ Clear Sky<br>🌡️ 24.7°C • 🌧️ 0% • 💨 6.7 km/h<br><br>🕔 17:00<br>☀️ Clear Sky<br>🌡️ 23.2°C • 🌧️ 0% • 💨 6.2 km/h<br><br>🕕 18:00<br>☀️ Clear Sky<br>🌡️ 21.7°C • 🌧️ 0% • 💨 7.0 km/h<br><br>🕖 19:00<br>☀️ Clear Sky<br>🌡️ 21.0°C • 🌧️ 0% • 💨 8.0 km/h<br><br>
+
+━━━━━━━━━━━━━━━━━━
+
+### 🌍 Environment
+
+☁️ Cloud Cover: 3%  
+🌡 Pressure: 1011.0 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 61 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 10.0<br>
-🌫️ PM10: 12.3<br>
+😷 Air Quality Index: 60 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 10.9<br>
+🌫️ PM10: 13.4<br>
 
-💨 Wind Speed: 5.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
-💨 Wind Gust: 24.1 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 153° (Tenggara)<br>
+💨 Wind Speed: 9.4 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Gust: 32.8 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 137° (Tenggara)<br>
 ☀️ UV: ⚠️ High UV (panasnya mulai toxic dikit)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:42  
 🌇 Sunset: 17:22
 
-👀 Visibility: 18480.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 30480.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 180.0 m  
 🔺 Max: 38120.0 m
 
