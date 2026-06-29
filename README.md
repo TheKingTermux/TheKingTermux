@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Trace Network Paths**
+**Check SSL Certificate**
     
-> _Use 'traceroute' or 'mtr' to diagnose routing issues._
+> _Use 'openssl s_client -connect domain.com:443' to inspect TLS details._
 
 </div>
 <!-- END_SECTION:server_tip -->
