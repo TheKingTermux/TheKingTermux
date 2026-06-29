@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Simplicity is a prerequisite for reliability.
+> There are only two kinds of languages: the ones people complain about and the ones nobody uses.
 
-<b>— Edsger W. Dijkstra</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
