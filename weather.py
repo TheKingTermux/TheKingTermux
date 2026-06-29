@@ -522,7 +522,7 @@ def main():
 
 ━━━━━━━━━━━━━━━━━━
 
-### ⏳ Forecast (Next 4 Hours)
+### ⏳ Forecast (Next 5 Hours)
 
 {forecast_text}
 
