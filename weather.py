@@ -309,7 +309,8 @@ def get_weather():
         gust_text,
         feels_like,
         feels_text,
-        forecast
+        forecast,
+        forecast_text
     )
 
 def update_readme(block):
@@ -434,7 +435,8 @@ def main():
         gust_text,
         feels_like,
         feels_text,
-        forecast
+        forecast,
+        forecast_text
     ) = get_weather()
     (
         latest_update,
