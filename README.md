@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check SSL Certificate**
+**Check Package Updates**
     
-> _Use 'openssl s_client -connect domain.com:443' to inspect TLS details._
+> _Regularly update systems using apt, dnf, pacman, or your distro package manager._
 
 </div>
 <!-- END_SECTION:server_tip -->
