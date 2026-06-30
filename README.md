@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+> C is quirky, flawed, and an enormous success.
 
-<b>— Bjarne Stroustrup</b>
+<b>— Dennis Ritchie</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
