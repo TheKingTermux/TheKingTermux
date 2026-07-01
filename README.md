@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Package Updates**
+**Rotate Logs**
     
-> _Regularly update systems using apt, dnf, pacman, or your distro package manager._
+> _Ensure logrotate is configured to prevent disk exhaustion._
 
 </div>
 <!-- END_SECTION:server_tip -->
