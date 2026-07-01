@@ -154,50 +154,50 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 2 to 3 Hour)
-##### 🟢 Latest: Kamis, 2 Juli 2026 04:58:17  
-##### 🟡 Previous: Kamis, 2 Juli 2026 03:22:09  
-##### ⏱️ Update Gap: 1 Jam 36 Menit 8 Detik lalu<br><br>
+##### 🟢 Latest: Kamis, 2 Juli 2026 06:19:19  
+##### 🟡 Previous: Kamis, 2 Juli 2026 04:58:17  
+##### ⏱️ Update Gap: 1 Jam 21 Menit 2 Detik lalu<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
 **☁️ Overcast**
 
-🌡️ Temperature: 16.0°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 16.9°C (🧊 Dingin, tangan auto cari selimut)<br>
-💧 Humidity: 89%  
-🌱 Soil Temp: 18.6°C
+🌡️ Temperature: 17.0°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 17.7°C (🧊 Dingin, tangan auto cari selimut)<br>
+💧 Humidity: 84%  
+🌱 Soil Temp: 18.3°C
 
 ━━━━━━━━━━━━━━━━━━
 
 ### ⏳ Forecast (Next 5 Hours)
 
-🕔 05:00<br>☁️ Overcast<br>🌡️ 15.9°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕕 06:00<br>☁️ Overcast<br>🌡️ 16.2°C • 🌧️ 0% • 💨 4.3 km/h<br><br>🕖 07:00<br>☁️ Overcast<br>🌡️ 20.3°C • 🌧️ 0% • 💨 5.5 km/h<br><br>🕗 08:00<br>☁️ Overcast<br>🌡️ 22.8°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕘 09:00<br>☁️ Overcast<br>🌡️ 24.8°C • 🌧️ 0% • 💨 4.8 km/h<br><br>
+🕖 07:00<br>☁️ Overcast<br>🌡️ 20.3°C • 🌧️ 0% • 💨 5.5 km/h<br><br>🕗 08:00<br>☁️ Overcast<br>🌡️ 22.8°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕘 09:00<br>☁️ Overcast<br>🌡️ 24.8°C • 🌧️ 0% • 💨 4.8 km/h<br><br>🕙 10:00<br>☁️ Overcast<br>🌡️ 25.9°C • 🌧️ 0% • 💨 7.8 km/h<br><br>🕚 11:00<br>☁️ Overcast<br>🌡️ 26.7°C • 🌧️ 0% • 💨 8.8 km/h<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 98%  
-🌡 Pressure: 1013.2 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 97%  
+🌡 Pressure: 1013.7 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 🌧️ Rain Hours: 0.0 h
 
-😷 Air Quality Index: 104 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 52.0<br>
-🌫️ PM10: 52.5<br>
+😷 Air Quality Index: 107 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 48.4<br>
+🌫️ PM10: 48.9<br>
 
-💨 Wind Speed: 2.9 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
-💨 Wind Gust: 10.4 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 300° (Barat Laut)<br>
+💨 Wind Speed: 4.8 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Gust: 11.9 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 295° (Barat Laut)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
-🌗 Time: 🌙 Night
+🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:43  
 🌇 Sunset: 17:23
 
-👀 Visibility: 260.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 7220.0 m  (Good (masih oke lah, gak blur-blur amat))<br>
 🔻 Min: 220.0 m  
 🔺 Max: 43580.0 m
 
