@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> C is quirky, flawed, and an enormous success.
+> Good code is its own best documentation.
 
-<b>— Dennis Ritchie</b>
+<b>— Steve McConnell</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
