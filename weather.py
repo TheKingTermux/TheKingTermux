@@ -517,8 +517,8 @@ def main():
 
 🌡️ Temperature: {temp}°C  ({temp_text})<br>
 🌡 Feels Like: {feels_like}°C ({feels_text})<br>
-💧 Humidity: {humidity}%  
-🌱 Soil Temp: {soil}°C
+🌧 Chance of Rain: {rain_chance}% ({rain_chance_text})<br>
+💨 Wind Speed: {wind} km/h  ({wind_text})<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -533,14 +533,15 @@ def main():
 ☁️ Cloud Cover: {cloud_cover}%  
 🌡 Pressure: {pressure} hPa ({pressure_text})<br>
 ☔ Precipitation: {precipitation} mm  ({rain_text})<br>
-🌧 Chance of Rain: {rain_chance}% ({rain_chance_text})<br>
 🌧️ Rain Hours: {rain_hours} h
+
+💧 Humidity: {humidity}%  
+🌱 Soil Temp: {soil}°C
 
 😷 Air Quality Index: {aqi} ({aqi_text})<br>
 🌫️ PM2.5: {pm25}<br>
 🌫️ PM10: {pm10}<br>
 
-💨 Wind Speed: {wind} km/h  ({wind_text})<br>
 💨 Wind Gust: {wind_gust} km/h ({gust_text})<br>
 🧭 Wind Direction: {wind_dir}° ({wind_dir_text})<br>
 ☀️ UV: {uv_text}  
