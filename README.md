@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Rotate Logs**
+**Check Swap Usage**
     
-> _Ensure logrotate is configured to prevent disk exhaustion._
+> _Use `swapon --show` to view active swap devices._
 
 </div>
 <!-- END_SECTION:server_tip -->
