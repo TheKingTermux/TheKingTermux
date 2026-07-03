@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Focused, hard work is the real key to success.
+> Make it work, make it right, make it fast.
 
-<b>— John Carmack</b>
+<b>— Kent Beck</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
