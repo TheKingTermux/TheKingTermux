@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Monitor Network Traffic**
+**Check active connections**
     
-> _Use `iftop` or `nload` to view live bandwidth usage._
+> _`ss -tunap` gives detailed network connections_
 
 </div>
 <!-- END_SECTION:server_tip -->
