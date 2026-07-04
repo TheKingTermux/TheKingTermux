@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Make it work, make it right, make it fast.
+> You can’t trust code that you did not totally create yourself.
 
-<b>— Kent Beck</b>
+<b>— Ken Thompson</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
