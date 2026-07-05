@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check active connections**
+**Check System Uptime**
     
-> _`ss -tunap` gives detailed network connections_
+> _Use `uptime` to quickly see load averages and uptime._
 
 </div>
 <!-- END_SECTION:server_tip -->
