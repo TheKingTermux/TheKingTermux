@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> You can’t trust code that you did not totally create yourself.
+> If you can't explain it simply, you don't understand it well enough.
 
-<b>— Ken Thompson</b>
+<b>— Albert Einstein</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
