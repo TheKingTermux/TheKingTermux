@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check System Uptime**
+**Verify Time Synchronization**
     
-> _Use `uptime` to quickly see load averages and uptime._
+> _Use `timedatectl status` to check NTP synchronization._
 
 </div>
 <!-- END_SECTION:server_tip -->
