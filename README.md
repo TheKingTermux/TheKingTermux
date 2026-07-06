@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> If you can't explain it simply, you don't understand it well enough.
+> Science is what we understand well enough to explain to a computer. Art is everything else we do.
 
-<b>— Albert Einstein</b>
+<b>— Donald Knuth</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
