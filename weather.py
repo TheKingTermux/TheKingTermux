@@ -505,10 +505,12 @@ def main():
 <div align="center">
 
 ### 🌦️ Weather in Me
-##### (Updated Approximately Every 2 to 3 Hour)
+##### (Updated Approximately Every 1 to 4 Hour)*
 ##### 🟢 Latest: {latest_update_id}  
 ##### 🟡 Previous: {last_update_id}  
 ##### ⏱️ Update Gap: {compare_pretty}<br><br>
+
+*its up to Github Cron Job to take, and its wild ngl 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
