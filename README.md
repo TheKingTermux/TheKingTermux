@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Time Synchronization**
+**Backup Before Updating**
     
-> _Use `timedatectl status` to check NTP synchronization._
+> _Always `create backups` before major upgrades or configuration changes._
 
 </div>
 <!-- END_SECTION:server_tip -->
