@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly.
+> Make simple tasks simple.
 
-<b>— Donald Knuth</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
