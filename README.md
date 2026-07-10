@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Inspect DNS Records**
+**Check Firewall Rules**
     
-> _Use `dig ANY domain.com` cautiously to inspect DNS information._
+> _Use `iptables -L -n -v` or `nft list ruleset` to inspect firewall policies._
 
 </div>
 <!-- END_SECTION:server_tip -->
