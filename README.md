@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Firewall Rules**
+**Check disk usage**
     
-> _Use `iptables -L -n -v` or `nft list ruleset` to inspect firewall policies._
+> _`df -h` shows disk usage in human readable format_
 
 </div>
 <!-- END_SECTION:server_tip -->
