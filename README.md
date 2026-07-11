@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Code is read much more often than it is written.
+> Software is like sex: it's better when it's free.
 
-<b>— Guido van Rossum</b>
+<b>— Linus Torvalds</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
