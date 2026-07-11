@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 1 to 4 Hour)*
-##### 🟢 Latest: Sabtu, 11 Juli 2026 18:03:01  
-##### 🟡 Previous: Sabtu, 11 Juli 2026 16:56:22  
-##### ⏱️ Update Gap: 1 Jam 6 Menit 39 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 11 Juli 2026 19:12:15  
+##### 🟡 Previous: Sabtu, 11 Juli 2026 18:03:01  
+##### ⏱️ Update Gap: 1 Jam 9 Menit 14 Detik lalu<br><br>
 
 *its up to Github Cron Job to take, and its wild ngl 💀
 
@@ -165,42 +165,42 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 22.7°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 24.1°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 22.3°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 23.6°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 1.3 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 2.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### ⏳ Forecast (Next 5 Hours)
 
-🕕 18:00<br>☁️ Overcast<br>🌡️ 22.7°C • 🌧️ 0% • 💨 1.3 km/h<br><br>🕖 19:00<br>☁️ Overcast<br>🌡️ 22.3°C • 🌧️ 0% • 💨 2.2 km/h<br><br>🕗 20:00<br>☁️ Overcast<br>🌡️ 20.8°C • 🌧️ 0% • 💨 1.4 km/h<br><br>🕘 21:00<br>⛅ Partly Cloudy<br>🌡️ 20.2°C • 🌧️ 0% • 💨 0.7 km/h<br><br>🕙 22:00<br>⛅ Partly Cloudy<br>🌡️ 18.6°C • 🌧️ 0% • 💨 0.4 km/h<br><br>
+🕖 19:00<br>☁️ Overcast<br>🌡️ 22.3°C • 🌧️ 0% • 💨 2.2 km/h<br><br>🕗 20:00<br>☁️ Overcast<br>🌡️ 20.8°C • 🌧️ 0% • 💨 1.4 km/h<br><br>🕘 21:00<br>⛅ Partly Cloudy<br>🌡️ 20.2°C • 🌧️ 0% • 💨 0.7 km/h<br><br>🕙 22:00<br>☁️ Overcast<br>🌡️ 18.6°C • 🌧️ 0% • 💨 0.4 km/h<br><br>🕚 23:00<br>☁️ Overcast<br>🌡️ 17.8°C • 🌧️ 0% • 💨 1.3 km/h<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 98%  
+☁️ Cloud Cover: 91%  
 🌡 Pressure: 1012.8 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 1.0 h
 
-💧 Humidity: 62%  
-🌱 Soil Temp: 27.6°C
+💧 Humidity: 64%  
+🌱 Soil Temp: 25.8°C
 
-😷 Air Quality Index: 86 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 43.5<br>
-🌫️ PM10: 45.4<br>
+😷 Air Quality Index: 87 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 62.9<br>
+🌫️ PM10: 65.0<br>
 
-💨 Wind Gust: 20.2 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 196° (Selatan)<br>
+💨 Wind Gust: 9.4 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 228° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:44  
 🌇 Sunset: 17:25
 
-👀 Visibility: 34560.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 34500.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 260.0 m  
 🔺 Max: 44560.0 m
 
