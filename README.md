@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Software is like sex: it's better when it's free.
+> The only way to go fast, is to go well.
 
-<b>— Linus Torvalds</b>
+<b>— Robert C. Martin</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
