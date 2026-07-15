@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Network Interfaces**
+**Test Latency**
     
-> _Use `ip addr show` to inspect interface configurations._
+> _Use `ping` to measure round-trip times._
 
 </div>
 <!-- END_SECTION:server_tip -->
