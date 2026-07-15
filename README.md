@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Always leave things better than you found them.
+> Stay hungry, stay foolish.
 
-<b>— Paul Graham</b>
+<b>— Steve Jobs</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
