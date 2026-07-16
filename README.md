@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 1 to 4 Hour)*
-##### 🟢 Latest: Kamis, 16 Juli 2026 12:23:54  
-##### 🟡 Previous: Kamis, 16 Juli 2026 09:08:25  
-##### ⏱️ Update Gap: 3 Jam 15 Menit 29 Detik lalu<br><br>
+##### 🟢 Latest: Kamis, 16 Juli 2026 12:39:24  
+##### 🟡 Previous: Kamis, 16 Juli 2026 12:35:09  
+##### ⏱️ Update Gap: 4 Menit 15 Detik lalu<br><br>
 
 *its up to Github Cron Job to take, and its wild ngl 💀
 
@@ -165,8 +165,8 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☀️ Clear Sky**
 
-🌡️ Temperature: 27.9°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 29.2°C (😌 Nyaman kayak kipas angin malam)<br>
+🌡️ Temperature: 27.7°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 29.1°C (😌 Nyaman kayak kipas angin malam)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 💨 Wind Speed: 12.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
@@ -180,27 +180,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 14%  
-🌡 Pressure: 1014.9 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 15%  
+🌡 Pressure: 1014.7 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 45%  
-🌱 Soil Temp: 31.6°C
+💧 Humidity: 47% (😌 Nyaman (balance banget))
+🌱 Soil Temp: 31.8°C
 
 😷 Air Quality Index: 100 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 14.7<br>
 🌫️ PM10: 16.4<br>
 
 💨 Wind Gust: 37.1 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 102° (Timur)<br>
+🧭 Wind Direction: 98° (Timur)<br>
 ☀️ UV: ⚠️ High UV (panasnya mulai toxic dikit)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:44  
 🌇 Sunset: 17:26
 
-👀 Visibility: 37920.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 36880.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 500.0 m  
 🔺 Max: 38960.0 m
 
