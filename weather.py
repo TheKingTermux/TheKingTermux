@@ -251,6 +251,22 @@ def get_weather():
     else:
         feels_text = "🧊 Dingin, tangan auto cari selimut"
 
+    # Humidity
+    if humidity >= 90:
+        humidity_text = "💦 Lembab brutal (baju kering aja bisa terasa basah 😭)"
+    elif humidity >= 80:
+        humidity_text = "🥵 Sangat lembab (gerahnya nempel di badan)"
+    elif humidity >= 70:
+        humidity_text = "😓 Lembab (keringat mulai gampang keluar)"
+    elif humidity >= 60:
+        humidity_text = "🙂 Cukup lembab (masih nyaman buat aktivitas)"
+    elif humidity >= 40:
+        humidity_text = "😌 Nyaman (balance banget)"
+    elif humidity >= 25:
+        humidity_text = "🍃 Agak kering (kulit mulai minta lotion)"
+    else:
+        humidity_text = "🏜️ Sangat kering (bibir auto pecah-pecah)"
+    
     forecast_text = ""
 
     clock = {
@@ -283,6 +299,7 @@ def get_weather():
         temp,
         temp_text,
         humidity,
+        humidity_text,
         desc,
         wind,
         wind_text,
@@ -409,6 +426,7 @@ def main():
         temp,
         temp_text,
         humidity,
+        humidity_text,
         desc,
         wind,
         wind_text,
@@ -537,7 +555,7 @@ def main():
 ☔ Precipitation: {precipitation} mm  ({rain_text})<br>
 🌧️ Rain Hours: {rain_hours} h
 
-💧 Humidity: {humidity}%  
+💧 Humidity: {humidity}% ({humidity_text})
 🌱 Soil Temp: {soil}°C
 
 😷 Air Quality Index: {aqi} ({aqi_text})<br>
