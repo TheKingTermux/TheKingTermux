@@ -11,8 +11,8 @@ PATH_STATUS = "status.json"
 START_MARKER = "<!-- START_SECTION:weather -->"
 END_MARKER = "<!-- END_SECTION:weather -->"
 
-LAT = ${{ secrets.SECRET_LAT }}
-LON = ${{ secrets.SECRET_LON }}
+LAT = os.getenv("SECRET_LAT")
+LON = os.getenv("SECRET_LON")
 
 def get_air_quality():
     url = (
