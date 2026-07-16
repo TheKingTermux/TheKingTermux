@@ -555,7 +555,7 @@ def main():
 ☔ Precipitation: {precipitation} mm  ({rain_text})<br>
 🌧️ Rain Hours: {rain_hours} h
 
-💧 Humidity: {humidity}% ({humidity_text})
+💧 Humidity: {humidity}% ({humidity_text})<br>
 🌱 Soil Temp: {soil}°C
 
 😷 Air Quality Index: {aqi} ({aqi_text})<br>
