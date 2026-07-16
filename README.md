@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Stay hungry, stay foolish.
+> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 
-<b>— Steve Jobs</b>
+<b>— Martin Fowler</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
