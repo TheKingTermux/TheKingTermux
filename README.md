@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 1 to 4 Hour)*
-##### 🟢 Latest: Jumat, 17 Juli 2026 21:06:36  
-##### 🟡 Previous: Jumat, 17 Juli 2026 21:01:23  
-##### ⏱️ Update Gap: 5 Menit 13 Detik lalu<br><br>
+##### 🟢 Latest: Jumat, 17 Juli 2026 21:13:15  
+##### 🟡 Previous: Jumat, 17 Juli 2026 21:06:36  
+##### ⏱️ Update Gap: 6 Menit 39 Detik lalu<br><br>
 
 *its up to Github Cron Job to take, and its wild ngl 💀
 
@@ -180,7 +180,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 📆 Forecast 3 days ahead
 
-📅 Jumat<br>🕐 🌅 Dini Hari<br>⛅ Partly Cloudy<br>🌡️ 20°C • 🌧️ 0% • 💨 1 km/h<br><br>🕐 🌄 Subuh<br>⛅ Partly Cloudy<br>🌡️ 18°C • 🌧️ 0% • 💨 4 km/h<br><br>🕐 🌤 Pagi<br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 1 km/h<br><br>🕐 ☀ Siang<br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 11 km/h<br><br>🕐 🌇 Sore<br>☀️ Clear Sky<br>🌡️ 26°C • 🌧️ 0% • 💨 10 km/h<br><br>🕐 🌙 Malam<br>☀️ Clear Sky<br>🌡️ 21°C • 🌧️ 0% • 💨 3 km/h<br><br><br>📅 Sabtu<br>🕐 🌅 Dini Hari<br>☀️ Clear Sky<br>🌡️ 19°C • 🌧️ 0% • 💨 1 km/h<br><br>🕐 🌄 Subuh<br>☀️ Clear Sky<br>🌡️ 17°C • 🌧️ 0% • 💨 2 km/h<br><br>🕐 🌤 Pagi<br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 4 km/h<br><br>🕐 ☀ Siang<br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 12 km/h<br><br>🕐 🌇 Sore<br>🌤️ Mainly Clear<br>🌡️ 27°C • 🌧️ 0% • 💨 9 km/h<br><br>🕐 🌙 Malam<br>☀️ Clear Sky<br>🌡️ 21°C • 🌧️ 0% • 💨 3 km/h<br><br><br>📅 Minggu<br>🕐 🌅 Dini Hari<br>☀️ Clear Sky<br>🌡️ 19°C • 🌧️ 0% • 💨 2 km/h<br><br>🕐 🌄 Subuh<br>☀️ Clear Sky<br>🌡️ 18°C • 🌧️ 0% • 💨 3 km/h<br><br>🕐 🌤 Pagi<br>🌤️ Mainly Clear<br>🌡️ 23°C • 🌧️ 0% • 💨 4 km/h<br><br>🕐 ☀ Siang<br>☁️ Overcast<br>🌡️ 28°C • 🌧️ 0% • 💨 10 km/h<br><br>🕐 🌇 Sore<br>⛅ Partly Cloudy<br>🌡️ 26°C • 🌧️ 0% • 💨 10 km/h<br><br>🕐 🌙 Malam<br>🌤️ Mainly Clear<br>🌡️ 21°C • 🌧️ 0% • 💨 4 km/h<br><br><br>
+📅 Jumat<br><b>🌅 Dini Hari (00:00)</b><br>⛅ Partly Cloudy<br>🌡️ 20°C • 🌧️ 0% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00)</b><br>⛅ Partly Cloudy<br>🌡️ 18°C • 🌧️ 0% • 💨 4 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 1 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 11 km/h<br><br><b>🌇 Sore (16:00)</b><br>☀️ Clear Sky<br>🌡️ 26°C • 🌧️ 0% • 💨 10 km/h<br><br><b>🌙 Malam (20:00)</b><br>☀️ Clear Sky<br>🌡️ 21°C • 🌧️ 0% • 💨 3 km/h<br><br><br>📅 Sabtu<br><b>🌅 Dini Hari (00:00)</b><br>☀️ Clear Sky<br>🌡️ 19°C • 🌧️ 0% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00)</b><br>☀️ Clear Sky<br>🌡️ 17°C • 🌧️ 0% • 💨 2 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 4 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 12 km/h<br><br><b>🌇 Sore (16:00)</b><br>🌤️ Mainly Clear<br>🌡️ 27°C • 🌧️ 0% • 💨 9 km/h<br><br><b>🌙 Malam (20:00)</b><br>☀️ Clear Sky<br>🌡️ 21°C • 🌧️ 0% • 💨 3 km/h<br><br><br>📅 Minggu<br><b>🌅 Dini Hari (00:00)</b><br>☀️ Clear Sky<br>🌡️ 19°C • 🌧️ 0% • 💨 2 km/h<br><br><b>🌄 Subuh (04:00)</b><br>☀️ Clear Sky<br>🌡️ 18°C • 🌧️ 0% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00)</b><br>🌤️ Mainly Clear<br>🌡️ 23°C • 🌧️ 0% • 💨 4 km/h<br><br><b>☀ Siang (12:00)</b><br>☁️ Overcast<br>🌡️ 28°C • 🌧️ 0% • 💨 10 km/h<br><br><b>🌇 Sore (16:00)</b><br>⛅ Partly Cloudy<br>🌡️ 26°C • 🌧️ 0% • 💨 10 km/h<br><br><b>🌙 Malam (20:00)</b><br>🌤️ Mainly Clear<br>🌡️ 21°C • 🌧️ 0% • 💨 4 km/h<br><br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
