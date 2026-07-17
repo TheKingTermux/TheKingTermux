@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+> Good enough software is often better than perfect software.
 
-<b>— Martin Fowler</b>
+<b>— David Thomas</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
