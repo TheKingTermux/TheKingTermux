@@ -20,8 +20,6 @@ if lat_env is None or lon_env is None:
 LAT = float(lat_env)
 LON = float(lon_env)
 
-if LAT is None or LON is None:
-    raise ValueError("SECRET_LAT atau SECRET_LON belum di-set")
 
 def get_air_quality():
     url = (
