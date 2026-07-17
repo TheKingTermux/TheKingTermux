@@ -348,16 +348,18 @@ def get_weather():
             if target_time in times:
                 idx = times.index(target_time)
 
-                icon = weather_map.get(codes[idx], "🌍 Unknown").split()[0]
+                desc_seg = weather_map.get(codes[idx], "🌍 Unknown")
                 t = round(temps[idx])
                 p = probs[idx]
                 w = round(winds[idx])
 
                 forecast_3days += (
-                    f"{segment_labels[hour]} "
-                    f"{icon} {t}°C • "
+                    f"{icon} {segment_labels[hour]}<br>"
+                    f"{desc_seg}<br>"
+                    f"🌡️ {t}°C • "
                     f"🌧️ {p}% • "
-                    f"💨 {w} km/h<br>"
+                    f"💨 {w} km/h"
+                    f"<br><br>"
                 )
 
         forecast_3days += "<br>"
