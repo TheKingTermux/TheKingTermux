@@ -11,8 +11,14 @@ PATH_STATUS = "status.json"
 START_MARKER = "<!-- START_SECTION:weather -->"
 END_MARKER = "<!-- END_SECTION:weather -->"
 
-LAT = os.getenv("SECRET_LAT")
-LON = os.getenv("SECRET_LON")
+lat_env = os.getenv("SECRET_LAT")
+lon_env = os.getenv("SECRET_LON")
+
+if lat_env is None or lon_env is None:
+    raise ValueError("SECRET_LAT atau SECRET_LON belum di-set")
+
+LAT = float(lat_env)
+LON = float(lon_env)
 
 def get_air_quality():
     url = (
@@ -295,6 +301,66 @@ def get_weather():
             f"<br><br>"
         )
 
+    # Forecast 3 Days
+    forecast_3days = ""
+
+    segment_hours = [0, 4, 8, 12, 16, 20]
+    
+    segment_labels = {
+        0: "🌅 Dini Hari",
+        4: "🌄 Subuh",
+        8: "🌤 Pagi",
+        12: "☀ Siang",
+        16: "🌇 Sore",
+        20: "🌙 Malam"
+    }
+    
+    days = {
+    "Monday": "Senin",
+    "Tuesday": "Selasa",
+    "Wednesday": "Rabu",
+    "Thursday": "Kamis",
+    "Friday": "Jumat",
+    "Saturday": "Sabtu",
+    "Sunday": "Minggu"
+    }
+
+    times = hourly["time"]
+    temps = hourly["temperature_2m"]
+    codes = hourly["weather_code"]
+    probs = hourly["precipitation_probability"]
+    winds = hourly["wind_speed_10m"]
+
+    for day_index in range(3):
+        target_date = daily["sunrise"][day_index][:10]
+
+        dt_day = datetime.strptime(target_date, "%Y-%m-%d")
+        day_name = days.get(dt_day.strftime("%A"), dt_day.strftime("%A"))
+
+        forecast_3days += f"📅 {day_name}<br>"
+
+        for hour in segment_hours:
+            target_time = f"{target_date}T{hour:02d}:00"
+
+            if target_time in times:
+                idx = times.index(target_time)
+
+                desc_seg = weather_map.get(codes[idx], "🌍 Unknown")
+                t = round(temps[idx])
+                p = probs[idx]
+                w = round(winds[idx])
+
+                forecast_3days += (
+                    f"<b>{segment_labels[hour]} ({hour:02d}:00)</b><br>"
+                    f"{desc_seg}<br>"
+                    f"🌡️ {t}°C • "
+                    f"🌧️ {p}% • "
+                    f"💨 {w} km/h"
+                    f"<br><br>"
+                )
+
+        forecast_3days += "<br>"
+
     return (
         temp,
         temp_text,
@@ -327,7 +393,8 @@ def get_weather():
         feels_like,
         feels_text,
         forecast,
-        forecast_text
+        forecast_text,
+        forecast_3days
     )
 
 def update_readme(block):
@@ -454,7 +521,8 @@ def main():
         feels_like,
         feels_text,
         forecast,
-        forecast_text
+        forecast_text,
+        forecast_3days
     ) = get_weather()
     (
         latest_update,
@@ -545,6 +613,12 @@ def main():
 ### ⏳ Forecast (Next 5 Hours)
 
 {forecast_text}
+
+━━━━━━━━━━━━━━━━━━
+
+### 📆 Forecast 3 days ahead
+
+{forecast_3days}
 
 ━━━━━━━━━━━━━━━━━━
 
