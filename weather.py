@@ -277,53 +277,6 @@ def get_weather():
         18:"🕕",19:"🕖",20:"🕗",21:"🕘",
         22:"🕙",23:"🕚"
     }
-
-    # ===== Forecast 3 Hari (6 Segmen) =====
-    forecast_3days = ""
-
-    segment_hours = [0, 6, 10, 15, 18, 21]
-    segment_labels = {
-        0: "🌅 Dini Hari",
-        6: "🌤 Pagi",
-        10: "☀ Siang",
-        15: "🌇 Sore",
-        18: "🌆 Petang",
-        21: "🌙 Malam"
-    }
-
-    times = hourly["time"]
-    temps = hourly["temperature_2m"]
-    codes = hourly["weather_code"]
-    probs = hourly["precipitation_probability"]
-    winds = hourly["wind_speed_10m"]
-
-    for day_index in range(3):
-        target_date = daily["sunrise"][day_index][:10]
-
-        dt_day = datetime.strptime(target_date, "%Y-%m-%d")
-        day_name = days.get(dt_day.strftime("%A"), dt_day.strftime("%A"))
-
-        forecast_3days += f"📅 {day_name}<br>"
-
-        for hour in segment_hours:
-            target_time = f"{target_date}T{hour:02d}:00"
-
-            if target_time in times:
-                idx = times.index(target_time)
-
-                icon = weather_map.get(codes[idx], "🌍 Unknown").split()[0]
-                t = round(temps[idx])
-                p = probs[idx]
-                w = round(winds[idx])
-
-                forecast_3days += (
-                    f"{segment_labels[hour]} "
-                    f"{icon} {t}°C • "
-                    f"🌧️ {p}% • "
-                    f"💨 {w} km/h<br>"
-                )
-
-        forecast_3days += "<br>"
     
     for item in forecast:
     
@@ -567,6 +520,53 @@ def main():
         f"{dt_latest.year} "
         f"{dt_latest.strftime('%H:%M:%S')}"
     )
+
+    # ===== Forecast 3 Hari (6 Segmen) =====
+    forecast_3days = ""
+
+    segment_hours = [0, 6, 10, 15, 18, 21]
+    segment_labels = {
+        0: "🌅 Dini Hari",
+        6: "🌤 Pagi",
+        10: "☀ Siang",
+        15: "🌇 Sore",
+        18: "🌆 Petang",
+        21: "🌙 Malam"
+    }
+
+    times = hourly["time"]
+    temps = hourly["temperature_2m"]
+    codes = hourly["weather_code"]
+    probs = hourly["precipitation_probability"]
+    winds = hourly["wind_speed_10m"]
+
+    for day_index in range(3):
+        target_date = daily["sunrise"][day_index][:10]
+
+        dt_day = datetime.strptime(target_date, "%Y-%m-%d")
+        day_name = days.get(dt_day.strftime("%A"), dt_day.strftime("%A"))
+
+        forecast_3days += f"📅 {day_name}<br>"
+
+        for hour in segment_hours:
+            target_time = f"{target_date}T{hour:02d}:00"
+
+            if target_time in times:
+                idx = times.index(target_time)
+
+                icon = weather_map.get(codes[idx], "🌍 Unknown").split()[0]
+                t = round(temps[idx])
+                p = probs[idx]
+                w = round(winds[idx])
+
+                forecast_3days += (
+                    f"{segment_labels[hour]} "
+                    f"{icon} {t}°C • "
+                    f"🌧️ {p}% • "
+                    f"💨 {w} km/h<br>"
+                )
+
+        forecast_3days += "<br>"
 
     block = f"""{START_MARKER}
 <div align="center">
