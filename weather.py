@@ -354,7 +354,7 @@ def get_weather():
                 w = round(winds[idx])
 
                 forecast_3days += (
-                    f"{icon} {segment_labels[hour]}<br>"
+                    f"<b>{segment_labels[hour]} ({hour:02d}:00)</b><br>"
                     f"{desc_seg}<br>"
                     f"🌡️ {t}°C • "
                     f"🌧️ {p}% • "
