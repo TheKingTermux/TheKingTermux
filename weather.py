@@ -20,7 +20,6 @@ if lat_env is None or lon_env is None:
 LAT = float(lat_env)
 LON = float(lon_env)
 
-
 def get_air_quality():
     url = (
         f"https://air-quality-api.open-meteo.com/v1/air-quality"
