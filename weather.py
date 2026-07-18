@@ -363,11 +363,12 @@ def get_weather():
                 desc_seg = weather_map.get(dominant_code, "🌍 Unknown")
     
                 forecast_3days += (
+                    f"<br>"
                     f"<b>{label} ({start_hour:02d}:00-{end_hour-1:02d}:59)</b><br>"
                     f"{desc_seg}<br>"
                     f"🌡️ {avg_temp}°C • 🌡 Feels {avg_feels}°C<br>"
                     f"🌧️ {max_rain}% • 💨 {avg_wind} km/h"
-                    f"<br><br>"
+                    f"<br>"
                 )
     
         forecast_3days += "<br>"
