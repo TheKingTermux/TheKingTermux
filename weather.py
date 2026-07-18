@@ -618,7 +618,12 @@ def main():
 
 ### 📆 Forecast 3 days ahead
 
+<details>
+<summary>🌤️ Lihat detail cuaca 3 hari ke depan</summary>
+
 {forecast_3days}
+
+</details>
 
 ━━━━━━━━━━━━━━━━━━
 
