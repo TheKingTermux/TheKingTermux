@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated Approximately Every 1 to 4 Hour)*
-##### 🟢 Latest: Sabtu, 18 Juli 2026 18:54:02  
-##### 🟡 Previous: Sabtu, 18 Juli 2026 17:57:58  
-##### ⏱️ Update Gap: 56 Menit 4 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 18 Juli 2026 20:03:11  
+##### 🟡 Previous: Sabtu, 18 Juli 2026 18:54:02  
+##### ⏱️ Update Gap: 1 Jam 9 Menit 9 Detik lalu<br><br>
 
 *its up to Github Cron Job to take, and its wild ngl 💀
 
@@ -165,16 +165,16 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **🌤️ Mainly Clear**
 
-🌡️ Temperature: 22.5°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 24.5°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 21.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 23.9°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 4.1 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 4.3 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### ⏳ Forecast (Next 5 Hours)
 
-🕖 19:00<br>🌤️ Mainly Clear<br>🌡️ 22.3°C • 🌧️ 0% • 💨 3.9 km/h<br><br>🕗 20:00<br>🌤️ Mainly Clear<br>🌡️ 21.5°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕘 21:00<br>🌤️ Mainly Clear<br>🌡️ 20.9°C • 🌧️ 0% • 💨 3.7 km/h<br><br>🕙 22:00<br>🌤️ Mainly Clear<br>🌡️ 20.4°C • 🌧️ 0% • 💨 4.0 km/h<br><br>🕚 23:00<br>🌤️ Mainly Clear<br>🌡️ 19.7°C • 🌧️ 0% • 💨 2.2 km/h<br><br>
+🕗 20:00<br>🌤️ Mainly Clear<br>🌡️ 21.6°C • 🌧️ 0% • 💨 4.3 km/h<br><br>🕘 21:00<br>🌤️ Mainly Clear<br>🌡️ 20.7°C • 🌧️ 0% • 💨 2.7 km/h<br><br>🕙 22:00<br>🌤️ Mainly Clear<br>🌡️ 20.1°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕚 23:00<br>☀️ Clear Sky<br>🌡️ 19.7°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕛 00:00<br>☀️ Clear Sky<br>🌡️ 19.2°C • 🌧️ 0% • 💨 2.4 km/h<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -183,7 +183,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <details>
 <summary>🌤️ Lihat detail cuaca 3 hari ke depan</summary>
 
-📅 Sabtu<br><b>🌅 Dini Hari (00:00)</b><br>🌤️ Mainly Clear<br>🌡️ 19°C • 🌧️ 0% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00)</b><br>⛅ Partly Cloudy<br>🌡️ 18°C • 🌧️ 0% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 1% • 💨 2 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 1% • 💨 8 km/h<br><br><b>🌇 Sore (16:00)</b><br>☀️ Clear Sky<br>🌡️ 26°C • 🌧️ 0% • 💨 8 km/h<br><br><b>🌙 Malam (20:00)</b><br>🌤️ Mainly Clear<br>🌡️ 22°C • 🌧️ 0% • 💨 3 km/h<br><br><br>📅 Minggu<br><b>🌅 Dini Hari (00:00)</b><br>🌤️ Mainly Clear<br>🌡️ 19°C • 🌧️ 0% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00)</b><br>🌤️ Mainly Clear<br>🌡️ 17°C • 🌧️ 0% • 💨 2 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 4 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 9 km/h<br><br><b>🌇 Sore (16:00)</b><br>🌤️ Mainly Clear<br>🌡️ 26°C • 🌧️ 0% • 💨 8 km/h<br><br><b>🌙 Malam (20:00)</b><br>🌤️ Mainly Clear<br>🌡️ 22°C • 🌧️ 0% • 💨 5 km/h<br><br><br>📅 Senin<br><b>🌅 Dini Hari (00:00)</b><br>☀️ Clear Sky<br>🌡️ 19°C • 🌧️ 0% • 💨 2 km/h<br><br><b>🌄 Subuh (04:00)</b><br>⛅ Partly Cloudy<br>🌡️ 17°C • 🌧️ 0% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 22°C • 🌧️ 0% • 💨 3 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 8 km/h<br><br><b>🌇 Sore (16:00)</b><br>☀️ Clear Sky<br>🌡️ 26°C • 🌧️ 0% • 💨 7 km/h<br><br><b>🌙 Malam (20:00)</b><br>☀️ Clear Sky<br>🌡️ 21°C • 🌧️ 0% • 💨 10 km/h<br><br><br>
+📅 Sabtu<br><b>🌅 Dini Hari (00:00)</b><br>🌤️ Mainly Clear<br>🌡️ 19°C • 🌧️ 0% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00)</b><br>⛅ Partly Cloudy<br>🌡️ 18°C • 🌧️ 0% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 1% • 💨 2 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 1% • 💨 8 km/h<br><br><b>🌇 Sore (16:00)</b><br>☀️ Clear Sky<br>🌡️ 27°C • 🌧️ 0% • 💨 11 km/h<br><br><b>🌙 Malam (20:00)</b><br>🌤️ Mainly Clear<br>🌡️ 22°C • 🌧️ 0% • 💨 4 km/h<br><br><br>📅 Minggu<br><b>🌅 Dini Hari (00:00)</b><br>☀️ Clear Sky<br>🌡️ 19°C • 🌧️ 0% • 💨 2 km/h<br><br><b>🌄 Subuh (04:00)</b><br>☀️ Clear Sky<br>🌡️ 18°C • 🌧️ 0% • 💨 2 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 5 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 11 km/h<br><br><b>🌇 Sore (16:00)</b><br>⛅ Partly Cloudy<br>🌡️ 26°C • 🌧️ 0% • 💨 9 km/h<br><br><b>🌙 Malam (20:00)</b><br>⛅ Partly Cloudy<br>🌡️ 22°C • 🌧️ 0% • 💨 7 km/h<br><br><br>📅 Senin<br><b>🌅 Dini Hari (00:00)</b><br>☀️ Clear Sky<br>🌡️ 20°C • 🌧️ 0% • 💨 5 km/h<br><br><b>🌄 Subuh (04:00)</b><br>🌤️ Mainly Clear<br>🌡️ 18°C • 🌧️ 0% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00)</b><br>☀️ Clear Sky<br>🌡️ 23°C • 🌧️ 0% • 💨 4 km/h<br><br><b>☀ Siang (12:00)</b><br>☀️ Clear Sky<br>🌡️ 28°C • 🌧️ 0% • 💨 8 km/h<br><br><b>🌇 Sore (16:00)</b><br>☀️ Clear Sky<br>🌡️ 25°C • 🌧️ 0% • 💨 8 km/h<br><br><b>🌙 Malam (20:00)</b><br>☀️ Clear Sky<br>🌡️ 21°C • 🌧️ 0% • 💨 9 km/h<br><br><br>
 
 </details>
 
@@ -191,27 +191,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 20%  
-🌡 Pressure: 1013.5 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 39%  
+🌡 Pressure: 1014.8 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 73% (😓 Lembab (keringat mulai gampang keluar))<br>
-🌱 Soil Temp: 27.2°C
+💧 Humidity: 82% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
+🌱 Soil Temp: 25.7°C
 
-😷 Air Quality Index: 98 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 40.7<br>
-🌫️ PM10: 46.1<br>
+😷 Air Quality Index: 99 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 50.5<br>
+🌫️ PM10: 54.7<br>
 
-💨 Wind Gust: 19.1 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 209° (Barat Daya)<br>
+💨 Wind Gust: 19.8 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 225° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:44  
 🌇 Sunset: 17:27
 
-👀 Visibility: 27980.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 23180.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 180.0 m  
 🔺 Max: 44520.0 m
 
