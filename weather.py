@@ -304,6 +304,7 @@ def get_weather():
 
     # Forecast 3 Days
     forecast_3days = ""
+    forecast_3days += "<br>"
     
     segments = [
         ("🌅 Dini Hari", 0, 4),
