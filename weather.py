@@ -326,6 +326,7 @@ def get_weather():
     
     times = hourly["time"]
     temps = hourly["temperature_2m"]
+    feels = hourly["apparent_temperature"]
     codes = hourly["weather_code"]
     probs = hourly["precipitation_probability"]
     winds = hourly["wind_speed_10m"]
@@ -349,6 +350,7 @@ def get_weather():
     
             if indexes:
                 avg_temp = round(sum(temps[i] for i in indexes) / len(indexes))
+                avg_feels = round(sum(feels[i] for i in indexes) / len(indexes))
                 avg_wind = round(sum(winds[i] for i in indexes) / len(indexes))
                 max_rain = max(probs[i] for i in indexes)
     
@@ -363,9 +365,8 @@ def get_weather():
                 forecast_3days += (
                     f"<b>{label} ({start_hour:02d}:00-{end_hour-1:02d}:59)</b><br>"
                     f"{desc_seg}<br>"
-                    f"🌡️ {avg_temp}°C • "
-                    f"🌧️ {max_rain}% • "
-                    f"💨 {avg_wind} km/h"
+                    f"🌡️ {avg_temp}°C • 🌡 Feels {avg_feels}°C<br>"
+                    f"🌧️ {max_rain}% • 💨 {avg_wind} km/h"
                     f"<br><br>"
                 )
     
