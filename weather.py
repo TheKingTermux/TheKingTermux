@@ -462,8 +462,7 @@ def get_big_cities_weather():
         url = (
             "https://api.open-meteo.com/v1/forecast"
             f"?latitude={lat}&longitude={lon}"
-            "&hourly=temperature_2m,apparent_temperature,weather_code,"
-            "precipitation_probability,wind_speed_10m"
+            "&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,wind_speed_10m"
             "&timezone=Asia%2FBangkok"
         )
 
