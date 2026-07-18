@@ -457,10 +457,10 @@ def get_big_cities_weather():
     today = datetime.now(ZoneInfo("Asia/Jakarta")).strftime("%Y-%m-%d")
 
     for city, (lat, lon) in cities.items():
-        url = (
+       url = (
             "https://api.open-meteo.com/v1/forecast"
             f"?latitude={lat}&longitude={lon}"
-            "&hourly=temperature_2m,weather_code,precipitation_probability,wind_speed_10m"
+            "&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,wind_speed_10m"
             "&timezone=Asia%2FBangkok"
         )
 
@@ -468,6 +468,7 @@ def get_big_cities_weather():
 
         times = data["time"]
         temps = data["temperature_2m"]
+        feels = data["apparent_temperature"]
         codes = data["weather_code"]
         probs = data["precipitation_probability"]
         winds = data["wind_speed_10m"]
@@ -483,6 +484,7 @@ def get_big_cities_weather():
             continue
 
         avg_temp = round(sum(temps[i] for i in indexes) / len(indexes))
+        avg_feels = round(sum(feels[i] for i in indexes) / len(indexes))
         avg_wind = round(sum(winds[i] for i in indexes) / len(indexes))
         max_rain = max(probs[i] for i in indexes)
 
@@ -492,7 +494,8 @@ def get_big_cities_weather():
         result += (
             f"<b>{city}</b><br>"
             f"{desc}<br>"
-            f"🌡️ {avg_temp}°C • 🌧️ {max_rain}% • 💨 {avg_wind} km/h"
+            f"🌡️ {avg_temp}°C • 🌡 Feels {avg_feels}°C<br>"
+            f"🌧️ {max_rain}% • 💨 {avg_wind} km/h"
             f"<br><br>"
         )
 
