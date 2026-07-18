@@ -1,8 +1,9 @@
-import requests
-import re
+from collections import Counter
+from datetime import datetime
 import json
 import os
-from datetime import datetime
+import re
+import requests
 from zoneinfo import ZoneInfo
 
 PATH_README = "README.md"
@@ -351,7 +352,6 @@ def get_weather():
                 avg_wind = round(sum(winds[i] for i in indexes) / len(indexes))
                 max_rain = max(probs[i] for i in indexes)
     
-                # Cari cuaca yang paling sering muncul
                 code_count = {}
                 for i in indexes:
                     c = codes[i]
@@ -370,59 +370,6 @@ def get_weather():
                 )
     
         forecast_3days += "<br>"
-
-def get_big_cities_weather():
-    cities = {
-        "🏙️ Jakarta": (-6.2088, 106.8456),
-        "⛰️ Bandung": (-6.9175, 107.6191),
-        "🏛️ Semarang": (-6.9667, 110.4167),
-        "🎓 Yogyakarta": (-7.7956, 110.3695),
-        "🌊 Surabaya": (-7.2575, 112.7521),
-        "🌧️ Medan": (3.5952, 98.6722),
-        "🚢 Palembang": (-2.9761, 104.7754),
-        "🛢️ Balikpapan": (-1.2654, 116.8312),
-        "🐟 Makassar": (-5.1477, 119.4327),
-        "🌴 Denpasar": (-8.6500, 115.2167),
-    }
-
-    weather_map = {
-        0: "☀️ Clear",
-        1: "🌤️ Mainly Clear",
-        2: "⛅ Cloudy",
-        3: "☁️ Overcast",
-        61: "🌧️ Rain",
-        63: "🌧️ Moderate Rain",
-        65: "⛈️ Heavy Rain",
-        80: "🌦️ Showers",
-        95: "⛈️ Thunderstorm"
-    }
-
-    result = ""
-
-    for city, (lat, lon) in cities.items():
-        url = (
-            "https://api.open-meteo.com/v1/forecast"
-            f"?latitude={lat}&longitude={lon}"
-            "&current=temperature_2m,weather_code,precipitation_probability,wind_speed_10m"
-        )
-
-        data = requests.get(url, timeout=15).json()["current"]
-
-        temp = round(data["temperature_2m"])
-        code = data["weather_code"]
-        rain = data.get("precipitation_probability", 0)
-        wind = round(data.get("wind_speed_10m", 0))
-
-        desc = weather_map.get(code, "🌍 Unknown")
-
-        result += (
-            f"<b>{city}</b><br>"
-            f"{desc}<br>"
-            f"🌡️ {temp}°C • 🌧️ {rain}% • 💨 {wind} km/h"
-            f"<br><br>"
-        )
-
-    return result
 
     return (
         temp,
@@ -460,6 +407,97 @@ def get_big_cities_weather():
         forecast_3days
     )
 
+def get_segment_hour():
+    now = datetime.now(ZoneInfo("Asia/Jakarta"))
+    hour = now.hour
+
+    if 0 <= hour < 4:
+        return ("🌅 Dini Hari", 0, 4)
+    elif 4 <= hour < 8:
+        return ("🌄 Subuh", 4, 8)
+    elif 8 <= hour < 12:
+        return ("🌤 Pagi", 8, 12)
+    elif 12 <= hour < 16:
+        return ("☀ Siang", 12, 16)
+    elif 16 <= hour < 20:
+        return ("🌇 Sore", 16, 20)
+    else:
+        return ("🌙 Malam", 20, 24)
+
+# ID Big Cities Weather Tracker
+def get_big_cities_weather():
+    cities = {
+        "🏙️ Jakarta": (-6.2088, 106.8456),
+        "⛰️ Bandung": (-6.9175, 107.6191),
+        "🏛️ Semarang": (-6.9667, 110.4167),
+        "🎓 Yogyakarta": (-7.7956, 110.3695),
+        "🌊 Surabaya": (-7.2575, 112.7521),
+        "🌧️ Medan": (3.5952, 98.6722),
+        "🚢 Palembang": (-2.9761, 104.7754),
+        "🛢️ Balikpapan": (-1.2654, 116.8312),
+        "🐟 Makassar": (-5.1477, 119.4327),
+        "🌴 Denpasar": (-8.6500, 115.2167),
+    }
+
+    weather_map = {
+        0: "☀️ Clear",
+        1: "🌤️ Mainly Clear",
+        2: "⛅ Cloudy",
+        3: "☁️ Overcast",
+        61: "🌧️ Rain",
+        63: "🌧️ Moderate Rain",
+        65: "⛈️ Heavy Rain",
+        80: "🌦️ Showers",
+        95: "⛈️ Thunderstorm"
+    }
+
+    label, start_hour, end_hour = get_segment_hour()
+    result = f"<b>{label} ({start_hour:02d}:00-{end_hour-1:02d}:59)</b><br><br>"
+
+    today = datetime.now(ZoneInfo("Asia/Jakarta")).strftime("%Y-%m-%d")
+
+    for city, (lat, lon) in cities.items():
+        url = (
+            "https://api.open-meteo.com/v1/forecast"
+            f"?latitude={lat}&longitude={lon}"
+            "&hourly=temperature_2m,weather_code,precipitation_probability,wind_speed_10m"
+            "&timezone=Asia%2FBangkok"
+        )
+
+        data = requests.get(url, timeout=15).json()["hourly"]
+
+        times = data["time"]
+        temps = data["temperature_2m"]
+        codes = data["weather_code"]
+        probs = data["precipitation_probability"]
+        winds = data["wind_speed_10m"]
+
+        indexes = []
+        for i, t in enumerate(times):
+            if t.startswith(today):
+                hour = int(t[11:13])
+                if start_hour <= hour < end_hour:
+                    indexes.append(i)
+
+        if not indexes:
+            continue
+
+        avg_temp = round(sum(temps[i] for i in indexes) / len(indexes))
+        avg_wind = round(sum(winds[i] for i in indexes) / len(indexes))
+        max_rain = max(probs[i] for i in indexes)
+
+        dominant_code = Counter(codes[i] for i in indexes).most_common(1)[0][0]
+        desc = weather_map.get(dominant_code, "🌍 Unknown")
+
+        result += (
+            f"<b>{city}</b><br>"
+            f"{desc}<br>"
+            f"🌡️ {avg_temp}°C • 🌧️ {max_rain}% • 💨 {avg_wind} km/h"
+            f"<br><br>"
+        )
+
+    return result
+    
 def update_readme(block):
     with open(PATH_README, "r", encoding="utf-8") as f:
         content = f.read()
@@ -481,11 +519,9 @@ def load_status():
 
     return {}
 
-
 def save_status(status):
     with open(PATH_STATUS, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=2)
-
 
 def update_weather_tracker():
     status = load_status()
