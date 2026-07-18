@@ -336,8 +336,11 @@ def get_weather():
     
         dt_day = datetime.strptime(target_date, "%Y-%m-%d")
         day_name = days.get(dt_day.strftime("%A"), dt_day.strftime("%A"))
+
+        if day_index > 0:
+            forecast_3days += "<br>"
     
-        forecast_3days += f"📅 <b>{day_name}</b><br><br>"
+        forecast_3days += f"📅 <b>{day_name}</b><br>"
     
         for label, start_hour, end_hour in segments:
             indexes = []
@@ -363,15 +366,11 @@ def get_weather():
                 desc_seg = weather_map.get(dominant_code, "🌍 Unknown")
     
                 forecast_3days += (
-                    f"<br>"
                     f"<b>{label} ({start_hour:02d}:00-{end_hour-1:02d}:59)</b><br>"
                     f"{desc_seg}<br>"
                     f"🌡️ {avg_temp}°C • 🌡 Feels {avg_feels}°C<br>"
-                    f"🌧️ {max_rain}% • 💨 {avg_wind} km/h"
-                    f"<br>"
+                    f"🌧️ {max_rain}% • 💨 {avg_wind} km/h<br><br>"
                 )
-    
-        forecast_3days += "<br>"
 
     return (
         temp,
