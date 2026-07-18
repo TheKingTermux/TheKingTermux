@@ -57,7 +57,7 @@ def get_weather():
     f"&longitude={LON}"
     "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m,uv_index,is_day,soil_temperature_0_to_10cm,visibility,cloud_cover,precipitation,apparent_temperature,pressure_msl,precipitation_probability"
     "&daily=sunrise,sunset,precipitation_hours"
-    "&hourly=visibility,temperature_2m,weather_code,precipitation_probability,wind_speed_10m,uv_index,cloud_cover"
+    "&hourly=visibility,temperature_2m,weather_code,precipitation_probability,wind_speed_10m,uv_index,cloud_cover,apparent_temperature"
     "&timezone=Asia%2FBangkok"
     )
 
