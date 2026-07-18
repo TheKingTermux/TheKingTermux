@@ -303,63 +303,126 @@ def get_weather():
 
     # Forecast 3 Days
     forecast_3days = ""
-
-    segment_hours = [0, 4, 8, 12, 16, 20]
     
-    segment_labels = {
-        0: "🌅 Dini Hari",
-        4: "🌄 Subuh",
-        8: "🌤 Pagi",
-        12: "☀ Siang",
-        16: "🌇 Sore",
-        20: "🌙 Malam"
-    }
+    segments = [
+        ("🌅 Dini Hari", 0, 4),
+        ("🌄 Subuh", 4, 8),
+        ("🌤 Pagi", 8, 12),
+        ("☀ Siang", 12, 16),
+        ("🌇 Sore", 16, 20),
+        ("🌙 Malam", 20, 24),
+    ]
     
     days = {
-    "Monday": "Senin",
-    "Tuesday": "Selasa",
-    "Wednesday": "Rabu",
-    "Thursday": "Kamis",
-    "Friday": "Jumat",
-    "Saturday": "Sabtu",
-    "Sunday": "Minggu"
+        "Monday": "Senin",
+        "Tuesday": "Selasa",
+        "Wednesday": "Rabu",
+        "Thursday": "Kamis",
+        "Friday": "Jumat",
+        "Saturday": "Sabtu",
+        "Sunday": "Minggu"
     }
-
+    
     times = hourly["time"]
     temps = hourly["temperature_2m"]
     codes = hourly["weather_code"]
     probs = hourly["precipitation_probability"]
     winds = hourly["wind_speed_10m"]
-
+    
     for day_index in range(3):
         target_date = daily["sunrise"][day_index][:10]
-
+    
         dt_day = datetime.strptime(target_date, "%Y-%m-%d")
         day_name = days.get(dt_day.strftime("%A"), dt_day.strftime("%A"))
-
-        forecast_3days += f"📅 {day_name}<br>"
-
-        for hour in segment_hours:
-            target_time = f"{target_date}T{hour:02d}:00"
-
-            if target_time in times:
-                idx = times.index(target_time)
-
-                desc_seg = weather_map.get(codes[idx], "🌍 Unknown")
-                t = round(temps[idx])
-                p = probs[idx]
-                w = round(winds[idx])
-
+    
+        forecast_3days += f"📅 <b>{day_name}</b><br><br>"
+    
+        for label, start_hour, end_hour in segments:
+            indexes = []
+    
+            for i, t in enumerate(times):
+                if t.startswith(target_date):
+                    hour = int(t[11:13])
+                    if start_hour <= hour < end_hour:
+                        indexes.append(i)
+    
+            if indexes:
+                avg_temp = round(sum(temps[i] for i in indexes) / len(indexes))
+                avg_wind = round(sum(winds[i] for i in indexes) / len(indexes))
+                max_rain = max(probs[i] for i in indexes)
+    
+                # Cari cuaca yang paling sering muncul
+                code_count = {}
+                for i in indexes:
+                    c = codes[i]
+                    code_count[c] = code_count.get(c, 0) + 1
+    
+                dominant_code = max(code_count, key=code_count.get)
+                desc_seg = weather_map.get(dominant_code, "🌍 Unknown")
+    
                 forecast_3days += (
-                    f"<b>{segment_labels[hour]} ({hour:02d}:00)</b><br>"
+                    f"<b>{label} ({start_hour:02d}:00-{end_hour-1:02d}:59)</b><br>"
                     f"{desc_seg}<br>"
-                    f"🌡️ {t}°C • "
-                    f"🌧️ {p}% • "
-                    f"💨 {w} km/h"
+                    f"🌡️ {avg_temp}°C • "
+                    f"🌧️ {max_rain}% • "
+                    f"💨 {avg_wind} km/h"
                     f"<br><br>"
                 )
-
+    
         forecast_3days += "<br>"
+
+def get_big_cities_weather():
+    cities = {
+        "🏙️ Jakarta": (-6.2088, 106.8456),
+        "⛰️ Bandung": (-6.9175, 107.6191),
+        "🏛️ Semarang": (-6.9667, 110.4167),
+        "🎓 Yogyakarta": (-7.7956, 110.3695),
+        "🌊 Surabaya": (-7.2575, 112.7521),
+        "🌧️ Medan": (3.5952, 98.6722),
+        "🚢 Palembang": (-2.9761, 104.7754),
+        "🛢️ Balikpapan": (-1.2654, 116.8312),
+        "🐟 Makassar": (-5.1477, 119.4327),
+        "🌴 Denpasar": (-8.6500, 115.2167),
+    }
+
+    weather_map = {
+        0: "☀️ Clear",
+        1: "🌤️ Mainly Clear",
+        2: "⛅ Cloudy",
+        3: "☁️ Overcast",
+        61: "🌧️ Rain",
+        63: "🌧️ Moderate Rain",
+        65: "⛈️ Heavy Rain",
+        80: "🌦️ Showers",
+        95: "⛈️ Thunderstorm"
+    }
+
+    result = ""
+
+    for city, (lat, lon) in cities.items():
+        url = (
+            "https://api.open-meteo.com/v1/forecast"
+            f"?latitude={lat}&longitude={lon}"
+            "&current=temperature_2m,weather_code,precipitation_probability,wind_speed_10m"
+        )
+
+        data = requests.get(url, timeout=15).json()["current"]
+
+        temp = round(data["temperature_2m"])
+        code = data["weather_code"]
+        rain = data.get("precipitation_probability", 0)
+        wind = round(data.get("wind_speed_10m", 0))
+
+        desc = weather_map.get(code, "🌍 Unknown")
+
+        result += (
+            f"<b>{city}</b><br>"
+            f"{desc}<br>"
+            f"🌡️ {temp}°C • 🌧️ {rain}% • 💨 {wind} km/h"
+            f"<br><br>"
+        )
+
+    return result
 
     return (
         temp,
@@ -535,6 +598,7 @@ def main():
     aqi_text = aq["aqi_text"]
     pm25 = aq["pm25"]
     pm10 = aq["pm10"]
+    big_cities = get_big_cities_weather()
 
     days = {
         "Monday": "Senin",
@@ -622,6 +686,19 @@ def main():
 <summary>🌤️ Lihat detail cuaca 3 hari ke depan</summary>
 
 {forecast_3days}
+
+</details>
+
+━━━━━━━━━━━━━━━━━━
+
+### Forecast Big Cities Indonesia
+
+<details>
+<summary>🏙️ Lihat cuaca kota besar Indonesia</summary>
+
+<br>
+
+{big_cities}
 
 </details>
 
