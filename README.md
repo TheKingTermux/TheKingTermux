@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Analyze Boot Time**
+**Check Listening UDP Ports**
     
-> _Use `systemd-analyze blame` to find slow startup services._
+> _Use `ss -lun` to view UDP services._
 
 </div>
 <!-- END_SECTION:server_tip -->
