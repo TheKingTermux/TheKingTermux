@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Design is not just what it looks like and feels like. Design is how it works.
+> Premature optimization is the root of all evil.
 
-<b>— Steve Jobs</b>
+<b>— Donald Knuth</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
