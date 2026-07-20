@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Listening UDP Ports**
+**Verify Service Status**
     
-> _Use `ss -lun` to view UDP services._
+> _Use `systemctl status <service>` for detailed service diagnostics._
 
 </div>
 <!-- END_SECTION:server_tip -->
