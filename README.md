@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Your most unhappy customers are your greatest source of learning.
+> One of my most productive days was throwing away 1000 lines of code.
 
-<b>— Bill Gates</b>
+<b>— Ken Thompson</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
