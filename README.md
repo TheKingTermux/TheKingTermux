@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Largest Directories**
+**Check File Permissions**
     
-> _Use `du -sh * | sort -hr` to locate storage hogs._
+> _Use `namei -l <path>` to inspect permission chains._
 
 </div>
 <!-- END_SECTION:server_tip -->
