@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> One of my most productive days was throwing away 1000 lines of code.
+> A ship in port is safe, but that is not what ships are built for.
 
-<b>— Ken Thompson</b>
+<b>— Grace Hopper</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
