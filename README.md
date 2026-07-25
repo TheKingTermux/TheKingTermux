@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check File Permissions**
+**Inspect Mounted Filesystems**
     
-> _Use `namei -l <path>` to inspect permission chains._
+> _Use `findmnt` for a cleaner view than `mount`._
 
 </div>
 <!-- END_SECTION:server_tip -->
