@@ -238,7 +238,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </p>
 
 <p align="center"> 
-  <img src="https://github-readme-stats.vercel.app/api?username=TheKingTermux&theme=radical&title_color=8E2DE2&text_color=fff&show_icons=true" alt="Github Stats"/> 
+  <img src="https://streak-stats.demolab.com?user=TheKingTermux&theme=radical&hide_border=true&locale=en&date_format=j%20M%5B%20Y%5D" alt="Github Stats"/> 
 </p>
 
 <p align="center"> 
@@ -246,7 +246,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </p>
 
 <p align="center"> 
-  <img align="center" src="https://github-profile-trophy.vercel.app/?username=TheKingTermux&theme=monokai&no-bg=true&no-frame=true&rank=-C" alt="Trophy"/> 
+  <img align="center" src="https://trophy.ryglcloud.net//?username=TheKingTermux&theme=monokai&no-bg=true&no-frame=true&rank=-C" alt="Trophy"/> 
 </p>
 
 <h2 align="center">My Detailed Stats</h2>
