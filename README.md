@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> I’m not a great programmer; I’m just a good programmer with great habits.
+> Most good programmers do programming not because they expect to get paid, but because it is fun.
 
-<b>— Kent Beck</b>
+<b>— Linus Torvalds</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
