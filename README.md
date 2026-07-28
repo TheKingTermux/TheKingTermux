@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Top Memory Consumers**
+**Document Changes**
     
-> _Use `ps aux --sort=-%mem | head` to find processes using the most RAM._
+> _`Keep notes` of configuration changes to simplify troubleshooting._
 
 </div>
 <!-- END_SECTION:server_tip -->
