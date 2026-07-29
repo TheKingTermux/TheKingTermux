@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Most good programmers do programming not because they expect to get paid, but because it is fun.
+> You can’t trust code that you did not totally create yourself.
 
-<b>— Linus Torvalds</b>
+<b>— Ken Thompson</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
