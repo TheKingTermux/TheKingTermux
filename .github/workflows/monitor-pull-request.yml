@@ -189,7 +189,7 @@ jobs:
                 color: ($color | tonumber),
                 fields: [
                   { name: "🏰 Lokasi Pemeriksaan", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
-                  { name: "💼 Judul Perjanjian PR", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
+                  { name: "💼 Judul Perjanjian PR", value: ("[*Nomor Berkas: " + $doc_num + "*](" + $doc_url + ")"), inline: false },
                   { name: "📝 Isi Ulasan / Isi Komentar", value: $body, inline: false },
                   { name: "📊 Ringkasan Berkas", value: $stats, inline: true },
                   { name: "👤 Peninjau Kontrak", value: ("`" + $actor + "`"), inline: true }
