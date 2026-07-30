@@ -23,7 +23,6 @@ jobs:
           CONCLUSION="${{ github.event.workflow_run.conclusion }}"
           TRIGGER_EVENT="${{ github.event.workflow_run.event }}"
           
-          # 1. LOGIKA UTAMA: MEMISAHKAN COLUMBINA (SUCCESS) & ARLECCHINO (FAILURE)
           if [ "$CONCLUSION" = "success" ]; then
             # --- KONFIGURASI COLUMBINA ---
             echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK }}" >> $GITHUB_OUTPUT
@@ -32,17 +31,16 @@ jobs:
             echo "COLOR=16764142" >> $GITHUB_OUTPUT
             echo "FOOTER=🕊️ \"Tidurlah dengan damai, biarkan malam menghapus air matamu...\"" >> $GITHUB_OUTPUT
             
-            # Penerjemah Pemicu versi Columbina
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
-              echo "POETIC_TRIGGER=⏰ *Takdir waktu yang berputar rutin (Penjadwalan Otomatis)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⏰ Takdir waktu yang berputar rutin (Penjadwalan Otomatis)" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-              echo "POETIC_TRIGGER=🖐️ *Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=🖐️ Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-              echo "POETIC_TRIGGER=🔄 *Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=🔄 Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "push" ]; then
-              echo "POETIC_TRIGGER=⚔️ *Goresan tinta baru yang dikirimkan ke dalam takdir (Push Code)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⚔️ Goresan tinta baru yang dikirimkan ke dalam takdir (Push Code)" >> $GITHUB_OUTPUT
             else
-              echo "POETIC_TRIGGER=🍃 *Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=🍃 Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
             fi
             
           else
@@ -53,59 +51,58 @@ jobs:
             echo "COLOR=10038562" >> $GITHUB_OUTPUT
             echo "FOOTER=🐦‍⬛ \"Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.\"" >> $GITHUB_OUTPUT
             
-            # Penerjemah Pemicu versi Arlecchino
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
-              echo "POETIC_TRIGGER=⚙️ *Siklus rutin yang terjadwal otomatis*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-              echo "POETIC_TRIGGER=♟️ *Perintah manual langsung darimu*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=♟️ Perintah manual langsung darimu" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-              echo "POETIC_TRIGGER=⏳ *Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "push" ]; then
-              echo "POETIC_TRIGGER=📦 *Pembaruan kode masuk terdeteksi (Push Code)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=📦 Pembaruan kode masuk terdeteksi (Push Code)" >> $GITHUB_OUTPUT
             else
-              echo "POETIC_TRIGGER=⛓️ *Intervensi dari faktor luar ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⛓️ Intervensi dari faktor luar ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
             fi
           fi
 
-      - name: Kirim Notifikasi ke Target Discord
+      - name: Kirim Notifikasi Aman via JQ
         run: |
+          # Ambil data trigger dengan format rapi (Gabungan Teks + Nomor Pertunjukan)
+          FULL_TRIGGER_TEXT=$(cat << 'EOF'
+          ${{ steps.format.outputs.POETIC_TRIGGER }}
+          *(Pertunjukan ke-${{ github.event.workflow_run.run_number }})*
+          EOF
+          )
+
+          # Buat struktur JSON payload secara aman menggunakan JQ untuk menghindari malformed string
+          jq -n \
+            --arg title "${{ steps.format.outputs.TITLE }}" \
+            --arg desc "${{ steps.format.outputs.DESC }}" \
+            --arg color "${{ steps.format.outputs.COLOR }}" \
+            --arg repo_name "${{ github.repository }}" \
+            --arg repo_url "https://github.com{{ github.repository }}" \
+            --arg wf_name "${{ github.event.workflow_run.name }}" \
+            --arg wf_conclusion "${{ github.event.workflow_run.conclusion }}" \
+            --arg wf_trigger "$FULL_TRIGGER_TEXT" \
+            --arg wf_log_url "${{ github.event.workflow_run.html_url }}" \
+            --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
+            '{
+              embeds: [{
+                title: $title,
+                description: $desc,
+                color: ($color | tonumber),
+                fields: [
+                  { name: "🏰 Tempat Melodi Bergema", value: ("[" + $repo_name + "](" + $repo_url + ")"), inline: false },
+                  { name: "✨ Melodi yang Dimainkan", value: ("`" + $wf_name + "`"), inline: true },
+                  { name: "👁️ Catatan Akhir", value: ("`" + $wf_conclusion + "`"), inline: true },
+                  { name: "🍃 Bisikan Angin Pemicu", value: $wf_trigger, inline: false },
+                  { name: "🔗 Intip Takdir di Sini", value: ("[Lihat lembaran catatan takdir di sini...](" + $wf_log_url + ")"), inline: false }
+                ],
+                footer: { text: $footer_text }
+              }]
+            }' > payload.json
+
+          # Tembak API Webhook Discord menggunakan payload berkas file aman
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d '{
-                 "embeds": [{
-                   "title": "${{ steps.format.outputs.TITLE }}",
-                   "description": "${{ steps.format.outputs.DESC }}",
-                   "color": ${{ steps.format.outputs.COLOR }},
-                   "fields": [
-                     {
-                       "name": "🏰 Tempat Melodi Bergema",
-                       "value": "[${{ github.repository }}](https://github.com{{ github.repository }})",
-                       "inline": false
-                     },
-                     {
-                       "name": "✨ Melodi yang Dimainkan",
-                       "value": "`${{ github.event.workflow_run.name }}`",
-                       "inline": true
-                     },
-                     {
-                       "name": "👁️ Catatan Akhir",
-                       "value": "`${{ github.event.workflow_run.conclusion }}`",
-                       "inline": true
-                     },
-                     {
-                       "name": "🍃 Bisikan Angin Pemicu",
-                       "value": "${{ steps.format.outputs.POETIC_TRIGGER }}\n*(Pertunjukan ke-${{ github.event.workflow_run.run_number }})*",
-                       "inline": false
-                     },
-                     {
-                       "name": "🔗 Intip Takdir di Sini",
-                       "value": "[Lihat lembaran catatan takdir di sini...](${{ github.event.workflow_run.html_url }})",
-                       "inline": false
-                     }
-                   ],
-                   "footer": {
-                     "text": "${{ steps.format.outputs.FOOTER }}"
-                   }
-                 }]
-               }' \
+               -d @payload.json \
                "${{ steps.format.outputs.TARGET_WEBHOOK }}"
