@@ -29,7 +29,6 @@ jobs:
             echo "TITLE=♫~ Ah, keharmonisan yang indah..." >> $GITHUB_OUTPUT
             echo "DESC=Semuanya berjalan dengan sangat damai, bagai melodi yang mengalun tanpa cela... Alur kerjamu menari dengan sempurna hari ini.~" >> $GITHUB_OUTPUT
             echo "COLOR=16764142" >> $GITHUB_OUTPUT
-            # DIUBAH: Menggunakan tanda kutip satu (') internal agar tidak merusak perintah bash string
             echo "FOOTER=🕊️ 'Tidurlah dengan damai, biarkan malam menghapus air matamu...'" >> $GITHUB_OUTPUT
             
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
@@ -50,36 +49,38 @@ jobs:
             echo "TITLE=🩸 Laporan Kegagalan: House of the Hearth" >> $GITHUB_OUTPUT
             echo "DESC=Ada gangguan pada sistem kita. Salah satu alur kerja gagal menyelesaikan tugasnya. Di bawah pengawasanku, setiap kesalahan harus dievaluasi dengan tegas. Jangan biarkan kelalaian ini terulang kembali." >> $GITHUB_OUTPUT
             echo "COLOR=10038562" >> $GITHUB_OUTPUT
-            # DIUBAH: Menggunakan tanda kutip satu (') internal agar tidak merusak perintah bash string
             echo "FOOTER=🐦‍⬛ 'Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.'" >> $GITHUB_OUTPUT
             
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
-              echo "POETIC_TRIGGER=⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
+              echo "⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-              echo "POETIC_TRIGGER=♟️ Perintah manual langsung darimu" >> $GITHUB_OUTPUT
+              echo "♟️ Perintah manual langsung darimu" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-              echo "POETIC_TRIGGER=⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
+              echo "⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "push" ]; then
-              echo "POETIC_TRIGGER=📦 Pembaruan kode masuk terdeteksi (Push Code)" >> $GITHUB_OUTPUT
+              echo "📦 Pembaruan kode masuk terdeteksi (Push Code)" >> $GITHUB_OUTPUT
             else
-              echo "POETIC_TRIGGER=⛓️ Intervensi dari faktor luar ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
+              echo "⛓️ Intervensi dari faktor luar ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
             fi
           fi
 
       - name: Kirim Notifikasi Aman via JQ
         run: |
-          # Ambil data trigger dengan format rapi (Menggunakan string aman)
           POETIC="${{ steps.format.outputs.POETIC_TRIGGER }}"
           RUN_NUM="${{ github.event.workflow_run.run_number }}"
           FULL_TRIGGER_TEXT="$POETIC"$'\n'"*(Pertunjukan ke-$RUN_NUM)*"
 
-          # Buat struktur JSON payload secara aman menggunakan JQ (Menggunakan string murni dari env)
+          # Menyatukan URL repo secara utuh di level Bash sebelum diumpan ke JQ
+          REPO_NAME_RAW="${{ github.repository }}"
+          REPO_URL_COMPLETE="https://github.com"
+
+          # Konstruksi JSON murni dengan menyalin objek string murni
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
             --arg color "${{ steps.format.outputs.COLOR }}" \
-            --arg repo_name "${{ github.repository }}" \
-            --arg repo_url "https://github.com{{ github.repository }}" \
+            --arg repo_name "$REPO_NAME_RAW" \
+            --arg repo_url "$REPO_URL_COMPLETE" \
             --arg wf_name "${{ github.event.workflow_run.name }}" \
             --arg wf_conclusion "${{ github.event.workflow_run.conclusion }}" \
             --arg wf_trigger "$FULL_TRIGGER_TEXT" \
@@ -101,7 +102,6 @@ jobs:
               }]
             }' > payload.json
 
-          # Tembak API Webhook Discord menggunakan payload berkas file aman
           curl -H "Content-Type: application/json" \
                -X POST \
                -d @payload.json \
