@@ -696,7 +696,7 @@ def main():
 <div align="center">
 
 ### 🌦️ Weather in Me
-##### (Updated Approximately Every 1 to 4 Hour)*
+##### (Updated approximately every less than 1 to more than 5 hours)*
 ##### 🟢 Latest: {latest_update_id}  
 ##### 🟡 Previous: {last_update_id}  
 ##### ⏱️ Update Gap: {compare_pretty}<br><br>
