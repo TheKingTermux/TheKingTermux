@@ -1,4 +1,4 @@
-name: Monitor Komentar Issues (Collab Dua Channel)
+name: Monitor Issues
 on:
   issue_comment:
     types: [created]
