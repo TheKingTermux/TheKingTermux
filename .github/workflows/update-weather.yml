@@ -24,13 +24,54 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run update script to refresh new weather informations available
-        run: python weather.py
+      - name: Run update script with selective 443 retry
+        shell: bash
+        run: |
+          ATTEMPTS=3
+          DELAY=15
+          count=1
+
+          until [ $count -gt $ATTEMPTS ]
+          do
+            echo "Percobaan $count dari $ATTEMPTS..."
+            
+            # Jalankan script python, simpan pesan error ke file sementara
+            python weather.py 2> error.log
+            EXIT_CODE=$?
+
+            # Jika berhasil, keluar dari perulangan (loop)
+            if [ $EXIT_CODE -eq 0 ]; then
+              echo "Script berhasil dijalankan."
+              break
+            fi
+
+            # Periksa apakah log error mengandung masalah koneksi port 443
+            if grep -q "443" error.log; then
+              echo "Peringatan: Terjadi kesalahan koneksi 443."
+              cat error.log
+              
+              if [ $count -ne $ATTEMPTS ]; then
+                echo "Mencoba kembali dalam $DELAY detik..."
+                sleep $DELAY
+              fi
+              ((count++))
+            else
+              echo "Kritis: Script gagal karena error non-443. Membatalkan proses."
+              cat error.log
+              exit $EXIT_CODE
+            fi
+          done
+
+          # Jika perulangan selesai tanpa berhasil tembus, gagalkan step ini
+          if [ $count -gt $ATTEMPTS ]; then
+            echo "Error: Gagal memperbarui cuaca setelah $ATTEMPTS percobaan karena masalah error 443 terus-menerus."
+            exit 1
+          fi
 
       - name: Commit and Push changes
         uses: EndBug/add-and-commit@latest
         with:
           author_name: TheKingTermux
-          author_email: 50316075+TheKingTermux@users.noreply.github.com
+          author_email: 50316075+TheKingTermux@://github.com
           message: "Otomatis: Update cuaca terbaru"
-          add: 'README.md status.json' 
+          add: 'README.md status.json'
