@@ -20,8 +20,10 @@ jobs:
     steps:
       - name: Ambil Data Real-time PR dari GitHub API
         id: fetch_pr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Amankan ekstraksi nomor PR secara mutakhir dari berbagai event context
+          # 1. Determine PR Number safely without evaluating complex templates
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUM="${{ github.event.pull_request.number }}"
           elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
@@ -32,13 +34,13 @@ jobs:
 
           echo "Mengambil dokumen audit untuk PR #$PR_NUM dari Jade Chamber..."
           
-          # PERBAIKAN TOTAL: Alamat URL diarahkan ke server API resmi tanpa kurung kurawal bocor
+          # 2. Fire request using clean, purely dynamic environment variables
           PR_DATA=$(curl -s \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://github.com{{ github.repository }}/pulls/$PR_NUM")
+            "https://github.com")
 
-          # Amankan ekstraksi data dengan perlindungan nilai kosong (fallback)
+          # 3. Pull metrics out safely using fallback defaults
           COMMITS=$(echo "$PR_DATA" | jq -r '.commits // 0')
           FILES=$(echo "$PR_DATA" | jq -r '.changed_files // 0')
           BRANCH=$(echo "$PR_DATA" | jq -r '.head.ref // "main"')
@@ -46,9 +48,10 @@ jobs:
           HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url // ""')
 
           if [ "$HTML_URL" = "null" ] || [ -z "$HTML_URL" ]; then
-            HTML_URL="${{ github.server_url }}/${{ github.repository }}/pull/$PR_NUM"
+            HTML_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/pull/$PR_NUM"
           fi
 
+          # 4. Save to Step Output channels
           echo "TOTAL_COMMITS=$COMMITS" >> $GITHUB_OUTPUT
           echo "CHANGED_FILES=$FILES" >> $GITHUB_OUTPUT
           echo "PR_BRANCH=$BRANCH" >> $GITHUB_OUTPUT
