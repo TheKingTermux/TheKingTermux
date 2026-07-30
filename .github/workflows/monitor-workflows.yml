@@ -4,7 +4,7 @@ on:
     workflows: 
       - "Update Weather"
       - "Metrics"
-      - "Update Meme"
+      - "Update Meme Image"
       - "Update Quotes"
       - "Update Server Tips"
     types:
@@ -21,15 +21,28 @@ jobs:
         id: format
         run: |
           CONCLUSION="${{ github.event.workflow_run.conclusion }}"
+          TRIGGER_EVENT="${{ github.event.workflow_run.event }}"
           
+          # 1. LOGIKA STATUS AKHIR (SUKSES / GAGAL)
           if [ "$CONCLUSION" = "success" ]; then
             echo "TITLE=♫~ Ah, keharmonisan yang indah..." >> $GITHUB_OUTPUT
             echo "DESC=Semuanya berjalan dengan sangat damai, bagai melodi yang mengalun tanpa cela... Alur kerjamu menari dengan sempurna hari ini.~" >> $GITHUB_OUTPUT
-            echo "COLOR=16764142" >> $GITHUB_OUTPUT # Warna Pink Lembut khas Columbina (Decimal)
+            echo "COLOR=16764142" >> $GITHUB_OUTPUT # Warna Pink Lembut Columbina
           else
             echo "TITLE=📄... Oh? Nadanya sedikit sumbang..." >> $GITHUB_OUTPUT
             echo "DESC=Sssttt... dengarlah, ada sesuatu yang retak di tengah keheningan. Salah satu alur kerjamu kehilangan melodinya dan terjatuh... Haruskah kita memperbaikinya bersama?~" >> $GITHUB_OUTPUT
-            echo "COLOR=11141120" >> $GITHUB_OUTPUT # Warna Merah Gelap / Fatui (Decimal)
+            echo "COLOR=11141120" >> $GITHUB_OUTPUT # Warna Merah Gelap / Fatui
+          fi
+
+          # 2. LOGIKA PENERJEMAH PEMICU (DETIL GAYA COLUMBINA)
+          if [ "$TRIGGER_EVENT" = "schedule" ]; then
+            echo "POETIC_TRIGGER=⏰ *Takdir waktu yang berputar rutin (Penjadwalan Otomatis)*" >> $GITHUB_OUTPUT
+          elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
+            echo "POETIC_TRIGGER=🖐️ *Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)*" >> $GITHUB_OUTPUT
+          elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
+            echo "POETIC_TRIGGER=🔄 *Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+          else
+            echo "POETIC_TRIGGER=🍃 *Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
           fi
 
       - name: Kirim Notifikasi ke Discord
@@ -53,13 +66,13 @@ jobs:
                        "inline": true
                      },
                      {
-                       "name": "🍃 Bisikan Angin",
-                       "value": "Pemicu: ${{ github.event.workflow_run.event }} (Run #${{ github.event.workflow_run.run_number }})",
+                       "name": "🍃 Bisikan Angin Pemicu",
+                       "value": "${{ steps.format.outputs.POETIC_TRIGGER }}\n*(Pertunjukan ke-${{ github.event.workflow_run.run_number }})*",
                        "inline": false
                      },
                      {
                        "name": "🔗 Intip Takdir di Sini",
-                       "value": "[Lihat lembaran log yang rusak...](${{ github.event.workflow_run.html_url }})",
+                       "value": "[Lihat lembaran catatan takdir di sini...](${{ github.event.workflow_run.html_url }})",
                        "inline": false
                      }
                    ],
