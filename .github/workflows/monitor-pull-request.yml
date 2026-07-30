@@ -1,7 +1,6 @@
 name: Monitor Pull Requests
 on:
   pull_request:
-    # Ditambahkan synchronize agar otomatis jalan setiap ada commit baru masuk ke PR
     types: [opened, closed, reopened, synchronize]
   pull_request_review:
     types: [submitted]
@@ -29,6 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # 1. Tentukan nomor PR
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUM="${{ github.event.pull_request.number }}"
           elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
@@ -39,21 +39,31 @@ jobs:
 
           echo "Mengambil dokumen audit untuk PR #$PR_NUM dari Jade Chamber..."
           
+          # 2. Ambil data dari API
           PR_DATA=$(curl -s \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
             "https://github.com")
 
-          COMMITS=$(echo "$PR_DATA" | jq -r '.commits // 0')
-          FILES=$(echo "$PR_DATA" | jq -r '.changed_files // 0')
-          BRANCH=$(echo "$PR_DATA" | jq -r '.head.ref // "main"')
-          TITLE=$(echo "$PR_DATA" | jq -r '.title // "Pull Request Baru"')
-          HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url // ""')
+          # 3. KUNCI PERBAIKAN: Gunakan data API, jika kosong ambil langsung dari objek Event Context bawaan
+          COMMITS=$(echo "$PR_DATA" | jq -r '.commits // empty')
+          [ -z "$COMMITS" ] || [ "$COMMITS" = "null" ] && COMMITS="${{ github.event.pull_request.commits || github.event.review.pull_request.commits || '1' }}"
 
-          if [ "$HTML_URL" = "null" ] || [ -z "$HTML_URL" ]; then
+          FILES=$(echo "$PR_DATA" | jq -r '.changed_files // empty')
+          [ -z "$FILES" ] || [ "$FILES" = "null" ] && FILES="${{ github.event.pull_request.changed_files || github.event.review.pull_request.changed_files || '1' }}"
+
+          BRANCH=$(echo "$PR_DATA" | jq -r '.head.ref // empty')
+          [ -z "$BRANCH" ] || [ "$BRANCH" = "null" ] && BRANCH="${{ github.event.pull_request.head.ref || github.event.review.pull_request.head.ref || 'main' }}"
+
+          TITLE=$(echo "$PR_DATA" | jq -r '.title // empty')
+          [ -z "$TITLE" ] || [ "$TITLE" = "null" ] && TITLE="${{ github.event.pull_request.title || github.event.review.pull_request.title || 'Proposal Transaksi PR' }}"
+
+          HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url // empty')
+          if [ -z "$HTML_URL" ] || [ "$HTML_URL" = "null" ]; then
             HTML_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/pull/$PR_NUM"
           fi
 
+          # 4. Amankan data ke lingkungan ENV
           echo "TOTAL_COMMITS=$COMMITS" >> $GITHUB_ENV
           echo "CHANGED_FILES=$FILES" >> $GITHUB_ENV
           echo "PR_BRANCH=$BRANCH" >> $GITHUB_ENV
