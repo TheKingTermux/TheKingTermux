@@ -29,7 +29,7 @@ jobs:
             echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK }}" >> $GITHUB_OUTPUT
             echo "TITLE=♫~ Ah, keharmonisan yang indah..." >> $GITHUB_OUTPUT
             echo "DESC=Semuanya berjalan dengan sangat damai, bagai melodi yang mengalun tanpa cela... Alur kerjamu menari dengan sempurna hari ini.~" >> $GITHUB_OUTPUT
-            echo "COLOR=16764142" >> $GITHUB_OUTPUT # Warna Pink Lembut
+            echo "COLOR=16764142" >> $GITHUB_OUTPUT
             echo "FOOTER=🕊️ \"Tidurlah dengan damai, biarkan malam menghapus air matamu...\"" >> $GITHUB_OUTPUT
             
             # Penerjemah Pemicu versi Columbina
@@ -39,6 +39,8 @@ jobs:
               echo "POETIC_TRIGGER=🖐️ *Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)*" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
               echo "POETIC_TRIGGER=🔄 *Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+            elif [ "$TRIGGER_EVENT" = "push" ]; then
+              echo "POETIC_TRIGGER=⚔️ *Goresan tinta baru yang dikirimkan ke dalam takdir (Push Code)*" >> $GITHUB_OUTPUT
             else
               echo "POETIC_TRIGGER=🍃 *Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
             fi
@@ -48,7 +50,7 @@ jobs:
             echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK_FAIL }}" >> $GITHUB_OUTPUT
             echo "TITLE=🩸 Laporan Kegagalan: House of the Hearth" >> $GITHUB_OUTPUT
             echo "DESC=Ada gangguan pada sistem kita. Salah satu alur kerja gagal menyelesaikan tugasnya. Di bawah pengawasanku, setiap kesalahan harus dievaluasi dengan tegas. Jangan biarkan kelalaian ini terulang kembali." >> $GITHUB_OUTPUT
-            echo "COLOR=10038562" >> $GITHUB_OUTPUT # Warna Merah Darah Gelap khas Arlecchino
+            echo "COLOR=10038562" >> $GITHUB_OUTPUT
             echo "FOOTER=🐦‍⬛ \"Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.\"" >> $GITHUB_OUTPUT
             
             # Penerjemah Pemicu versi Arlecchino
@@ -58,6 +60,8 @@ jobs:
               echo "POETIC_TRIGGER=♟️ *Perintah manual langsung darimu*" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
               echo "POETIC_TRIGGER=⏳ *Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+            elif [ "$TRIGGER_EVENT" = "push" ]; then
+              echo "POETIC_TRIGGER=📦 *Pembaruan kode masuk terdeteksi (Push Code)*" >> $GITHUB_OUTPUT
             else
               echo "POETIC_TRIGGER=⛓️ *Intervensi dari faktor luar ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
             fi
