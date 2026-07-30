@@ -15,24 +15,41 @@ permissions:
 jobs:
   kirim-notifikasi-pr:
     runs-on: ubuntu-latest
+    # KUNCI KEAMANAN: Jika tipenya issue_comment, pastikan berkas tersebut ADALAH sebuah Pull Request (bukan Isu murni)
+    if: ${{ github.event_name != 'issue_comment' || github.event.issue.pull_request != null }}
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Hitung Statistik Perubahan Kode PR
-        id: pr_stats
+      - name: Ambil Data Real-time PR dari GitHub API
+        id: fetch_pr
         run: |
-          # Ekstraksi data menggunakan fallback bertingkat demi keamanan context object
-          COMMITS_COUNT="${{ github.event.pull_request.commits || github.event.review.pull_request.commits || github.event.comment.pull_request.commits || '0' }}"
-          CHANGED_FILES="${{ github.event.pull_request.changed_files || github.event.review.pull_request.changed_files || github.event.comment.pull_request.changed_files || '0' }}"
-          
-          if [ "$COMMITS_COUNT" = "null" ] || [ -z "$COMMITS_COUNT" ]; then COMMITS_COUNT="0"; fi
-          if [ "$CHANGED_FILES" = "null" ] || [ -z "$CHANGED_FILES" ]; then CHANGED_FILES="0"; fi
+          # Dapatkan nomor PR secara dinamis dari berbagai jenis event context
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            PR_NUM="${{ github.event.pull_request.number }}"
+          elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
+            PR_NUM="${{ github.event.pull_request.number || github.event.review.pull_request.number }}"
+          else
+            PR_NUM="${{ github.event.issue.number }}"
+          fi
 
-          echo "TOTAL_COMMITS=$COMMITS_COUNT" >> $GITHUB_OUTPUT
-          echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "Mengambil dokumen audit untuk PR #$PR_NUM dari Jade Chamber..."
+          
+          # Tembak REST API resmi GitHub untuk mengambil data murni jumlah commit dan file
+          PR_DATA=$(curl -s \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://github.com{{ github.repository }}/pulls/$PR_NUM")
+
+          COMMITS=$(echo "$PR_DATA" | jq -r '.commits // 0')
+          FILES=$(echo "$PR_DATA" | jq -r '.changed_files // 0')
+          BRANCH=$(echo "$PR_DATA" | jq -r '.head.ref // "main"')
+          TITLE=$(echo "$PR_DATA" | jq -r '.title // "Pull Request"')
+          HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url')
+
+          echo "TOTAL_COMMITS=$COMMITS" >> $GITHUB_OUTPUT
+          echo "CHANGED_FILES=$FILES" >> $GITHUB_OUTPUT
+          echo "PR_BRANCH=$BRANCH" >> $GITHUB_OUTPUT
+          echo "PR_TITLE=$TITLE" >> $GITHUB_OUTPUT
+          echo "PR_HTML_URL=$HTML_URL" >> $GITHUB_OUTPUT
+          echo "PR_NUMBER=$PR_NUM" >> $GITHUB_OUTPUT
 
       - name: Atur Payload Gaya Bisnis Ningguang
         id: format
@@ -81,6 +98,7 @@ jobs:
             fi
 
           else
+            # Untuk komentar diskusi umum di PR (issue_comment / pull_request_review_comment)
             if [ $INDEX -eq 0 ]; then
               echo "TITLE=✍️ Catatan Koreksi di Lembar Lampiran" >> $GITHUB_OUTPUT
               echo "DESC=Seseorang menambahkan tinta catatan kecil pada baris klausul dokumen kita. Mari kita teliti pesan koreksinya agar transaksi ini berjalan tanpa cacat." >> $GITHUB_OUTPUT
@@ -99,47 +117,45 @@ jobs:
           REPO_NAME="${{ github.repository }}"
           USER_ACTOR="${{ github.actor }}"
           
-          # Ambil data esensial berdasarkan cabang objek event yang aktif saat ini
+          # Ambil data teks komentar berdasarkan struktur event asal
           if [ "$EVENT_NAME" = "pull_request" ]; then
-            DOC_TITLE="${{ github.event.pull_request.title }}"
-            DOC_NUM="#${{ github.event.pull_request.number }}"
-            DOC_URL="${{ github.event.pull_request.html_url }}"
-            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
             COMMENT_TEXT="Menunggu peninjauan draf dokumen..."
+            TARGET_URL="${{ steps.fetch_pr.outputs.PR_HTML_URL }}"
           elif [ "$EVENT_NAME" = "pull_request_review" ]; then
-            DOC_TITLE="${{ github.event.pull_request.title }}"
-            DOC_NUM="#${{ github.event.pull_request.number }}"
-            DOC_URL="${{ github.event.review.html_url }}"
-            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
             COMMENT_TEXT="${{ github.event.review.body }}"
-          else
-            DOC_TITLE="${{ github.event.pull_request.title }}"
-            DOC_NUM="#${{ github.event.pull_request.number }}"
-            DOC_URL="${{ github.event.comment.html_url }}"
-            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+            TARGET_URL="${{ github.event.review.html_url }}"
+          elif [ "$EVENT_NAME" = "pull_request_review_comment" ]; then
             COMMENT_TEXT="${{ github.event.comment.body }}"
+            TARGET_URL="${{ github.event.comment.html_url }}"
+          else
+            # Dari event issue_comment pada berkas PR
+            COMMENT_TEXT="${{ github.event.comment.body }}"
+            TARGET_URL="${{ github.event.comment.html_url }}"
           fi
 
           if [ -z "$COMMENT_TEXT" ] || [ "$COMMENT_TEXT" = "null" ]; then
             COMMENT_TEXT="Memberikan catatan ulasan lampiran berkas..."
           fi
 
+          BRANCH_NAME="${{ steps.fetch_pr.outputs.PR_BRANCH }}"
           REPO_URL="${{ github.server_url }}/$REPO_NAME/tree/$BRANCH_NAME"
-          STAT_BOX="🔢 ${{ steps.pr_stats.outputs.TOTAL_COMMITS }} commits\n📂 ${{ steps.pr_stats.outputs.CHANGED_FILES }} files"
+          STAT_BOX="🔢 ${{ steps.fetch_pr.outputs.TOTAL_COMMITS }} commits\n📂 ${{ steps.fetch_pr.outputs.CHANGED_FILES }} files"
 
-          # Memperbaiki total kebocoran karakter JQ dengan memasukkan string bersih pembungkus markdown block
+          # Bungkus isi komentar ke dalam blok kode markdown secara aman
+          FORMATTED_COMMENT=$(printf '```\n%s\n```' "$COMMENT_TEXT")
+
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
             --arg color "${{ steps.format.outputs.COLOR }}" \
             --arg repo_name "$REPO_NAME" \
             --arg repo_url "$REPO_URL" \
-            --arg doc_title "$DOC_TITLE" \
-            --arg doc_num "$DOC_NUM" \
-            --arg doc_url "$DOC_URL" \
+            --arg doc_title "${{ steps.fetch_pr.outputs.PR_TITLE }}" \
+            --arg doc_num "#${{ steps.fetch_pr.outputs.PR_NUMBER }}" \
+            --arg doc_url "$TARGET_URL" \
             --arg actor "$USER_ACTOR" \
             --arg stats "$STAT_BOX" \
-            --arg body "$COMMENT_TEXT" \
+            --arg body "$FORMATTED_COMMENT" \
             --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
             --arg branch "$BRANCH_NAME" \
             '{
@@ -150,7 +166,7 @@ jobs:
                 fields: [
                   { name: "🏰 Lokasi Pemeriksaan", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
                   { name: "💼 Judul Perjanjian PR", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
-                  { name: "📝 Isi Ulasan / Isi Komentar", value: ("```\n" + \$body + "\n```"), inline: false },
+                  { name: "📝 Isi Ulasan / Isi Komentar", value: $body, inline: false },
                   { name: "📊 Ringkasan Berkas", value: $stats, inline: true },
                   { name: "👤 Peninjau Kontrak", value: ("`" + $actor + "`"), inline: true }
                 ],
@@ -161,4 +177,3 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d @pr_payload.json \
-               "${{ secrets.DISCORD_WEBHOOK_PR }}"
