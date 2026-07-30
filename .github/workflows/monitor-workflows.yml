@@ -57,17 +57,17 @@ jobs:
 
             FULL_TRIGGER_TEXT="$POETIC_TRIGGER"$'\n'"*(Pertunjukan ke-$RUN_NUM)*"
 
-            # Konstruksi Array Fields Lembut versi Columbina
+            # Perbaikan JQ: Tanda miring dibentuk aman di level JQ, bukan di level argumen Bash
             jq -n \
               --arg repo "[$REPO_NAME_RAW ($BRANCH_NAME)]($REPO_URL_COMPLETE)" \
-              --arg wf "`$WF_NAME_RAW`" \
-              --arg conc "`$CONCLUSION`" \
+              --arg wf "$WF_NAME_RAW" \
+              --arg conc "$CONCLUSION" \
               --arg trig "$FULL_TRIGGER_TEXT" \
               --arg log "[Lihat lembaran catatan takdir di sini...]($WF_LOG_URL_RAW)" \
               '[
                 { name: "🏰 Tempat Melodi Bergema", value: $repo, inline: false },
-                { name: "✨ Melodi yang Dimainkan", value: $wf, inline: true },
-                { name: "👁️ Catatan Akhir", value: $conc, inline: true },
+                { name: "✨ Melodi yang Dimainkan", value: ("`" + $wf + "`"), inline: true },
+                { name: "👁️ Catatan Akhir", value: ("`" + $conc + "`"), inline: true },
                 { name: "🍃 Bisikan Angin Pemicu", value: $trig, inline: false },
                 { name: "🔗 Intip Takdir di Sini", value: $log, inline: false }
               ]' > fields_payload.json
@@ -92,17 +92,17 @@ jobs:
 
             FULL_TRIGGER_TEXT="$POETIC_TRIGGER"$'\n'"*(Evaluasi ke-$RUN_NUM)*"
 
-            # Konstruksi Array Fields Tegas versi Arlecchino (Nama kolom diubah menjadi tema militer/investigasi)
+            # Perbaikan JQ: Tanda miring dibentuk aman di level JQ, bukan di level argumen Bash
             jq -n \
               --arg repo "[$REPO_NAME_RAW ($BRANCH_NAME)]($REPO_URL_COMPLETE)" \
-              --arg wf "`$WF_NAME_RAW`" \
-              --arg conc "`$CONCLUSION`" \
+              --arg wf "$WF_NAME_RAW" \
+              --arg conc "$CONCLUSION" \
               --arg trig "$FULL_TRIGGER_TEXT" \
               --arg log "[Buka berkas investigasi kerusakan...]($WF_LOG_URL_RAW)" \
               '[
                 { name: "🗺️ Sektor Repositori Target", value: $repo, inline: false },
-                { name: "🛠️ Operasi Sistem yang Rusak", value: $wf, inline: true },
-                { name: "🚨 Status Kegagalan", value: $conc, inline: true },
+                { name: "🛠️ Operasi Sistem yang Rusak", value: ("`" + $wf + "`"), inline: true },
+                { name: "🚨 Status Kegagalan", value: ("`" + $conc + "`"), inline: true },
                 { name: "⛓️ Penyebab Gangguan", value: $trig, inline: false },
                 { name: "🔍 Tinjau Kelalaian di Sini", value: $log, inline: false }
               ]' > fields_payload.json
@@ -110,10 +110,8 @@ jobs:
 
       - name: Kirim Notifikasi Aman via JQ
         run: |
-          # Ambil struktur fields array JSON yang sudah dibentuk oleh salah satu karakter di atas
           FIELDS_DATA=$(cat fields_payload.json)
 
-          # Susun payload embed utama secara bersih menggunakan JQ
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
