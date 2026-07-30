@@ -29,7 +29,8 @@ jobs:
             echo "TITLE=♫~ Ah, keharmonisan yang indah..." >> $GITHUB_OUTPUT
             echo "DESC=Semuanya berjalan dengan sangat damai, bagai melodi yang mengalun tanpa cela... Alur kerjamu menari dengan sempurna hari ini.~" >> $GITHUB_OUTPUT
             echo "COLOR=16764142" >> $GITHUB_OUTPUT
-            echo "FOOTER=🕊️ \"Tidurlah dengan damai, biarkan malam menghapus air matamu...\"" >> $GITHUB_OUTPUT
+            # DIUBAH: Menggunakan tanda kutip satu (') internal agar tidak merusak perintah bash string
+            echo "FOOTER=🕊️ 'Tidurlah dengan damai, biarkan malam menghapus air matamu...'" >> $GITHUB_OUTPUT
             
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
               echo "POETIC_TRIGGER=⏰ Takdir waktu yang berputar rutin (Penjadwalan Otomatis)" >> $GITHUB_OUTPUT
@@ -49,7 +50,8 @@ jobs:
             echo "TITLE=🩸 Laporan Kegagalan: House of the Hearth" >> $GITHUB_OUTPUT
             echo "DESC=Ada gangguan pada sistem kita. Salah satu alur kerja gagal menyelesaikan tugasnya. Di bawah pengawasanku, setiap kesalahan harus dievaluasi dengan tegas. Jangan biarkan kelalaian ini terulang kembali." >> $GITHUB_OUTPUT
             echo "COLOR=10038562" >> $GITHUB_OUTPUT
-            echo "FOOTER=🐦‍⬛ \"Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.\"" >> $GITHUB_OUTPUT
+            # DIUBAH: Menggunakan tanda kutip satu (') internal agar tidak merusak perintah bash string
+            echo "FOOTER=🐦‍⬛ 'Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.'" >> $GITHUB_OUTPUT
             
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
               echo "POETIC_TRIGGER=⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
@@ -66,14 +68,12 @@ jobs:
 
       - name: Kirim Notifikasi Aman via JQ
         run: |
-          # Ambil data trigger dengan format rapi (Gabungan Teks + Nomor Pertunjukan)
-          FULL_TRIGGER_TEXT=$(cat << 'EOF'
-          ${{ steps.format.outputs.POETIC_TRIGGER }}
-          *(Pertunjukan ke-${{ github.event.workflow_run.run_number }})*
-          EOF
-          )
+          # Ambil data trigger dengan format rapi (Menggunakan string aman)
+          POETIC="${{ steps.format.outputs.POETIC_TRIGGER }}"
+          RUN_NUM="${{ github.event.workflow_run.run_number }}"
+          FULL_TRIGGER_TEXT="$POETIC"$'\n'"*(Pertunjukan ke-$RUN_NUM)*"
 
-          # Buat struktur JSON payload secara aman menggunakan JQ untuk menghindari malformed string
+          # Buat struktur JSON payload secara aman menggunakan JQ (Menggunakan string murni dari env)
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
