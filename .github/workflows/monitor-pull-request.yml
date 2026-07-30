@@ -6,7 +6,10 @@ on:
     types: [submitted]
   pull_request_review_comment:
     types: [created]
-    
+  issue_comment:
+    types: [created]
+
+# MANDATORY: Grants token clear read-access to fetch API data metrics
 permissions:
   actions: read
   contents: read
@@ -16,6 +19,7 @@ permissions:
 jobs:
   kirim-notifikasi-pr:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'issue_comment' || github.event.issue.pull_request != null }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -27,6 +31,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUM="${{ github.event.pull_request.number }}"
+          elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
+            PR_NUM="${{ github.event.pull_request.number || github.event.review.pull_request.number }}"
           else
             PR_NUM="${{ github.event.review.pull_request.number }}"
           fi
@@ -89,7 +95,7 @@ jobs:
               fi
             fi
 
-          else
+          elif [ "$EVENT_NAME" = "pull_request_review" ]; then
             # Skenario untuk pull_request_review (Approve / Request Changes)
             REVIEW_STATE="${{ github.event.review.state }}"
             if [ "$REVIEW_STATE" = "approved" ]; then
@@ -101,6 +107,18 @@ jobs:
             else
               echo "TITLE=💬 Ulasan Catatan Berkas Transaksi" >> $GITHUB_ENV
               echo "DESC=Sebuah tinjauan umum tanpa putusan final baru saja ditambahkan pada lembar draf kerja ini. Evaluasi umum sedang berlangsung." >> $GITHUB_ENV
+            fi
+
+            else
+            if [ $INDEX -eq 0 ]; then
+              echo "TITLE=✍️ Catatan Koreksi di Lembar Lampiran" >> $GITHUB_ENV
+              echo "DESC=Seseorang menambahkan tinta catatan kecil pada baris klausul dokumen kita. Mari kita teliti pesan koreksinya agar transaksi ini berjalan tanpa cacat." >> $GITHUB_ENV
+            elif [ $INDEX -eq 1 ]; then
+              echo "TITLE=⚖️ Diskusi Harga Aset: Negosiasi Kode" >> $GITHUB_ENV
+              echo "DESC=Terjadi adu argumen sehat di ruang rapat mengenai efisiensi baris kode yang diajukan. Penyesuaian pendapat adalah hal biasa dalam bisnis." >> $GITHUB_ENV
+            else
+              echo "TITLE=💬 Bisikan Informasi Tambahan di Jade Chamber" >> $GITHUB_ENV
+              echo "DESC=Sekretaris baru saja memperbarui log diskusi interaktif pada dokumen perjanjian komit ini. Meninjau masukan..." >> $GITHUB_ENV
             fi
           fi
 
@@ -119,9 +137,12 @@ jobs:
           if [ "$EVENT_NAME" = "pull_request" ]; then
             COMMENT_TEXT="Menunggu peninjauan draf dokumen..."
             TARGET_URL="$PR_HTML_URL"
-          else
+          elif [ "$EVENT_NAME" = "pull_request_review" ]; then
             COMMENT_TEXT="${{ github.event.review.body }}"
             TARGET_URL="${{ github.event.review.html_url }}"
+          else
+            COMMENT_TEXT="${{ github.event.comment.body }}"
+            TARGET_URL="${{ github.event.comment.html_url }}"
           fi
 
           if [ -z "$COMMENT_TEXT" ] || [ "$COMMENT_TEXT" = "null" ]; then
@@ -131,7 +152,7 @@ jobs:
           REPO_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/tree/$PR_BRANCH"
           
           # PERBAIKAN FORMULA STRUKTUR DATA STATISTIK BERKAS
-          STAT_BOX="🔢 $TOTAL_COMMITS commits"$'\n'"📂 $CHANGED_FILES files"
+          STAT_BOX="🔢 ${TOTAL_COMMITS} commits"$'\n'"📂 ${CHANGED_FILES} files"
           FORMATTED_COMMENT=$(printf '```\n%s\n```' "$COMMENT_TEXT")
 
           jq -n \
