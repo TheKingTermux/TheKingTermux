@@ -1,4 +1,4 @@
-name: Monitor Issues dan Komentar
+name: Monitor Issues
 on:
   issues:
     types: [opened, closed]
