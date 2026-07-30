@@ -7,12 +7,13 @@ on:
 
 permissions:
   actions: read
+  issues: read
 
 jobs:
   kirim-notifikasi-sidang:
     runs-on: ubuntu-slim
-    # PENGAMAN KUNCI: Jangan biarkan Furina & Neuvi mengurus komentar milik Pull Request (PR)
-    if: ${{ github.event.issue.pull_request == null }}
+    # BENTENG PENGAMAN TOTAL: Memastikan event murni issue, ATAU jika komentar, pastikan objek PR-nya mutlak kosong (null)
+    if: ${{ github.event_name == 'issues' || github.event.issue.pull_request == null }}
     steps:
       - name: Kirim Notifikasi Sandiwara Ruang Sidang via JQ
         run: |
@@ -60,7 +61,6 @@ jobs:
             FIELD_VALUE="\`$ACTOR\`"
           fi
 
-          # PERBAIKAN UTAMA JQ: Menggunakan argumen murni untuk menghindari pecahan karakter pencetakan
           jq -n \
             --arg title "🏛️ Ruang Sidang Fontaine: Perkembangan Berkas" \
             --arg desc "($FURINA_DIALOG\n\n$NEUVI_DIALOG)" \
