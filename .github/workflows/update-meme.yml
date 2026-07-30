@@ -2,11 +2,11 @@ name: Update Meme Image
 on:
   workflow_dispatch:
   schedule:
-  - cron: '0 6 * * *'
+  - cron: '0 1 * * *'
 
 jobs:
   update-image:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
