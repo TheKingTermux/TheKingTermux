@@ -123,7 +123,6 @@ jobs:
         env:
           DISCORD_URL: ${{ secrets.DISCORD_WEBHOOK_PR }}
         run: |
-          # Safe fallback exit if your Secret configuration is completely empty
           if [ -z "$DISCORD_URL" ]; then
             echo "Critical Error: DISCORD_WEBHOOK_PR value is missing inside GitHub Secrets!"
             exit 1
@@ -138,9 +137,6 @@ jobs:
           elif [ "$EVENT_NAME" = "pull_request_review" ]; then
             COMMENT_TEXT="${{ github.event.review.body }}"
             TARGET_URL="${{ github.event.review.html_url }}"
-          elif [ "$EVENT_NAME" = "pull_request_review_comment" ]; then
-            COMMENT_TEXT="${{ github.event.comment.body }}"
-            TARGET_URL="${{ github.event.comment.html_url }}"
           else
             COMMENT_TEXT="${{ github.event.comment.body }}"
             TARGET_URL="${{ github.event.comment.html_url }}"
@@ -151,7 +147,9 @@ jobs:
           fi
 
           REPO_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/tree/$PR_BRANCH"
-          STAT_BOX="🔢 $TOTAL_COMMITS commits\n📂 $CHANGED_FILES files"
+          
+          # PERBAIKAN UTAMA: Menggunakan variabel lingkungan murni ($ENV) Linux Bash agar angka statistiknya tercetak nyata
+          STAT_BOX="🔢 ${TOTAL_COMMITS} commits"$'\n'"📂 ${CHANGED_FILES} files"
           FORMATTED_COMMENT=$(printf '```\n%s\n```' "$COMMENT_TEXT")
 
           jq -n \
