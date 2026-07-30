@@ -35,9 +35,12 @@ jobs:
           do
             echo "Percobaan $count dari $ATTEMPTS..."
             
-            # Jalankan script python, simpan pesan error ke file sementara
+            # Matikan fail-fast sementara agar script tidak langsung crash
+            set +e
             python weather.py 2> error.log
             EXIT_CODE=$?
+            # Nyalakan kembali fail-fast demi keamanan alur kerja
+            set -e
 
             # Jika berhasil, keluar dari perulangan (loop)
             if [ $EXIT_CODE -eq 0 ]; then
