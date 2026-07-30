@@ -25,83 +25,107 @@ jobs:
           CONCLUSION="${{ github.event.workflow_run.conclusion }}"
           TRIGGER_EVENT="${{ github.event.workflow_run.event }}"
           
+          # Pengaman nama cabang branch jika kosong (seperti pada event schedule)
+          BRANCH_NAME="${{ github.event.workflow_run.head_branch }}"
+          if [ -z "$BRANCH_NAME" ] || [ "$BRANCH_NAME" = "null" ]; then
+            BRANCH_NAME="main"
+          fi
+
+          REPO_NAME_RAW="${{ github.repository }}"
+          REPO_URL_COMPLETE="${{ github.server_url }}/$REPO_NAME_RAW/tree/$BRANCH_NAME"
+          WF_NAME_RAW="${{ github.event.workflow_run.name }}"
+          WF_LOG_URL_RAW="${{ github.event.workflow_run.html_url }}"
+          RUN_NUM="${{ github.event.workflow_run.run_number }}"
+
           if [ "$CONCLUSION" = "success" ]; then
-            # --- KONFIGURASI COLUMBINA ---
+            # =================================================================
+            # VARIANT 1: --- STRUKTUR EMBED FIELDS COLUMBINA CHAN (SUKSES) ---
+            # =================================================================
             echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK }}" >> $GITHUB_OUTPUT
             echo "TITLE=♫~ Ah, keharmonisan yang indah..." >> $GITHUB_OUTPUT
             echo "DESC=Semuanya berjalan dengan sangat damai, bagai melodi yang mengalun tanpa cela... Alur kerjamu menari dengan sempurna hari ini.~" >> $GITHUB_OUTPUT
             echo "COLOR=16764142" >> $GITHUB_OUTPUT
             echo "FOOTER=🕊️ 'Tidurlah dengan damai, biarkan malam menghapus air matamu...'" >> $GITHUB_OUTPUT
             
-            if [ "$TRIGGER_EVENT" = "schedule" ]; then
-              echo "POETIC_TRIGGER=⏰ Takdir waktu yang berputar rutin (Penjadwalan Otomatis)" >> $GITHUB_OUTPUT
-            elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-              echo "POETIC_TRIGGER=🖐️ Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)" >> $GITHUB_OUTPUT
-            elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-              echo "POETIC_TRIGGER=🔄 Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
-            elif [ "$TRIGGER_EVENT" = "push" ]; then
-              echo "POETIC_TRIGGER=⚔️ Goresan tinta baru yang dikirimkan ke dalam takdir (Push Code)" >> $GITHUB_OUTPUT
-            else
-              echo "POETIC_TRIGGER=🍃 Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
-            fi
+            if [ "$TRIGGER_EVENT" = "schedule" ]; then POETIC_TRIGGER="⏰ Takdir waktu yang berputar rutin (Penjadwalan Otomatis)";
+            elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then POETIC_TRIGGER="🖐️ Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)";
+            elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then POETIC_TRIGGER="🔄 Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)";
+            elif [ "$TRIGGER_EVENT" = "push" ]; then POETIC_TRIGGER="⚔️ Goresan tinta baru yang dikirimkan ke dalam takdir (Push Code)";
+            elif [ "$TRIGGER_EVENT" = "pull_request" ] || [ "$TRIGGER_EVENT" = "pull_request_review" ] || [ "$TRIGGER_EVENT" = "pull_request_review_comment" ]; then POETIC_TRIGGER="📜 Lembaran kontrak kerja sama yang diajukan ke pengadilan (Pull Request)";
+            elif [ "$TRIGGER_EVENT" = "issues" ] || [ "$TRIGGER_EVENT" = "issue_comment" ]; then POETIC_TRIGGER="🏛️ Suara kesaksian publik yang menggema di ruang sidang (Issues/Comments)";
+            else POETIC_TRIGGER="🍃 Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)"; fi
+
+            FULL_TRIGGER_TEXT="$POETIC_TRIGGER"$'\n'"*(Pertunjukan ke-$RUN_NUM)*"
+
+            # Konstruksi Array Fields Lembut versi Columbina
+            jq -n \
+              --arg repo "[$REPO_NAME_RAW ($BRANCH_NAME)]($REPO_URL_COMPLETE)" \
+              --arg wf "`$WF_NAME_RAW`" \
+              --arg conc "`$CONCLUSION`" \
+              --arg trig "$FULL_TRIGGER_TEXT" \
+              --arg log "[Lihat lembaran catatan takdir di sini...]($WF_LOG_URL_RAW)" \
+              '[
+                { name: "🏰 Tempat Melodi Bergema", value: $repo, inline: false },
+                { name: "✨ Melodi yang Dimainkan", value: $wf, inline: true },
+                { name: "👁️ Catatan Akhir", value: $conc, inline: true },
+                { name: "🍃 Bisikan Angin Pemicu", value: $trig, inline: false },
+                { name: "🔗 Intip Takdir di Sini", value: $log, inline: false }
+              ]' > fields_payload.json
             
           else
-            # --- KONFIGURASI ARLECCHINO ---
+            # =================================================================
+            # VARIANT 2: --- STRUKTUR EMBED FIELDS ARLECCHINO FATHER (GAGAL) ---
+            # =================================================================
             echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK_FAIL }}" >> $GITHUB_OUTPUT
             echo "TITLE=🩸 Laporan Kegagalan: House of the Hearth" >> $GITHUB_OUTPUT
-            echo "DESC=Ada gangguan pada sistem kita. Salah satu alur kerja gagal menyelesaikan tugasnya. Di bawah pengawasanku, setiap kesalahan harus dievaluasi dengan tegas. Jangan biarkan kelalaian ini terulang kembali." >> $GITHUB_OUTPUT
+            echo "DESC=Ada gangguan serius pada sistem kita. Salah satu alur kerja gagal menyelesaikan tugasnya di bawah pengawasanku. Setiap kesalahan harus dievaluasi dengan tegas. Jangan biarkan kelalaian konyol ini terulang kembali!" >> $GITHUB_OUTPUT
             echo "COLOR=10038562" >> $GITHUB_OUTPUT
             echo "FOOTER=🐦‍⬛ 'Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.'" >> $GITHUB_OUTPUT
             
-            if [ "$TRIGGER_EVENT" = "schedule" ]; then
-              echo "POETIC_TRIGGER=⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
-            elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-              echo "POETIC_TRIGGER=♟️ Perintah manual langsung darimu" >> $GITHUB_OUTPUT
-            elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-              echo "POETIC_TRIGGER=⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
-            elif [ "$TRIGGER_EVENT" = "push" ]; then
-              echo "POETIC_TRIGGER=📦 Pembaruan kode masuk terdeteksi (Push Code)" >> $GITHUB_OUTPUT
-            else
-              echo "POETIC_TRIGGER=⛓️ Intervensi dari faktor luar ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
-            fi
+            if [ "$TRIGGER_EVENT" = "schedule" ]; then POETIC_TRIGGER="⚙️ Siklus mesin rutin yang terjadwal otomatis";
+            elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then POETIC_TRIGGER="♟️ Perintah manual langsung darimu (Bypass Prosedur)";
+            elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then POETIC_TRIGGER="⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)";
+            elif [ "$TRIGGER_EVENT" = "push" ]; then POETIC_TRIGGER="📦 Pembaruan kode masuk terdeteksi (Push Code)";
+            elif [ "$TRIGGER_EVENT" = "pull_request" ] || [ "$TRIGGER_EVENT" = "pull_request_review" ] || [ "$TRIGGER_EVENT" = "pull_request_review_comment" ]; then POETIC_TRIGGER="⛓️ Cacat pengerjaan pada draf pengajuan kontrak baru (Pull Request)";
+            elif [ "$TRIGGER_EVENT" = "issues" ] || [ "$TRIGGER_EVENT" = "issue_comment" ]; then POETIC_TRIGGER="🛑 Pelanggaran tata tertib diskusi atau sengketa laporan berkas (Issues/Comments)";
+            else POETIC_TRIGGER="⛓️ Intervensi ilegal dari faktor luar ($TRIGGER_EVENT)"; fi
+
+            FULL_TRIGGER_TEXT="$POETIC_TRIGGER"$'\n'"*(Evaluasi ke-$RUN_NUM)*"
+
+            # Konstruksi Array Fields Tegas versi Arlecchino (Nama kolom diubah menjadi tema militer/investigasi)
+            jq -n \
+              --arg repo "[$REPO_NAME_RAW ($BRANCH_NAME)]($REPO_URL_COMPLETE)" \
+              --arg wf "`$WF_NAME_RAW`" \
+              --arg conc "`$CONCLUSION`" \
+              --arg trig "$FULL_TRIGGER_TEXT" \
+              --arg log "[Buka berkas investigasi kerusakan...]($WF_LOG_URL_RAW)" \
+              '[
+                { name: "🗺️ Sektor Repositori Target", value: $repo, inline: false },
+                { name: "🛠️ Operasi Sistem yang Rusak", value: $wf, inline: true },
+                { name: "🚨 Status Kegagalan", value: $conc, inline: true },
+                { name: "⛓️ Penyebab Gangguan", value: $trig, inline: false },
+                { name: "🔍 Tinjau Kelalaian di Sini", value: $log, inline: false }
+              ]' > fields_payload.json
           fi
 
       - name: Kirim Notifikasi Aman via JQ
         run: |
-          POETIC="${{ steps.format.outputs.POETIC_TRIGGER }}"
-          RUN_NUM="${{ github.event.workflow_run.run_number }}"
-          FULL_TRIGGER_TEXT="$POETIC"$'\n'"*(Pertunjukan ke-$RUN_NUM)*"
+          # Ambil struktur fields array JSON yang sudah dibentuk oleh salah satu karakter di atas
+          FIELDS_DATA=$(cat fields_payload.json)
 
-          # MENYUSUN TAUTAN ABSOLUT BERSAMA BRANCH AKTIF
-          REPO_NAME_RAW="${{ github.repository }}"
-          BRANCH_NAME="${{ github.event.workflow_run.head_branch }}"
-          REPO_URL_COMPLETE="${{ github.server_url }}/$REPO_NAME_RAW/tree/$BRANCH_NAME"
-
-          # Konstruksi JSON menggunakan JQ agar karakter string aman
+          # Susun payload embed utama secara bersih menggunakan JQ
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
             --arg color "${{ steps.format.outputs.COLOR }}" \
-            --arg repo_name "$REPO_NAME_RAW" \
-            --arg repo_url "$REPO_URL_COMPLETE" \
-            --arg branch "$BRANCH_NAME" \
-            --arg wf_name "${{ github.event.workflow_run.name }}" \
-            --arg wf_conclusion "${{ github.event.workflow_run.conclusion }}" \
-            --arg wf_trigger "$FULL_TRIGGER_TEXT" \
-            --arg wf_log_url "${{ github.event.workflow_run.html_url }}" \
             --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
+            --argjson fields "$FIELDS_DATA" \
             '{
               embeds: [{
                 title: $title,
                 description: $desc,
                 color: ($color | tonumber),
-                fields: [
-                  { name: "🏰 Tempat Melodi Bergema", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
-                  { name: "✨ Melodi yang Dimainkan", value: ("`" + $wf_name + "`"), inline: true },
-                  { name: "👁️ Catatan Akhir", value: ("`" + $wf_conclusion + "`"), inline: true },
-                  { name: "🍃 Bisikan Angin Pemicu", value: $wf_trigger, inline: false },
-                  { name: "🔗 Intip Takdir di Sini", value: ("[Lihat lembaran catatan takdir di sini...](" + $wf_log_url + ")"), inline: false }
-                ],
+                fields: $fields,
                 footer: { text: $footer_text }
               }]
             }' > payload.json
