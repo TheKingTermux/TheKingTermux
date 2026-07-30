@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Cron Jobs**
+**Check Disk I/O**
     
-> _Use `crontab -l` to review scheduled user tasks._
+> _Use `iostat -xz 1` to monitor disk performance._
 
 </div>
 <!-- END_SECTION:server_tip -->
