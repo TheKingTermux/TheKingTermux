@@ -24,11 +24,12 @@ jobs:
       - name: Hitung Statistik Perubahan Kode PR
         id: pr_stats
         run: |
-          COMMITS_COUNT="${{ github.event.pull_request.commits || github.event.review.pull_request.commits || 0 }}"
-          CHANGED_FILES="${{ github.event.pull_request.changed_files || github.event.review.pull_request.changed_files || 0 }}"
+          # Ekstraksi data menggunakan fallback bertingkat demi keamanan context object
+          COMMITS_COUNT="${{ github.event.pull_request.commits || github.event.review.pull_request.commits || github.event.comment.pull_request.commits || '0' }}"
+          CHANGED_FILES="${{ github.event.pull_request.changed_files || github.event.review.pull_request.changed_files || github.event.comment.pull_request.changed_files || '0' }}"
           
-          [ -z "$COMMITS_COUNT" ] || [ "$COMMITS_COUNT" = "null" ] && COMMITS_COUNT="0"
-          [ -z "$CHANGED_FILES" ] || [ "$CHANGED_FILES" = "null" ] && CHANGED_FILES="0"
+          if [ "$COMMITS_COUNT" = "null" ] || [ -z "$COMMITS_COUNT" ]; then COMMITS_COUNT="0"; fi
+          if [ "$CHANGED_FILES" = "null" ] || [ -z "$CHANGED_FILES" ]; then CHANGED_FILES="0"; fi
 
           echo "TOTAL_COMMITS=$COMMITS_COUNT" >> $GITHUB_OUTPUT
           echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_OUTPUT
@@ -69,10 +70,10 @@ jobs:
           elif [ "$EVENT_NAME" = "pull_request_review" ]; then
             REVIEW_STATE="${{ github.event.review.state }}"
             if [ "$REVIEW_STATE" = "approved" ]; then
-              echo "TITLE=✅ Audit Selesai: Kontrak Mendapat Sertifikasi 'Approved'" >> $GITHUB_OUTPUT
+              echo "TITLE=✅ Audit Selesai: Kontrak Mendapat Sertifikasi Approved" >> $GITHUB_OUTPUT
               echo "DESC=Kabar baik. Salah satu pengawas keuangan senior kita telah memeriksa struktur amandemen ini dan memberikan tanda sepakat. Jalan menuju merger semakin terbuka lebar." >> $GITHUB_OUTPUT
             elif [ "$REVIEW_STATE" = "changes_requested" ]; then
-              echo "TITLE=⚠️ Amandemen Ditolak Sementara: 'Changes Requested'" >> $GITHUB_OUTPUT
+              echo "TITLE=⚠️ Amandemen Ditolak Sementara: Changes Requested" >> $GITHUB_OUTPUT
               echo "DESC=Tunggu dulu. Ditemukan poin audit yang cacat atau berisiko merugikan sistem. Dokumen dikembalikan ke meja pemohon untuk segera direvisi sesuai instruksi." >> $GITHUB_OUTPUT
             else
               echo "TITLE=💬 Ulasan Catatan Berkas Transaksi" >> $GITHUB_OUTPUT
@@ -98,6 +99,7 @@ jobs:
           REPO_NAME="${{ github.repository }}"
           USER_ACTOR="${{ github.actor }}"
           
+          # Ambil data esensial berdasarkan cabang objek event yang aktif saat ini
           if [ "$EVENT_NAME" = "pull_request" ]; then
             DOC_TITLE="${{ github.event.pull_request.title }}"
             DOC_NUM="#${{ github.event.pull_request.number }}"
@@ -109,7 +111,7 @@ jobs:
             DOC_NUM="#${{ github.event.pull_request.number }}"
             DOC_URL="${{ github.event.review.html_url }}"
             BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-            COMMENT_TEXT="${{ github.event.review.body || 'Memberikan ulasan penilaian resmi...' }}"
+            COMMENT_TEXT="${{ github.event.review.body }}"
           else
             DOC_TITLE="${{ github.event.pull_request.title }}"
             DOC_NUM="#${{ github.event.pull_request.number }}"
@@ -118,11 +120,14 @@ jobs:
             COMMENT_TEXT="${{ github.event.comment.body }}"
           fi
 
+          if [ -z "$COMMENT_TEXT" ] || [ "$COMMENT_TEXT" = "null" ]; then
+            COMMENT_TEXT="Memberikan catatan ulasan lampiran berkas..."
+          fi
+
           REPO_URL="${{ github.server_url }}/$REPO_NAME/tree/$BRANCH_NAME"
           STAT_BOX="🔢 ${{ steps.pr_stats.outputs.TOTAL_COMMITS }} commits\n📂 ${{ steps.pr_stats.outputs.CHANGED_FILES }} files"
-          FORMATTED_COMMENT='```\n'\${COMMENT_TEXT}'\n```'
 
-          # PERBAIKAN BESAR JQ: Menyematkan variabel komentar yang sudah dibentuk aman tanpa tabrakan sintaksis
+          # Memperbaiki total kebocoran karakter JQ dengan memasukkan string bersih pembungkus markdown block
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
@@ -134,8 +139,9 @@ jobs:
             --arg doc_url "$DOC_URL" \
             --arg actor "$USER_ACTOR" \
             --arg stats "$STAT_BOX" \
-            --arg body "$FORMATTED_COMMENT" \
+            --arg body "$COMMENT_TEXT" \
             --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
+            --arg branch "$BRANCH_NAME" \
             '{
               embeds: [{
                 title: $title,
@@ -144,7 +150,7 @@ jobs:
                 fields: [
                   { name: "🏰 Lokasi Pemeriksaan", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
                   { name: "💼 Judul Perjanjian PR", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
-                  { name: "📝 Isi Ulasan / Isi Komentar", value: $body, inline: false },
+                  { name: "📝 Isi Ulasan / Isi Komentar", value: ("```\n" + \$body + "\n```"), inline: false },
                   { name: "📊 Ringkasan Berkas", value: $stats, inline: true },
                   { name: "👤 Peninjau Kontrak", value: ("`" + $actor + "`"), inline: true }
                 ],
