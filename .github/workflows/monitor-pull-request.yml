@@ -1,7 +1,8 @@
 name: Monitor Pull Requests
 on:
   pull_request:
-    types: [opened, closed, reopened]
+    # Ditambahkan synchronize agar otomatis jalan setiap ada commit baru masuk ke PR
+    types: [opened, closed, reopened, synchronize]
   pull_request_review:
     types: [submitted]
   pull_request_review_comment:
@@ -28,19 +29,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 1. Identifikasi Nomor PR secara akurat berdasarkan rumpun objek event
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUM="${{ github.event.pull_request.number }}"
           elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
             PR_NUM="${{ github.event.pull_request.number || github.event.review.pull_request.number }}"
           else
-            # Untuk event issue_comment yang menempel di berkas PR
             PR_NUM="${{ github.event.issue.number }}"
           fi
 
           echo "Mengambil dokumen audit untuk PR #$PR_NUM dari Jade Chamber..."
           
-          # 2. Ambil metadata murni menggunakan REST API resmi GitHub (Anti-Bocor)
           PR_DATA=$(curl -s \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
@@ -56,7 +54,6 @@ jobs:
             HTML_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/pull/$PR_NUM"
           fi
 
-          # 3. Kunci data ke GITHUB_ENV agar awet sampai step pengiriman terakhir
           echo "TOTAL_COMMITS=$COMMITS" >> $GITHUB_ENV
           echo "CHANGED_FILES=$FILES" >> $GITHUB_ENV
           echo "PR_BRANCH=$BRANCH" >> $GITHUB_ENV
@@ -68,13 +65,16 @@ jobs:
         id: format
         run: |
           EVENT_NAME="${{ github.event_name }}"
+          ACTION="${{ github.event.action }}"
           echo "FOOTER=💎 'Setiap transaksi harus mendatangkan nilai keuntungan bagi Liyue.'" >> $GITHUB_ENV
           
           INDEX=$((RANDOM % 4))
           
           if [ "$EVENT_NAME" = "pull_request" ]; then
-            ACTION="${{ github.event.action }}"
-            if [ "$ACTION" = "opened" ]; then
+            if [ "$ACTION" = "synchronize" ]; then
+              echo "TITLE=🔄 Pembaruan Dokumen Kontrak: Amandemen Baru Masuk" >> $GITHUB_ENV
+              echo "DESC=Mitra bisnis kita baru saja mengirimkan lembar amandemen kodingan baru ke dalam proposal ini. Jade Chamber akan langsung menghitung ulang nilai aset dan memeriksa statistik perubahan terbarunya." >> $GITHUB_ENV
+            elif [ "$ACTION" = "opened" ]; then
               if [ $INDEX -eq 0 ]; then
                 echo "TITLE=📜 Proposal Kontrak Kerja Baru Tiba" >> $GITHUB_ENV
                 echo "DESC=Sebuah draf penggabungan kode baru telah diajukan ke Jade Chamber. Jika proposal investasi baris kode ini menguntungkan stabilitas proyek, saya akan segera menandatanganinya." >> $GITHUB_ENV
@@ -132,10 +132,15 @@ jobs:
           fi
 
           EVENT_NAME="${{ github.event_name }}"
+          ACTION="${{ github.event.action }}"
           USER_ACTOR="${{ github.actor }}"
           
           if [ "$EVENT_NAME" = "pull_request" ]; then
-            COMMENT_TEXT="Menunggu peninjauan draf dokumen..."
+            if [ "$ACTION" = "synchronize" ]; then
+              COMMENT_TEXT="Mengirimkan serangkaian revisi amandemen commit baru..."
+            else
+              COMMENT_TEXT="Menunggu peninjauan draf dokumen..."
+            fi
             TARGET_URL="$PR_HTML_URL"
           elif [ "$EVENT_NAME" = "pull_request_review" ]; then
             COMMENT_TEXT="${{ github.event.review.body }}"
@@ -150,8 +155,6 @@ jobs:
           fi
 
           REPO_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/tree/$PR_BRANCH"
-          
-          # Cetak data statistik murni menggunakan GITHUB_ENV yang sudah terisi valid
           STAT_BOX="🔢 ${TOTAL_COMMITS} commits"$'\n'"📂 ${CHANGED_FILES} files"
           FORMATTED_COMMENT=$(printf '```\n%s\n```' "$COMMENT_TEXT")
 
