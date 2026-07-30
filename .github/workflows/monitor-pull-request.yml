@@ -9,7 +9,6 @@ on:
   issue_comment:
     types: [created]
 
-# MANDATORY: Grants token clear read-access to fetch API data metrics
 permissions:
   actions: read
   contents: read
@@ -29,33 +28,35 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # 1. Identifikasi Nomor PR secara akurat berdasarkan rumpun objek event
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUM="${{ github.event.pull_request.number }}"
           elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
             PR_NUM="${{ github.event.pull_request.number || github.event.review.pull_request.number }}"
           else
-            PR_NUM="${{ github.event.review.pull_request.number }}"
+            # Untuk event issue_comment yang menempel di berkas PR
+            PR_NUM="${{ github.event.issue.number }}"
           fi
 
           echo "Mengambil dokumen audit untuk PR #$PR_NUM dari Jade Chamber..."
           
+          # 2. Ambil metadata murni menggunakan REST API resmi GitHub (Anti-Bocor)
           PR_DATA=$(curl -s \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
             "https://github.com")
 
-          # Ambil data murni dan suntikkan langsung ke GITHUB_ENV agar bisa dibaca di seluruh step bawah
           COMMITS=$(echo "$PR_DATA" | jq -r '.commits // 0')
           FILES=$(echo "$PR_DATA" | jq -r '.changed_files // 0')
           BRANCH=$(echo "$PR_DATA" | jq -r '.head.ref // "main"')
-          TITLE=$(echo "$PR_DATA" | jq -r '.title // "Pull Request"')
+          TITLE=$(echo "$PR_DATA" | jq -r '.title // "Pull Request Baru"')
           HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url // ""')
 
           if [ "$HTML_URL" = "null" ] || [ -z "$HTML_URL" ]; then
             HTML_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/pull/$PR_NUM"
           fi
 
-          # TRANSFER DATA KE ENV SECARA SAH
+          # 3. Kunci data ke GITHUB_ENV agar awet sampai step pengiriman terakhir
           echo "TOTAL_COMMITS=$COMMITS" >> $GITHUB_ENV
           echo "CHANGED_FILES=$FILES" >> $GITHUB_ENV
           echo "PR_BRANCH=$BRANCH" >> $GITHUB_ENV
@@ -96,7 +97,6 @@ jobs:
             fi
 
           elif [ "$EVENT_NAME" = "pull_request_review" ]; then
-            # Skenario untuk pull_request_review (Approve / Request Changes)
             REVIEW_STATE="${{ github.event.review.state }}"
             if [ "$REVIEW_STATE" = "approved" ]; then
               echo "TITLE=✅ Audit Selesai: Kontrak Mendapat Sertifikasi Approved" >> $GITHUB_ENV
@@ -109,7 +109,7 @@ jobs:
               echo "DESC=Sebuah tinjauan umum tanpa putusan final baru saja ditambahkan pada lembar draf kerja ini. Evaluasi umum sedang berlangsung." >> $GITHUB_ENV
             fi
 
-            else
+          else
             if [ $INDEX -eq 0 ]; then
               echo "TITLE=✍️ Catatan Koreksi di Lembar Lampiran" >> $GITHUB_ENV
               echo "DESC=Seseorang menambahkan tinta catatan kecil pada baris klausul dokumen kita. Mari kita teliti pesan koreksinya agar transaksi ini berjalan tanpa cacat." >> $GITHUB_ENV
@@ -151,7 +151,7 @@ jobs:
 
           REPO_URL="${{ github.server_url }}/$GITHUB_REPOSITORY/tree/$PR_BRANCH"
           
-          # PERBAIKAN FORMULA STRUKTUR DATA STATISTIK BERKAS
+          # Cetak data statistik murni menggunakan GITHUB_ENV yang sudah terisi valid
           STAT_BOX="🔢 ${TOTAL_COMMITS} commits"$'\n'"📂 ${CHANGED_FILES} files"
           FORMATTED_COMMENT=$(printf '```\n%s\n```' "$COMMENT_TEXT")
 
