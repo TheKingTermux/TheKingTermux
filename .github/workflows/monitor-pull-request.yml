@@ -1,7 +1,11 @@
-name: Monitor Pull Requests (Lady Ningguang Solo)
+name: Monitor Pull Requests
 on:
   pull_request:
     types: [opened, closed, reopened]
+  pull_request_review:
+    types: [submitted]
+  pull_request_review_comment:
+    types: [created]
 
 permissions:
   actions: read
@@ -10,114 +14,128 @@ permissions:
 
 jobs:
   kirim-notifikasi-pr:
-    runs-on: ubuntu-latest # Membutuhkan ubuntu-latest untuk kalkulasi git diff internal
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Ambil seluruh riwayat commit untuk menghitung statistik perubahan
+          fetch-depth: 0
 
       - name: Hitung Statistik Perubahan Kode PR
         id: pr_stats
         run: |
-          # Dapatkan data statistik perubahan langsung dari REST API GitHub Event Context
-          COMMITS_COUNT="${{ github.event.pull_request.commits }}"
-          CHANGED_FILES="${{ github.event.pull_request.changed_files }}"
+          COMMITS_COUNT="${{ github.event.pull_request.commits || github.event.review.pull_request.commits || 0 }}"
+          CHANGED_FILES="${{ github.event.pull_request.changed_files || github.event.review.pull_request.changed_files || 0 }}"
           
-          # Hitung selisih baris kode menggunakan git diff native terhadap base branch
-          git fetch origin ${{ github.event.pull_request.base.ref }}
-          DIFF_STATS=$(git diff --shortstat origin/${{ github.event.pull_request.base.ref }} HEAD || echo "0 files changed, 0 insertions(+), 0 deletions(-)")
-          
-          # Ekstrak data penambahan dan pengurangan baris kode
-          ADDITIONS=$(echo "$DIFF_STATS" | grep -oE '[0-9]+ insertion' | awk '{print $1}' || echo "0")
-          DELETIONS=$(echo "$DIFF_STATS" | grep -oE '[0-9]+ deletion' | awk '{print $1}' || echo "0")
-          
-          [ -z "$ADDITIONS" ] && ADDITIONS=0
-          [ -z "$DELETIONS" ] && DELETIONS=0
+          # Gunakan fallback aman jika data context langsung kosong
+          [ -z "$COMMITS_COUNT" ] || [ "$COMMITS_COUNT" = "null" ] && COMMITS_COUNT="0"
+          [ -z "$CHANGED_FILES" ] || [ "$CHANGED_FILES" = "null" ] && CHANGED_FILES="0"
 
           echo "TOTAL_COMMITS=$COMMITS_COUNT" >> $GITHUB_OUTPUT
           echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_OUTPUT
-          echo "ADDITIONS=$ADDITIONS" >> $GITHUB_OUTPUT
-          echo "DELETIONS=$DELETIONS" >> $GITHUB_OUTPUT
 
       - name: Atur Payload Gaya Bisnis Ningguang
         id: format
         run: |
-          ACTION="${{ github.event.action }}"
+          EVENT_NAME="${{ github.event_name }}"
+          echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK_PR }}" >> $GITHUB_OUTPUT
           echo "COLOR=16239121" >> $GITHUB_OUTPUT
           echo "FOOTER=💎 'Setiap transaksi harus mendatangkan nilai keuntungan bagi Liyue.'" >> $GITHUB_OUTPUT
           
           INDEX=$((RANDOM % 4))
           
-          if [ "$ACTION" = "opened" ]; then
-            if [ $INDEX -eq 0 ]; then
-              echo "TITLE=📜 Proposal Kontrak Kerja Baru Tiba" >> $GITHUB_OUTPUT
-              echo "DESC=Sebuah draf penggabungan kode baru telah diajukan ke Jade Chamber. Jika proposal investasi baris kode ini menguntungkan stabilitas proyek, saya akan segera menandatanganinya." >> $GITHUB_OUTPUT
-            elif [ $INDEX -eq 1 ]; then
-              echo "TITLE=📈 Analisis Pasar: Peluang Investasi Kode" >> $GITHUB_OUTPUT
-              echo "DESC=Sekretarisku baru saja membawakan dokumen pengajuan kode ini. Mari kita bedah bersama, apakah kontribusi baru ini akan menaikkan nilai kapitalisasi repositori kita atau tidak." >> $GITHUB_OUTPUT
-            elif [ $INDEX -eq 2 ]; then
-              echo "TITLE=♟️ Langkah Catur Baru di Papan Perdagangan" >> $GITHUB_OUTPUT
-              echo "DESC=Seseorang mencoba memasukkan aset baru ke dalam ekosistem Liyue. Menarik... Saya menyukai mitra bisnis yang berani mengajukan perubahan radikal seperti ini." >> $GITHUB_OUTPUT
-            else
-              echo "TITLE=🔍 Pemeriksaan Ketat Draf Perjanjian" >> $GITHUB_OUTPUT
-              echo "DESC=Jangan biarkan ada celah hukum atau bug sekecil apa pun lolos dari pengawasan Jade Chamber. Kita akan melakukan audit menyeluruh terhadap pengajuan baru ini." >> $GITHUB_OUTPUT
-            fi
-            
-          elif [ "$ACTION" = "closed" ]; then
-            IS_MERGED="${{ github.event.pull_request.merged }}"
-            if [ "$IS_MERGED" = "true" ]; then
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            ACTION="${{ github.event.action }}"
+            if [ "$ACTION" = "opened" ]; then
               if [ $INDEX -eq 0 ]; then
+                echo "TITLE=📜 Proposal Kontrak Kerja Baru Tiba" >> $GITHUB_OUTPUT
+                echo "DESC=Sebuah draf penggabungan kode baru telah diajukan ke Jade Chamber. Jika proposal investasi baris kode ini menguntungkan stabilitas proyek, saya akan segera menandatanganinya." >> $GITHUB_OUTPUT
+              elif [ $INDEX -eq 1 ]; then
+                echo "TITLE=📈 Analisis Pasar: Peluang Investasi Kode" >> $GITHUB_OUTPUT
+                echo "DESC=Sekretarisku baru saja membawakan dokumen pengajuan kode ini. Mari kita bedah bersama, apakah kontribusi baru ini akan menaikkan nilai kapitalisasi repositori kita atau tidak." >> $GITHUB_OUTPUT
+              else
+                echo "TITLE=🔍 Pemeriksaan Ketat Draf Perjanjian" >> $GITHUB_OUTPUT
+                echo "DESC=Jangan biarkan ada celah hukum atau bug sekecil apa pun lolos dari pengawasan Jade Chamber. Kita akan melakukan audit menyeluruh terhadap pengajuan baru ini." >> $GITHUB_OUTPUT
+              fi
+            elif [ "$ACTION" = "closed" ]; then
+              IS_MERGED="${{ github.event.pull_request.merged }}"
+              if [ "$IS_MERGED" = "true" ]; then
                 echo "TITLE=🤝 Kontrak Disetujui dan Disahkan" >> $GITHUB_OUTPUT
                 echo "DESC=Kesepakatan telah dicapai! Draf proposal ini resmi digabungkan ke dalam cabang utama. Kerja sama yang sangat menguntungkan." >> $GITHUB_OUTPUT
               else
-                echo "TITLE=💰 Aset Resmi Di-merger ke Cabang Utama" >> $GITHUB_OUTPUT
-                echo "DESC=Sempurna. Semua baris kode telah diaudit dan resmi menjadi hak milik sah kekayaan intelektual repositori. Keuntungan besar bagi proyek kita." >> $GITHUB_OUTPUT
-              fi
-            else
-              if [ $INDEX -eq 0 ]; then
                 echo "TITLE=❌ Proposal Kontrak Ditolak" >> $GITHUB_OUTPUT
                 echo "DESC=Setelah pertimbangan yang matang di Jade Chamber, investasi kode ini dinilai tidak membawa keuntungan bagi kestabilan proyek. Berkas dibatalkan." >> $GITHUB_OUTPUT
-              else
-                echo "TITLE=🍂 Kesepakatan Bisnis Gagal Terjadi" >> $GITHUB_OUTPUT
-                echo "DESC=Negosiasi dihentikan. Struktur atau kualitas dari pengajuan ini belum memenuhi standar pasar yang saya tetapkan. Silakan kembali jika modal kodinganmu sudah siap." >> $GITHUB_OUTPUT
               fi
             fi
+
+          elif [ "$EVENT_NAME" = "pull_request_review" ]; then
+            REVIEW_STATE="${{ github.event.review.state }}"
+            if [ "$REVIEW_STATE" = "approved" ]; then
+              echo "TITLE=✅ Audit Selesai: Kontrak Mendapat Sertifikasi 'Approved'" >> $GITHUB_OUTPUT
+              echo "DESC=Kabar baik. Salah satu pengawas keuangan senior kita telah memeriksa struktur amandemen ini dan memberikan tanda sepakat. Jalan menuju merger semakin terbuka lebar." >> $GITHUB_OUTPUT
+            elif [ "$REVIEW_STATE" = "changes_requested" ]; then
+              echo "TITLE=⚠️ Amandemen Ditolak Sementara: 'Changes Requested'" >> $GITHUB_OUTPUT
+              echo "DESC=Tunggu dulu. Ditemukan poin audit yang cacat atau berisiko merugikan sistem. Dokumen dikembalikan ke meja pemohon untuk segera direvisi sesuai instruksi." >> $GITHUB_OUTPUT
+            else
+              echo "TITLE=💬 Ulasan Catatan Berkas Transaksi" >> $GITHUB_OUTPUT
+              echo "DESC=Sebuah tinjauan umum tanpa putusan final baru saja ditambahkan pada lembar draf kerja ini. Evaluasi umum sedang berlangsung." >> $GITHUB_OUTPUT
+            fi
+
           else
-            echo "TITLE=📊 Pengajuan Ulang Proposal Bisnis" >> $GITHUB_OUTPUT
-            echo "DESC=Draf proposal penggabungan kode yang sempat tertunda kini telah diajukan kembali untuk dilakukan kalkulasi ulang biaya dan risikonya." >> $GITHUB_OUTPUT
+            # Event: pull_request_review_comment (Komentar baris kode di dalam PR)
+            if [ $INDEX -eq 0 ]; then
+              echo "TITLE=✍️ Catatan Koreksi di Lembar Lampiran" >> $GITHUB_OUTPUT
+              echo "DESC=Seseorang menambahkan tinta catatan kecil pada baris klausul dokumen kita. Mari kita teliti pesan koreksinya agar transaksi ini berjalan tanpa cacat." >> $GITHUB_OUTPUT
+            elif [ $INDEX -eq 1 ]; then
+              echo "TITLE=⚖️ Diskusi Harga Aset: Negosiasi Kode" >> $GITHUB_OUTPUT
+              echo "DESC=Terjadi adu argumen sehat di ruang rapat mengenai efisiensi baris kode yang diajukan. Penyesuaian pendapat adalah hal biasa dalam bisnis." >> $GITHUB_OUTPUT
+            else
+              echo "TITLE=💬 Bisikan Informasi Tambahan di Jade Chamber" >> $GITHUB_OUTPUT
+              echo "DESC=Sekretaris baru saja memperbarui log diskusi interaktif pada dokumen perjanjian komit ini. Meninjau masukan..." >> $GITHUB_OUTPUT
+            fi
           fi
 
       - name: Kirim Notifikasi via JQ
         run: |
+          EVENT_NAME="${{ github.event_name }}"
           REPO_NAME="${{ github.repository }}"
-          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-          REPO_URL="${{ github.server_url }}/$REPO_NAME/tree/$BRANCH_NAME"
           USER_ACTOR="${{ github.actor }}"
-          DOC_TITLE="${{ github.event.pull_request.title }}"
-          DOC_NUM="#${{ github.event.pull_request.number }}"
-          DOC_URL="${{ github.event.pull_request.html_url }}"
+          
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            DOC_TITLE="${{ github.event.pull_request.title }}"
+            DOC_NUM="#${{ github.event.pull_request.number }}"
+            DOC_URL="${{ github.event.pull_request.html_url }}"
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+            COMMENT_TEXT="Menunggu peninjauan draf dokumen..."
+          elif [ "$EVENT_NAME" = "pull_request_review" ]; then
+            DOC_TITLE="${{ github.event.pull_request.title }}"
+            DOC_NUM="#${{ github.event.pull_request.number }}"
+            DOC_URL="${{ github.event.review.html_url }}"
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+            COMMENT_TEXT="${{ github.event.review.body || 'Memberikan ulasan penilaian resmi...' }}"
+          else
+            DOC_TITLE="${{ github.event.pull_request.title }}"
+            DOC_NUM="#${{ github.event.pull_request.number }}"
+            DOC_URL="${{ github.event.comment.html_url }}"
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+            COMMENT_TEXT="${{ github.event.comment.body }}"
+          fi
 
-          # Format baris statistik ala Github Web
-          STAT_COMMITS="🔢 ${{ steps.pr_stats.outputs.TOTAL_COMMITS }} commits"
-          STAT_FILES="📂 ${{ steps.pr_stats.outputs.CHANGED_FILES }} files changed"
-          STAT_LINES="🟩 +${{ steps.pr_stats.outputs.ADDITIONS }}  🟥 -${{ steps.pr_stats.outputs.DELETIONS }} lines"
+          REPO_URL="${{ github.server_url }}/$REPO_NAME/tree/$BRANCH_NAME"
+          STAT_BOX="🔢 ${{ steps.pr_stats.outputs.TOTAL_COMMITS }} commits\n📂 ${{ steps.pr_stats.outputs.CHANGED_FILES }} files"
 
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
-            --arg color "${{ secrets.COLOR || '16239121' }}" \
+            --arg color "${{ steps.format.outputs.COLOR }}" \
             --arg repo_name "$REPO_NAME" \
             --arg repo_url "$REPO_URL" \
             --arg doc_title "$DOC_TITLE" \
             --arg doc_num "$DOC_NUM" \
             --arg doc_url "$DOC_URL" \
             --arg actor "$USER_ACTOR" \
-            --arg s_commits "$STAT_COMMITS" \
-            --arg s_files "$STAT_FILES" \
-            --arg s_lines "$STAT_LINES" \
-            --arg branch "$BRANCH_NAME" \
-            --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
+            --arg stats "$STAT_BOX" \
+            --arg body "$COMMENT_TEXT" \
             '{
               embeds: [{
                 title: $title,
@@ -125,9 +143,10 @@ jobs:
                 color: ($color | tonumber),
                 fields: [
                   { name: "🏰 Lokasi Pemeriksaan", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
-                  { name: "💼 Judul Perjanjian", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
-                  { name: "📊 Audit Stat Kode (GitHub Live)", value: ($s_commits + "\n" + $s_files + "\n" + $s_lines), inline: false },
-                  { name: "👤 Pemohon Kontrak", value: ("`" + $actor + "`"), inline: true }
+                  { name: "💼 Judul Perjanjian PR", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
+                  { name: "📝 Isi Ulasan / Isi Komentar", value: ("```\n" + \$body + "\n```"), inline: false },
+                  { name: "📊 Ringkasan Berkas", value: $stats, inline: true },
+                  { name: "👤 Peninjau Kontrak", value: ("`" + $actor + "`"), inline: true }
                 ],
                 footer: { text: $footer_text }
               }]
@@ -136,4 +155,4 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d @pr_payload.json \
-               "${{ secrets.DISCORD_WEBHOOK_PR }}"
+               "${{ steps.format.outputs.TARGET_WEBHOOK }}"
