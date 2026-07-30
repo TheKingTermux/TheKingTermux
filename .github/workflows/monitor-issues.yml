@@ -12,8 +12,8 @@ permissions:
 jobs:
   kirim-notifikasi-sidang:
     runs-on: ubuntu-slim
-    # BENTENG PENGAMAN TOTAL: Memastikan event murni issue, ATAU jika komentar, pastikan objek PR-nya mutlak kosong (null)
-    if: ${{ github.event_name == 'issues' || github.event.issue.pull_request == null }}
+    # BENTENG PENGAMAN MUTLAK: Langsung matikan mesin runner (Skipped) jika terdeteksi ada objek pull_request di dalam isu
+    if: github.event.issue.pull_request == null
     steps:
       - name: Kirim Notifikasi Sandiwara Ruang Sidang via JQ
         run: |
