@@ -147,32 +147,40 @@ jobs:
       - name: Eksekusi Kirim / Edit Pesan Discord via Bot API
         run: |
           CHANNEL_ID="${{ secrets.DISCORD_PR_CHANNEL_ID }}"
-          BOT_TOKEN="${{ secrets.DISCORD_PR_TOKEN }}"
+          BOT_TOKEN="${{ secrets.DISCORD_BOT_TOKEN }}"
+          
+          # Hapus spasi atau karakter aneh yang mungkin terbawa di rahasia ID
+          CHANNEL_ID=$(echo "$CHANNEL_ID" | tr -d '[:space:]')
           
           if [ "${{ steps.msg_check.outputs.EXISTS }}" = "true" ]; then
-            # EDIT PESAN LAMA (Jika ini adalah event commit baru/synchronize)
-            echo "Mengedit pesan Discord lama dengan ID: ${{ steps.msg_check.outputs.MSG_ID }}"
+            # MODE 1: EDIT PESAN LAMA (Synchronize / Commit Baru)
+            MSG_ID="${{ steps.msg_check.outputs.MSG_ID }}"
+            echo "Mengedit dokumen kontrak lama di Discord dengan ID: $MSG_ID"
+            
             RESPONSE=$(curl -s -X PATCH \
               -H "Authorization: Bot $BOT_TOKEN" \
               -H "Content-Type: application/json" \
               -d @pr_payload.json \
-              "https://discord.com{{ steps.msg_check.outputs.MSG_ID }}")
+              "https://discord.com{CHANNEL_ID}/messages/${MSG_ID}")
           else
-            # KIRIM PESAN BARU PERTAMA KALI (Jika PR baru dibuka)
-            echo "Mengirim notifikasi kontrak baru pertama kali..."
+            # MODE 2: KIRIM PESAN BARU (PR Pertama Kali Dibuka)
+            echo "Mengirim proposal kontrak baru ke Jade Chamber..."
+            
             RESPONSE=$(curl -s -X POST \
               -H "Authorization: Bot $BOT_TOKEN" \
               -H "Content-Type: application/json" \
               -d @pr_payload.json \
-              "https://discord.com")
+              "https://discord.com{CHANNEL_ID}/messages")
             
-            # Ekstrak ID pesan baru yang sukses dikirim dan simpan untuk amandemen berikutnya
+            # Ekstrak ID pesan dari struktur balasan resmi JSON Discord
             NEW_MSG_ID=$(echo "$RESPONSE" | jq -r '.id' 2>/dev/null || echo "null")
+            
             if [ "$NEW_MSG_ID" != "null" ] && [ -n "$NEW_MSG_ID" ]; then
-              echo "Berhasil menyimpan ID pesan baru: $NEW_MSG_ID"
+              echo "Berhasil mengamankan ID pesan baru: $NEW_MSG_ID"
               echo "$NEW_MSG_ID" > discord_msg_id.txt
             else
-              echo "Kritis: Gagal mendapatkan ID pesan dari Discord. Balasan server:"
+              echo "Kritis: Gagal mendapatkan ID pesan dari Discord API. Kemungkinan Token atau ID Channel salah."
+              echo "Respon Server Discord:"
               echo "$RESPONSE"
               exit 1
             fi
