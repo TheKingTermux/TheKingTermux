@@ -56,6 +56,11 @@ jobs:
                    "color": ${{ steps.format.outputs.COLOR }},
                    "fields": [
                      {
+                       "name": "🏰 Tempat Melodi Bergema",
+                       "value": "[${{ github.repository }}](https://github.com{{ github.repository }})",
+                       "inline": false
+                     },
+                     {
                        "name": "✨ Melodi yang Dimainkan",
                        "value": "`${{ github.event.workflow_run.name }}`",
                        "inline": true
