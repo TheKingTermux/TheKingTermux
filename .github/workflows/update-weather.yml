@@ -1,12 +1,15 @@
 name: Update Weather
 on:
   workflow_dispatch:
+  # Menerima pemicu otomatis untuk run ulang jika terjadi error 443
+  repository_dispatch:
+    types: [retry-weather-443]
   schedule:
   - cron: '*/30 * * * *'
 
 jobs:
   update-weather:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     env:
       SECRET_LAT: ${{ secrets.SECRET_LAT }}
       SECRET_LON: ${{ secrets.SECRET_LON }}
@@ -35,20 +38,16 @@ jobs:
           do
             echo "Percobaan $count dari $ATTEMPTS..."
             
-            # Matikan fail-fast sementara agar script tidak langsung crash
             set +e
             python weather.py 2> error.log
             EXIT_CODE=$?
-            # Nyalakan kembali fail-fast demi keamanan alur kerja
             set -e
 
-            # Jika berhasil, keluar dari perulangan (loop)
             if [ $EXIT_CODE -eq 0 ]; then
               echo "Script berhasil dijalankan."
               break
             fi
 
-            # Periksa apakah log error mengandung masalah koneksi port 443
             if grep -q "443" error.log; then
               echo "Peringatan: Terjadi kesalahan koneksi 443."
               cat error.log
@@ -65,9 +64,10 @@ jobs:
             fi
           done
 
-          # Jika perulangan selesai tanpa berhasil tembus, gagalkan step ini
+          # Jika setelah 3 kali percobaan cepat di atas masih gagal karena 443:
           if [ $count -gt $ATTEMPTS ]; then
-            echo "Error: Gagal memperbarui cuaca setelah $ATTEMPTS percobaan karena masalah error 443 terus-menerus."
+            echo "Error: Gagal mendulang sukses setelah $ATTEMPTS percobaan cepat."
+            echo "Memicu sistem penjadwalan eksekusi ulang 5 menit ke depan..."
             exit 1
           fi
 
@@ -78,3 +78,22 @@ jobs:
           author_email: 50316075+TheKingTermux@://github.com
           message: "Otomatis: Update cuaca terbaru"
           add: 'README.md status.json'
+
+  # JOB BARU: Mengatur penjadwalan 5 menit tanpa memakan kuota menit runner aktif
+  auto-retry-scheduler:
+    runs-on: ubuntu-latest # Butuh ubuntu-latest karena memakai GitHub Action eksternal
+    needs: update-weather
+    if: failure() # Hanya jalan jika job 'update-weather' di atas mengalami kegagalan total
+    steps:
+      - name: Mengantre eksekusi ulang dalam 5 menit
+        uses: mscoutermarsh/sleep-action@v1.2.0
+        with:
+          duration: 300 # Menunggu selama 300 detik (5 menit) sebelum menembak API
+
+      - name: Trigger Re-run via Repository Dispatch
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               -X POST \
+               -d '{"event_type": "retry-weather-443"}' \
+               "https://github.com{{ github.repository }}/dispatches"
