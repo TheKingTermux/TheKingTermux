@@ -52,15 +52,15 @@ jobs:
             echo "FOOTER=🐦‍⬛ 'Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.'" >> $GITHUB_OUTPUT
             
             if [ "$TRIGGER_EVENT" = "schedule" ]; then
-              echo "⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⚙️ Siklus rutin yang terjadwal otomatis" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-              echo "♟️ Perintah manual langsung darimu" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=♟️ Perintah manual langsung darimu" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-              echo "⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⏳ Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)" >> $GITHUB_OUTPUT
             elif [ "$TRIGGER_EVENT" = "push" ]; then
-              echo "📦 Pembaruan kode masuk terdeteksi (Push Code)" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=📦 Pembaruan kode masuk terdeteksi (Push Code)" >> $GITHUB_OUTPUT
             else
-              echo "⛓️ Intervensi dari faktor luar ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
+              echo "POETIC_TRIGGER=⛓️ Intervensi dari faktor luar ($TRIGGER_EVENT)" >> $GITHUB_OUTPUT
             fi
           fi
 
@@ -70,17 +70,19 @@ jobs:
           RUN_NUM="${{ github.event.workflow_run.run_number }}"
           FULL_TRIGGER_TEXT="$POETIC"$'\n'"*(Pertunjukan ke-$RUN_NUM)*"
 
-          # Menyatukan URL repo secara utuh di level Bash sebelum diumpan ke JQ
+          # MENYUSUN TAUTAN ABSOLUT BERSAMA BRANCH AKTIF
           REPO_NAME_RAW="${{ github.repository }}"
-          REPO_URL_COMPLETE="https://github.com"
+          BRANCH_NAME="${{ github.event.workflow_run.head_branch }}"
+          REPO_URL_COMPLETE="${{ github.server_url }}/$REPO_NAME_RAW/tree/$BRANCH_NAME"
 
-          # Konstruksi JSON murni dengan menyalin objek string murni
+          # Konstruksi JSON menggunakan JQ agar karakter string aman
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
             --arg color "${{ steps.format.outputs.COLOR }}" \
             --arg repo_name "$REPO_NAME_RAW" \
             --arg repo_url "$REPO_URL_COMPLETE" \
+            --arg branch "$BRANCH_NAME" \
             --arg wf_name "${{ github.event.workflow_run.name }}" \
             --arg wf_conclusion "${{ github.event.workflow_run.conclusion }}" \
             --arg wf_trigger "$FULL_TRIGGER_TEXT" \
@@ -92,7 +94,7 @@ jobs:
                 description: $desc,
                 color: ($color | tonumber),
                 fields: [
-                  { name: "🏰 Tempat Melodi Bergema", value: ("[" + $repo_name + "](" + $repo_url + ")"), inline: false },
+                  { name: "🏰 Tempat Melodi Bergema", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
                   { name: "✨ Melodi yang Dimainkan", value: ("`" + $wf_name + "`"), inline: true },
                   { name: "👁️ Catatan Akhir", value: ("`" + $wf_conclusion + "`"), inline: true },
                   { name: "🍃 Bisikan Angin Pemicu", value: $wf_trigger, inline: false },
