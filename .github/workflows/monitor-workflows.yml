@@ -7,6 +7,8 @@ on:
       - "Update Meme Image"
       - "Update Quotes"
       - "Update Server Tips"
+      - "Monitor Pull Requests"
+      - "Monitor Issues"
     types:
       - completed
 
