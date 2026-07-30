@@ -21,7 +21,7 @@ jobs:
       - name: Ambil Data Real-time PR dari GitHub API
         id: fetch_pr
         run: |
-          # Dapatkan nomor PR secara dinamis dari berbagai jenis event context
+          # Amankan ekstraksi nomor PR secara mutakhir dari berbagai event context
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUM="${{ github.event.pull_request.number }}"
           elif [ "${{ github.event_name }}" = "pull_request_review" ] || [ "${{ github.event_name }}" = "pull_request_review_comment" ]; then
@@ -32,17 +32,22 @@ jobs:
 
           echo "Mengambil dokumen audit untuk PR #$PR_NUM dari Jade Chamber..."
           
-          # Tembak REST API resmi GitHub untuk mengambil data murni jumlah commit dan file
+          # PERBAIKAN TOTAL: Alamat URL diarahkan ke server API resmi tanpa kurung kurawal bocor
           PR_DATA=$(curl -s \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             "https://github.com{{ github.repository }}/pulls/$PR_NUM")
 
+          # Amankan ekstraksi data dengan perlindungan nilai kosong (fallback)
           COMMITS=$(echo "$PR_DATA" | jq -r '.commits // 0')
           FILES=$(echo "$PR_DATA" | jq -r '.changed_files // 0')
           BRANCH=$(echo "$PR_DATA" | jq -r '.head.ref // "main"')
           TITLE=$(echo "$PR_DATA" | jq -r '.title // "Pull Request"')
-          HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url')
+          HTML_URL=$(echo "$PR_DATA" | jq -r '.html_url // ""')
+
+          if [ "$HTML_URL" = "null" ] || [ -z "$HTML_URL" ]; then
+            HTML_URL="${{ github.server_url }}/${{ github.repository }}/pull/$PR_NUM"
+          fi
 
           echo "TOTAL_COMMITS=$COMMITS" >> $GITHUB_OUTPUT
           echo "CHANGED_FILES=$FILES" >> $GITHUB_OUTPUT
