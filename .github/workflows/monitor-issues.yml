@@ -1,4 +1,4 @@
-name: Monitor Issues dan Komentar (Collab Neuvi & Furina)
+name: Monitor Issues dan Komentar
 on:
   issues:
     types: [opened, closed]
