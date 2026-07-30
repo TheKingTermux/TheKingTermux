@@ -27,7 +27,6 @@ jobs:
           COMMITS_COUNT="${{ github.event.pull_request.commits || github.event.review.pull_request.commits || 0 }}"
           CHANGED_FILES="${{ github.event.pull_request.changed_files || github.event.review.pull_request.changed_files || 0 }}"
           
-          # Gunakan fallback aman jika data context langsung kosong
           [ -z "$COMMITS_COUNT" ] || [ "$COMMITS_COUNT" = "null" ] && COMMITS_COUNT="0"
           [ -z "$CHANGED_FILES" ] || [ "$CHANGED_FILES" = "null" ] && CHANGED_FILES="0"
 
@@ -38,7 +37,6 @@ jobs:
         id: format
         run: |
           EVENT_NAME="${{ github.event_name }}"
-          echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK_PR }}" >> $GITHUB_OUTPUT
           echo "COLOR=16239121" >> $GITHUB_OUTPUT
           echo "FOOTER=💎 'Setiap transaksi harus mendatangkan nilai keuntungan bagi Liyue.'" >> $GITHUB_OUTPUT
           
@@ -82,7 +80,6 @@ jobs:
             fi
 
           else
-            # Event: pull_request_review_comment (Komentar baris kode di dalam PR)
             if [ $INDEX -eq 0 ]; then
               echo "TITLE=✍️ Catatan Koreksi di Lembar Lampiran" >> $GITHUB_OUTPUT
               echo "DESC=Seseorang menambahkan tinta catatan kecil pada baris klausul dokumen kita. Mari kita teliti pesan koreksinya agar transaksi ini berjalan tanpa cacat." >> $GITHUB_OUTPUT
@@ -123,7 +120,9 @@ jobs:
 
           REPO_URL="${{ github.server_url }}/$REPO_NAME/tree/$BRANCH_NAME"
           STAT_BOX="🔢 ${{ steps.pr_stats.outputs.TOTAL_COMMITS }} commits\n📂 ${{ steps.pr_stats.outputs.CHANGED_FILES }} files"
+          FORMATTED_COMMENT='```\n'\${COMMENT_TEXT}'\n```'
 
+          # PERBAIKAN BESAR JQ: Menyematkan variabel komentar yang sudah dibentuk aman tanpa tabrakan sintaksis
           jq -n \
             --arg title "${{ steps.format.outputs.TITLE }}" \
             --arg desc "${{ steps.format.outputs.DESC }}" \
@@ -135,7 +134,8 @@ jobs:
             --arg doc_url "$DOC_URL" \
             --arg actor "$USER_ACTOR" \
             --arg stats "$STAT_BOX" \
-            --arg body "$COMMENT_TEXT" \
+            --arg body "$FORMATTED_COMMENT" \
+            --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
             '{
               embeds: [{
                 title: $title,
@@ -144,7 +144,7 @@ jobs:
                 fields: [
                   { name: "🏰 Lokasi Pemeriksaan", value: ("[" + $repo_name + " (" + $branch + ")](" + $repo_url + ")"), inline: false },
                   { name: "💼 Judul Perjanjian PR", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
-                  { name: "📝 Isi Ulasan / Isi Komentar", value: ("```\n" + \$body + "\n```"), inline: false },
+                  { name: "📝 Isi Ulasan / Isi Komentar", value: $body, inline: false },
                   { name: "📊 Ringkasan Berkas", value: $stats, inline: true },
                   { name: "👤 Peninjau Kontrak", value: ("`" + $actor + "`"), inline: true }
                 ],
@@ -155,4 +155,4 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d @pr_payload.json \
-               "${{ steps.format.outputs.TARGET_WEBHOOK }}"
+               "${{ secrets.DISCORD_WEBHOOK_PR }}"
