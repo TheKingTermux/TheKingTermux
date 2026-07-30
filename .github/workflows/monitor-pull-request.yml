@@ -158,7 +158,7 @@ jobs:
               -d @pr_payload.json \
               "https://discord.com{{ steps.msg_check.outputs.MSG_ID }}")
           else
-            # KIRM PESAN BARU PERTAMA KALI (Jika PR baru dibuka)
+            # KIRIM PESAN BARU PERTAMA KALI (Jika PR baru dibuka)
             echo "Mengirim notifikasi kontrak baru pertama kali..."
             RESPONSE=$(curl -s -X POST \
               -H "Authorization: Bot $BOT_TOKEN" \
@@ -167,9 +167,14 @@ jobs:
               "https://discord.com")
             
             # Ekstrak ID pesan baru yang sukses dikirim dan simpan untuk amandemen berikutnya
-            NEW_MSG_ID=$(echo "$RESPONSE" | jq -r '.id')
-            if [ "$NEW_MSG_ID" != "null" ]; then
+            NEW_MSG_ID=$(echo "$RESPONSE" | jq -r '.id' 2>/dev/null || echo "null")
+            if [ "$NEW_MSG_ID" != "null" ] && [ -n "$NEW_MSG_ID" ]; then
+              echo "Berhasil menyimpan ID pesan baru: $NEW_MSG_ID"
               echo "$NEW_MSG_ID" > discord_msg_id.txt
+            else
+              echo "Kritis: Gagal mendapatkan ID pesan dari Discord. Balasan server:"
+              echo "$RESPONSE"
+              exit 1
             fi
           fi
 
