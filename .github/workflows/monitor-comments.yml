@@ -1,0 +1,107 @@
+name: Monitor Komentar Issues (Collab Dua Channel)
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  actions: read
+
+jobs:
+  kirim-notifikasi-komentar:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Kirim Notifikasi Sandiwara Dua Karakter via JQ
+        run: |
+          # 1. Ambil data mentah dari konteks eksekusi GitHub secara aman
+          REPO_NAME="${{ github.repository }}"
+          REPO_URL="${{ github.server_url }}/$REPO_NAME"
+          ISSUE_TITLE="${{ github.event.issue.title }}"
+          ISSUE_NUM="#${{ github.event.issue.number }}"
+          ISSUE_URL="${{ github.event.issue.html_url }}"
+          COMMENTER="${{ github.actor }}"
+          COMMENT_BODY="${{ github.event.comment.body }}"
+
+          # 2. SISTEM ACAK UNTUK VARIASI DIALOG (4 VARIASI)
+          INDEX=$((RANDOM % 4))
+
+          if [ $INDEX -eq 0 ]; then
+            # VARIASI 1: TEMA SKANDAL & SURAT RAHASIA
+            FURINA_DIALOG="🎭 **Lady Furina:**\n\"Astaga! Seseorang baru saja mengirimkan surat rahasia di tengah jalannya persidangan megah kita! Lihat ini, \`$COMMENTER\` berani menyuarakan pendapatnya langsung di panggung utamaku! Apakah ini sebuah tantangan terbuka atau surat pujian untuk keanggunanku?! Semua mata penonton teater kini tertuju pada argumen ini!~\""
+            NEUVI_DIALOG="⚖️ **Monsieur Neuvillette:**\n\"Harap tenang, Lady Furina. Saya mendengar keributan Anda dari ruang sebelah. Berdasarkan berkas perkara $ISSUE_NUM, saksi \`$COMMENTER\` memang memiliki hak konstitusional untuk menambahkan bukti atau argumen baru demi kejelasan hukum repositori. Mari kita pelajari pernyataannya secara objektif.\""
+            
+          elif [ $INDEX -eq 1 ]; then
+            # VARIASI 2: TEMA INTERUPSI DRAMATIS
+            FURINA_DIALOG="🎭 **Lady Furina:**\n\"Tunggu, tunggu, tunggu! Hentikan musiknya! Jangan bilang orang bernama \`$COMMENTER\` ini berniat merebut sorotan lampu panggung dariku dengan argumen tambahan itu?! Neuvillette, panggil penjaga! Ini adalah interupsi paling berani yang pernah kulihat di Opera Epiclese!~\""
+            NEUVI_DIALOG="⚖️ **Monsieur Neuvillette:**\n\"Tidak perlu memanggil Garda Keamanan, Lady Furina. Apa yang dilakukan oleh \`$COMMENTER\` bukanlah sebuah pelanggaran hukum, melainkan bagian dari diskusi peninjauan perkara. Duduklah kembali di kursimu dan biarkan saya mencatat esensi dari perkataannya.\""
+
+          elif [ $INDEX -eq 2 ]; then
+            # VARIASI 3: TEMA TEKA-TEKI & KEBINGUNGAN FURINA
+            FURINA_DIALOG="🎭 **Lady Furina:**\n\"Eh? T-tunggu sebentar... Apa maksud dari baris kata-kata yang diketik oleh \`$COMMENTER\` ini? Sulit sekali dimengerti! Tapi sebagai Archon yang bijaksana, tentu saja aku... ehem, pura-pura paham! Neuvillette, cepat jelaskan padaku apa maksud argumen rumit ini sebelum penonton menyadari aku bingung!\""
+            NEUVI_DIALOG="⚖️ **Monsieur Neuvillette:**\n\"*Helaan napas berat...* Jika Anda meluangkan waktu sejenak untuk membaca isi dokumen dengan teliti, Lady Furina, Anda akan tahu bahwa \`$COMMENTER\` sedang memberikan ulasan teknis yang sangat penting untuk kestabilan proyek kita. Izinkan saya merangkumnya untuk Anda.\""
+
+          else
+            # VARIASI 4: TEMA PANGGUNG KLIMAKS / DEBAT PANAS
+            FURINA_DIALOG="🎭 **Lady Furina:**\n\"Oho! Ketegangan di ruang sidang semakin memuncak! \`$COMMENTER\` baru saja melemparkan argumen baru yang sangat tajam ke dalam diskusi! Penonton di balkon berteriak histeris! Drama macam ini yang membuat panggungku menjadi yang terbaik di seluruh Teyvat!~\""
+            NEUVI_DIALOG="⚖️ **MonsVerify:**\n\"Persidangan ini adalah tempat mencari kebenaran, Lady Furina, bukan ajang hiburan sirkus. Meskipun tensi diskusi pada berkas $ISSUE_NUM ini meningkat, kita harus tetap menghormati dedikasi \`$COMMENTER\` dalam memberikan sudut pandang baru. Mari kita evaluasi tanpa emosi.\""
+          fi
+
+          # 3. KIRIM PAYLOAD PERTAMA: LADY FURINA (Ke Webhook Comments)
+          jq -n \
+            --arg desc "$FURINA_DIALOG" \
+            --arg repo_name "$REPO_NAME" \
+            --arg repo_url "$REPO_URL" \
+            --arg issue_title "$ISSUE_TITLE" \
+            --arg issue_num "$ISSUE_NUM" \
+            --arg issue_url "$ISSUE_URL" \
+            --arg commenter "$COMMENTER" \
+            --arg comment_body "$COMMENT_BODY" \
+            '{
+              embeds: [{
+                title: "🎭 Panggung Teater Furina: Interupsi Surat Masuk!",
+                description: $desc,
+                color: 6197475,
+                fields: [
+                  { name: "🏰 Tempat Kejadian", value: ("[" + $repo_name + "](" + $repo_url + ")"), inline: false },
+                  { name: "📌 Berkas Bahasan", value: ("[" + $issue_title + " " + $issue_num + "](" + $issue_url + ")"), inline: false },
+                  { name: "🗣️ Penulis Surat", value: ("`" + $commenter + "`"), inline: true },
+                  { name: "📄 Isi Pesan Rahasia", value: ("```\n" + \$comment_body + "\n```"), inline: false }
+                ],
+                footer: { text: "✨ \"Tepuk tangan yang meriah, silakan! Pertunjukan baru saja dimulai!~\"" }
+              }]
+            }' > furina_payload.json
+
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d @furina_payload.json \
+               "${{ secrets.DISCORD_WEBHOOK_COMMENTS }}"
+
+
+          # 4. KIRIM PAYLOAD KEDUA: MONSIEUR NEUVILLETTE (Ke Webhook Issues)
+          jq -n \
+            --arg desc "$NEUVI_DIALOG" \
+            --arg repo_name "$REPO_NAME" \
+            --arg repo_url "$REPO_URL" \
+            --arg issue_title "$ISSUE_TITLE" \
+            --arg issue_num "$ISSUE_NUM" \
+            --arg issue_url "$ISSUE_URL" \
+            --arg commenter "$COMMENTER" \
+            --arg comment_body "$COMMENT_BODY" \
+            '{
+              embeds: [{
+                title: "⚖️ Pengadilan Fontaine: Tanggapan Atas Kesaksian",
+                description: $desc,
+                color: 2456538,
+                fields: [
+                  { name: "🏰 Lokasi Sidang", value: ("[" + $repo_name + "](" + $repo_url + ")"), inline: false },
+                  { name: "📌 Berkas Kasus Utama", value: ("[" + $issue_title + " " + $issue_num + "](" + $issue_url + ")"), inline: false },
+                  { name: "🗣️ Identitas Saksi", value: ("`" + $commenter + "`"), inline: true },
+                  { name: "📄 Catatan Kesaksian", value: ("```\n" + \$comment_body + "\n```"), inline: false }
+                ],
+                footer: { text: "⚖️ \"Hukum tidak memandang bulu, dan keadilan tetap berjalan di ruang sidang sebelah.\"" }
+              }]
+            }' > neuvi_payload.json
+
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d @neuvi_payload.json \
+               "${{ secrets.DISCORD_WEBHOOK_ISSUES }}"
