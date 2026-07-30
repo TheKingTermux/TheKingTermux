@@ -2,11 +2,11 @@ name: Update Server Tips
 on:
   workflow_dispatch:
   schedule:
-  - cron: '0 1 * * *'
+  - cron: '0 6 * * *'
 
 jobs:
   update-server-tips:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
