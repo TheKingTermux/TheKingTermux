@@ -1,0 +1,99 @@
+name: Monitor Pull Requests
+on:
+  pull_request:
+    types: [opened, closed, reopened]
+
+permissions:
+  actions: read
+
+jobs:
+  kirim-notifikasi-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Atur Payload Gaya Bisnis Ningguang
+        id: format
+        run: |
+          ACTION="${{ github.event.action }}"
+          echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK_PR }}" >> $GITHUB_OUTPUT
+          echo "COLOR=16239121" >> $GITHUB_OUTPUT
+          echo "FOOTER=💎 'Setiap transaksi harus mendatangkan nilai keuntungan bagi Liyue.'" >> $GITHUB_OUTPUT
+          
+          INDEX=$((RANDOM % 4))
+          
+          if [ "$ACTION" = "opened" ]; then
+            if [ $INDEX -eq 0 ]; then
+              echo "TITLE=📜 Proposal Kontrak Kerja Baru Tiba" >> $GITHUB_OUTPUT
+              echo "DESC=Sebuah draf penggabungan kode baru telah diajukan ke Jade Chamber. Jika proposal investasi baris kode ini menguntungkan stabilitas proyek, saya akan segera menandatanganinya." >> $GITHUB_OUTPUT
+            elif [ $INDEX -eq 1 ]; then
+              echo "TITLE=📈 Analisis Pasar: Peluang Investasi Kode" >> $GITHUB_OUTPUT
+              echo "DESC=Sekretarisku baru saja membawakan dokumen pengajuan kode ini. Mari kita bedah bersama, apakah kontribusi baru ini akan menaikkan nilai kapitalisasi repositori kita atau tidak." >> $GITHUB_OUTPUT
+            elif [ $INDEX -eq 2 ]; then
+              echo "TITLE=♟️ Langkah Catur Baru di Papan Perdagangan" >> $GITHUB_OUTPUT
+              echo "DESC=Seseorang mencoba memasukkan aset baru ke dalam ekosistem Liyue. Menarik... Saya menyukai mitra bisnis yang berani mengajukan perubahan radikal seperti ini." >> $GITHUB_OUTPUT
+            else
+              echo "TITLE=🔍 Pemeriksaan Ketat Draf Perjanjian" >> $GITHUB_OUTPUT
+              echo "DESC=Jangan biarkan ada celah hukum atau bug sekecil apa pun lolos dari pengawasan Jade Chamber. Kita akan melakukan audit menyeluruh terhadap pengajuan baru ini." >> $GITHUB_OUTPUT
+            fi
+            
+          elif [ "$ACTION" = "closed" ]; then
+            IS_MERGED="${{ github.event.pull_request.merged }}"
+            if [ "$IS_MERGED" = "true" ]; then
+              if [ $INDEX -eq 0 ]; then
+                echo "TITLE=🤝 Kontrak Disetujui dan Disahkan" >> $GITHUB_OUTPUT
+                echo "DESC=Kesepakatan telah dicapai! Draf proposal ini resmi digabungkan ke dalam cabang utama. Kerja sama yang sangat menguntungkan." >> $GITHUB_OUTPUT
+              else
+                echo "TITLE=💰 Aset Resmi Di-merger ke Cabang Utama" >> $GITHUB_OUTPUT
+                echo "DESC=Sempurna. Semua baris kode telah diaudit dan resmi menjadi hak milik sah kekayaan intelektual repositori. Keuntungan besar bagi proyek kita." >> $GITHUB_OUTPUT
+              fi
+            else
+              if [ $INDEX -eq 0 ]; then
+                echo "TITLE=❌ Proposal Kontrak Ditolak" >> $GITHUB_OUTPUT
+                echo "DESC=Setelah pertimbangan yang matang di Jade Chamber, investasi kode ini dinilai tidak membawa keuntungan bagi kestabilan proyek. Berkas dibatalkan." >> $GITHUB_OUTPUT
+              else
+                echo "TITLE=🍂 Kesepakatan Bisnis Gagal Terjadi" >> $GITHUB_OUTPUT
+                echo "DESC=Negosiasi dihentikan. Struktur atau kualitas dari pengajuan ini belum memenuhi standar pasar yang saya tetapkan. Silakan kembali jika modal kodinganmu sudah siap." >> $GITHUB_OUTPUT
+              fi
+            fi
+          else
+            echo "TITLE=📊 Pengajuan Ulang Proposal Bisnis" >> $GITHUB_OUTPUT
+            echo "DESC=Draf proposal penggabungan kode yang sempat tertunda kini telah diajukan kembali untuk dilakukan kalkulasi ulang biaya dan risikonya." >> $GITHUB_OUTPUT
+          fi
+
+      - name: Kirim Notifikasi via JQ
+        run: |
+          REPO_NAME="${{ github.repository }}"
+          REPO_URL="${{ github.server_url }}/$REPO_NAME"
+          USER_ACTOR="${{ github.actor }}"
+          DOC_TITLE="${{ github.event.pull_request.title }}"
+          DOC_NUM="#${{ github.event.pull_request.number }}"
+          DOC_URL="${{ github.event.pull_request.html_url }}"
+
+          jq -n \
+            --arg title "${{ steps.format.outputs.TITLE }}" \
+            --arg desc "${{ steps.format.outputs.DESC }}" \
+            --arg color "${{ steps.format.outputs.COLOR }}" \
+            --arg repo_name "$REPO_NAME" \
+            --arg repo_url "$REPO_URL" \
+            --arg doc_title "$DOC_TITLE" \
+            --arg doc_num "$DOC_NUM" \
+            --arg doc_url "$DOC_URL" \
+            --arg actor "$USER_ACTOR" \
+            --arg footer_text "${{ steps.format.outputs.FOOTER }}" \
+            '{
+              embeds: [{
+                title: $title,
+                description: $desc,
+                color: ($color | tonumber),
+                fields: [
+                  { name: "🏰 Lokasi Pemeriksaan", value: ("[" + $repo_name + "](" + $repo_url + ")"), inline: false },
+                  { name: "💼 Judul Perjanjian", value: ("[" + $doc_title + " " + $doc_num + "](" + $doc_url + ")"), inline: false },
+                  { name: "👤 Pemohon Kontrak", value: ("`" + $actor + "`"), inline: true }
+                ],
+                footer: { text: $footer_text }
+              }]
+            }' > pr_payload.json
+
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d @pr_payload.json \
+               "${{ steps.format.outputs.TARGET_WEBHOOK }}"
