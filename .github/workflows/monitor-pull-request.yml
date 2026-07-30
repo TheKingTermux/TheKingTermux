@@ -147,7 +147,7 @@ jobs:
       - name: Eksekusi Kirim / Edit Pesan Discord via Bot API
         run: |
           CHANNEL_ID="${{ secrets.DISCORD_PR_CHANNEL_ID }}"
-          BOT_TOKEN="${{ secrets.DISCORD_BOT_TOKEN }}"
+          BOT_TOKEN="${{ secrets.DISCORD_PR_TOKEN }}"
           
           # Hapus spasi atau karakter aneh yang mungkin terbawa di rahasia ID
           CHANNEL_ID=$(echo "$CHANNEL_ID" | tr -d '[:space:]')
