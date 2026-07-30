@@ -17,35 +17,53 @@ jobs:
   kirim-notifikasi-discord:
     runs-on: ubuntu-slim
     steps:
-      - name: Atur Format Notifikasi Gaya Columbina
+      - name: Atur Format Notifikasi Berdasarkan Karakter Fatui
         id: format
         run: |
           CONCLUSION="${{ github.event.workflow_run.conclusion }}"
           TRIGGER_EVENT="${{ github.event.workflow_run.event }}"
           
-          # 1. LOGIKA STATUS AKHIR (SUKSES / GAGAL)
+          # 1. LOGIKA UTAMA: MEMISAHKAN COLUMBINA (SUCCESS) & ARLECCHINO (FAILURE)
           if [ "$CONCLUSION" = "success" ]; then
+            # --- KONFIGURASI COLUMBINA ---
+            echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK }}" >> $GITHUB_OUTPUT
             echo "TITLE=♫~ Ah, keharmonisan yang indah..." >> $GITHUB_OUTPUT
             echo "DESC=Semuanya berjalan dengan sangat damai, bagai melodi yang mengalun tanpa cela... Alur kerjamu menari dengan sempurna hari ini.~" >> $GITHUB_OUTPUT
-            echo "COLOR=16764142" >> $GITHUB_OUTPUT # Warna Pink Lembut Columbina
+            echo "COLOR=16764142" >> $GITHUB_OUTPUT # Warna Pink Lembut
+            echo "FOOTER=🕊️ \"Tidurlah dengan damai, biarkan malam menghapus air matamu...\"" >> $GITHUB_OUTPUT
+            
+            # Penerjemah Pemicu versi Columbina
+            if [ "$TRIGGER_EVENT" = "schedule" ]; then
+              echo "POETIC_TRIGGER=⏰ *Takdir waktu yang berputar rutin (Penjadwalan Otomatis)*" >> $GITHUB_OUTPUT
+            elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
+              echo "POETIC_TRIGGER=🖐️ *Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)*" >> $GITHUB_OUTPUT
+            elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
+              echo "POETIC_TRIGGER=🔄 *Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+            else
+              echo "POETIC_TRIGGER=🍃 *Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
+            fi
+            
           else
-            echo "TITLE=📄... Oh? Nadanya sedikit sumbang..." >> $GITHUB_OUTPUT
-            echo "DESC=Sssttt... dengarlah, ada sesuatu yang retak di tengah keheningan. Salah satu alur kerjamu kehilangan melodinya dan terjatuh... Haruskah kita memperbaikinya bersama?~" >> $GITHUB_OUTPUT
-            echo "COLOR=11141120" >> $GITHUB_OUTPUT # Warna Merah Gelap / Fatui
+            # --- KONFIGURASI ARLECCHINO ---
+            echo "TARGET_WEBHOOK=${{ secrets.DISCORD_WEBHOOK_FAIL }}" >> $GITHUB_OUTPUT
+            echo "TITLE=🩸 Laporan Kegagalan: House of the Hearth" >> $GITHUB_OUTPUT
+            echo "DESC=Ada gangguan pada sistem kita. Salah satu alur kerja gagal menyelesaikan tugasnya. Di bawah pengawasanku, setiap kesalahan harus dievaluasi dengan tegas. Jangan biarkan kelalaian ini terulang kembali." >> $GITHUB_OUTPUT
+            echo "COLOR=10038562" >> $GITHUB_OUTPUT # Warna Merah Darah Gelap khas Arlecchino
+            echo "FOOTER=🐦‍⬛ \"Di dalam kegelapan, kedisiplinan adalah satu-satunya cahaya yang tersisa.\"" >> $GITHUB_OUTPUT
+            
+            # Penerjemah Pemicu versi Arlecchino
+            if [ "$TRIGGER_EVENT" = "schedule" ]; then
+              echo "POETIC_TRIGGER=⚙️ *Siklus rutin yang terjadwal otomatis*" >> $GITHUB_OUTPUT
+            elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
+              echo "POETIC_TRIGGER=♟️ *Perintah manual langsung darimu*" >> $GITHUB_OUTPUT
+            elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
+              echo "POETIC_TRIGGER=⏳ *Sistem mencoba bangkit kembali dari kegerhanaan (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
+            else
+              echo "POETIC_TRIGGER=⛓️ *Intervensi dari faktor luar ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
+            fi
           fi
 
-          # 2. LOGIKA PENERJEMAH PEMICU (DETIL GAYA COLUMBINA)
-          if [ "$TRIGGER_EVENT" = "schedule" ]; then
-            echo "POETIC_TRIGGER=⏰ *Takdir waktu yang berputar rutin (Penjadwalan Otomatis)*" >> $GITHUB_OUTPUT
-          elif [ "$TRIGGER_EVENT" = "workflow_dispatch" ]; then
-            echo "POETIC_TRIGGER=🖐️ *Sentuhan jemarimu yang menggerakkan takdir (Eksekusi Manual)*" >> $GITHUB_OUTPUT
-          elif [ "$TRIGGER_EVENT" = "repository_dispatch" ]; then
-            echo "POETIC_TRIGGER=🔄 *Alunan lagu lama yang terpaksa dimainkan ulang dari awal setelah sempat terputus (Otomatis Coba Lagi 5 Menit)*" >> $GITHUB_OUTPUT
-          else
-            echo "POETIC_TRIGGER=🍃 *Bisikan tak dikenal dari dimensi lain ($TRIGGER_EVENT)*" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Kirim Notifikasi ke Discord
+      - name: Kirim Notifikasi ke Target Discord
         run: |
           curl -H "Content-Type: application/json" \
                -X POST \
@@ -82,8 +100,8 @@ jobs:
                      }
                    ],
                    "footer": {
-                     "text": "🕊️ \"Tidurlah dengan damai, biarkan malam menghapus air matamu...\""
+                     "text": "${{ steps.format.outputs.FOOTER }}"
                    }
                  }]
                }' \
-               "${{ secrets.DISCORD_WEBHOOK }}"
+               "${{ steps.format.outputs.TARGET_WEBHOOK }}"
