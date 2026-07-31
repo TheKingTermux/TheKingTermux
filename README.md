@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Most good programmers do programming not because they expect to get paid, but because it is fun.
+> Your most unhappy customers are your greatest source of learning.
 
-<b>— Linus Torvalds</b>
+<b>— Bill Gates</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
