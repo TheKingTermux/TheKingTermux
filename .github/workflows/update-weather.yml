@@ -79,7 +79,7 @@ jobs:
           message: "Otomatis: Update cuaca terbaru"
           add: 'README.md status.json'
 
-  # JOB BARU: Mengatur penjadwalan 5 menit tanpa memakan kuota menit runner aktif
+# JOB BARU: Mengatur penjadwalan 5 menit tanpa memakan kuota menit runner aktif
   auto-retry-scheduler:
     runs-on: ubuntu-latest
     needs: update-weather
@@ -96,4 +96,4 @@ jobs:
                -H "Accept: application/vnd.github.v3+json" \
                -X POST \
                -d '{"event_type": "retry-weather-443"}' \
-               "https://github.com{{ github.repository }}/dispatches"
+               "https://api.github.com/repos/${{ github.repository }}/dispatches"
