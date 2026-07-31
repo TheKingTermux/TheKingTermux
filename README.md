@@ -154,11 +154,11 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Sabtu, 1 Agustus 2026 00:32:23  
-##### 🟡 Previous: Jumat, 31 Juli 2026 20:13:08  
-##### ⏱️ Update Gap: 4 Jam 19 Menit 15 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 1 Agustus 2026 00:44:08  
+##### 🟡 Previous: Sabtu, 1 Agustus 2026 00:32:23  
+##### ⏱️ Update Gap: 11 Menit 45 Detik lalu<br><br>
 
-*its up to Github Cron Job to take, and its wild ngl 💀
+*It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
