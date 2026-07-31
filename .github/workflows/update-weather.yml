@@ -81,14 +81,14 @@ jobs:
 
   # JOB BARU: Mengatur penjadwalan 5 menit tanpa memakan kuota menit runner aktif
   auto-retry-scheduler:
-    runs-on: ubuntu-latest # Butuh ubuntu-latest karena memakai GitHub Action eksternal
+    runs-on: ubuntu-latest
     needs: update-weather
-    if: failure() # Hanya jalan jika job 'update-weather' di atas mengalami kegagalan total
+    if: failure()
     steps:
-      - name: Mengantre eksekusi ulang dalam 5 menit
-        uses: mscoutermarsh/sleep-action@v1.2.0
-        with:
-          duration: 300 # Menunggu selama 300 detik (5 menit) sebelum menembak API
+      - name: Mengantre eksekusi ulang dalam 5 menit (Native Sleep)
+        run: |
+          echo "Menunggu selama 5 menit sebelum pemicuan ulang..."
+          sleep 300
 
       - name: Trigger Re-run via Repository Dispatch
         run: |
