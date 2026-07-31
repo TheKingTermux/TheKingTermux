@@ -701,7 +701,7 @@ def main():
 ##### 🟡 Previous: {last_update_id}  
 ##### ⏱️ Update Gap: {compare_pretty}<br><br>
 
-*its up to Github Cron Job to take, and its wild ngl 💀
+*It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
