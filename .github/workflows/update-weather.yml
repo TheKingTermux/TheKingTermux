@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   # Menerima pemicu otomatis untuk run ulang jika terjadi error 443
   repository_dispatch:
-    types: [retry-weather-443]
+    types: [retry-update-weather-443]
   schedule:
   - cron: '*/30 * * * *'
 
@@ -127,5 +127,5 @@ jobs:
           curl -H "Authorization: Bearer $BOT_TOKEN" \
                -H "Accept: application/vnd.github.v3+json" \
                -X POST \
-               -d '{"event_type": "retry-weather-443", "client_payload": {"retry_count": '"$NEXT_RETRY_COUNT"'}}' \
+               -d '{"event_type": "retry-update-weather-443", "client_payload": {"retry_count": '"$NEXT_RETRY_COUNT"'}}' \
                "https://api.github.com/repos/${{ github.repository }}/dispatches"
