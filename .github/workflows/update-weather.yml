@@ -75,7 +75,7 @@ jobs:
         uses: EndBug/add-and-commit@latest
         with:
           author_name: TheKingTermux
-          author_email: 50316075+TheKingTermux@://github.com
+          author_email: 50316075+TheKingTermux@users.noreply.github.com
           message: "Otomatis: Update cuaca terbaru"
           add: 'README.md status.json'
 
