@@ -79,21 +79,53 @@ jobs:
           message: "Otomatis: Update cuaca terbaru"
           add: 'README.md status.json'
 
-# JOB BARU: Mengatur penjadwalan 5 menit tanpa memakan kuota menit runner aktif
+  # JOB BARU: Mengatur penjadwalan 5 menit dengan pembatas maksimal 3x loop
   auto-retry-scheduler:
     runs-on: ubuntu-latest
     needs: update-weather
     if: failure()
     steps:
+      - name: Cek Batas Loop Retry
+        id: check_retry
+        run: |
+          # Ambil hitungan retry dari trigger sebelumnya. Jika kosong (dari cron), anggap 0.
+          CURRENT_RETRY="${{ github.event.client_payload.retry_count }}"
+          CURRENT_RETRY=${CURRENT_RETRY:-0}
+          
+          echo "Status saat ini: Gagal pada percobaan ke-$CURRENT_RETRY."
+          
+          if [ "$CURRENT_RETRY" -ge 3 ]; then
+            echo "Batas maksimal retry (3x) telah tercapai. Menghentikan loop darurat."
+            echo "continue=false" >> $GITHUB_OUTPUT
+          else
+            NEXT_RETRY=$((CURRENT_RETRY + 1))
+            echo "Akan mencoba retry ke-$NEXT_RETRY setelah 5 menit."
+            echo "next_retry=$NEXT_RETRY" >> $GITHUB_OUTPUT
+            echo "continue=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Mengantre eksekusi ulang dalam 5 menit (Native Sleep)
+        if: steps.check_retry.outputs.continue == 'true'
         run: |
           echo "Menunggu selama 5 menit sebelum pemicuan ulang..."
           sleep 300
 
+      - name: Generate Bot Token
+        if: steps.check_retry.outputs.continue == 'true'
+        id: get_bug_bot_token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Trigger Re-run via Repository Dispatch
+        if: steps.check_retry.outputs.continue == 'true'
+        env:
+          NEXT_RETRY_COUNT: ${{ steps.check_retry.outputs.next_retry }}
+          BOT_TOKEN: ${{ steps.get_bug_bot_token.outputs.token }}
         run: |
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          curl -H "Authorization: Bearer $BOT_TOKEN" \
                -H "Accept: application/vnd.github.v3+json" \
                -X POST \
-               -d '{"event_type": "retry-weather-443"}' \
+               -d '{"event_type": "retry-weather-443", "client_payload": {"retry_count": '"$NEXT_RETRY_COUNT"'}}' \
                "https://api.github.com/repos/${{ github.repository }}/dispatches"
