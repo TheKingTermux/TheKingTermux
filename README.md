@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Enable Fail2Ban**
+**Check Failed SSH Logins**
     
-> _`Fail2Ban` helps block repeated failed login attempts._
+> _Use `grep Failed /var/log/auth.log` to identify brute-force attempts._
 
 </div>
 <!-- END_SECTION:server_tip -->
