@@ -115,7 +115,7 @@ jobs:
         id: get_bug_bot_token
         uses: actions/create-github-app-token@v3
         with:
-          app-id: ${{ secrets.BOT_APP_ID }}
+          client-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Trigger Re-run via Repository Dispatch
