@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Failed SSH Logins**
+**Check Open Files**
     
-> _Use `grep Failed /var/log/auth.log` to identify brute-force attempts._
+> _Use `lsof` to see which files are currently opened by processes._
 
 </div>
 <!-- END_SECTION:server_tip -->
