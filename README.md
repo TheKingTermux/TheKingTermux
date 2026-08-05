@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check TCP Connections**
+**Monitor Login Sessions**
     
-> _Use `ss -ant` to inspect active TCP sessions._
+> _Use `who` or `w` to view active users._
 
 </div>
 <!-- END_SECTION:server_tip -->
