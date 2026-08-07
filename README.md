@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Monitor Logs Live**
+**Find Zombie Processes**
     
-> _Use `journalctl -xef` to follow logs and view recent errors._
+> _Use `ps aux | grep Z` to locate zombie processes._
 
 </div>
 <!-- END_SECTION:server_tip -->
