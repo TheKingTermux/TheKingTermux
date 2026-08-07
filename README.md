@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Code is read much more often than it is written.
+> Debugging is twice as hard as writing the code in the first place.
 
-<b>— Guido van Rossum</b>
+<b>— Brian Kernighan</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
