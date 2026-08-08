@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           ATTEMPTS=3
-          DELAY=15
+          DELAY=20
           count=1
 
           until [ $count -gt $ATTEMPTS ]
