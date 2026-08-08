@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Debugging is twice as hard as writing the code in the first place.
+> Don't live with broken windows.
 
-<b>— Brian Kernighan</b>
+<b>— Andrew Hunt</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
