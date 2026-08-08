@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Sabtu, 8 Agustus 2026 21:34:15  
-##### 🟡 Previous: Sabtu, 8 Agustus 2026 20:48:30  
-##### ⏱️ Update Gap: 45 Menit 45 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 8 Agustus 2026 21:58:32  
+##### 🟡 Previous: Sabtu, 8 Agustus 2026 21:34:15  
+##### ⏱️ Update Gap: 24 Menit 17 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -167,8 +167,8 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 🌡️ Temperature: 20.2°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
 🌡 Feels Like: 21.5°C (🌤️ Adem banget, cocok rebahan)<br>
-🌧 Chance of Rain: 6% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 11.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+🌧 Chance of Rain: 8% (☀️ Santai, langit lagi baik hati)<br>
+💨 Wind Speed: 11.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 60%  
+☁️ Cloud Cover: 52%  
 🌡 Pressure: 1016.3 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 88% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
-🌱 Soil Temp: 24.2°C
+💧 Humidity: 87% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
+🌱 Soil Temp: 24.0°C
 
 😷 Air Quality Index: 104 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 35.3<br>
 🌫️ PM10: 38.1<br>
 
 💨 Wind Gust: 24.8 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 235° (Barat Daya)<br>
+🧭 Wind Direction: 236° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:40  
 🌇 Sunset: 17:29
 
-👀 Visibility: 14020.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 15760.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 460.0 m  
 🔺 Max: 37620.0 m
 
