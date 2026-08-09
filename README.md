@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Failed Services**
+**Inspect ARP Table**
     
-> _Use `systemctl --failed` to find broken services._
+> _Use `ip neigh` to view ARP and neighbor entries._
 
 </div>
 <!-- END_SECTION:server_tip -->
