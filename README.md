@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Inspect ARP Table**
+**View Kernel Version**
     
-> _Use `ip neigh` to view ARP and neighbor entries._
+> _Use `uname -r` to identify the running kernel._
 
 </div>
 <!-- END_SECTION:server_tip -->
