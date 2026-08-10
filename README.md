@@ -154,21 +154,21 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Senin, 10 Agustus 2026 17:18:38  
-##### 🟡 Previous: Senin, 10 Agustus 2026 15:38:21  
-##### ⏱️ Update Gap: 1 Jam 40 Menit 17 Detik lalu<br><br>
+##### 🟢 Latest: Senin, 10 Agustus 2026 18:05:25  
+##### 🟡 Previous: Senin, 10 Agustus 2026 17:18:38  
+##### ⏱️ Update Gap: 46 Menit 47 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**🌤️ Mainly Clear**
+**⛅ Partly Cloudy**
 
-🌡️ Temperature: 23.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 25.1°C (😌 Nyaman kayak kipas angin malam)<br>
+🌡️ Temperature: 22.1°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 23.8°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 8.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 7.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 28%  
-🌡 Pressure: 1011.9 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 68%  
+🌡 Pressure: 1012.6 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 70% (😓 Lembab (keringat mulai gampang keluar))<br>
-🌱 Soil Temp: 29.6°C
+💧 Humidity: 76% (😓 Lembab (keringat mulai gampang keluar))<br>
+🌱 Soil Temp: 28.2°C
 
-😷 Air Quality Index: 74 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 22.8<br>
-🌫️ PM10: 24.7<br>
+😷 Air Quality Index: 84 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 27.9<br>
+🌫️ PM10: 29.6<br>
 
-💨 Wind Gust: 27.7 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 160° (Selatan)<br>
+💨 Wind Gust: 26.3 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 180° (Selatan)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
-🌗 Time: 🌞 Day
+🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:40  
 🌇 Sunset: 17:29
 
-👀 Visibility: 19620.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 27280.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 60.0 m  
 🔺 Max: 33340.0 m
 
