@@ -154,21 +154,21 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Senin, 10 Agustus 2026 06:32:52  
-##### 🟡 Previous: Senin, 10 Agustus 2026 05:32:12  
-##### ⏱️ Update Gap: 1 Jam 40 Detik lalu<br><br>
+##### 🟢 Latest: Senin, 10 Agustus 2026 07:12:17  
+##### 🟡 Previous: Senin, 10 Agustus 2026 06:32:52  
+##### ⏱️ Update Gap: 39 Menit 25 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**☁️ Overcast**
+**⛅ Partly Cloudy**
 
-🌡️ Temperature: 18.3°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 20.8°C (🌤️ Adem banget, cocok rebahan)<br>
-🌧 Chance of Rain: 6% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 2.7 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+🌡️ Temperature: 19.1°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 21.6°C (🌤️ Adem banget, cocok rebahan)<br>
+🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
+💨 Wind Speed: 3.8 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 89%  
-🌡 Pressure: 1015.0 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 73%  
+🌡 Pressure: 1014.8 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 99% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 20.0°C
+💧 Humidity: 96% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
+🌱 Soil Temp: 20.3°C
 
-😷 Air Quality Index: 69 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 25.4<br>
-🌫️ PM10: 26.5<br>
+😷 Air Quality Index: 70 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 17.6<br>
+🌫️ PM10: 19.3<br>
 
-💨 Wind Gust: 11.9 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 217° (Barat Daya)<br>
+💨 Wind Gust: 14.8 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 183° (Selatan)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:40  
 🌇 Sunset: 17:29
 
-👀 Visibility: 180.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 280.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 80.0 m  
 🔺 Max: 33400.0 m
 
