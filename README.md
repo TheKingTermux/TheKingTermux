@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+> One of my most productive days was throwing away 1000 lines of code.
 
-<b>— Martin Fowler</b>
+<b>— Ken Thompson</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
