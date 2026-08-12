@@ -154,27 +154,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Kamis, 13 Agustus 2026 00:35:19  
-##### 🟡 Previous: Rabu, 12 Agustus 2026 23:48:49  
-##### ⏱️ Update Gap: 46 Menit 30 Detik lalu<br><br>
+##### 🟢 Latest: Kamis, 13 Agustus 2026 01:33:56  
+##### 🟡 Previous: Kamis, 13 Agustus 2026 00:35:19  
+##### ⏱️ Update Gap: 58 Menit 37 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**☀️ Clear Sky**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 19.2°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 21.1°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 18.7°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 20.4°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 2.5 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 3.5 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### ⏳ Forecast (Next 5 Hours)
 
-🕐 01:00<br>☀️ Clear Sky<br>🌡️ 18.9°C • 🌧️ 0% • 💨 3.0 km/h<br><br>🕑 02:00<br>🌤️ Mainly Clear<br>🌡️ 18.5°C • 🌧️ 0% • 💨 4.0 km/h<br><br>🕒 03:00<br>🌤️ Mainly Clear<br>🌡️ 18.2°C • 🌧️ 0% • 💨 4.3 km/h<br><br>🕓 04:00<br>🌤️ Mainly Clear<br>🌡️ 18.0°C • 🌧️ 0% • 💨 4.0 km/h<br><br>🕔 05:00<br>🌤️ Mainly Clear<br>🌡️ 17.9°C • 🌧️ 0% • 💨 3.1 km/h<br><br>
+🕑 02:00<br>🌤️ Mainly Clear<br>🌡️ 18.5°C • 🌧️ 0% • 💨 4.0 km/h<br><br>🕒 03:00<br>🌤️ Mainly Clear<br>🌡️ 18.2°C • 🌧️ 0% • 💨 4.3 km/h<br><br>🕓 04:00<br>🌤️ Mainly Clear<br>🌡️ 18.0°C • 🌧️ 0% • 💨 4.0 km/h<br><br>🕔 05:00<br>🌤️ Mainly Clear<br>🌡️ 17.9°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕕 06:00<br>☀️ Clear Sky<br>🌡️ 18.2°C • 🌧️ 0% • 💨 2.0 km/h<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 11%  
-🌡 Pressure: 1015.5 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 20%  
+🌡 Pressure: 1014.7 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 85% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
-🌱 Soil Temp: 21.6°C
+💧 Humidity: 87% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
+🌱 Soil Temp: 20.9°C
 
-😷 Air Quality Index: 90 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
-🌫️ PM2.5: 56.9<br>
-🌫️ PM10: 58.8<br>
+😷 Air Quality Index: 91 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
+🌫️ PM2.5: 50.1<br>
+🌫️ PM10: 51.9<br>
 
-💨 Wind Gust: 7.6 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 240° (Barat Daya)<br>
+💨 Wind Gust: 7.9 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 258° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:39  
 🌇 Sunset: 17:29
 
-👀 Visibility: 23560.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 23600.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 9820.0 m  
 🔺 Max: 42140.0 m
 
