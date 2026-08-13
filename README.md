@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Top CPU Consumers**
+**List Listening Ports**
     
-> _Use `ps aux --sort=-%cpu | head` to identify CPU-intensive processes._
+> _Use `ss -lntp` instead of the deprecated netstat._
 
 </div>
 <!-- END_SECTION:server_tip -->
