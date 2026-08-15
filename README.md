@@ -154,19 +154,19 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Sabtu, 15 Agustus 2026 23:25:03  
-##### 🟡 Previous: Sabtu, 15 Agustus 2026 22:58:29  
-##### ⏱️ Update Gap: 26 Menit 34 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 15 Agustus 2026 23:55:58  
+##### 🟡 Previous: Sabtu, 15 Agustus 2026 23:25:03  
+##### ⏱️ Update Gap: 30 Menit 55 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**⛅ Partly Cloudy**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 19.8°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 22.7°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 19.5°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 22.3°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 💨 Wind Speed: 3.4 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
@@ -204,19 +204,19 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 53%  
-🌡 Pressure: 1016.1 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 45%  
+🌡 Pressure: 1016.0 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 2.0 h
 
 💧 Humidity: 96% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 23.1°C
+🌱 Soil Temp: 22.8°C
 
 😷 Air Quality Index: 84 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
 🌫️ PM2.5: 29.3<br>
 🌫️ PM10: 31.1<br>
 
-💨 Wind Gust: 10.1 km/h (😴 Tenang, angin lagi cuti)<br>
+💨 Wind Gust: 9.4 km/h (😴 Tenang, angin lagi cuti)<br>
 🧭 Wind Direction: 276° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
@@ -224,7 +224,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌅 Sunrise: 05:38  
 🌇 Sunset: 17:29
 
-👀 Visibility: 1600.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 2740.0 m  (Moderate (agak gakelihatan, kayak mood Senin 😩))<br>
 🔻 Min: 160.0 m  
 🔺 Max: 36900.0 m
 
