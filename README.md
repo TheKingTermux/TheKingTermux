@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check System Temperature**
+**Verify Reverse DNS**
     
-> _Use `sensors` from lm-sensors to monitor hardware temperatures._
+> _Use `dig -x <IP>` to check PTR records._
 
 </div>
 <!-- END_SECTION:server_tip -->
