@@ -94,8 +94,8 @@ jobs:
           
           echo "Status saat ini: Gagal pada percobaan ke-$CURRENT_RETRY."
           
-          if [ "$CURRENT_RETRY" -ge 3 ]; then
-            echo "Batas maksimal retry (3x) telah tercapai. Menghentikan loop darurat."
+          if [ "$CURRENT_RETRY" -ge 4 ]; then
+            echo "Batas maksimal retry (4x) telah tercapai. Menghentikan loop darurat."
             echo "continue=false" >> $GITHUB_OUTPUT
           else
             NEXT_RETRY=$((CURRENT_RETRY + 1))
