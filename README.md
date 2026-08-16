@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Reverse DNS**
+**Check Certificate Expiry**
     
-> _Use `dig -x <IP>` to check PTR records._
+> _Monitor `TLS certificates` to avoid unexpected outages._
 
 </div>
 <!-- END_SECTION:server_tip -->
