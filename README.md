@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Talk is cheap. Show me the code.
+> A ship in port is safe, but that is not what ships are built for.
 
-<b>— Linus Torvalds</b>
+<b>— Grace Hopper</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
