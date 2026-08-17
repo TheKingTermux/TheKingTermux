@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Certificate Expiry**
+**Limit Root Access**
     
-> _Monitor `TLS certificates` to avoid unexpected outages._
+> _Prefer `sudo` over `direct root` logins for accountability._
 
 </div>
 <!-- END_SECTION:server_tip -->
