@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> A ship in port is safe, but that is not what ships are built for.
+> Focused, hard work is the real key to success.
 
-<b>— Grace Hopper</b>
+<b>— John Carmack</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
