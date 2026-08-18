@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Selasa, 18 Agustus 2026 15:36:50  
-##### 🟡 Previous: Selasa, 18 Agustus 2026 14:32:57  
-##### ⏱️ Update Gap: 1 Jam 3 Menit 53 Detik lalu<br><br>
+##### 🟢 Latest: Selasa, 18 Agustus 2026 16:04:35  
+##### 🟡 Previous: Selasa, 18 Agustus 2026 15:36:50  
+##### ⏱️ Update Gap: 27 Menit 45 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,10 +165,10 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 26.7°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 28.2°C (😌 Nyaman kayak kipas angin malam)<br>
+🌡️ Temperature: 26.2°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 27.9°C (😌 Nyaman kayak kipas angin malam)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 13.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 12.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -196,7 +196,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 <br>
 
-<b>☀ Siang (12:00-15:59)</b><br><br><b>🏙️ Jakarta</b><br>🌍 Unknown<br>🌡️ 33°C • 🌡 Feels 37°C<br>🌧️ 38% • 💨 7 km/h<br><br><b>⛰️ Bandung</b><br>☀️ Clear<br>🌡️ 31°C • 🌡 Feels 33°C<br>🌧️ 0% • 💨 12 km/h<br><br><b>🏛️ Semarang</b><br>🌤️ Mainly Clear<br>🌡️ 33°C • 🌡 Feels 36°C<br>🌧️ 7% • 💨 13 km/h<br><br><b>🎓 Yogyakarta</b><br>☀️ Clear<br>🌡️ 33°C • 🌡 Feels 36°C<br>🌧️ 2% • 💨 9 km/h<br><br><b>🌊 Surabaya</b><br>☀️ Clear<br>🌡️ 30°C • 🌡 Feels 34°C<br>🌧️ 4% • 💨 17 km/h<br><br><b>🌧️ Medan</b><br>🌍 Unknown<br>🌡️ 30°C • 🌡 Feels 35°C<br>🌧️ 87% • 💨 6 km/h<br><br><b>🚢 Palembang</b><br>☁️ Overcast<br>🌡️ 33°C • 🌡 Feels 38°C<br>🌧️ 2% • 💨 8 km/h<br><br><b>🛢️ Balikpapan</b><br>🌤️ Mainly Clear<br>🌡️ 29°C • 🌡 Feels 33°C<br>🌧️ 1% • 💨 20 km/h<br><br><b>🐟 Makassar</b><br>☁️ Overcast<br>🌡️ 31°C • 🌡 Feels 32°C<br>🌧️ 0% • 💨 16 km/h<br><br><b>🌴 Denpasar</b><br>☀️ Clear<br>🌡️ 30°C • 🌡 Feels 33°C<br>🌧️ 0% • 💨 15 km/h<br><br>
+<b>🌇 Sore (16:00-19:59)</b><br><br><b>🏙️ Jakarta</b><br>🌍 Unknown<br>🌡️ 31°C • 🌡 Feels 34°C<br>🌧️ 61% • 💨 10 km/h<br><br><b>⛰️ Bandung</b><br>🌧️ Rain<br>🌡️ 28°C • 🌡 Feels 31°C<br>🌧️ 2% • 💨 5 km/h<br><br><b>🏛️ Semarang</b><br>☁️ Overcast<br>🌡️ 30°C • 🌡 Feels 34°C<br>🌧️ 8% • 💨 6 km/h<br><br><b>🎓 Yogyakarta</b><br>☁️ Overcast<br>🌡️ 28°C • 🌡 Feels 31°C<br>🌧️ 0% • 💨 8 km/h<br><br><b>🌊 Surabaya</b><br>☁️ Overcast<br>🌡️ 28°C • 🌡 Feels 31°C<br>🌧️ 0% • 💨 19 km/h<br><br><b>🌧️ Medan</b><br>🌍 Unknown<br>🌡️ 28°C • 🌡 Feels 34°C<br>🌧️ 96% • 💨 4 km/h<br><br><b>🚢 Palembang</b><br>🌤️ Mainly Clear<br>🌡️ 32°C • 🌡 Feels 36°C<br>🌧️ 8% • 💨 7 km/h<br><br><b>🛢️ Balikpapan</b><br>☁️ Overcast<br>🌡️ 27°C • 🌡 Feels 30°C<br>🌧️ 0% • 💨 17 km/h<br><br><b>🐟 Makassar</b><br>☁️ Overcast<br>🌡️ 29°C • 🌡 Feels 30°C<br>🌧️ 0% • 💨 12 km/h<br><br><b>🌴 Denpasar</b><br>☁️ Overcast<br>🌡️ 26°C • 🌡 Feels 29°C<br>🌧️ 0% • 💨 16 km/h<br><br>
 
 </details>
 
@@ -204,20 +204,20 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 88%  
-🌡 Pressure: 1011.6 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 91%  
+🌡 Pressure: 1011.8 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 64% (🙂 Cukup lembab (masih nyaman buat aktivitas))<br>
-🌱 Soil Temp: 32.6°C
+💧 Humidity: 66% (🙂 Cukup lembab (masih nyaman buat aktivitas))<br>
+🌱 Soil Temp: 32.2°C
 
 😷 Air Quality Index: 149 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 32.2<br>
-🌫️ PM10: 34.1<br>
+🌫️ PM2.5: 30.5<br>
+🌫️ PM10: 32.4<br>
 
-💨 Wind Gust: 35.6 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 49° (Timur Laut)<br>
+💨 Wind Gust: 34.2 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 47° (Timur Laut)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
