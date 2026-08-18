@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Rabu, 19 Agustus 2026 04:18:16  
-##### 🟡 Previous: Rabu, 19 Agustus 2026 03:55:01  
-##### ⏱️ Update Gap: 23 Menit 15 Detik lalu<br><br>
+##### 🟢 Latest: Rabu, 19 Agustus 2026 04:46:00  
+##### 🟡 Previous: Rabu, 19 Agustus 2026 04:18:16  
+##### ⏱️ Update Gap: 27 Menit 44 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,10 +165,10 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 19.5°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 20.3°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 19.4°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 20.0°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 4.7 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 5.9 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -209,22 +209,22 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 74% (😓 Lembab (keringat mulai gampang keluar))<br>
-🌱 Soil Temp: 20.5°C
+💧 Humidity: 73% (😓 Lembab (keringat mulai gampang keluar))<br>
+🌱 Soil Temp: 20.4°C
 
 😷 Air Quality Index: 143 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 59.8<br>
 🌫️ PM10: 61.7<br>
 
-💨 Wind Gust: 10.8 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 344° (Utara)<br>
+💨 Wind Gust: 12.2 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 349° (Utara)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:36  
 🌇 Sunset: 17:29
 
-👀 Visibility: 540.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 660.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 360.0 m  
 🔺 Max: 36700.0 m
 
