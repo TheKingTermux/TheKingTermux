@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Selasa, 18 Agustus 2026 12:15:44  
-##### 🟡 Previous: Selasa, 18 Agustus 2026 11:27:45  
-##### ⏱️ Update Gap: 47 Menit 59 Detik lalu<br><br>
+##### 🟢 Latest: Selasa, 18 Agustus 2026 12:53:19  
+##### 🟡 Previous: Selasa, 18 Agustus 2026 12:15:44  
+##### ⏱️ Update Gap: 37 Menit 35 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,10 +165,10 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **🌤️ Mainly Clear**
 
-🌡️ Temperature: 29.0°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 31.8°C (🌞 Panas santai tapi mulai lengket)<br>
+🌡️ Temperature: 28.7°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 31.3°C (🌞 Panas santai tapi mulai lengket)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 12.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 12.5 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -205,26 +205,26 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 ### 🌍 Environment
 
 ☁️ Cloud Cover: 26%  
-🌡 Pressure: 1013.2 hPa (⚖️ Normal (aman terkendali))<br>
+🌡 Pressure: 1013.0 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 53% (😌 Nyaman (balance banget))<br>
-🌱 Soil Temp: 32.4°C
+💧 Humidity: 54% (😌 Nyaman (balance banget))<br>
+🌱 Soil Temp: 32.8°C
 
 😷 Air Quality Index: 150 (😷 Tidak sehat (masker jangan cuma pajangan))<br>
 🌫️ PM2.5: 32.6<br>
 🌫️ PM10: 34.1<br>
 
 💨 Wind Gust: 37.1 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 90° (Timur)<br>
-☀️ UV: 🥵 Very High UV (kulit auto drama kalo lama di luar ☀️)  
+🧭 Wind Direction: 75° (Timur)<br>
+☀️ UV: ⚠️ High UV (panasnya mulai toxic dikit)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:37  
 🌇 Sunset: 17:29
 
-👀 Visibility: 27300.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 30760.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 160.0 m  
 🔺 Max: 32560.0 m
 
