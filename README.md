@@ -154,21 +154,21 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Kamis, 20 Agustus 2026 05:19:05  
-##### 🟡 Previous: Kamis, 20 Agustus 2026 05:04:05  
-##### ⏱️ Update Gap: 15 Menit lalu<br><br>
+##### 🟢 Latest: Kamis, 20 Agustus 2026 05:49:22  
+##### 🟡 Previous: Kamis, 20 Agustus 2026 05:19:05  
+##### ⏱️ Update Gap: 30 Menit 17 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**🌤️ Mainly Clear**
+**☀️ Clear Sky**
 
 🌡️ Temperature: 18.1°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 19.7°C (🧊 Dingin, tangan auto cari selimut)<br>
+🌡 Feels Like: 19.6°C (🧊 Dingin, tangan auto cari selimut)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 1.8 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 1.9 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 20%  
-🌡 Pressure: 1016.5 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 16%  
+🌡 Pressure: 1016.8 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
 💧 Humidity: 84% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
-🌱 Soil Temp: 19.6°C
+🌱 Soil Temp: 19.4°C
 
-😷 Air Quality Index: 118 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 35.6<br>
-🌫️ PM10: 38.4<br>
+😷 Air Quality Index: 106 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 31.0<br>
+🌫️ PM10: 34.2<br>
 
 💨 Wind Gust: 4.3 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 336° (Barat Laut)<br>
+🧭 Wind Direction: 338° (Utara)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
-🌗 Time: 🌙 Night
+🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:36  
 🌇 Sunset: 17:29
 
-👀 Visibility: 820.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 1060.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 260.0 m  
 🔺 Max: 32340.0 m
 
