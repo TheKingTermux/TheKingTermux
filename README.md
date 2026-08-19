@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Rabu, 19 Agustus 2026 23:28:18  
-##### 🟡 Previous: Rabu, 19 Agustus 2026 23:03:44  
-##### ⏱️ Update Gap: 24 Menit 34 Detik lalu<br><br>
+##### 🟢 Latest: Rabu, 19 Agustus 2026 23:56:21  
+##### 🟡 Previous: Rabu, 19 Agustus 2026 23:28:18  
+##### ⏱️ Update Gap: 28 Menit 3 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,10 +165,10 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 20.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 22.8°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 20.7°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 22.9°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 6.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 6.7 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 96%  
-🌡 Pressure: 1016.9 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 95%  
+🌡 Pressure: 1016.7 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 87% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
-🌱 Soil Temp: 22.8°C
+💧 Humidity: 89% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
+🌱 Soil Temp: 22.7°C
 
 😷 Air Quality Index: 112 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 95.7<br>
 🌫️ PM10: 98.7<br>
 
-💨 Wind Gust: 15.8 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 347° (Utara)<br>
+💨 Wind Gust: 15.1 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 354° (Utara)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:36  
 🌇 Sunset: 17:29
 
-👀 Visibility: 740.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 680.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 380.0 m  
 🔺 Max: 36800.0 m
 
