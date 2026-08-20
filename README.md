@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Jumat, 21 Agustus 2026 00:30:44  
-##### 🟡 Previous: Kamis, 20 Agustus 2026 23:40:00  
-##### ⏱️ Update Gap: 50 Menit 44 Detik lalu<br><br>
+##### 🟢 Latest: Jumat, 21 Agustus 2026 00:54:53  
+##### 🟡 Previous: Jumat, 21 Agustus 2026 00:30:44  
+##### ⏱️ Update Gap: 24 Menit 9 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,10 +165,10 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☀️ Clear Sky**
 
-🌡️ Temperature: 19.0°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 21.0°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 18.8°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 20.8°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 0.8 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 0.9 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -205,19 +205,19 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 ### 🌍 Environment
 
 ☁️ Cloud Cover: 1%  
-🌡 Pressure: 1015.5 hPa (⚖️ Normal (aman terkendali))<br>
+🌡 Pressure: 1015.4 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
 💧 Humidity: 84% (🥵 Sangat lembab (gerahnya nempel di badan))<br>
-🌱 Soil Temp: 20.8°C
+🌱 Soil Temp: 20.6°C
 
 😷 Air Quality Index: 107 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 60.8<br>
 🌫️ PM10: 62.4<br>
 
 💨 Wind Gust: 4.0 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 315° (Barat Laut)<br>
+🧭 Wind Direction: 307° (Barat Laut)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
