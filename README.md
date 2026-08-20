@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Clean code always looks like it was written by someone who cares.
+> Always leave things better than you found them.
 
-<b>— Robert C. Martin</b>
+<b>— Paul Graham</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
