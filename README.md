@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Jumat, 21 Agustus 2026 23:05:02  
-##### 🟡 Previous: Jumat, 21 Agustus 2026 22:04:36  
-##### ⏱️ Update Gap: 1 Jam 26 Detik lalu<br><br>
+##### 🟢 Latest: Jumat, 21 Agustus 2026 23:57:39  
+##### 🟡 Previous: Jumat, 21 Agustus 2026 23:05:02  
+##### ⏱️ Update Gap: 52 Menit 37 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,16 +165,16 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **⛅ Partly Cloudy**
 
-🌡️ Temperature: 20.8°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 24.4°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 20.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 24.2°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 1.9 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 1.5 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### ⏳ Forecast (Next 5 Hours)
 
-🕚 23:00<br>⛅ Partly Cloudy<br>🌡️ 20.8°C • 🌧️ 0% • 💨 1.9 km/h<br><br>🕛 00:00<br>⛅ Partly Cloudy<br>🌡️ 20.5°C • 🌧️ 0% • 💨 1.4 km/h<br><br>🕐 01:00<br>⛅ Partly Cloudy<br>🌡️ 19.9°C • 🌧️ 0% • 💨 2.3 km/h<br><br>🕑 02:00<br>⛅ Partly Cloudy<br>🌡️ 19.3°C • 🌧️ 0% • 💨 2.8 km/h<br><br>🕒 03:00<br>⛅ Partly Cloudy<br>🌡️ 18.8°C • 🌧️ 0% • 💨 3.1 km/h<br><br>
+🕛 00:00<br>⛅ Partly Cloudy<br>🌡️ 20.5°C • 🌧️ 0% • 💨 1.4 km/h<br><br>🕐 01:00<br>⛅ Partly Cloudy<br>🌡️ 19.9°C • 🌧️ 0% • 💨 2.3 km/h<br><br>🕑 02:00<br>⛅ Partly Cloudy<br>🌡️ 19.3°C • 🌧️ 0% • 💨 2.8 km/h<br><br>🕒 03:00<br>⛅ Partly Cloudy<br>🌡️ 18.8°C • 🌧️ 0% • 💨 3.1 km/h<br><br>🕓 04:00<br>☁️ Overcast<br>🌡️ 18.3°C • 🌧️ 0% • 💨 2.6 km/h<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 65%  
-🌡 Pressure: 1016.4 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 58%  
+🌡 Pressure: 1016.0 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 96% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 24.0°C
+💧 Humidity: 97% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
+🌱 Soil Temp: 23.5°C
 
 😷 Air Quality Index: 126 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 58.8<br>
 🌫️ PM10: 61.2<br>
 
-💨 Wind Gust: 8.3 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 287° (Barat)<br>
+💨 Wind Gust: 7.9 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 277° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 680.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 580.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 220.0 m  
 🔺 Max: 36140.0 m
 
