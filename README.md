@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Sabtu, 22 Agustus 2026 03:19:10  
-##### 🟡 Previous: Sabtu, 22 Agustus 2026 03:01:10  
-##### ⏱️ Update Gap: 18 Menit lalu<br><br>
+##### 🟢 Latest: Sabtu, 22 Agustus 2026 03:55:18  
+##### 🟡 Previous: Sabtu, 22 Agustus 2026 03:19:10  
+##### ⏱️ Update Gap: 36 Menit 8 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -168,7 +168,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌡️ Temperature: 19.9°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
 🌡 Feels Like: 23.6°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 0.3 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+💨 Wind Speed: 0.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -205,26 +205,26 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 ### 🌍 Environment
 
 ☁️ Cloud Cover: 100%  
-🌡 Pressure: 1015.0 hPa (⚖️ Normal (aman terkendali))<br>
+🌡 Pressure: 1015.2 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
 💧 Humidity: 100% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 21.6°C
+🌱 Soil Temp: 21.5°C
 
 😷 Air Quality Index: 120 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 39.6<br>
 🌫️ PM10: 42.0<br>
 
-💨 Wind Gust: 4.0 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 315° (Barat Laut)<br>
+💨 Wind Gust: 5.0 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 270° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 260.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 180.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 100.0 m  
 🔺 Max: 32120.0 m
 
