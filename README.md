@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Time Synchronization**
+**Restart Service**
     
-> _Use `timedatectl status` to check NTP synchronization._
+> _Use `systemctl restart <service>` to restart a service after configuration changes._
 
 </div>
 <!-- END_SECTION:server_tip -->
