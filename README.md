@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Restart Service**
+**Ping test**
     
-> _Use `systemctl restart <service>` to restart a service after configuration changes._
+> _Use `ping 8.8.8.8` to test internet connectivity_
 
 </div>
 <!-- END_SECTION:server_tip -->
