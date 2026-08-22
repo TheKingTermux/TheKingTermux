@@ -154,21 +154,21 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Minggu, 23 Agustus 2026 04:23:52  
-##### 🟡 Previous: Minggu, 23 Agustus 2026 03:46:59  
-##### ⏱️ Update Gap: 36 Menit 53 Detik lalu<br><br>
+##### 🟢 Latest: Minggu, 23 Agustus 2026 04:44:05  
+##### 🟡 Previous: Minggu, 23 Agustus 2026 04:23:52  
+##### ⏱️ Update Gap: 20 Menit 13 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**⛅ Partly Cloudy**
+**☁️ Overcast**
 
-🌡️ Temperature: 18.9°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 21.5°C (🌤️ Adem banget, cocok rebahan)<br>
-🌧 Chance of Rain: 7% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 4.2 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+🌡️ Temperature: 18.7°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 21.4°C (🌤️ Adem banget, cocok rebahan)<br>
+🌧 Chance of Rain: 9% (☀️ Santai, langit lagi baik hati)<br>
+💨 Wind Speed: 3.3 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 63%  
-🌡 Pressure: 1015.1 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 80%  
+🌡 Pressure: 1015.2 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
 💧 Humidity: 99% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 21.4°C
+🌱 Soil Temp: 21.3°C
 
 😷 Air Quality Index: 99 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
 🌫️ PM2.5: 25.0<br>
 🌫️ PM10: 27.0<br>
 
 💨 Wind Gust: 13.0 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 258° (Barat)<br>
+🧭 Wind Direction: 261° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 12660.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 12640.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 520.0 m  
 🔺 Max: 32080.0 m
 
