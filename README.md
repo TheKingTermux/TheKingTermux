@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Minggu, 23 Agustus 2026 02:35:34  
-##### 🟡 Previous: Minggu, 23 Agustus 2026 01:56:34  
-##### ⏱️ Update Gap: 39 Menit lalu<br><br>
+##### 🟢 Latest: Minggu, 23 Agustus 2026 02:51:44  
+##### 🟡 Previous: Minggu, 23 Agustus 2026 02:35:34  
+##### ⏱️ Update Gap: 16 Menit 10 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -166,7 +166,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 **⛅ Partly Cloudy**
 
 🌡️ Temperature: 19.3°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 22.0°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡 Feels Like: 21.9°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 2% (☀️ Santai, langit lagi baik hati)<br>
 💨 Wind Speed: 5.2 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
@@ -204,19 +204,19 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 75%  
-🌡 Pressure: 1014.6 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 68%  
+🌡 Pressure: 1014.5 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 99% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 22.1°C
+💧 Humidity: 98% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
+🌱 Soil Temp: 21.9°C
 
 😷 Air Quality Index: 103 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 31.1<br>
 🌫️ PM10: 32.6<br>
 
-💨 Wind Gust: 11.9 km/h (😴 Tenang, angin lagi cuti)<br>
+💨 Wind Gust: 12.2 km/h (😴 Tenang, angin lagi cuti)<br>
 🧭 Wind Direction: 254° (Barat)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
@@ -224,7 +224,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 920.0 m  (Poor (tidor pun sodap ni 💤))<br>
+👀 Visibility: 1120.0 m  (Poor (tidor pun sodap ni 💤))<br>
 🔻 Min: 520.0 m  
 🔺 Max: 32080.0 m
 
