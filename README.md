@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Minggu, 23 Agustus 2026 03:16:09  
-##### 🟡 Previous: Minggu, 23 Agustus 2026 02:51:44  
-##### ⏱️ Update Gap: 24 Menit 25 Detik lalu<br><br>
+##### 🟢 Latest: Minggu, 23 Agustus 2026 03:46:59  
+##### 🟡 Previous: Minggu, 23 Agustus 2026 03:16:09  
+##### ⏱️ Update Gap: 30 Menit 50 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,9 +165,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **⛅ Partly Cloudy**
 
-🌡️ Temperature: 19.3°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
-🌡 Feels Like: 21.8°C (🌤️ Adem banget, cocok rebahan)<br>
-🌧 Chance of Rain: 4% (☀️ Santai, langit lagi baik hati)<br>
+🌡️ Temperature: 19.2°C  (🧥 Cold (udah mulai butuh jaket dikit))<br>
+🌡 Feels Like: 21.7°C (🌤️ Adem banget, cocok rebahan)<br>
+🌧 Chance of Rain: 5% (☀️ Santai, langit lagi baik hati)<br>
 💨 Wind Speed: 5.4 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
@@ -204,13 +204,13 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 58%  
-🌡 Pressure: 1014.6 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 50%  
+🌡 Pressure: 1014.8 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
 💧 Humidity: 98% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
-🌱 Soil Temp: 21.7°C
+🌱 Soil Temp: 21.6°C
 
 😷 Air Quality Index: 101 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 29.5<br>
@@ -224,7 +224,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 4160.0 m  (Moderate (agak gakelihatan, kayak mood Senin 😩))<br>
+👀 Visibility: 9820.0 m  (Good (masih oke lah, gak blur-blur amat))<br>
 🔻 Min: 520.0 m  
 🔺 Max: 32080.0 m
 
