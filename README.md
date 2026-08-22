@@ -154,21 +154,21 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Sabtu, 22 Agustus 2026 15:29:21  
-##### 🟡 Previous: Sabtu, 22 Agustus 2026 14:53:51  
-##### ⏱️ Update Gap: 35 Menit 30 Detik lalu<br><br>
+##### 🟢 Latest: Sabtu, 22 Agustus 2026 15:55:23  
+##### 🟡 Previous: Sabtu, 22 Agustus 2026 15:29:21  
+##### ⏱️ Update Gap: 26 Menit 2 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**☀️ Clear Sky**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 27.6°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 28.4°C (😌 Nyaman kayak kipas angin malam)<br>
+🌡️ Temperature: 27.0°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 27.9°C (😌 Nyaman kayak kipas angin malam)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 13.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 12.8 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 13%  
-🌡 Pressure: 1012.7 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 40%  
+🌡 Pressure: 1012.9 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 54% (😌 Nyaman (balance banget))<br>
-🌱 Soil Temp: 33.3°C
+💧 Humidity: 56% (😌 Nyaman (balance banget))<br>
+🌱 Soil Temp: 32.8°C
 
 😷 Air Quality Index: 102 (😐 Kurang sehat (paru-paru kerja lembur))<br>
 🌫️ PM2.5: 23.1<br>
 🌫️ PM10: 25.1<br>
 
 💨 Wind Gust: 33.5 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 58° (Timur Laut)<br>
+🧭 Wind Direction: 55° (Timur Laut)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 29000.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 31060.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 360.0 m  
 🔺 Max: 32120.0 m
 
