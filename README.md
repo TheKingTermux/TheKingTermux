@@ -154,19 +154,19 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Minggu, 23 Agustus 2026 12:23:35  
-##### 🟡 Previous: Minggu, 23 Agustus 2026 11:30:55  
-##### ⏱️ Update Gap: 52 Menit 40 Detik lalu<br><br>
+##### 🟢 Latest: Minggu, 23 Agustus 2026 12:53:23  
+##### 🟡 Previous: Minggu, 23 Agustus 2026 12:23:35  
+##### ⏱️ Update Gap: 29 Menit 48 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**🌤️ Mainly Clear**
+**☀️ Clear Sky**
 
-🌡️ Temperature: 28.0°C  (😌 Warm (enak sih, manusiawi banget))<br>
-🌡 Feels Like: 30.7°C (🌞 Panas santai tapi mulai lengket)<br>
+🌡️ Temperature: 28.2°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡 Feels Like: 30.6°C (🌞 Panas santai tapi mulai lengket)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
 💨 Wind Speed: 12.6 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 26%  
-🌡 Pressure: 1013.8 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 12%  
+🌡 Pressure: 1013.4 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 6.0 h
 
-💧 Humidity: 54% (😌 Nyaman (balance banget))<br>
-🌱 Soil Temp: 32.4°C
+💧 Humidity: 55% (😌 Nyaman (balance banget))<br>
+🌱 Soil Temp: 32.9°C
 
 😷 Air Quality Index: 86 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
 🌫️ PM2.5: 16.4<br>
 🌫️ PM10: 18.3<br>
 
-💨 Wind Gust: 36.7 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 95° (Timur)<br>
-☀️ UV: 🥵 Very High UV (kulit auto drama kalo lama di luar ☀️)  
+💨 Wind Gust: 36.4 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 89° (Timur)<br>
+☀️ UV: ⚠️ High UV (panasnya mulai toxic dikit)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 05:35  
 🌇 Sunset: 17:29
 
-👀 Visibility: 8980.0 m  (Good (masih oke lah, gak blur-blur amat))<br>
+👀 Visibility: 10800.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 260.0 m  
 🔺 Max: 32080.0 m
 
