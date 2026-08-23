@@ -154,21 +154,21 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Minggu, 23 Agustus 2026 14:28:32  
-##### 🟡 Previous: Minggu, 23 Agustus 2026 13:31:33  
-##### ⏱️ Update Gap: 56 Menit 59 Detik lalu<br><br>
+##### 🟢 Latest: Minggu, 23 Agustus 2026 14:56:59  
+##### 🟡 Previous: Minggu, 23 Agustus 2026 14:28:32  
+##### ⏱️ Update Gap: 28 Menit 27 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
 ━━━━━━━━━━━━━━━━━━
 ### 📍 Current
 
-**☀️ Clear Sky**
+**🌤️ Mainly Clear**
 
-🌡️ Temperature: 28.5°C  (😌 Warm (enak sih, manusiawi banget))<br>
+🌡️ Temperature: 28.3°C  (😌 Warm (enak sih, manusiawi banget))<br>
 🌡 Feels Like: 29.3°C (😌 Nyaman kayak kipas angin malam)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 11.7 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 11.0 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,20 +204,20 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 12%  
+☁️ Cloud Cover: 39%  
 🌡 Pressure: 1012.7 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 50% (😌 Nyaman (balance banget))<br>
-🌱 Soil Temp: 33.8°C
+💧 Humidity: 51% (😌 Nyaman (balance banget))<br>
+🌱 Soil Temp: 33.7°C
 
 😷 Air Quality Index: 85 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
 🌫️ PM2.5: 21.1<br>
 🌫️ PM10: 23.3<br>
 
-💨 Wind Gust: 34.6 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 76° (Timur)<br>
+💨 Wind Gust: 34.2 km/h (🍃 Lumayan nendang)<br>
+🧭 Wind Direction: 72° (Timur)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
