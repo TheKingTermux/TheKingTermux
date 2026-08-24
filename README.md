@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check File Permissions**
+**Enable Fail2Ban**
     
-> _Use `namei -l <path>` to inspect permission chains._
+> _`Fail2Ban` helps block repeated failed login attempts._
 
 </div>
 <!-- END_SECTION:server_tip -->
