@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Senin, 24 Agustus 2026 18:21:46  
-##### 🟡 Previous: Senin, 24 Agustus 2026 17:39:26  
-##### ⏱️ Update Gap: 42 Menit 20 Detik lalu<br><br>
+##### 🟢 Latest: Senin, 24 Agustus 2026 18:52:25  
+##### 🟡 Previous: Senin, 24 Agustus 2026 18:21:46  
+##### ⏱️ Update Gap: 30 Menit 39 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,10 +165,10 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **🌤️ Mainly Clear**
 
-🌡️ Temperature: 23.1°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 24.6°C (🌤️ Adem banget, cocok rebahan)<br>
+🌡️ Temperature: 22.6°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 24.2°C (🌤️ Adem banget, cocok rebahan)<br>
 🌧 Chance of Rain: 0% (☀️ Santai, langit lagi baik hati)<br>
-💨 Wind Speed: 10.7 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
+💨 Wind Speed: 11.1 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -204,27 +204,27 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 34%  
-🌡 Pressure: 1014.4 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 36%  
+🌡 Pressure: 1014.7 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
 🌧️ Rain Hours: 0.0 h
 
-💧 Humidity: 75% (😓 Lembab (keringat mulai gampang keluar))<br>
-🌱 Soil Temp: 28.3°C
+💧 Humidity: 79% (😓 Lembab (keringat mulai gampang keluar))<br>
+🌱 Soil Temp: 27.6°C
 
 😷 Air Quality Index: 70 (🙂 Sedang (masih oke tapi jangan sok bersih))<br>
 🌫️ PM2.5: 21.9<br>
 🌫️ PM10: 24.0<br>
 
 💨 Wind Gust: 26.6 km/h (🍃 Lumayan nendang)<br>
-🧭 Wind Direction: 215° (Barat Daya)<br>
+🧭 Wind Direction: 231° (Barat Daya)<br>
 ☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌙 Night
 
 🌅 Sunrise: 05:34  
 🌇 Sunset: 17:28
 
-👀 Visibility: 24860.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
+👀 Visibility: 22200.0 m  (Excellent (anjir jernih banget, kayak mata elang 🦅))<br>
 🔻 Min: 560.0 m  
 🔺 Max: 31980.0 m
 
