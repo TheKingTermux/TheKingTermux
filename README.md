@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> C is quirky, flawed, and an enormous success.
+> Stay hungry, stay foolish.
 
-<b>— Dennis Ritchie</b>
+<b>— Steve Jobs</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
