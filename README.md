@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Good enough software is often better than perfect software.
+> There are only two kinds of languages: the ones people complain about and the ones nobody uses.
 
-<b>— David Thomas</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
