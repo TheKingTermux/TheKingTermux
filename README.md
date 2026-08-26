@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**View Routing Table**
+**Check Listening UDP Ports**
     
-> _Use `ip route` to inspect network routes._
+> _Use `ss -lun` to view UDP services._
 
 </div>
 <!-- END_SECTION:server_tip -->
