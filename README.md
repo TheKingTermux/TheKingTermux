@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Make simple tasks simple.
+> Any code is easier to change than no code at all.
 
-<b>— Bjarne Stroustrup</b>
+<b>— Martin Fowler</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
