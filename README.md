@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Any code is easier to change than no code at all.
+> Design is not just what it looks like and feels like. Design is how it works.
 
-<b>— Martin Fowler</b>
+<b>— Steve Jobs</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
