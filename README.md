@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Reverse DNS**
+**Find Top CPU Consumers**
     
-> _Use `dig -x <IP>` to check PTR records._
+> _Use `ps aux --sort=-%cpu | head` to identify CPU-intensive processes._
 
 </div>
 <!-- END_SECTION:server_tip -->
