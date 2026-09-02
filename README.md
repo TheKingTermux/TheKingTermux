@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Top CPU Consumers**
+**Monitor Network Traffic**
     
-> _Use `ps aux --sort=-%cpu | head` to identify CPU-intensive processes._
+> _Use `iftop` or `nload` to view live bandwidth usage._
 
 </div>
 <!-- END_SECTION:server_tip -->
