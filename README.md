@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Controlling complexity is the essence of computer programming.
+> The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly.
 
-<b>— Brian Kernighan</b>
+<b>— Donald Knuth</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
