@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Test Download Speed**
+**Check active connections**
     
-> _Use `speedtest-cli` or `iperf3` for network performance tests._
+> _`ss -tunap` gives detailed network connections_
 
 </div>
 <!-- END_SECTION:server_tip -->
