@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check disk usage**
+**Backup Before Updating**
     
-> _`df -h` shows disk usage in human readable format_
+> _Always `create backups` before major upgrades or configuration changes._
 
 </div>
 <!-- END_SECTION:server_tip -->
