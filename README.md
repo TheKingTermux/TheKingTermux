@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> C is quirky, flawed, and an enormous success.
+> Always leave things better than you found them.
 
-<b>— Dennis Ritchie</b>
+<b>— Paul Graham</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
