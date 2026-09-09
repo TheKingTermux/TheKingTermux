@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Backup Before Updating**
+**Verify Public IP**
     
-> _Always `create backups` before major upgrades or configuration changes._
+> _Use `curl ifconfig.me` or similar services._
 
 </div>
 <!-- END_SECTION:server_tip -->
