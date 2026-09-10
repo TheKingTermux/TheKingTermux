@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Always leave things better than you found them.
+> Measuring programming progress by lines of code is like measuring aircraft building progress by weight.
 
-<b>— Paul Graham</b>
+<b>— Bill Gates</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
