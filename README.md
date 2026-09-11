@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Cron Jobs**
+**Check Firewall Rules**
     
-> _Use `crontab -l` to review scheduled user tasks._
+> _Use `iptables -L -n -v` or `nft list ruleset` to inspect firewall policies._
 
 </div>
 <!-- END_SECTION:server_tip -->
