@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Any code is easier to change than no code at all.
+> The most dangerous phrase is: 'We've always done it this way.'
 
-<b>— Martin Fowler</b>
+<b>— Grace Hopper</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
