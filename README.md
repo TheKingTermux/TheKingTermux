@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Secure SSH**
+**Trace Network Paths**
     
-> _`Disable password authentication` and `use SSH keys` whenever possible._
+> _Use `traceroute` or `mtr` to diagnose routing issues._
 
 </div>
 <!-- END_SECTION:server_tip -->
