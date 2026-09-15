@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Trace Network Paths**
+**Document Changes**
     
-> _Use `traceroute` or `mtr` to diagnose routing issues._
+> _`Keep notes` of configuration changes to simplify troubleshooting._
 
 </div>
 <!-- END_SECTION:server_tip -->
