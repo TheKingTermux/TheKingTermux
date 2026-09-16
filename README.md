@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> You can’t trust code that you did not totally create yourself.
+> Don't live with broken windows.
 
-<b>— Ken Thompson</b>
+<b>— Andrew Hunt</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
