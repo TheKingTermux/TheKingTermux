@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Don't live with broken windows.
+> Premature optimization is the root of all evil.
 
-<b>— Andrew Hunt</b>
+<b>— Donald Knuth</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
