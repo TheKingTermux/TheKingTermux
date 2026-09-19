@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**List Listening Ports**
+**Rotate Logs**
     
-> _Use `ss -lntp` instead of the deprecated netstat._
+> _Ensure `logrotate` is configured to prevent disk exhaustion._
 
 </div>
 <!-- END_SECTION:server_tip -->
