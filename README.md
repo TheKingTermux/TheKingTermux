@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Talk is cheap. Show me the code.
+> Code is read much more often than it is written.
 
-<b>— Linus Torvalds</b>
+<b>— Guido van Rossum</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
