@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Code is read much more often than it is written.
+> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 
-<b>— Guido van Rossum</b>
+<b>— Martin Fowler</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
