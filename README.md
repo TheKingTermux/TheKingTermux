@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Rotate Logs**
+**Inspect DNS Records**
     
-> _Ensure `logrotate` is configured to prevent disk exhaustion._
+> _Use `dig ANY domain.com` cautiously to inspect DNS information._
 
 </div>
 <!-- END_SECTION:server_tip -->
