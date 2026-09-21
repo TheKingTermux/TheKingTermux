@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Inspect DNS Records**
+**Audit Recent Logins**
     
-> _Use `dig ANY domain.com` cautiously to inspect DNS information._
+> _Use `last` to inspect login history._
 
 </div>
 <!-- END_SECTION:server_tip -->
