@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+> Programming is like writing a book... except if you miss out a single comma on page 126 the whole thing makes no sense.
 
-<b>— Martin Fowler</b>
+<b>— Yukihiro Matsumoto</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
