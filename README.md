@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Established Connections**
+**Find Zombie Processes**
     
-> _Use `ss -ant state established` to list active TCP sessions._
+> _Use `ps aux | grep Z` to locate zombie processes._
 
 </div>
 <!-- END_SECTION:server_tip -->
