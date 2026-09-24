@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Zombie Processes**
+**Inspect Mounted Filesystems**
     
-> _Use `ps aux | grep Z` to locate zombie processes._
+> _Use `findmnt` for a cleaner view than `mount`._
 
 </div>
 <!-- END_SECTION:server_tip -->
