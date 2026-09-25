@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Testing shows the presence, not the absence of bugs.
+> Focused, hard work is the real key to success.
 
-<b>— Edsger W. Dijkstra</b>
+<b>— John Carmack</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
