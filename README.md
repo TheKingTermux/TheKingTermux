@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Focused, hard work is the real key to success.
+> Make simple tasks simple.
 
-<b>— John Carmack</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
