@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Most good programmers do programming not because they expect to get paid, but because it is fun.
+> Clean code always looks like it was written by someone who cares.
 
-<b>— Linus Torvalds</b>
+<b>— Robert C. Martin</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
