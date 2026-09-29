@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Clean code always looks like it was written by someone who cares.
+> Your most unhappy customers are your greatest source of learning.
 
-<b>— Robert C. Martin</b>
+<b>— Bill Gates</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
