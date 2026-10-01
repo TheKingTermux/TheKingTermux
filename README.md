@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> The only way to go fast, is to go well.
+> I’m not a great programmer; I’m just a good programmer with great habits.
 
-<b>— Robert C. Martin</b>
+<b>— Kent Beck</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
