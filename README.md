@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> A ship in port is safe, but that is not what ships are built for.
+> There are only two kinds of languages: the ones people complain about and the ones nobody uses.
 
-<b>— Grace Hopper</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
