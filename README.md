@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Good code is its own best documentation.
+> Simplicity is a prerequisite for reliability.
 
-<b>— Steve McConnell</b>
+<b>— Edsger W. Dijkstra</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
