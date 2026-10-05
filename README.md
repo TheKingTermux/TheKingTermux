@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Monitor Logs Live**
+**Check TCP Connections**
     
-> _Use `journalctl -xef` to follow logs and view recent errors._
+> _Use `ss -ant` to inspect active TCP sessions._
 
 </div>
 <!-- END_SECTION:server_tip -->
