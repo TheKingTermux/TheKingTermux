@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check TCP Connections**
+**Check Failed SSH Logins**
     
-> _Use `ss -ant` to inspect active TCP sessions._
+> _Use `grep Failed /var/log/auth.log` to identify brute-force attempts._
 
 </div>
 <!-- END_SECTION:server_tip -->
