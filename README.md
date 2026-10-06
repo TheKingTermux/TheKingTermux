@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Simplicity is a prerequisite for reliability.
+> Make it work, make it right, make it fast.
 
-<b>— Edsger W. Dijkstra</b>
+<b>— Kent Beck</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
