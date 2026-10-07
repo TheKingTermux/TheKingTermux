@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Failed SSH Logins**
+**Check logs live**
     
-> _Use `grep Failed /var/log/auth.log` to identify brute-force attempts._
+> _`journalctl -f` is your best friend_
 
 </div>
 <!-- END_SECTION:server_tip -->
