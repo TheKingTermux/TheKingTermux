@@ -9,6 +9,7 @@ on:
       - "Update Server Tips"
       - "Monitor Pull Requests"
       - "Monitor Issues"
+      - "Update Activity Graph"
     types:
       - completed
 
