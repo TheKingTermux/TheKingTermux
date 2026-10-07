@@ -1,0 +1,32 @@
+name: Update Activity Graph
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate activity graph
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: ${{ github.repository_owner }}
+          options: theme=dracula&hide_border=true
+          output_path: picture/activity-graph.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: TheKingTermux
+          author_email: 50316075+TheKingTermux@users.noreply.github.com
+          message: "Otomatis: Update Activity Graph"
+          add: 'picture/activity-graph.svg'
