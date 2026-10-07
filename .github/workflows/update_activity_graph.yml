@@ -19,7 +19,7 @@ jobs:
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: ${{ github.repository_owner }}
-          options: theme=dracula&hide_border=true
+          options: theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true
           output_path: picture/activity-graph.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
