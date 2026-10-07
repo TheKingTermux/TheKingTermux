@@ -242,7 +242,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 </p>
 
 <p align="center"> 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TheKingTermux&theme=react-dark&custom_title=TheKingTermux%20Recent%20Activity&hide_border=true" alt="Github Activity Graph"/> 
+  <img src="picture/activity-graph.svg" alt="Github Activity Graph"/> 
 </p>
 
 <p align="center"> 
