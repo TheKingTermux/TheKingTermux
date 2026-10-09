@@ -31,7 +31,7 @@ jobs:
           committer_message: "Otomatis: Update metrics (detailed stats)"
 
           # Simpan sementara di root dengan nama metrics.svg (akan dipindah oleh script bawah)
-          filename: metrics.svg
+          filename: github-metrics.svg
 
           # Options
           user: TheKingTermux
@@ -84,10 +84,10 @@ jobs:
       - name: Move metrics.svg to picture folder
         run: |
           mkdir -p picture
-          mv metrics.svg picture/metrics.svg
+          mv github-metrics.svg picture/github-metrics.svg
 
       - name: Commit and push metrics
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Otomatis: Pindahkan metrics.svg ke folder picture"
-          file_pattern: "picture/metrics.svg"
+          commit_message: "Otomatis: Pindahkan github-metrics.svg ke folder picture"
+          file_pattern: "picture/github-metrics.svg"
