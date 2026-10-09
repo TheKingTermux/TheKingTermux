@@ -91,3 +91,5 @@ jobs:
         with:
           commit_message: "Otomatis: Pindahkan github-metrics.svg ke folder picture"
           file_pattern: "picture/github-metrics.svg"
+          push_options: "--force-with-lease"
+          skip_ci: true
