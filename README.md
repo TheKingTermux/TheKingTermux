@@ -251,4 +251,4 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 <h2 align="center">My Detailed Stats</h2>
 
-<img align="center" src="/github-metrics.svg" alt="Metrics" width="100%">
+<img align="center" src="picture/github-metrics.svg" alt="Metrics" width="100%">
