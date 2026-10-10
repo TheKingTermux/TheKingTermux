@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Stay hungry, stay foolish.
+> If you can't explain it simply, you don't understand it well enough.
 
-<b>— Steve Jobs</b>
+<b>— Albert Einstein</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
