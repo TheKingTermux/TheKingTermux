@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Bad programmers worry about the code. Good programmers worry about data structures.
+> One of my most productive days was throwing away 1000 lines of code.
 
-<b>— Linus Torvalds</b>
+<b>— Ken Thompson</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
