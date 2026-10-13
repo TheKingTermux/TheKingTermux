@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> One of my most productive days was throwing away 1000 lines of code.
+> Controlling complexity is the essence of computer programming.
 
-<b>— Ken Thompson</b>
+<b>— Brian Kernighan</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
