@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Monitor Bandwidth Usage**
+**Check Failed Services**
     
-> _Use `vnstat` to collect long-term traffic statistics._
+> _Use `systemctl --failed` to find broken services._
 
 </div>
 <!-- END_SECTION:server_tip -->
