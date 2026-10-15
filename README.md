@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Software is like sex: it's better when it's free.
+> Good code is its own best documentation.
 
-<b>— Linus Torvalds</b>
+<b>— Steve McConnell</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
