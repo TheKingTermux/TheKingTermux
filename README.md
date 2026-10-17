@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Design is not just what it looks like and feels like. Design is how it works.
+> Your most unhappy customers are your greatest source of learning.
 
-<b>— Steve Jobs</b>
+<b>— Bill Gates</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
