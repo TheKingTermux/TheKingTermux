@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Your most unhappy customers are your greatest source of learning.
+> Testing shows the presence, not the absence of bugs.
 
-<b>— Bill Gates</b>
+<b>— Edsger W. Dijkstra</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
