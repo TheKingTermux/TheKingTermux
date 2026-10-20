@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Inspect Mounted Filesystems**
+**Audit Recent Logins**
     
-> _Use `findmnt` for a cleaner view than `mount`._
+> _Use `last` to inspect login history._
 
 </div>
 <!-- END_SECTION:server_tip -->
