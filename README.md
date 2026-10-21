@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Science is what we understand well enough to explain to a computer. Art is everything else we do.
+> Always leave things better than you found them.
 
-<b>— Donald Knuth</b>
+<b>— Paul Graham</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
