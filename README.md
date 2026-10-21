@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Audit Recent Logins**
+**View Routing Table**
     
-> _Use `last` to inspect login history._
+> _Use `ip route` to inspect network routes._
 
 </div>
 <!-- END_SECTION:server_tip -->
