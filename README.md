@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**View Routing Table**
+**Test DNS Resolution**
     
-> _Use `ip route` to inspect network routes._
+> _Use `dig google.com` or `nslookup google.com` to verify DNS functionality._
 
 </div>
 <!-- END_SECTION:server_tip -->
