@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Always leave things better than you found them.
+> Make simple tasks simple.
 
-<b>— Paul Graham</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
