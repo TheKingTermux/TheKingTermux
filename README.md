@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Simplicity is a prerequisite for reliability.
+> Good enough software is often better than perfect software.
 
-<b>— Edsger W. Dijkstra</b>
+<b>— David Thomas</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
