@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Service Status**
+**Find Top Memory Consumers**
     
-> _Use `systemctl status <service>` for detailed service diagnostics._
+> _Use `ps aux --sort=-%mem | head` to find processes using the most RAM._
 
 </div>
 <!-- END_SECTION:server_tip -->
