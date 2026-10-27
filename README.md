@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Bad programmers worry about the code. Good programmers worry about data structures.
+> Debugging is twice as hard as writing the code in the first place.
 
-<b>— Linus Torvalds</b>
+<b>— Brian Kernighan</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
