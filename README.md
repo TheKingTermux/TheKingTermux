@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Top Memory Consumers**
+**Check Listening UDP Ports**
     
-> _Use `ps aux --sort=-%mem | head` to find processes using the most RAM._
+> _Use `ss -lun` to view UDP services._
 
 </div>
 <!-- END_SECTION:server_tip -->
