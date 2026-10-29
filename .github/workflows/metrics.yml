@@ -63,7 +63,7 @@ jobs:
           plugin_notable_from: organization
           plugin_notable_types: commit
           plugin_repositories: yes
-          plugin_repositories_featured: TheKingTermux/extensions-source, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/myanimelist-nekopoi-scrapper, TheKingTermux/nekopoi-renamer, TheKingTermux/Website-Pengaduan-Masyarakat-Remake, UKKWariors/Website-Pengaduan-Masyarakat-Remake, TheKingTermux/ira-zte-live-signal-charts
+          plugin_repositories_featured: TheKingTermux/extensions-source, TheKingTermux/tachiyomi-extensions, TheKingTermux/alice, TheKingTermux/myanimelist-nekopoi-scrapper, TheKingTermux/nekopoi-renamer, TheKingTermux/ira-zte-live-signal-charts, TheKingTermux/Website-Pengaduan-Masyarakat-Remake, UKKWariors/Website-Pengaduan-Masyarakat-Remake
           retries: 3
           retries_delay: 300
           retries_output_action: 5
