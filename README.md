@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Listening UDP Ports**
+**Test Download Speed**
     
-> _Use `ss -lun` to view UDP services._
+> _Use `speedtest-cli` or `iperf3` for network performance tests._
 
 </div>
 <!-- END_SECTION:server_tip -->
