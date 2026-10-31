@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Test Download Speed**
+**Test HTTP Response**
     
-> _Use `speedtest-cli` or `iperf3` for network performance tests._
+> _Use `curl -I https://example.com` to inspect headers._
 
 </div>
 <!-- END_SECTION:server_tip -->
