@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Make it work, make it right, make it fast.
+> The only way to go fast, is to go well.
 
-<b>— Kent Beck</b>
+<b>— Robert C. Martin</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
