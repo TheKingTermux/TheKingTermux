@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Test HTTP Response**
+**Secure SSH**
     
-> _Use `curl -I https://example.com` to inspect headers._
+> _`Disable password authentication` and `use SSH keys` whenever possible._
 
 </div>
 <!-- END_SECTION:server_tip -->
