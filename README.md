@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Secure SSH**
+**Check disk usage**
     
-> _`Disable password authentication` and `use SSH keys` whenever possible._
+> _`df -h` shows disk usage in human readable format_
 
 </div>
 <!-- END_SECTION:server_tip -->
