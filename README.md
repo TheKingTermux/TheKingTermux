@@ -128,7 +128,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> The only way to go fast, is to go well.
+> Clean code always looks like it was written by someone who cares.
 
 <b>— Robert C. Martin</b>
 
