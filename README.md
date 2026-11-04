@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Open Files**
+**Verify Cron Jobs**
     
-> _Use `lsof` to see which files are currently opened by processes._
+> _Use `crontab -l` to review scheduled user tasks._
 
 </div>
 <!-- END_SECTION:server_tip -->
