@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> I’m not a great programmer; I’m just a good programmer with great habits.
+> A ship in port is safe, but that is not what ships are built for.
 
-<b>— Kent Beck</b>
+<b>— Grace Hopper</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
