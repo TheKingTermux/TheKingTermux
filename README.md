@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Verify Cron Jobs**
+**Backup Before Updating**
     
-> _Use `crontab -l` to review scheduled user tasks._
+> _Always `create backups` before major upgrades or configuration changes._
 
 </div>
 <!-- END_SECTION:server_tip -->
