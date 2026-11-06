@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> A ship in port is safe, but that is not what ships are built for.
+> Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 
-<b>— Grace Hopper</b>
+<b>— Martin Fowler</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
