@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Test Latency**
+**Check open ports**
     
-> _Use `ping` to measure round-trip times._
+> _Use: `netstat -tulnp` or `ss -tulnp` to see listening services_
 
 </div>
 <!-- END_SECTION:server_tip -->
