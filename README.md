@@ -128,7 +128,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Premature optimization is the root of all evil.
+> The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly.
 
 <b>— Donald Knuth</b>
 
