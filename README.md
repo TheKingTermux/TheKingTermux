@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Established Connections**
+**Check Network Interfaces**
     
-> _Use `ss -ant state established` to list active TCP sessions._
+> _Use `ip addr show` to inspect interface configurations._
 
 </div>
 <!-- END_SECTION:server_tip -->
