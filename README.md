@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> If you can't explain it simply, you don't understand it well enough.
+> One of my most productive days was throwing away 1000 lines of code.
 
-<b>— Albert Einstein</b>
+<b>— Ken Thompson</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
