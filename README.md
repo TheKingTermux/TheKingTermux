@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> One of my most productive days was throwing away 1000 lines of code.
+> There are only two kinds of languages: the ones people complain about and the ones nobody uses.
 
-<b>— Ken Thompson</b>
+<b>— Bjarne Stroustrup</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
