@@ -154,9 +154,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌦️ Weather in Me
 ##### (Updated approximately every less than 1 to more than 5 hours)*
-##### 🟢 Latest: Selasa, 17 November 2026 07:37:22  
-##### 🟡 Previous: Senin, 16 November 2026 23:56:36  
-##### ⏱️ Update Gap: 7 Jam 40 Menit 46 Detik lalu<br><br>
+##### 🟢 Latest: Selasa, 17 November 2026 15:59:31  
+##### 🟡 Previous: Selasa, 17 November 2026 07:37:22  
+##### ⏱️ Update Gap: 8 Jam 22 Menit 9 Detik lalu<br><br>
 
 *It's up to Github Cron Job and Open Meteo API's calls to take, and its wild ngl. Sometimes Open Meteo give error 443, sometimes no Github Cron Job available 💀
 
@@ -165,16 +165,16 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 **☁️ Overcast**
 
-🌡️ Temperature: 25.1°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
-🌡 Feels Like: 28.8°C (😌 Nyaman kayak kipas angin malam)<br>
-🌧 Chance of Rain: 49% (🌤️ Bisa hujan bisa tidak (cuaca mode indecisive))<br>
-💨 Wind Speed: 4.5 km/h  (🍃 Calm (diam total, kayak WiFi pas ujian 😐))<br>
+🌡️ Temperature: 23.8°C  (🌤️ Cool (adem, cocok buat rebahan produktif))<br>
+🌡 Feels Like: 28.0°C (😌 Nyaman kayak kipas angin malam)<br>
+🌧 Chance of Rain: 100% (🌧️ Fix basah (payung? udah gak cukup, butuh kapal 😭))<br>
+💨 Wind Speed: 5.2 km/h  (🍃 Light Wind (cuma lewat doang, gak niat))<br>
 
 ━━━━━━━━━━━━━━━━━━
 
 ### ⏳ Forecast (Next 5 Hours)
 
-🕗 08:00<br>☁️ Overcast<br>🌡️ 26.0°C • 🌧️ 57% • 💨 5.8 km/h<br><br>🕘 09:00<br>☁️ Overcast<br>🌡️ 27.5°C • 🌧️ 77% • 💨 8.3 km/h<br><br>🕙 10:00<br>⛅ Partly Cloudy<br>🌡️ 29.4°C • 🌧️ 92% • 💨 10.5 km/h<br><br>🕚 11:00<br>☁️ Overcast<br>🌡️ 30.2°C • 🌧️ 98% • 💨 9.9 km/h<br><br>🕛 12:00<br>☁️ Overcast<br>🌡️ 31.2°C • 🌧️ 99% • 💨 6.9 km/h<br><br>
+🕓 16:00<br>🌦️ Light Drizzle<br>🌡️ 23.9°C • 🌧️ 100% • 💨 5.6 km/h<br><br>🕔 17:00<br>☁️ Overcast<br>🌡️ 23.3°C • 🌧️ 100% • 💨 4.2 km/h<br><br>🕕 18:00<br>☁️ Overcast<br>🌡️ 23.0°C • 🌧️ 99% • 💨 2.7 km/h<br><br>🕖 19:00<br>☁️ Overcast<br>🌡️ 23.2°C • 🌧️ 94% • 💨 2.2 km/h<br><br>🕗 20:00<br>☁️ Overcast<br>🌡️ 22.5°C • 🌧️ 82% • 💨 2.3 km/h<br><br>
 
 ━━━━━━━━━━━━━━━━━━
 
@@ -183,7 +183,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <details>
 <summary>🌤️ Lihat detail cuaca 3 hari ke depan</summary>
 
-<br>📅 <b>Selasa</b><br><b>🌅 Dini Hari (00:00-03:59)</b><br>🌫️ Fog<br>🌡️ 22°C • 🌡 Feels 27°C<br>🌧️ 87% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00-07:59)</b><br>🌫️ Fog<br>🌡️ 23°C • 🌡 Feels 27°C<br>🌧️ 43% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00-11:59)</b><br>☁️ Overcast<br>🌡️ 28°C • 🌡 Feels 32°C<br>🌧️ 98% • 💨 9 km/h<br><br><b>☀ Siang (12:00-15:59)</b><br>☁️ Overcast<br>🌡️ 29°C • 🌡 Feels 32°C<br>🌧️ 100% • 💨 9 km/h<br><br><b>🌇 Sore (16:00-19:59)</b><br>☁️ Overcast<br>🌡️ 24°C • 🌡 Feels 28°C<br>🌧️ 100% • 💨 5 km/h<br><br><b>🌙 Malam (20:00-23:59)</b><br>☁️ Overcast<br>🌡️ 23°C • 🌡 Feels 27°C<br>🌧️ 82% • 💨 2 km/h<br><br><br>📅 <b>Rabu</b><br><b>🌅 Dini Hari (00:00-03:59)</b><br>🌫️ Fog<br>🌡️ 22°C • 🌡 Feels 25°C<br>🌧️ 53% • 💨 3 km/h<br><br><b>🌄 Subuh (04:00-07:59)</b><br>🌫️ Fog<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 35% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00-11:59)</b><br>⛅ Partly Cloudy<br>🌡️ 28°C • 🌡 Feels 32°C<br>🌧️ 100% • 💨 7 km/h<br><br><b>☀ Siang (12:00-15:59)</b><br>🌦️ Light Drizzle<br>🌡️ 27°C • 🌡 Feels 31°C<br>🌧️ 100% • 💨 7 km/h<br><br><b>🌇 Sore (16:00-19:59)</b><br>🌦️ Light Drizzle<br>🌡️ 23°C • 🌡 Feels 28°C<br>🌧️ 100% • 💨 4 km/h<br><br><b>🌙 Malam (20:00-23:59)</b><br>🌦️ Light Drizzle<br>🌡️ 22°C • 🌡 Feels 27°C<br>🌧️ 95% • 💨 1 km/h<br><br><br>📅 <b>Kamis</b><br><b>🌅 Dini Hari (00:00-03:59)</b><br>🌦️ Light Drizzle<br>🌡️ 21°C • 🌡 Feels 26°C<br>🌧️ 81% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00-07:59)</b><br>⛅ Partly Cloudy<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 63% • 💨 2 km/h<br><br><b>🌤 Pagi (08:00-11:59)</b><br>🌤️ Mainly Clear<br>🌡️ 27°C • 🌡 Feels 31°C<br>🌧️ 99% • 💨 6 km/h<br><br><b>☀ Siang (12:00-15:59)</b><br>🌍 Unknown<br>🌡️ 25°C • 🌡 Feels 30°C<br>🌧️ 100% • 💨 5 km/h<br><br><b>🌇 Sore (16:00-19:59)</b><br>🌦️ Light Drizzle<br>🌡️ 22°C • 🌡 Feels 27°C<br>🌧️ 100% • 💨 4 km/h<br><br><b>🌙 Malam (20:00-23:59)</b><br>⛅ Partly Cloudy<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 93% • 💨 2 km/h<br><br>
+<br>📅 <b>Selasa</b><br><b>🌅 Dini Hari (00:00-03:59)</b><br>🌫️ Fog<br>🌡️ 22°C • 🌡 Feels 27°C<br>🌧️ 89% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00-07:59)</b><br>🌫️ Fog<br>🌡️ 23°C • 🌡 Feels 27°C<br>🌧️ 22% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00-11:59)</b><br>☁️ Overcast<br>🌡️ 29°C • 🌡 Feels 33°C<br>🌧️ 87% • 💨 8 km/h<br><br><b>☀ Siang (12:00-15:59)</b><br>🌦️ Light Drizzle<br>🌡️ 27°C • 🌡 Feels 32°C<br>🌧️ 100% • 💨 8 km/h<br><br><b>🌇 Sore (16:00-19:59)</b><br>☁️ Overcast<br>🌡️ 23°C • 🌡 Feels 28°C<br>🌧️ 100% • 💨 4 km/h<br><br><b>🌙 Malam (20:00-23:59)</b><br>☁️ Overcast<br>🌡️ 22°C • 🌡 Feels 27°C<br>🌧️ 82% • 💨 2 km/h<br><br><br>📅 <b>Rabu</b><br><b>🌅 Dini Hari (00:00-03:59)</b><br>🌫️ Fog<br>🌡️ 22°C • 🌡 Feels 25°C<br>🌧️ 49% • 💨 3 km/h<br><br><b>🌄 Subuh (04:00-07:59)</b><br>🌫️ Fog<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 35% • 💨 3 km/h<br><br><b>🌤 Pagi (08:00-11:59)</b><br>🌤️ Mainly Clear<br>🌡️ 28°C • 🌡 Feels 32°C<br>🌧️ 100% • 💨 8 km/h<br><br><b>☀ Siang (12:00-15:59)</b><br>🌦️ Light Drizzle<br>🌡️ 27°C • 🌡 Feels 31°C<br>🌧️ 100% • 💨 5 km/h<br><br><b>🌇 Sore (16:00-19:59)</b><br>🌍 Unknown<br>🌡️ 23°C • 🌡 Feels 28°C<br>🌧️ 100% • 💨 3 km/h<br><br><b>🌙 Malam (20:00-23:59)</b><br>🌦️ Light Drizzle<br>🌡️ 22°C • 🌡 Feels 27°C<br>🌧️ 92% • 💨 2 km/h<br><br><br>📅 <b>Kamis</b><br><b>🌅 Dini Hari (00:00-03:59)</b><br>🌦️ Light Drizzle<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 81% • 💨 1 km/h<br><br><b>🌄 Subuh (04:00-07:59)</b><br>☁️ Overcast<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 73% • 💨 2 km/h<br><br><b>🌤 Pagi (08:00-11:59)</b><br>☁️ Overcast<br>🌡️ 27°C • 🌡 Feels 31°C<br>🌧️ 100% • 💨 6 km/h<br><br><b>☀ Siang (12:00-15:59)</b><br>🌦️ Light Drizzle<br>🌡️ 26°C • 🌡 Feels 30°C<br>🌧️ 100% • 💨 5 km/h<br><br><b>🌇 Sore (16:00-19:59)</b><br>🌍 Unknown<br>🌡️ 23°C • 🌡 Feels 27°C<br>🌧️ 100% • 💨 4 km/h<br><br><b>🌙 Malam (20:00-23:59)</b><br>🌦️ Light Drizzle<br>🌡️ 22°C • 🌡 Feels 26°C<br>🌧️ 89% • 💨 2 km/h<br><br>
 
 </details>
 
@@ -196,7 +196,7 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 <br>
 
-<b>🌄 Subuh (04:00-07:59)</b><br><br><b>🏙️ Jakarta</b><br>🌍 Unknown<br>🌡️ 27°C • 🌡 Feels 33°C<br>🌧️ 29% • 💨 3 km/h<br><br><b>⛰️ Bandung</b><br>🌤️ Mainly Clear<br>🌡️ 22°C • 🌡 Feels 25°C<br>🌧️ 0% • 💨 2 km/h<br><br><b>🏛️ Semarang</b><br>☁️ Overcast<br>🌡️ 28°C • 🌡 Feels 33°C<br>🌧️ 0% • 💨 5 km/h<br><br><b>🎓 Yogyakarta</b><br>☁️ Overcast<br>🌡️ 25°C • 🌡 Feels 31°C<br>🌧️ 10% • 💨 3 km/h<br><br><b>🌊 Surabaya</b><br>☁️ Overcast<br>🌡️ 28°C • 🌡 Feels 33°C<br>🌧️ 10% • 💨 4 km/h<br><br><b>🌧️ Medan</b><br>🌍 Unknown<br>🌡️ 24°C • 🌡 Feels 29°C<br>🌧️ 82% • 💨 4 km/h<br><br><b>🚢 Palembang</b><br>☁️ Overcast<br>🌡️ 25°C • 🌡 Feels 31°C<br>🌧️ 67% • 💨 7 km/h<br><br><b>🛢️ Balikpapan</b><br>🌍 Unknown<br>🌡️ 27°C • 🌡 Feels 32°C<br>🌧️ 49% • 💨 6 km/h<br><br><b>🐟 Makassar</b><br>🌤️ Mainly Clear<br>🌡️ 27°C • 🌡 Feels 32°C<br>🌧️ 6% • 💨 6 km/h<br><br><b>🌴 Denpasar</b><br>🌤️ Mainly Clear<br>🌡️ 26°C • 🌡 Feels 32°C<br>🌧️ 37% • 💨 2 km/h<br><br>
+<b>☀ Siang (12:00-15:59)</b><br><br><b>🏙️ Jakarta</b><br>☁️ Overcast<br>🌡️ 33°C • 🌡 Feels 39°C<br>🌧️ 73% • 💨 8 km/h<br><br><b>⛰️ Bandung</b><br>🌍 Unknown<br>🌡️ 27°C • 🌡 Feels 31°C<br>🌧️ 83% • 💨 4 km/h<br><br><b>🏛️ Semarang</b><br>☁️ Overcast<br>🌡️ 31°C • 🌡 Feels 36°C<br>🌧️ 85% • 💨 6 km/h<br><br><b>🎓 Yogyakarta</b><br>🌍 Unknown<br>🌡️ 28°C • 🌡 Feels 34°C<br>🌧️ 100% • 💨 6 km/h<br><br><b>🌊 Surabaya</b><br>🌍 Unknown<br>🌡️ 33°C • 🌡 Feels 38°C<br>🌧️ 88% • 💨 8 km/h<br><br><b>🌧️ Medan</b><br>🌍 Unknown<br>🌡️ 28°C • 🌡 Feels 34°C<br>🌧️ 97% • 💨 6 km/h<br><br><b>🚢 Palembang</b><br>☁️ Overcast<br>🌡️ 31°C • 🌡 Feels 38°C<br>🌧️ 81% • 💨 2 km/h<br><br><b>🛢️ Balikpapan</b><br>☁️ Overcast<br>🌡️ 30°C • 🌡 Feels 36°C<br>🌧️ 100% • 💨 10 km/h<br><br><b>🐟 Makassar</b><br>🌍 Unknown<br>🌡️ 29°C • 🌡 Feels 35°C<br>🌧️ 100% • 💨 7 km/h<br><br><b>🌴 Denpasar</b><br>🌍 Unknown<br>🌡️ 29°C • 🌡 Feels 35°C<br>🌧️ 100% • 💨 9 km/h<br><br>
 
 </details>
 
@@ -204,29 +204,29 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 
 ### 🌍 Environment
 
-☁️ Cloud Cover: 97%  
-🌡 Pressure: 1013.9 hPa (⚖️ Normal (aman terkendali))<br>
+☁️ Cloud Cover: 90%  
+🌡 Pressure: 1012.3 hPa (⚖️ Normal (aman terkendali))<br>
 ☔ Precipitation: 0.0 mm  (☀️ No Rain (kering total, AC alam aktif 🔥))<br>
-🌧️ Rain Hours: 2.0 h
+🌧️ Rain Hours: 6.0 h
 
-💧 Humidity: 78% (😓 Lembab (keringat mulai gampang keluar))<br>
-🌱 Soil Temp: 25.8°C
+💧 Humidity: 90% (💦 Lembab brutal (baju kering aja bisa terasa basah 😭))<br>
+🌱 Soil Temp: 30.3°C
 
-😷 Air Quality Index: 102 (😐 Kurang sehat (paru-paru kerja lembur))<br>
-🌫️ PM2.5: 17.5<br>
-🌫️ PM10: 18.2<br>
+😷 Air Quality Index: 101 (😐 Kurang sehat (paru-paru kerja lembur))<br>
+🌫️ PM2.5: 30.4<br>
+🌫️ PM10: 30.9<br>
 
-💨 Wind Gust: 21.2 km/h (😴 Tenang, angin lagi cuti)<br>
-🧭 Wind Direction: 151° (Tenggara)<br>
-☀️ UV: 🟡 Moderate UV (masih aman tapi jangan sok kuat)  
+💨 Wind Gust: 22.0 km/h (😴 Tenang, angin lagi cuti)<br>
+🧭 Wind Direction: 182° (Selatan)<br>
+☀️ UV: 🟢 Safe UV (aman lah, kayak zona nyaman 😌)  
 🌗 Time: 🌞 Day
 
 🌅 Sunrise: 04:59  
 🌇 Sunset: 17:28
 
-👀 Visibility: 11980.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
+👀 Visibility: 10820.0 m  (Very Good (lumayan bening, masih enak dipandang 👀))<br>
 🔻 Min: 80.0 m  
-🔺 Max: 37780.0 m
+🔺 Max: 33480.0 m
 
 </div>
 <!-- END_SECTION:weather -->
