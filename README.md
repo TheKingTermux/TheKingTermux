@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check active connections**
+**Inspect DNS Records**
     
-> _`ss -tunap` gives detailed network connections_
+> _Use `dig ANY domain.com` cautiously to inspect DNS information._
 
 </div>
 <!-- END_SECTION:server_tip -->
