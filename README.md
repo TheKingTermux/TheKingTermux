@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Talk is cheap. Show me the code.
+> Controlling complexity is the essence of computer programming.
 
-<b>— Linus Torvalds</b>
+<b>— Brian Kernighan</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
