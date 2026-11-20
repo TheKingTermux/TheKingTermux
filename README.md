@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Find Top CPU Consumers**
+**Monitor Real-Time Processes**
     
-> _Use `ps aux --sort=-%cpu | head` to identify CPU-intensive processes._
+> _Use `htop` for an interactive process viewer._
 
 </div>
 <!-- END_SECTION:server_tip -->
