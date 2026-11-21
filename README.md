@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> Always leave things better than you found them.
+> Any code is easier to change than no code at all.
 
-<b>— Paul Graham</b>
+<b>— Martin Fowler</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
