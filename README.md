@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check Swap Usage**
+**Monitor Network Traffic**
     
-> _Use `swapon --show` to view active swap devices._
+> _Use `iftop` or `nload` to view live bandwidth usage._
 
 </div>
 <!-- END_SECTION:server_tip -->
