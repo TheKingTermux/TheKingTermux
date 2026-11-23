@@ -128,9 +128,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:daily_quote -->
 <div align="center">
 
-> A ship in port is safe, but that is not what ships are built for.
+> Your most unhappy customers are your greatest source of learning.
 
-<b>— Grace Hopper</b>
+<b>— Bill Gates</b>
 
 </div>
 <!-- END_SECTION:daily_quote -->
