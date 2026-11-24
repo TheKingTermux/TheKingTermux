@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check System Uptime**
+**Restart Service**
     
-> _Use `uptime` to quickly see load averages and uptime._
+> _Use `systemctl restart <service>` to restart a service after configuration changes._
 
 </div>
 <!-- END_SECTION:server_tip -->
