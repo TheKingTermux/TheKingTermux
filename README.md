@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Restart Service**
+**Check logs live**
     
-> _Use `systemctl restart <service>` to restart a service after configuration changes._
+> _`journalctl -f` is your best friend_
 
 </div>
 <!-- END_SECTION:server_tip -->
