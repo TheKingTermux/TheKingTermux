@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Check logs live**
+**Ping test**
     
-> _`journalctl -f` is your best friend_
+> _Use `ping 8.8.8.8` to test internet connectivity_
 
 </div>
 <!-- END_SECTION:server_tip -->
