@@ -140,9 +140,9 @@ Finally i have bought a PSU, now my goal is saving for a GPU, for the Case, Gami
 <!-- START_SECTION:server_tip -->
 <div align="center">
     
-**Ping test**
+**Enable Fail2Ban**
     
-> _Use `ping 8.8.8.8` to test internet connectivity_
+> _`Fail2Ban` helps block repeated failed login attempts._
 
 </div>
 <!-- END_SECTION:server_tip -->
